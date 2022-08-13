@@ -1,0 +1,106 @@
+﻿<nav role="navigation">
+    <div class="header-link hide-menu"><i class="fa fa-bars"></i></div>
+    <div class="small-logo" style="margin-top:-1%">
+        <small class="text-primary" style="font-size:22px">LOD APR</small>
+    </div>
+    <div class="navbar-left hidden-xs">
+        <h3>
+            <strong>Gestión de Libro de Obra APR</strong>
+        </h3>
+    </div>
+    <div class="mobile-menu">
+        <button type="button" class="navbar-toggle mobile-menu-toggle" data-toggle="collapse" data-target="#mobile-collapse">
+            <i class="fa fa-chevron-down"></i>
+        </button>
+        <div class="collapse mobile-navbar" id="mobile-collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a class=""  href="/Account/LogOff/">Logout</a>
+                 </li>
+            </ul>
+        </div>
+    </div>
+
+
+    @{ var SplitUrl = Request.Url.AbsolutePath.Split('/');
+        string Area = SplitUrl[1];}
+    <div class="navbar-right tour-2">
+        <ul class="nav navbar-nav no-borders">
+           
+            @{int NSistemas = Html.AccesoMenuAPP();
+                string tam = "400px";
+                string col = "col-md-4";
+                switch (NSistemas)
+                {
+                    case 2:
+                        tam = "120px";
+                        col = "col-md-12";
+                        break;
+                    case 3:
+                        tam = "280px";
+                        col = "col-md-6";
+                        break;
+                }
+            }
+@if (NSistemas > 1) { 
+            <li class="dropdown">
+                <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+                    <i class="pe-7s-keypad"></i>
+                </a>
+                <div class="dropdown-menu hdropdown bigmenu animated flipInX" style="min-width: @tam">
+                    <div class="row">
+
+                        @if (Area != "Admin")
+                        {
+                            <div class="@col">
+                                <a style="height:85px" href="@Url.Action("Index", "Home", new { area = "Admin" }, null)" @*target="_blank"*@>
+                                    <i class="fa fa-sitemap text-info fa-2x"></i>
+                                    <h6>Administración</h6>
+                                </a>
+                            </div>
+                        }
+
+                        @if (Area != "GLOD")
+                        {
+                            <div class="@col">
+                                <a style="height:85px" href="@Url.Action("InicioRapido", "Contratos", new { area = "GLOD" }, null)" @*target="_blank"*@>
+                                    <i class="pe pe-7s-display2 text-navy-blue fa-2x"></i>
+                                    <h6>Gestión Libro de Obra</h6>
+                                </a>
+                            </div>
+                        }
+
+                        @*@if (Area != "BIB")
+                        {
+                            if (Html.ValidaPermisos("0070000000"))
+                            {
+                                <div class="@col">
+                                    <a style="height:85px" href="@Url.Action("Index", "Home", new { area = "BIB" }, null)" target="_blank">
+                                        <i class="fa fa-book text-green fa-2x"></i>
+                                        <h6>Biblioteca</h6>
+                                    </a>
+                                </div>
+                                }
+                         }*@
+
+                        </div>
+                </div>
+            </li>
+            }
+
+            <li class="dropdown">
+                <a href="javascript:document.getElementById('logoutForm').submit()">
+                    <i class="pe-7s-upload pe-rotate-90"></i>
+                </a>
+                @using (Html.BeginForm("LogOff", "Account",new { area = ""}, FormMethod.Post, new { id = "logoutForm" }))
+                {
+                    @Html.AntiForgeryToken()
+                }
+
+            </li>
+        </ul>
+    </div>
+    
+</nav>
+
+

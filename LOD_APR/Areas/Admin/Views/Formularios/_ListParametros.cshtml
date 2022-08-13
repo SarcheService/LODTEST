@@ -1,0 +1,159 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.FORM_FormPreguntas>
+@using LOD_APR.Areas.Admin.Models
+
+@{int j = 1;}
+<ul class="list-group @((!ViewBag.EvaluacionActiva)?"dragable-List":"")">
+    @foreach (var obj in Model.OrderBy(o => o.Indice))
+    {
+    <li class="list-group-item" data-id="@obj.IdPregunta" data-idItem="@obj.IdItem">
+        @if (!ViewBag.EvaluacionActiva)
+        {
+            <div class=" btn-group pull-right">
+                @if (obj.TipoParam > 912)
+                {
+                    @Ajax.RawActionLink(string.Format("<i class='fa fa-list-alt'></i>"), "Create", "FormAlternativas", new { id = obj.IdPregunta },
+                    new AjaxOptions
+                    {
+                        HttpMethod = "GET",
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "modalCanvas",
+                        OnSuccess = "form_alternativasSM.initModal(data,status,xhr);"
+                    }
+                    , new { @class = "btn btn-xs btn-success btn-outline", @title = "Agregar Alternativa" })
+                }
+
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-edit'></i>"), "Edit", "FormPreguntas", new { id = obj.IdPregunta, embebido=false },
+                new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "modalCanvas",
+                    OnSuccess = "form_parametrosFormulario.initModal(data,status,xhr);"
+                }
+                , new { @class = "btn btn-xs btn-warning2 btn-outline", @title = "Editar Pregunta" })
+
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-trash'></i>"), "Delete", "FormPreguntas", new { id = obj.IdPregunta },
+                new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "modalCanvas",
+                    OnSuccess = "form_parametrosFormulario.initModal(data,status,xhr);"
+                }
+                , new { @class = "btn btn-xs btn-danger btn-outline", @title = "Eliminar Pregunta" })
+
+            </div>
+        }
+
+        <h5>
+            <span id="ParamIndic_@obj.IdPregunta">@j)</span> @obj.Titulo
+        </h5>
+
+        <h6 class="m-l-md">
+            @Html.DisplayFor(modelItem => obj.Descripcion)
+        </h6>
+
+        <h5 class="m-l-md">
+            <span class="label label-info" style="color:white">@Html.Raw(obj.ConfigPregunta.Icono) @obj.ConfigPregunta.Titulo | @obj.ConfigPregunta.Descripcion</span>
+            @if (obj.Obligatoria)
+            {
+                <span class="label label-warning" style="color:white">Obligatoria</span>
+            }
+            <span class="label label-success" style="color:white">Tamaño: @obj.Largo</span>
+
+            @foreach (string error in obj.ErrorList)
+            {
+                <span class="label label-danger small" style="color:white">
+                    <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                    @Html.Raw(error)
+                </span>
+            }
+        </h5>
+
+        @if (obj.TipoParam == 904)
+        {
+            if (!ViewBag.EvaluacionActiva)
+            {
+                using (Ajax.BeginForm("UpdateFormEmb", "Formularios", new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "form_parametrosFormulario.saveResult(data,status,xhr);"
+                }, new { }))
+                {
+                    <div class="row">
+                        <div class="col-md-10 m-l-md m-t-md">
+                            <div class="input-group">
+                                <input type="hidden" name="IdPregunta" value="@obj.IdPregunta" />
+                                <select class="form-control" id="FormsEmbebidos" name="FormsEmbebidos">
+                                    <option value="">Seleccione un Formulario</option>
+                                    @foreach (var item in obj.SelectedFormItems)
+                                    {
+                                        <option value="@item.Value" @((item.Selected) ? "selected=\"selected\"" : "")>@item.Text</option>
+                                    }
+                                </select>
+                                <span class="input-group-addon">
+                                    <button role="button" type="submit" class="btn btn-xs btn-success"><i class="fa fa-upload"></i> Actualizar</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="row">
+                    <div class="col-md-10 m-l-md m-t-md">
+                        <input type="text" class="form-control input-sm" value="@obj.FORM_Formularios.Titulo" readonly="readonly" />
+                    </div>
+                </div>
+            }
+        }
+
+        @{j++;}
+        <br />
+        @{int k = 1;}
+        @if (obj.TipoParam > 912)
+        {
+            <p class="m-l-md"><strong>Listado de Opciones:</strong></p>
+        }
+        <ul>
+            @foreach (var alternativa in obj.FORM_FormAlternativa.OrderBy(o => o.Indice))
+            {
+
+                <li style="display:block">
+
+                    @Html.Raw(obj.ConfigPregunta.Icono) @alternativa.Titulo
+
+                    @if (!obj.FORM_FormItems.FORM_Formularios.Activa)
+                    {
+                        <div class="btn-group">
+                            @Ajax.RawActionLink(string.Format("<i class='fa fa-pencil' style='color:#ffb606'> </i>"), "Edit", "FormAlternativas", new { id = alternativa.IdAlternativa, letra = @Html.EnumeracionLetras(k) },
+                             new AjaxOptions
+                             {
+                                 HttpMethod = "GET",
+                                 InsertionMode = InsertionMode.Replace,
+                                 UpdateTargetId = "modalCanvas",
+                                 OnSuccess = "form_alternativasSM.initModal(data,status,xhr);"
+                             }
+                             , new { @title = "Editar Alternativa" })
+
+                            @Ajax.RawActionLink(string.Format("<i class='fa fa-close' style='color:#e74c3c'> </i>"), "Delete", "FormAlternativas", new { id = alternativa.IdAlternativa },
+                             new AjaxOptions
+                             {
+                                 HttpMethod = "GET",
+                                 InsertionMode = InsertionMode.Replace,
+                                 UpdateTargetId = "modalCanvas",
+                                 OnSuccess = "form_alternativasSM.initModal(data,status,xhr);"
+                             }
+                             , new { @title = "Eliminar Alternativa" })
+                        </div>
+
+                    }
+                </li>
+                k++;
+            }
+
+        </ul>
+    </li>
+    }
+</ul>

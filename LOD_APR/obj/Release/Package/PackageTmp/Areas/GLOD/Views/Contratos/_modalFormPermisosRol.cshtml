@@ -1,0 +1,94 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_PermisosRolesContrato>
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalContratos" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+            </div>
+        
+            <div class="modal-body">
+                        <div class="col-lg-12">
+                            <div class="col-lg-10"></div>
+                            <div class="col-lg-2">
+                                @if(ViewBag.PermiteCrear && !ViewBag.ContratoLiquidado)
+                                {
+
+                                    @Ajax.RawActionLink(string.Format("<i class='fa fa-plus' aria-hidden='true'></i> Agregar Permiso"), "CrearPermisoRol", "Contratos",
+                                                                     new { id = ViewBag.IdRCContrato },
+                                                                     new AjaxOptions
+                                                                     {
+                                                                         HttpMethod = "GET",
+                                                                         InsertionMode = InsertionMode.Replace,
+                                                                         UpdateTargetId = "modalCanvas2",
+                                                                         OnSuccess = "glod_contratos.initModalPermisosRol(data,status,xhr);"
+                                                                     }
+                                                                     , new { @class = "btn btn-xs btn-success pull-right", @id = "BtnEditarPermiso" })
+                                    <hr />
+                                
+                                }
+                            </div>
+                        </div>
+                        <div id="divPermisosRol">
+                            <table class="table table-condensed table-hover" id="tablaLogs" name="tablaLogs">
+                                <thead>
+                                    <tr>
+                                        <th>Libro</th>
+                                        <th>Lectura</th>
+                                        <th>Escritura</th>
+                                        <th>Firma Gobierno</th>
+                                        <th>Fima Elect. Avanzada</th>
+                                        <th>Firma simple</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var item in Model.OrderBy(x => x.Indice).ThenBy(x => x.SubIndice))
+                                    {
+                                        <tr>
+                                            <td>@Html.DisplayFor(modelItem => item.LOD_LibroObras.NombreLibroObra)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Lectura)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.Escritura)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.FirmaGob)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.FirmaFea)</td>
+                                            <td>@Html.DisplayFor(modelItem => item.FirmaSimple)</td>
+                                            <td>
+                                                @if (Html.ValidaPermisos("0020000002") && !ViewBag.ContratoLiquidado)
+                                                {
+                                                          @Ajax.RawActionLink(string.Format("<i class='fa fa-edit' aria-hidden='true'></i> Editar"), "EditarPermisoRol", "Contratos",
+                                                                  new { id = item.IdPermiso },
+                                                                  new AjaxOptions
+                                                                     {
+                                                                                      HttpMethod = "GET",
+                                                                                      InsertionMode = InsertionMode.Replace,
+                                                                                      UpdateTargetId = "modalCanvas2",
+                                                                                      OnSuccess = "glod_contratos.initModalEditPermisosRol(data,status,xhr);"
+                                                                      }
+                                                                  , new { @class = "btn btn-xs btn-warning pull-right", @id = "BtnEditarPermiso" })
+
+                                                }
+                                            </td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    
+            </div>
+
+                    
+            <div class="modal-footer">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="btn-group pull-right">
+
+                            <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+</div>
+

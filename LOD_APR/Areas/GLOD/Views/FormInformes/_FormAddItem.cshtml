@@ -1,0 +1,101 @@
+﻿@model LOD_APR.Areas.Admin.Models.FORM_Formularios
+
+<div class="modal fade hmodal-success" id="modalFormReporte" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">@ViewBag.Titulo</h4>
+                <small class="font-bold">Los registros asociados a otros módulos no se pueden eliminar</small>
+            </div>
+            <div class="modal-body">
+                <form action="/GLOD/FormInformes/PostFormEjecutivo" id="formEncuesta" method="post" name="formEncuesta" novalidate="novalidate">
+                    <div class="form-horizontal">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" id="IdItemInforme" name="IdItemInforme" value="@ViewBag.IdItemInforme" />
+                        <input type="hidden" id="IdContrato" name="IdContrato" value="@ViewBag.IdContrato" />
+                        @foreach (var item in Model.FORM_FormItems.OrderBy(o => o.Indice))
+                        {
+                            foreach (var p in item.FORM_FormPreguntas.OrderBy(o => o.Indice))
+                            {
+                                <div class="form-group">
+                                    <label class="control-label col-lg-4 col-md-4">@p.Titulo</label>
+                                    <div class="col-lg-@p.Largo col-md-@p.Largo">
+                                        @if (p.TipoParam == 914) //ALTERNATIVAS
+                                        {
+                                            foreach (var a in p.FORM_FormAlternativa.OrderBy(o => o.Indice)) //SELECCION MULTIPLE
+                                            {
+                                                <div class="form-group m-b-xs">
+                                                    <div class="col-lg-12">
+                                                        <div class="checkbox">
+                                                            <label for="check_@a.IdAlternativa" class="m-l-n-md"><input type="checkbox" class="i-checks respuesta @p.ConfigPregunta.Clase" style="opacity: 0;" data-obligatoria="@p.Obligatoria" data-id-preg="@p.IdPregunta" data-IdTipo="@p.TipoParam" data-id-alterna="@a.IdAlternativa" data-id-item="@item.IdItem" name="check_@p.IdPregunta" id="check_@a.IdAlternativa"> @a.Titulo</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div id="error_check_@p.IdPregunta"></div>
+                                        }
+                                        else if (p.TipoParam == 915)
+                                        {
+                                            foreach (var a in p.FORM_FormAlternativa.OrderBy(o => o.Indice)) //SELECCION UNICA
+                                            {
+                                                <div class="form-group m-b-xs">
+                                                    <div class="col-lg-12">
+                                                        <div class="checkbox">
+                                                            <label for="radio_@a.IdAlternativa" style="padding-left:0px;"><input type="radio" class="iradio_square-green i-checks @p.ConfigPregunta.Clase respuesta" style="opacity: 0;" data-obligatoria="@p.Obligatoria" data-id-preg="@p.IdPregunta" data-IdTipo="@p.TipoParam" data-id-alterna="@a.IdAlternativa" data-id-item="@item.IdItem" name="radio_@p.IdPregunta" id="radio_@a.IdAlternativa"> @a.Titulo</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div id="error_radio_@p.IdPregunta"></div>
+                                        }
+                                        else if (p.TipoParam == 913)
+                                        {
+                                            <select class="form-control @p.ConfigPregunta.Clase respuesta" data-obligatoria="@p.Obligatoria" data-id-preg="@p.IdPregunta" data-IdTipo="@p.TipoParam" data-id-item="@item.IdItem" id="Select_@p.IdPregunta" name="Select_@p.IdPregunta" title="Seleccione una opción">
+                                                <option value="">Seleccione una opción</option>
+                                                @foreach (var a in p.FORM_FormAlternativa.OrderBy(o => o.Indice)) //SELECCION COMBO
+                                                {
+                                                    <option value="@a.IdAlternativa" data-IdAlterna="@a.IdAlternativa">@a.Titulo</option>
+                                                }
+                                            </select>
+                                            <div id="error_Select_@p.IdPregunta"></div>
+                                        }
+                                        else if (p.TipoParam == 2) //TEXTO MULTILÍNEA
+                                        {
+                                            <textarea class="form-control input-sm @p.ConfigPregunta.Clase respuesta" rows="5" data-obligatoria="@p.Obligatoria" data-id-preg="@p.IdPregunta" data-IdTipo="@p.TipoParam" data-id-item="@item.IdItem" id="Mensaje_@p.IdPregunta" name="Mensaje_@p.IdPregunta"></textarea>
+                                            <div id="error_Mensaje_@p.IdPregunta"></div>
+                                        }
+                                        else if (p.TipoParam == 1) //TEXTO SIMPLE
+                                        {
+                                            <input type="text" class="form-control input-sm @p.ConfigPregunta.Clase respuesta" data-obligatoria="@p.Obligatoria" data-id-preg="@p.IdPregunta" data-IdTipo="@p.TipoParam" data-id-item="@item.IdItem" id="Mensaje_@p.IdPregunta" name="Mensaje_@p.IdPregunta" />
+                                            <div id="error_Mensaje_@p.IdPregunta"></div>
+                                        }
+                                        else
+                                        {
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <span>@Html.Raw(p.ConfigPregunta.Icono)</span>
+                                                </span>
+                                                <input type="text" class="form-control input-sm respuesta @p.ConfigPregunta.Clase" data-obligatoria="@p.Obligatoria" data-id-preg="@p.IdPregunta" data-IdTipo="@p.TipoParam" data-id-item="@item.IdItem" id="Mensaje_@p.IdPregunta" name="Mensaje_@p.IdPregunta" />
+                                            </div>
+                                            <div id="error_Mensaje_@p.IdPregunta"></div>
+                                        }
+
+                                    </div>
+                                </div>
+                            }
+                        }
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right" role="group" aria-label="..." style="margin-top:15px">
+                                    <button id="btnSubmitForm" type="submit" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-upload"></i> Ingresar Datos</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

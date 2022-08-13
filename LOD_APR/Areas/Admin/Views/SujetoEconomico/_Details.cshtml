@@ -1,0 +1,154 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_sujetoEconomico
+
+
+<div class="modal inmodal fade hmodal-info" id="modalSujeto" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header" style="padding:8px">
+
+
+
+                <button type="button" class="close" data-dismiss="modal">×</button>
+
+                @*<center><h4 class="modal-title">Ficha Individual</h4></center>*@
+
+            </div>
+
+            <div class="hpanel hblue">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Ficha Sujeto Económico</span>
+                        </div>
+                        <div class="col-xs-4 pull-right">
+                            @if (Model.Activo)
+                            {
+                                <label class="label label-success pull-right">Activo</label>}
+                            else
+                            {
+                                <label class="label label-danger pull-right">Inactivo</label>}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body text-center panel-load">
+                    <div class="sk-spinner sk-spinner-wandering-cubes">
+                        <div class="sk-cube1"></div>
+                        <div class="sk-cube2"></div>
+                    </div>
+                    @if (Model.RutaImagen != null)
+                    {
+                        <img alt="logo" class="img-thumbnail " style="max-width:200px" src="~/Images/Sujetos/@Model.RutaImagen">}
+                    else
+                    {
+                        <h2 href="#" data-letters="@Html.ImageLetter(Model.RazonSocial)" class="no-margins @Model.DataLetters img-thumbnail" style="vertical-align: middle;"></h2>
+                    }
+                    <div class="m-t-sm">
+                        <h3 class="m-b-xs">@Html.DisplayFor(model => model.RazonSocial)</h3>
+                        <div class="text-muted font-bold m-b-xs">@Html.DisplayFor(model => model.Rut)</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="btn-group">
+                            @if (Model.web != null)
+                            {
+                                <a class="btn btn-info btn-xs" href="http://@Model.web" target="_blank"><i class="fa fa-globe"></i></a>}
+                            @if (Model.email != null)
+                            {
+                                <a class="btn btn-default btn-xs" href="mailto:@Model.email" target="_blank"><i class="fa fa-envelope-o"></i></a>}
+                            @if (Model.UrlFacebook != null)
+                            {
+                                <a class="btn btn-info btn-xs" href="@Model.UrlFacebook" target="_blank"><i class="fa fa-facebook"></i></a>}
+                            @if (Model.UrlTwitter != null)
+                            {
+                                <a class="btn btn-default btn-xs" href="@Model.UrlTwitter" target="_blank"><i class="fa fa-twitter"></i></a>}
+                            @if (Model.UrlLinkedin != null)
+                            {
+                                <a class="btn btn-primary btn-xs" href="@Model.UrlLinkedin" target="_blank"><i class="fa fa-linkedin"></i></a>}
+                        </div>
+                    </div>
+                    <div class="text-left m-t-md">
+                        <table class="table small m-b-xs">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>N. Fantasía</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.NomFantasia)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Giro</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Giro)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Dirección</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Direccion)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Ciudad</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.MAE_ciudad.Ciudad)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>E-mail</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.email)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Tel.Contacto</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Telefono)
+                                    </td>
+                                </tr>
+                             
+                                
+                                <tr>
+                                    <td>
+                                        <strong>Tipo de Empresa</strong>
+                                    </td>
+                                    <td>
+                                        @{ string tipo = "Contratista";
+                                            if (Model.EsMandante)
+                                            {
+                                                tipo = "Empresa Mandante";
+                                            }
+                                            else if (Model.EsGubernamental)
+                                            {
+                                                tipo = "Institución de Gobierno";
+                                            }
+                                        }  @tipo
+                                    </td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                @*<div class="border-right border-left">
+                <section id="map">
+                    <div id="map1" style="height: 200px"></div>
+                </section>
+            </div>*@
+            </div>
+
+
+        </div>
+    </div>
+</div>

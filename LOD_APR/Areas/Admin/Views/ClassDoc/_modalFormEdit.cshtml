@@ -1,0 +1,99 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_ClassDoc
+
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalTipo" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title">@ViewBag.Titulo</h4></center>
+            </div>
+            <div class="modal-body">
+                @{string action = ViewBag.Action;}
+                @using (Ajax.BeginForm(action, null, new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "mae_classdoc.saveResult(data,status,xhr);"
+                }, new { name = "formTipo", id = "formTipo" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.IdClassDoc)
+                    @Html.HiddenFor(model => model.IdTipo)
+                    @Html.HiddenFor(model => model.IdTipoSub)
+                    @Html.HiddenFor(model => model.IdClassTwo)
+
+
+                    <div class="form-group">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.MAE_ClassTwo.Nombre, "Subclasificación", htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.MAE_ClassTwo.Nombre, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.MAE_ClassTwo.Nombre, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.MAE_TipoDocumento.Tipo, "Tipo documento", htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.MAE_TipoDocumento.Tipo, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.MAE_TipoDocumento.Tipo, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                            @Html.LabelFor(model => model.MAE_SubtipoComunicacion.Nombre, "Subtipo de Comunicación", htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.MAE_SubtipoComunicacion.Nombre, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.MAE_SubtipoComunicacion.Nombre, "", new { @class = "text-danger" })
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>
+                    <div class="form-group m-t-sm">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-4">
+                            @Html.LabelFor(model => model.EsLiquidacion, "Requerido en Liquidación", htmlAttributes: new { @class = "control-label" })
+                            @Html.CheckBoxFor(model => model.EsLiquidacion, new { @class = "i-checks" })
+                        </div>
+                        <div class="col-md-7"></div>
+                    </div>
+                    <input type="hidden" id="foo" name="foo" />
+                    <hr />
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="btn-group pull-right">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-upload"></i> Guardar</button>
+                                <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    $('#Tipo').change(function () {
+                            var texto = $('#Tipo :selected').val();
+                            if (isNaN(texto)) {
+                                texto = 0;
+                            }
+        $('#IdTipo').val(texto);
+                        });
+
+                        //$("#first").select2('val');
+
+        @*$('#Tipo').autocomplete({
+            source: '@Url.Action("getJsonTipos", "TipoDoc")',
+            minLength: 2
+        });*@
+
+</script>

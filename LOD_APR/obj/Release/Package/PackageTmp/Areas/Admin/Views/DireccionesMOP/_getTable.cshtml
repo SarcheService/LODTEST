@@ -1,0 +1,59 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_DireccionesMOP>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+               Nombre
+            </th>
+            <th>
+                Descripción
+            </th>
+            <th>Acciones</th>           
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NombreDireccion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DescripcionDireccion)
+                </td>
+                <td>
+
+                    <div class="btn-group btn-group-nobreak">
+                        @if (Html.ValidaPermisos("0010100002"))
+                        {
+                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Editar"), "Edit", null, new { id = item.IdDireccion },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "mae_dirmop.InitModalEdit(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-warning btn-xs" })
+                        }
+
+                        @if (Html.ValidaPermisos("0010100003"))
+                        {
+                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdDireccion },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "mae_dirmop.initModal(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-danger btn-xs" })
+                        }
+                        </div>
+
+                </td>
+                
+            </tr>}
+    </tbody>
+</table>

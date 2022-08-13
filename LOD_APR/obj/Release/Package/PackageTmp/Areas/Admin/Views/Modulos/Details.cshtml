@@ -1,0 +1,42 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_modulos
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MAE_modulos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MAE_sistema.Sistema)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAE_sistema.Sistema)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.indice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.indice)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdModulo }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

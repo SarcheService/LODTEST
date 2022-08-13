@@ -1,0 +1,61 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_sistema>
+
+<table id="tableRoles" class="table">
+    <thead>
+        <tr>
+            <th>
+                <center>
+                    Nombre Módulo
+                </center>
+            </th>
+            <th>
+                <center>
+                    Abrev.
+                </center>
+            </th>
+
+            <th>
+                <center>
+                    Rol Asignado
+                </center>
+            </th>
+        </tr>
+    </thead>
+    
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+
+        <tr>
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.NombreSistema)
+                </center>
+
+            </td>
+            <td>
+                <center>
+                    @Html.DisplayFor(modelItem => item.Sistema)
+                </center>
+
+            </td>
+            <td>
+                <center>
+                    @if (item.RolUSerApp == "0")
+                    {
+                        <label class="label label-info">No posee Rol  en ésta APP</label>
+                    }
+                    else
+                    {
+                        <label class="label label-success"> @item.RolUSerApp</label>
+
+                    }
+                </center>
+            </td>
+        </tr>
+          }
+
+    </tbody>
+
+</table>

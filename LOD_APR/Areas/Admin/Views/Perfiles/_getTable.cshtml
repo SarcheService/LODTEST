@@ -1,0 +1,62 @@
+﻿@model IEnumerable<LOD_APR.Models.ApplicationRole>
+
+<table id="tablaDatos" class="table table-condensed table-hover dataTable no-footer">
+    <thead>
+        <tr>
+            <th>
+                Perfil
+            </th>
+            <th>
+                Numeros Usuario
+            </th>
+            @*@if (Html.ValidaPermisos(67) || Html.ValidaPermisos(68))
+                {*@
+            <th>Acciones</th>
+            @*}*@
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Users.Count)
+                </td>
+                @*@if (Html.ValidaPermisos(67) || Html.ValidaPermisos(68))
+                {*@
+                <td>
+
+                    @*@if (Html.ValidaPermisos(67))
+                    {*@
+                    
+                    <a class="btn btn-warning btn-xs" href="@Url.Action("Edit", "Perfiles", new { id = item.Id })"><i class="fa fa-pencil"></i></a>
+                   
+                    @*}*@
+                    @*@if (Html.ValidaPermisos(68))
+                    {*@
+
+                    @if (item.Users.Count == 0)
+                    {
+                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.Id },
+                        new AjaxOptions
+                        {
+                            HttpMethod = "GET",
+                            InsertionMode = InsertionMode.Replace,
+                            UpdateTargetId = "modalCanvas",
+                            OnSuccess = "seg_perfiles.initModal(data,status,xhr);"
+                        }
+                        , new { @class = "btn btn-danger btn-xs" })
+                    }
+
+                    @*}*@
+
+                </td>
+                @*}*@
+            </tr>
+        }
+    </tbody>
+</table>

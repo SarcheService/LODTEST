@@ -1,0 +1,41 @@
+﻿@if (ViewBag.IdContrato != 0)
+{
+    <div class="col-lg-4 text-left">
+        <div class="hpanel stats">
+            <div class="panel-heading">
+                <div class="panel-tools">
+                    
+                </div>
+                Libros de Contrato:
+            </div>
+            <div class="panel-body list" id="getInfoDoc" style="display: block;">
+                <div class="">
+                    <small>
+                        Información del listado de documentos para la liquidación de contratos actualmente cargados.
+                    </small>
+                    <br>
+                </div>
+                <div class="row m-t-md m-b-xs">
+                    <div class="col-lg-12">
+                        <h5>Documentos cargados</h5>
+                        <h3 class="no-margins font-extra-bold text-success">@ViewBag.TotalDoc</h3>
+                        <div class="font-bold">@ViewBag.PorTotalDoc% <i class="fa fa-level-up text-success"></i></div>
+                        <div class="m-t-xs">
+                            <small>Según total Doc. Cargados</small>
+                        </div>
+
+                    </div>
+                    @*<div class="col-lg-6">
+                        <h5>Documentos Pendientes</h5>
+                        <h3 class="no-margins font-extra-bold text-warning">@ViewBag.DocPendiente</h3>
+                        <div class="font-bold">@ViewBag.PorDocPendiente% <i class="fa fa-level-up text-warning"></i></div>
+                        <div class="m-t-xs">
+                            <small>Según total Doc. Obligatorios</small>
+                        </div>
+
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+}

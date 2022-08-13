@@ -1,0 +1,125 @@
+﻿<div id="navigation">
+    @Html.Partial("~/Views/Shared/_AppProfile.cshtml")
+    <ul class="nav metismenu side-menu-light-blue" id="side-menu">
+        @*<li class="@Html.IsSelected("SujetoEconomico", "Index")"><a href="@Url.Action("Index", "SujetoEconomico", new { area = "Admin" }, null)">Inicio</a></li>*@
+
+        @if (Html.ValidaPermisos("0010000000"))
+        {
+            <li class="@Html.IsSelected("SujetoEconomico", "Index")"><a href="@Url.Action("Index", "SujetoEconomico", new { area = "Admin" }, null)">Sujetos Económicos</a></li>
+        }
+
+        @if (Html.ValidaPermisos("0010010000") || Html.ValidaPermisos("0010020000"))
+        {
+        <li class="@Html.IsSelected(new string[] { "Usuarios", "Perfiles" })">
+            <a href="#"> <span class="nav-label">Usuarios</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                @if (Html.ValidaPermisos("0010010000"))
+                {
+                    <li class="@Html.IsSelected(controller: "Usuarios", action: "Index")"><a href="@Url.Action("Index", "Usuarios", new { area = "Admin" }, null)">Control de Usuarios</a></li>
+                }
+
+
+                @if (Html.ValidaPermisos("0010020000"))
+                {
+                    <li class="@Html.IsSelected("Perfiles", "Index")"><a href="@Url.Action("Index", "Perfil", new { area = "Admin" }, null)">Perfiles</a></li>
+                }
+            </ul>
+        </li>
+        }
+
+        <li class="@Html.IsSelected(new string[] { "TipoComunicacion", "SubtipoComunicacion", "TipoDoc", "TiposLOD", "DireccionesMOP" })">
+            <a href="#"> <span class="nav-label">Auxiliares LOD</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                @if (Html.ValidaPermisos("0010030000"))
+                {
+                    <li class="@Html.IsSelected("TipoComunicacion", "")">
+                        <a href="@Url.Action("Index", "TipoComunicacion", new { area = "Admin" }, null)">Tipo de Comunicaciones</a>
+                    </li>
+                }
+                @if (Html.ValidaPermisos("0010040000"))
+                {
+                    <li class="@Html.IsSelected("SubtipoComunicacion", "")">
+                        <a href="@Url.Action("Index", "SubtipoComunicacion", new { area = "Admin" }, null)">Subtipo de Comunicaciones</a>
+                    </li>
+                }
+
+                @if (Html.ValidaPermisos("0010110000"))
+                {
+
+                    <li class="@Html.IsSelected("TipoDoc", "")">
+                        <a href="@Url.Action("Index", "TipoDoc", new { area = "Admin" }, null)">Tipo de Documentos</a>
+                    </li>
+                }
+                @if (Html.ValidaPermisos("0010080000"))
+                {
+                    <li class="@Html.IsSelected("CodSubCom", "Index")"><a href="@Url.Action("Index", "CodSubCom", new { area = "Admin" }, null)">Control Documentario Subtipo de Comunicación</a></li>
+                }
+                @if (Html.ValidaPermisos("0010050000"))
+                {
+                    <li class="@Html.IsSelected("TiposLOD", "")"><a href="@Url.Action("Index", "TipoLOD", new { area = "Admin" }, null)">Tipos LOD</a></li>
+                }
+                @if (Html.ValidaPermisos("0010060000"))
+                {
+                    <li class="@Html.IsSelected("ClassOne", "")"><a href="@Url.Action("Index", "ClassOne", new { area = "Admin" }, null)">Clasificación Documentos</a></li>
+                }
+                @if (Html.ValidaPermisos("0010070000"))
+                {
+                    <li class="@Html.IsSelected("ClassTwo", "")"><a href="@Url.Action("Index", "ClassTwo", new { area = "Admin" }, null)">Subclasificación Documentos</a></li>
+                }
+                @if (Html.ValidaPermisos("0010090000"))
+                {
+                    <li class="@Html.IsSelected("ClassDoc", "")"><a href="@Url.Action("Index", "ClassDoc", new { area = "Admin" }, null)">Control por Clasificación de Documentos</a></li>
+
+                }
+
+                @if (Html.ValidaPermisos("0010100000"))
+                {
+                    <li class="@Html.IsSelected("DireccionesMOP", "Index")"><a href="@Url.Action("Index", "DireccionesMOP", new { area = "Admin" }, null)">Direcciones MOP y GORE</a></li>
+                }
+                @if (Html.ValidaPermisos("0010190000"))
+                {
+                    <li class="@Html.IsSelected("RolesContrato", "Index")"><a href="@Url.Action("Index", "RolesContrato", new { area = "Admin" }, null)">Roles Contrato</a></li>
+                }
+            </ul>
+        </li>
+
+
+        @*<li class="@Html.IsSelected(new string[] {"Formularios", "FormsEmbebidos" })">
+            <a href="#"><span class="nav-label">Gestión Formularios</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                @if (Html.ValidaPermisos("0010120000"))
+                {
+                    <li class="@Html.IsSelected("Formularios", "Index")"><a href="@Url.Action("Index", "Formularios", new { area = "Admin" }, null)">Formularios</a></li>
+                }
+                @if (Html.ValidaPermisos("0010130000"))
+                {
+                    <li class="@Html.IsSelected("FormsEmbebidos", "Index")"><a href="@Url.Action("Index", "FormsEmbebidos", new { area = "Admin" }, null)">Formularios Embebidos</a></li>
+                }
+            </ul>
+        </li>*@
+
+        @if (Html.ValidaPermisos("0010180000") || Html.ValidaPermisos("0010140002"))
+        {
+            <li class="@Html.IsSelected(new string[] {@*"Empresas",*@"ConfigSecurityEmail","ConfigEmail" })">
+                <a href="#"> <span class="nav-label">Configuracion</span><span class="fa arrow"></span> </a>
+                <ul class="nav nav-second-level">
+
+                    @*@if (Html.ValidaPermisos("00101200"))
+                    {
+                        <li class="@Html.IsSelected("Empresas", "Index")"><a href="@Url.Action("Index", "Empresas", new { area = "Admin" }, null)">Empresas</a></li>
+                    }*@
+                    @if (Html.ValidaPermisos("0010180000"))
+                    {
+                        <li class="@Html.IsSelected("ConfigSecurityEmail", "Edit")"><a href="@Url.Action("Edit", "ConfigSecurityEmail", new { area = "Admin" }, null)">Seguridad cuentas de usuario</a></li>
+                    }
+                    @if (Html.ValidaPermisos("0010140002"))
+                    {
+                        <li class="@Html.IsSelected("ConfigEmail", "Edit")"><a href="@Url.Action("Edit", "ConfigEmail", new { area = "Admin" }, null)">Configuración  Servidor Email</a></li>
+                    }
+                </ul>
+            </li>
+        }
+
+        
+        </ul>
+</div>

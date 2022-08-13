@@ -1,0 +1,12 @@
+BIB/Home/_GetTable se agregó el boton de descarga con registro en log
+BIB/Home/Index se agregó botón de descarga de excel, se unificaron colores (se agregaron los métodos correspondientes)
+
+GLOD/RepContrato/_detalleDocAnotacion se agregó botón de descarga con registro en log (nuevo)
+GLOD/Contratos/_getDetailsContrato.cshtml se posicionaron botones de log, informe y seguimiento de doc.
+	adicionalmente se eliminaron los tab de documentos (se utiliza el seguimiento para mostrar los doc)
+GLOD/Shared/_GLODNavigation  se comentaron temporalmente menús que no tenían funcionamiento actualmente. 
+
+Admin/Usuarios/Register /Edit se agregó input para el Id de firma avanzada (IdCertificado) se agregó esta variable a los modelos userviewmodel y registerviewmodel, así en los respectivos métodos.
+admin/Shared/_AdminNavigation se comentaron temporalmente menús que no tenían funcionamiento actualmente. 
+
+View

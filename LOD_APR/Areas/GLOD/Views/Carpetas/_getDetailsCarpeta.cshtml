@@ -1,0 +1,178 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_Carpetas
+
+<div class="row">
+    @if (Model.EsPortafolio)
+    {
+        <div class="col-sm-1">
+            <h4 class="text-center text-primary"><i class="fa fa-briefcase  fa-2x" style="margin-left:12px" aria-hidden="true"></i></h4>
+        </div>
+    }
+    else
+    {
+        <div class="col-sm-1">
+            <h4 class="text-center text-primary"><i class="fa fa-folder-open-o  fa-2x" style="margin-left:12px" aria-hidden="true"></i></h4>
+        </div>
+    }
+
+    <div class="col-sm-8">
+        @*Vista escritorio*@
+        <h3 class="text-navy-blue hidden-xs"><b>@Model.NombreCarpeta</b></h3>
+        <span class="hidden-xs"><b>Creado por:</b> @Model.Creador | <b>Fecha Creación:</b> @Model.FechaCreacion.ToString()</span>
+    
+        @*Vista celular*@
+        <center class="visible-xs"> <h4 class="text-navy-blue"><b>@Model.NombreCarpeta</b></h4> </center>
+        <span class="visible-xs"><b>Creado por:</b> @Model.Creador</span>
+        <span class="visible-xs"><b>Fecha Creación:</b> @Model.FechaCreacion.ToString()</span>
+   </div>
+    <div class="col-sm-3">
+        <div class="btn-group pull-right" style="margin-top:20px">
+
+            @if (Html.ValidaPermisos("0020000101"))
+            {
+                @Ajax.RawActionLink(string.Format("Editar"), "Edit", "Carpetas", new { area = "GLOD", id = Model.IdCarpeta },
+                              new AjaxOptions
+                              {
+                                  HttpMethod = "GET",
+                                  InsertionMode = InsertionMode.Replace,
+                                  UpdateTargetId = "modalCanvas",
+                                  OnSuccess = "glod_carpetas.initModal(data,status,xhr);"
+                              }
+                              , new { @class = "btn btn-xs btn-warning2 btn-outline" })
+            }
+             @if (Html.ValidaPermisos("0020000103"))
+            {
+                @Ajax.RawActionLink(string.Format("Eliminar"), "Delete", "Carpetas", new { area = "GLOD", id = Model.IdCarpeta },
+                              new AjaxOptions
+                              {
+                                  HttpMethod = "GET",
+                                  InsertionMode = InsertionMode.Replace,
+                                  UpdateTargetId = "modalCanvas",
+                                  OnSuccess = "glod_carpetas.initModal(data,status,xhr);"
+                              }
+                              , new { @class = "btn btn-xs btn-danger2 btn-outline" })
+            }
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12 col-xs-12"><hr /></div>
+</div>
+<div class="row">
+    @if (ViewBag.TipoMenu == 1)
+     {
+        <div class="col-xs-12">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-5 col-xs-6">
+                <h2 class="text-center text-primary"><i class="fa fa-folder-o  fa-2x hidden-xs" aria-hidden="true"></i></h2>
+                <h2 class="text-center text-primary"><i class="fa fa-folder-o visible-xs" aria-hidden="true"></i></h2>
+                 <center>
+                    @if (Html.ValidaPermisos("0020000101"))
+                    {
+                        @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> Carpeta"), "Create", "Carpetas", new { area="GLOD",Padre = @Model.IdCarpeta, Tipo = "carp" },
+                                             new AjaxOptions
+                                             {
+                                                 HttpMethod = "GET",
+                                                 InsertionMode = InsertionMode.Replace,
+                                                 UpdateTargetId = "modalCanvas",
+                                                 OnSuccess = "glod_carpetas.initModal(data,status,xhr);"
+                                             }
+                                             , new { @class = "btn btn-primary btn-xs btn-outline"})
+                    }
+                    </center>
+            </div>
+          
+           
+            <div class="col-lg-5 col-xs-6">
+                <h2 class="text-center text-primary"><i class="fa fa-file-text-o  fa-2x hidden-xs" aria-hidden="true"></i></h2>
+                <h2 class="text-center text-primary"><i class="fa fa-file-text-o  visible-xs" aria-hidden="true"></i></h2>
+                <center>
+                    @if (Html.ValidaPermisos("0020000001"))
+                    {
+                        @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> Contrato"), "Create", "Contratos", new {area="GLOD", Padre = @Model.IdCarpeta, Tipo = "carp" },
+                                             new AjaxOptions
+                                             {
+                                                 HttpMethod = "GET",
+                                                 InsertionMode = InsertionMode.Replace,
+                                                 UpdateTargetId = "modalCanvas",
+                                                 OnSuccess = "glod_contratos.initModal(data,status,xhr);"
+                                             }
+                                             , new { @class = "btn btn-primary btn-xs btn-outline" })
+                    }
+                    </center>
+
+            </div>
+
+            
+            <div class="col-lg-1"></div>
+        </div> 
+    }
+    else if (ViewBag.TipoMenu == 2)
+    {
+<div class="col-xs-12">
+    <div class="col-lg-4 col-xs-6">
+        @*<h2 class="text-center text-primary"><i class="fa fa-folder-o  fa-2x hidden-xs" aria-hidden="true"></i></h2>
+        <h2 class="text-center text-primary"><i class="fa fa-folder-o   visible-xs" aria-hidden="true"></i></h2>
+        <center>
+            @if (Html.ValidaPermisos("00601301"))
+            {
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> Carpeta"), "Create", "Carpetas", new { Padre = @Model.IdCarpeta, Tipo = "carp" },
+                                     new AjaxOptions
+                                     {
+                                         HttpMethod = "GET",
+                                         InsertionMode = InsertionMode.Replace,
+                                         UpdateTargetId = "modalCanvas",
+                                         OnSuccess = "asp_carpetas.initModal(data,status,xhr);"
+                                     }
+                                     , new { @class = "btn btn-primary btn-xs btn-outline", @id = "CreateCarpetas" })
+            }
+        </center>*@
+    </div>
+
+    <div class="col-lg-4 col-xs-6">
+        <h2 class="text-center text-primary"><i class="fa fa-book  fa-2x hidden-xs" aria-hidden="true"></i></h2>
+        <h2 class="text-center text-primary"><i class="fa fa-book  visible-xs" aria-hidden="true"></i></h2>
+        <center>
+            @if(ViewBag.EsInspectorFiscal)
+            {
+                int tipo = Convert.ToInt32(Model.NombreCarpeta.Substring(0, 1));
+
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> LOD"), "Create", "LibroObras", new { Padre = Model.IdCarpeta, Tipo = tipo, IdContrato = Model.IdContrato },
+                                     new AjaxOptions
+                                     {
+                                         HttpMethod = "GET",
+                                         InsertionMode = InsertionMode.Replace,
+                                         UpdateTargetId = "modalCanvas",
+                                         OnSuccess = "glod_libroobras.initModal(data,status,xhr);"
+                                     }
+                                     , new { @class = "btn btn-primary btn-xs btn-outline", @id = "CreateLibros" })
+            }
+        </center>
+    </div>
+
+    <div class="col-lg-4 col-xs-6">
+        @*<h2 class="text-center text-primary"><i class="fa fa-file-text-o  fa-2x hidden-xs" aria-hidden="true"></i></h2>
+        <h2 class="text-center text-primary"><i class="fa fa-file-text-o  visible-xs " aria-hidden="true"></i></h2>
+        <center>
+            @if (Html.ValidaPermisos("00601701"))
+            {
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> Contrato"), "Create", "Contratos", new { Padre = @Model.IdCarpeta, Tipo = "carp" },
+                                     new AjaxOptions
+                                     {
+                                         HttpMethod = "GET",
+                                         InsertionMode = InsertionMode.Replace,
+                                         UpdateTargetId = "modalCanvas",
+                                         OnSuccess = "asp_contratos.initModal(data,status,xhr);"
+                                     }
+                                     , new { @class = "btn btn-primary btn-xs btn-outline", @id = "CreateContratos" })
+            }
+        </center>*@
+
+    </div>
+
+</div>
+
+    }
+   
+</div>
+

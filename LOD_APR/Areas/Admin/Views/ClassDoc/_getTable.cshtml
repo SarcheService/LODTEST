@@ -1,0 +1,109 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_ClassDoc>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+                Clasificación
+            </th>
+            <th>
+                Subclasificación
+            </th>
+            <th>
+                Tipo Documento
+            </th>
+            <th>Req. Liquidación</th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{ var lod = 0;
+            var classtwo = 0;
+            }
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (Model.First() == item)
+                {
+                <td rowspan="@Model.Where(x => x.MAE_ClassTwo.IdClassOne == item.MAE_ClassTwo.IdClassOne).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_ClassTwo.MAE_ClassOne.Nombre)
+                </td>}
+                else if(item.MAE_ClassTwo.IdClassOne != Model.First().MAE_ClassTwo.IdClassOne && lod == 0) 
+                {
+                    lod = item.MAE_ClassTwo.IdClassOne;
+                    if(item.MAE_ClassTwo.IdClassOne == lod)
+                    {
+                        <td rowspan="@Model.Where(x => x.MAE_ClassTwo.IdClassOne == item.MAE_ClassTwo.IdClassOne).Count()">
+                            @Html.DisplayFor(modelItem => item.MAE_ClassTwo.MAE_ClassOne.Nombre)
+                        </td>
+                    }
+                }else if(lod != 0 && lod != item.MAE_ClassTwo.IdClassOne)
+                {
+                    lod = item.MAE_ClassTwo.IdClassOne;
+                    if(item.MAE_ClassTwo.IdClassOne == lod)
+                    {
+                        <td rowspan="@Model.Where(x => x.MAE_ClassTwo.IdClassOne == item.MAE_ClassTwo.IdClassOne).Count()">
+                            @Html.DisplayFor(modelItem => item.MAE_ClassTwo.MAE_ClassOne.Nombre)
+                        </td>
+                    }
+                }
+
+
+                  @if (classtwo == 0)
+                    {
+                        <td>@Html.DisplayFor(modelItem => item.MAE_ClassTwo.Nombre)</td>
+                        classtwo = item.IdClassTwo;
+                    }
+                    else if (classtwo == item.IdClassTwo)
+                    {
+                        <td style="border-color:transparent;"></td>
+                    }
+                    else
+                    {
+                        <td>@Html.DisplayFor(modelItem => item.MAE_ClassTwo.Nombre)</td>
+                        classtwo = item.IdClassTwo;
+                    }
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.MAE_TipoDocumento.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EsLiquidacion)
+                </td>
+                <td>
+                    <div class="btn-group btn-group-nobreak">
+                        @if (Html.ValidaPermisos("0010090002"))
+                        {
+                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-search\"></i> Editar"), "Edit", null, new { id = item.IdClassDoc },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "mae_classdoc.InitModalEdit(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-warning btn-xs" })
+                        }
+
+                        @if (Html.ValidaPermisos("0010090003"))
+                        {
+                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdClassDoc },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "mae_classdoc.InitModalEdit(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-danger btn-xs" })
+                        }
+
+                        </div>
+
+                </td>
+                
+            </tr>}
+    </tbody>
+</table>

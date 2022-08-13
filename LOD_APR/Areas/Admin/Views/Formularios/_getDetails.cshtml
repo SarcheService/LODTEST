@@ -1,0 +1,88 @@
+﻿@model LOD_APR.Areas.Admin.Models.FORM_Formularios
+
+@if (ViewBag.Errores == true)
+{
+    <div class="row m-b-md">
+        <div class="col-md-12">
+            <label class="label label-danger m-b-lg">
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                @Html.Raw(ViewBag.ErrorItems)
+            </label>
+        </div>
+    </div>
+}
+
+@{int i = 1;}
+@foreach (var item in Model.FORM_FormItems.OrderBy(o => o.Indice))
+{
+    <div class="hpanel @((!ViewBag.EvaluacionActiva)?"dragable-panel":"")" data-idform="@item.IdForm" data-id="@item.IdItem" id="hpanel_@item.IdItem">
+        <div class="panel-heading hbuilt" style="border-bottom:2px solid #e67e22">
+            <div class="row">
+                <div class="col-md-9">
+                    <h5>
+                        <button class="btn btn-xs" data-toggle="collapse" data-target="#Panel_@item.IdItem">
+                            <i id="Icon_Panel_@item.IdItem" class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </button> <b>@item.Titulo.ToString()</b>
+                    </h5>
+                    <p class="text-muted m-l-lg text-justify">
+                        @if (item.Descripcion != null)
+                        {
+                            @item.Descripcion.ToString()
+                        }
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+                    @if (!Model.Activa)
+                    {
+                        <div class="btn-group pull-right">
+                            @Ajax.RawActionLink("<i class='fa fa-plus'></i> Pregunta", "Create", "FormPreguntas", new { id = item.IdItem, embebido= false },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "modalCanvas",
+                                        OnSuccess = "form_parametrosFormulario.initModal(data,status,xhr);"
+                                    }
+                                    , new { @class = "btn btn-xs btn-success btn-outline", @title = "Agregar Pregunta/Parámetro" })
+
+                            @Ajax.RawActionLink("<i class='fa fa-edit'></i>", "Edit", "FormItems", new { id = item.IdItem },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "modalCanvas",
+                                        OnSuccess = "form_itemsFormulario.initModal(data,status,xhr);"
+                                    }
+                                    , new { @class = "btn btn-xs btn-warning2 btn-outline", @title = "Editar Item" })
+
+                            @Ajax.RawActionLink("<i class='fa fa-trash'></i>", "Delete", "FormItems", new { id = item.IdItem },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "modalCanvas",
+                                        OnSuccess = "form_itemsFormulario.initModal(data,status,xhr);"
+                                    }
+                                    , new { @class = "btn btn-xs btn-danger2 btn-outline", @title = "Eliminar Item" })
+                        </div>
+                    }
+
+                    @foreach (string error in item.ErrorList)
+                    {
+                        <label class="label label-danger pull-right" style="color:white">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            @Html.Raw(error)
+                        </label>
+                    }
+                </div>
+            </div>
+
+        </div>
+        <div class="panel-body collapse in" style="overflow:auto;border-top:none" id="Panel_@item.IdItem">
+            @Html.Partial("_ListParametros", item.FORM_FormPreguntas)
+        </div>
+    </div>
+    i++;
+}
+

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.FORM_Informes>
+@using LOD_APR.Areas.GLOD.Models
+
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-condensed table-hover" id="tablaReportes" name="tablaReportes">
+            <thead>
+                <tr>
+                    <th>Mes Informado</th>
+                    <th>Contrato</th>
+                    <th>Mes</th>
+                    <th>Año</th>
+                    <th>Creado el</th>
+                    <th>Creado por</th>
+                    <th>Estado</th>
+                    <th>F.Despacho</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.MesInformado)</td>
+                    <td>@Html.DisplayFor(modelItem => item.CON_Contratos.CodigoContrato)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Mes)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Anio)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FechaCreacion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Usuario)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Estado)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FechaDespacho)</td>
+
+                    <td>
+                        <div class="btn-group text-right">
+
+                            <a href="@Url.Action("View", "FormInformes", new { area = "GLOD", id= item.IdEnvio }, null)" role="button" class="btn btn-xs btn-warning"><i class="fa fa-search"></i> Ver</a>
+
+                            @Ajax.RawActionLink("<i class='fa fa-trash'></i>", "Delete", "FormInformes", new { id = item.IdEnvio },
+                            new AjaxOptions
+                            {
+                                HttpMethod = "GET",
+                                InsertionMode = InsertionMode.Replace,
+                                UpdateTargetId = "modalCanvas",
+                                OnSuccess = "form_formulario.initModal(data,status,xhr);"
+                            }
+                            , new { @class = "btn btn-xs btn-danger", @title = "Eliminar Item" })
+
+                        </div>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

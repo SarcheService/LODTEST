@@ -1,0 +1,101 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_modulos
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalModulo" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center> <h4 class="modal-title">@ViewBag.Titulo </h4></center>
+            </div>
+
+            @{string action = ViewBag.Action;}
+            @using (Ajax.BeginForm(action, "Modulos", new AjaxOptions()
+            {
+                HttpMethod = "POST",
+
+                OnSuccess = "mae_modulos.saveResult(data,status,xhr);"
+            }, new { name = "formDatos", id = "formDatos" }))
+            {
+
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => model.IdModulo)
+                @Html.HiddenFor(model => model.IdSistema)
+
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+
+                            <div class="col-md-6">
+                                <label class="control-label">Modulo</label>
+                                @Html.EditorFor(model => model.Modulo, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Modulo, "", new { @class = "text-danger" })
+                            </div>
+                          
+                            
+                            <div class="col-md-6">
+                                <label class="control-label">Indice</label>
+                                @Html.EditorFor(model => model.indice, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.indice, "", new { @class = "text-danger" })
+                            </div>
+                           
+                        </div>
+
+                        <br />
+                        <h3>Parametros</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th class="col-md-5">Parametro</th>
+                                    <th class="col-md-5">Valor</th>
+                                    <th class="col-md-2"><a onclick="mae_modulos.AddParametro()" class="btn btn-success btn-sm" title="Agregar parametro"><i class="fa fa-plus"></i></a></th>
+                                </tr>
+                            </thead>
+                            <tbody id="divParametros">
+                                @{int CountParametros = -1;
+                                    if (Model.MAE_ParametrosModulo != null && Model.MAE_ParametrosModulo.Count > 0)
+                                    {
+                                        CountParametros = Model.MAE_ParametrosModulo.Count - 1;
+                                    }
+                                }
+                                <input type="hidden" id="CountParametros" value="@CountParametros" />
+                                <tr id="TrCopy" class="hidden">
+                                    <input class="form-control text-box single-line" id="IdModuloParametro" type="hidden" value="@Model.IdModulo">
+                                    <th class="col-md-5"><input class="form-control text-box single-line" id="NombreParametro" type="text" value=""></th>
+                                    <th class="col-md-5"><input class="form-control text-box single-line" id="ValorParametro" type="text" value=""></th>
+                                    <th class="col-md-2"><a class="btn btn-danger btn-sm" title="Agregar parametro"><i class="fa fa-trash"></i></a></th>
+                                </tr>
+                                @if (Model.MAE_ParametrosModulo != null)
+                                {
+                                    for (int i = 0; i < Model.MAE_ParametrosModulo.Count; i++)
+                                    {
+                                        <tr id="Parametro-@i">
+                                            @Html.EditorFor(model => model.MAE_ParametrosModulo[i].IdModulo, new { htmlAttributes = new { @class = "form-control", @type = "hidden" } })
+                                            @Html.EditorFor(model => model.MAE_ParametrosModulo[i].IdParametro, new { htmlAttributes = new { @class = "form-control", @type = "hidden" } })
+                                            <th class="col-md-5">@Html.EditorFor(model => model.MAE_ParametrosModulo[i].Parametro, new { htmlAttributes = new { @class = "form-control" } })</th>
+                                            <th class="col-md-5">@Html.EditorFor(model => model.MAE_ParametrosModulo[i].Valor, new { htmlAttributes = new { @class = "form-control" } })</th>
+                                            <th class="col-md-2"><a onclick="mae_modulos.DeleteParametro(@i)" class="btn btn-danger btn-sm" title="Agregar parametro"><i class="fa fa-trash"></i></a></th>
+                                        </tr>
+                                    }
+                                }
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="btn-group pull-right" role="group" aria-label="...">
+                                <button type="submit" id="btnSubmit" class="btn btn-primary ladda-button ladda-button-demo" data-style="zoom-in"><i class="fa fa-upload"></i> Guardar</button>
+                                <a href="#" data-dismiss="modal" class="btn btn-default" role="button"><i class="fa fa-ban"></i> Cancelar </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>

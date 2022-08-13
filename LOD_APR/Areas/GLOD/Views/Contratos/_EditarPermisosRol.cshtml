@@ -1,0 +1,83 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_PermisosRolesContrato
+
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalPermisos" role="dialog" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+            </div>
+            @{string action = ViewBag.Action;}
+            @using (Ajax.BeginForm(action, "Contratos", new AjaxOptions()
+            {
+                HttpMethod = "POST",
+                OnSuccess = "glod_contratos.saveResultPermisos(data,status,xhr);"
+            }, new { name = "formPermisos", id = "formPermisos" }))
+            {
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        @Html.AntiForgeryToken()
+
+                        @Html.HiddenFor(model => Model.IdPermiso)
+                        @Html.HiddenFor(model => Model.IdRCContrato)
+                        @if (ViewBag.Create)
+                        {
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    @Html.LabelFor(model => Model.IdLod, "Seleccione Libro", htmlAttributes: new { @class = "control-label" })
+                                    @Html.DropDownList("IdLod", null, new { htmlAttributes = new { @class = "form-control select2" } })
+                                </div>
+                            </div> 
+                        }
+                       else
+                       { @Html.HiddenFor(model => Model.IdLod)}
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <table class="table table-condensed table-hover" id="tablaPerm" name="tablaPerm">
+                                    <thead>
+                                        <tr>
+                                            <th>Lectura</th>
+                                            <th>Escritura</th>
+                                            <th>Firma E. Avanzada</th>
+                                            <th>Firma Gob.</th>
+                                            <th>Firma E. Simple</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><center>@Html.CheckBoxFor(model => model.Lectura, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                            <td><center>@Html.CheckBoxFor(model => model.Escritura, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                            <td><center>@Html.CheckBoxFor(model => model.FirmaFea, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                            <td><center>@Html.CheckBoxFor(model => model.FirmaGob, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                            <td><center>@Html.CheckBoxFor(model => model.FirmaSimple, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="btn-group pull-right">
+                                    @if (Html.ValidaPermisos("0020000002"))
+                                    {
+                                        <button id="btnSubmit" type="button" onclick="glod_contratos.LoadLadda();" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-save"></i> guardar</button>
+                                    }
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                                                    </div>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+                
+            }
+            <div class="modal-footer">
+
+                </div>
+        </div>
+    </div>
+</div>
+

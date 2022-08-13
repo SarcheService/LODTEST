@@ -1,0 +1,44 @@
+﻿@model LOD_APR.Areas.GLOD.Models.FORM_Informes
+@using LOD_APR.Areas.GLOD.Models;
+
+<div class="modal fade hmodal-success" id="modalFormReporte" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Cerrar Informe Ejecutivo Mensual</h4>
+            </div>
+            <div class="modal-body">
+              @using (Ajax.BeginForm("Cerrar", null, new AjaxOptions()
+              {
+                  HttpMethod = "POST",
+                  OnSuccess = "form_formulario.saveResult(data,status,xhr);"
+              }, new { name = "formFormEval", id = "formFormEval" }))
+              {
+                    <div class="form-horizontal">
+                        <h4>¿Realmente desea cerrar este Informe Ejecutivo?</h4>
+                        <hr />
+                        <dl class="dl-horizontal">
+                            <dt>Mes Informado</dt>
+                            <dd>@Model.MesInformado</dd>
+                            <dt>Mes Calendario</dt>
+                            <dd>@Model.Mes</dd>
+                            <dt>Año</dt>
+                            <dd>@Model.Anio</dd>
+                        </dl>
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.IdEnvio)
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right">
+                                    <button type="submit" class="btn btn-success"><i class="fa fa-check"></i> Si, cerrar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+                </div>
+        </div>
+    </div>
+</div>

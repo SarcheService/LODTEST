@@ -1,0 +1,40 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_log>
+
+<table class="table table-condensed table-hover" id="tableDatos">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                Objeto de Referencia
+            </th>
+            <th>Acción</th>
+            <th>
+                Usuario
+            </th>
+            <th>
+                Fecha de registro
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+
+            //var lod = 0;
+            //var com = 0;
+            //var sub = 0;
+            //var classone = 0;
+            //var classtwo = 0;
+
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.IdLog)</td>
+                <td>@Html.DisplayFor(modelItem => item.Objeto)</td>
+                <td>@Html.DisplayFor(modelItem => item.Accion)</td>
+                <td>@Html.DisplayFor(modelItem => item.ApplicationUser.NombreCompleto)</td>
+                <td>@Html.DisplayFor(modelItem => item.FechaLog)</td>
+            </tr>
+        }
+    </tbody>
+</table>

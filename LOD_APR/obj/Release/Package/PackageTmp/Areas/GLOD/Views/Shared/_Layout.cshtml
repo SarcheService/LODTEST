@@ -1,0 +1,82 @@
+﻿@using System.Configuration
+@{ ViewBag.webKey = Convert.ToString(ConfigurationManager.AppSettings.Get("InternalCaptchaSiteKey")); }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LOD APR | Gestión de Libros de Obras</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+    <!-- Primary vendor style -->
+    @Styles.Render("~/bundles/font-awesome/css")
+    @Styles.Render("~/bundles/animate/css")
+    @Styles.Render("~/bundles/bootstrap/css")
+    @Styles.Render("~/bundles/peicon7stroke/css")
+    @Styles.Render("~/bundles/toastr/css")
+    @Styles.Render("~/bundles/datatables-Layout/css")
+
+    <!-- Add local styles, mostly for plugins css file -->
+    @if (IsSectionDefined("Styles"))
+    {@RenderSection("Styles", required: false)}
+    <!-- Primary HOMER style -->
+    @Styles.Render("~/bundles/homer/css")
+    <link href="~/Scripts/components/DateTimePicker/datetimepicker.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-select.min.css" rel="stylesheet" />
+
+    @Styles.Render("~/bundles/bootstrapCheckbox/css")
+    @Styles.Render("~/bundles/site/css")
+</head>
+<body class="@Html.PageClass() fixed-navbar">
+    <!-- Simple splash screen-->
+    <div class="splash"> <div class="color-line"></div><div class="splash-title"><h1>MDTECH - GLOD APR</h1><p>Especialistas en soluciones informáticas</p><div class="spinner"> <div class="rect1"></div> <div class="rect2"></div> <div class="rect3"></div> <div class="rect4"></div> <div class="rect5"></div> </div> </div> </div>
+    <!--[if lt IE 7]>
+       <p class="alert alert-danger">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+       <![endif]-->
+    <!-- Header -->
+    <div id="header">
+        @Html.Partial("_GLODHeader")
+    </div>
+    <!-- Navigation -->
+    <aside id="menu">
+        @Html.Partial("_GLODNavigation")
+    </aside>
+    <!-- Main view  -->
+    <div id="wrapper">
+        @RenderBody()
+        <!-- Footer-->
+        @Html.Partial("_GLODFooter")
+    </div>
+    <!-- Section for main scripts render -->
+    @Scripts.Render("~/bundles/jquery/js")
+    @Scripts.Render("~/bundles/bootstrap/js")
+    @Scripts.Render("~/bundles/validation/js")
+    @Scripts.Render("~/bundles/unobtrusive")
+    @Scripts.Render("~/bundles/toastr/js")
+    @Scripts.Render("~/bundles/homer/js")
+    @Scripts.Render("~/bundles/datatables-Layout/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap-Layout/js")
+    @Scripts.Render("~/bundles/moment/js")
+    <script src="~/Scripts/vue.js"></script>
+    <script src="~/Scripts/axios.min.js"></script>
+    <script src="~/Scripts/lodash.min.js"></script>
+    <script src="~/Scripts/components/SessionTimer.vue.js"></script>
+    <script src="~/Scripts/components/SelectDropdown.vue.js"></script>
+    <script src="~/Scripts/components/SelectTree.vue.js"></script>
+    <script src="~/Scripts/components/DataTableHtml.vue.js"></script>
+    <script src="~/Scripts/components/DateTimePicker/datetimepicker.vue.js"></script>
+    <script src="~/Scripts/components/ModalButton.vue.js"></script>
+    <script src="~/Scripts/components/ModalButtonNoForm.vue.js"></script>
+    <script src="~/Scripts/bootstrap-select.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?&render=@ViewBag.webKey"></script>
+    <!-- Handler for local scripts -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.fn.dataTable.moment('D-MM-YYYY');
+            new Vue({ el: "#divPerfil" });
+        });
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

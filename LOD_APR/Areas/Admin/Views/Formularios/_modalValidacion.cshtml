@@ -1,0 +1,108 @@
+﻿@model LOD_APR.Areas.Admin.Models.FORM_Formularios
+
+<div class="modal inmodal fade hmodal-info" id="modalFormEval" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h5 class="modal-title">Validación de Formulario</h5></center>
+            </div>
+            <div class="modal-body">
+                <div class="panel-body">
+                    @{ bool errores = false;}
+                    @if (Model.FORM_FormItems.Count == 0)
+                    {
+                        <span class="text-danger"><i class="fa fa-exclamation-circle text-danger" aria-hidden="true"></i> Debe Ingresar a lo menos un Ítem con sus preguntas</span>
+                        errores = true;
+                    }
+                        <ol type="I">
+
+                            @foreach (var item in Model.FORM_FormItems.OrderBy(o => o.Indice))
+                            {
+                                <li>
+                                    <strong>@item.Titulo</strong>
+                                    @if (item.Errores)
+                                    {
+                                        <i class="fa fa-exclamation-circle text-danger" aria-hidden="true"></i>
+                                    }
+                                    else
+                                    {
+                                        <i class="fa fa-check text-success" aria-hidden="true"></i>
+                                    }
+                                    @foreach (string e in item.ErrorList)
+                                    {
+                                        <span class="text-danger">
+                                            @Html.Raw(e)
+                                        </span>
+                                    }
+                                    <ol>
+                                        @foreach (var pregunta in item.FORM_FormPreguntas.OrderBy(o => o.Indice))
+                                        {
+                                            <li>
+                                                @pregunta.Titulo
+                                                @if (pregunta.Errores)
+                                                {
+                                                    <i class="fa fa-times text-danger" aria-hidden="true"></i>
+                                                }
+                                                else
+                                                {
+                                                    <i class="fa fa-check text-success" aria-hidden="true"></i>
+                                                }
+                                                @foreach (string e in pregunta.ErrorList)
+                                                {
+                                                    <span class="text-danger">
+                                                        @Html.Raw(e)
+                                                    </span>
+                                                }
+                                            </li>
+                                        }
+                                    </ol>
+
+                                </li>
+                                if (item.Errores)
+                                {
+                                    errores = true;
+                                }
+                            }
+                        </ol>
+                    </div>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        @if (errores)
+                        {
+                            <center><a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cerrar ventana</a></center>
+                        }
+                        else
+                        {
+                            using (Ajax.BeginForm("Activar", "Formularios", new AjaxOptions()
+                            {
+                                HttpMethod = "POST",
+                                OnSuccess = "form_formulario.SaveResultActivate(data,status,xhr);",
+                                OnBegin = "form_formulario.OnBeginActivate();"
+                            }, new { name = "formActivateFormEval", id = "formActivateFormEval" }))
+                            {
+                                <div class="form-horizontal">
+                                    @Html.AntiForgeryToken()
+                                    @Html.HiddenFor(model => model.IdForm)
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <div class="btn-group">
+                                                <button id="BtnSubmitActivate" type="submit" class="btn btn-success"><i class="fa fa-check"></i> Activar Formulario</button>
+                                                <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

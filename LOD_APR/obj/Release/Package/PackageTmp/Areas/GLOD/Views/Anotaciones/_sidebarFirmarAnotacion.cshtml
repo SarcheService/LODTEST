@@ -1,0 +1,46 @@
+﻿
+@{ 
+    int IdLod = ViewBag.IdLod;
+    string IdUserActual = ViewBag.IdUserActual;
+    string elementos = "[";
+    if (Html.ValidaRoles(IdLod, 4, IdUserActual))
+    {
+        elementos = elementos + "1";
+    }
+    if(Html.ValidaRoles(IdLod, 3, IdUserActual) && ViewBag.EsGubernamental) {
+        if (elementos.Equals("["))
+        {
+            elementos = elementos + "2";
+        }else if (elementos.Equals("[1"))
+        {
+            elementos = elementos + ",2";
+        }
+    }
+    if (Html.ValidaRoles(IdLod, 5, IdUserActual))
+    {
+        if (elementos.Equals("["))
+        {
+            elementos = elementos + "3]";
+        }
+        else if (elementos.Equals("[1") || elementos.Equals("[2") || elementos.Equals("[1,2"))
+        {
+            elementos = elementos + ",3]";
+        }
+    }
+    else {
+        elementos = elementos + "]";
+    }
+
+}
+
+
+
+<div class="form-horizontal">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Firmar la anotación de la siguiente forma:</h4>
+        </div>
+    </div>
+    <select-tipo-firma :id-anotacion="@ViewBag.IdAnotacion" :es-toma-conocimiento="false" :FirmasPermitidas="@elementos" ></select-tipo-firma>
+</div>
+

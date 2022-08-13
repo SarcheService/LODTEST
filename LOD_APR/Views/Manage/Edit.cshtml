@@ -1,0 +1,118 @@
+﻿@model LOD_APR.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Editar usuario";
+}
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <div id="hbreadcrumb" class="pull-right">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                    <li>
+                        <span>Configuración</span>
+                    </li>
+                    <li class="active">
+                        <span>Editar Mi Perfil</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Editar Mi Perfil
+            </h2>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+
+    <div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hpanel">
+                    <div class="panel-heading hbuilt">
+                        Datos del Usuario
+                    </div>
+                    <div class="panel-body">
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-horizontal">
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                @Html.HiddenFor(model => model.Id)
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-3">
+                                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", @readonly="readonly" } })
+                                        @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-4">
+                                        @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-2">
+                                        @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                                    <div class="col-md-3">
+                                        @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.Email, "Si modifica el e-mail deberá volver a confirmarlo!", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group  pull-right">
+                                    <div class="col-md-12">
+                                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-unlock\"></i> Resetar Password"), "SetPassword", "Manage", new { },
+                                        new AjaxOptions
+                                        {
+                                            HttpMethod = "GET",
+                                            InsertionMode = InsertionMode.Replace,
+                                            UpdateTargetId = "modalCanvas",
+                                            OnSuccess = "sms_users.initModal(data,status,xhr);"
+                                        }
+                                        , new { @class = "btn btn-outline btn-info" })
+                                        <a href="@Url.Action("Edit","Manage",new {})" role="button" class="btn btn-default"><i class="fa fa-ban" aria-hidden="true"></i> Cancelar</a>
+                                        <button id="btnSubmit" type="submit" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-upload" aria-hidden="true"></i> Guardar</button>
+                                    </div>
+                                </div>
+                            </div>}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="modalCanvas"></div>
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/bundles/select2/css")
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/SMS_Users")
+    <script type="text/javascript">
+        var sms_users;
+        $(document).ready(function () {
+            sms_users = new SMS_Users();
+        });
+    </script>
+}
+

@@ -1,0 +1,82 @@
+﻿@model IEnumerable<Galena.Models.ApplicationRole>
+
+<table id="tablaDatos" class="table table-condensed table-hover dataTable no-footer">
+    <thead>
+        <tr>
+            <th>
+                Perfil
+            </th>
+            <th>
+                Numeros Usuario
+            </th>
+            @if (ViewBag.AppId == 0)
+            {
+                <th>Sistema</th>
+            }
+            @{
+                string PemisoEdita = ViewBag.PermisoEditar;
+                string PemisoElimina = ViewBag.PermisoEliminar;
+                if (Html.ValidaPermisos(PemisoEdita) || Html.ValidaPermisos(PemisoElimina))
+                {
+                    <th>Acciones </th>
+                }
+            }
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @{string abrev = string.Empty; string NS = string.Empty; }
+                    @if (ViewBag.AppId == 0)
+                    {
+                        abrev = item.IdSistema == 0 ? "Plt -" : item.MAE_sistema.Sistema +" -";
+                        NS = item.IdSistema == 0 ? "Plataforma" : item.MAE_sistema.NombreSistema;
+
+                    }
+
+                    <strong>@abrev</strong> @Html.DisplayFor(modelItem => item.Name)                   
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Users.Count)
+                </td>
+
+                @if (ViewBag.AppId == 0)
+                {
+                    <td>@NS</td>
+                }
+
+                @if (Html.ValidaPermisos(PemisoEdita) || Html.ValidaPermisos(PemisoElimina))
+                {
+
+                    <td>
+                        @{ string controlador = ViewBag.AppId == 0 ? "PerfilesGlobales" : "PerfilesApp";}
+                        @if (Html.ValidaPermisos(PemisoEdita))
+                        {                    
+                            <a class="btn btn-warning btn-xs" href="@Url.Action("Edit", controlador , new { id = item.Id, AppId = item.IdSistema })"><i class="fa fa-pencil"></i></a>                   
+                        }
+
+                        @if (Html.ValidaPermisos(PemisoElimina))
+                        {
+                            if (item.Users.Count == 0)
+                            {
+                                @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", controlador, new { id = item.Id },
+                                new AjaxOptions
+                                {
+                                    HttpMethod = "GET",
+                                    InsertionMode = InsertionMode.Replace,
+                                    UpdateTargetId = "modalCanvas",
+                                    OnSuccess = "seg_perfiles.initModal(data,status,xhr);"
+                                }
+                                , new { @class = "btn btn-danger btn-xs" })
+                            }
+
+                        }
+
+                    </td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,151 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_RolesContrato
+
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalTipo" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">@ViewBag.Titulo</h4>
+            </div>
+            <div class="modal-body">
+                @{string action = ViewBag.Action;}
+                @using (Ajax.BeginForm(action, null, new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "mae_rolescontrato.saveResult(data,status,xhr);"
+                }, new { name = "formTipo", id = "formTipo" }))
+                {
+                    @Html.AntiForgeryToken()
+                    
+                        @Html.HiddenFor(model => model.IdRolCtto)
+
+                            <div class="form-horizontal">
+                                <div class="form-group">
+                                        <div class="col-xs-6">
+                                            @Html.LabelFor(model => model.NombreRol, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.NombreRol, new { htmlAttributes = new { @class = "form-control", Type = "text" } })
+                                            @Html.ValidationMessageFor(model => model.NombreRol, "", new { @class = "text-danger" })
+                                        </div>
+                                    <div class="col-xs-6"></div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <table class="table table-condensed table-hover" id="tablaPerm" name="tablaPerm">
+                                            <thead>
+                                                <tr>
+                                                    <th>Libro</th>
+                                                    <th></th>
+                                                    <th>Lectura</th>
+                                                    <th>Escritura</th>
+                                                    <th>Firma E. Avanzada</th>
+                                                    <th>Firma Gob.</th>
+                                                    <th>Firma E. Simple</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Libro al  <br />cual Pertenece</td>
+                                                    <td>@Html.DropDownList("IdTipoLod", null, htmlAttributes: new { @class = "form-control m-t-xs" })</td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Lectura, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Escritura, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaFea, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaGob, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaSimple, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Libro Maestro</td>
+                                                    <td></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Lectura1, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Escritura1, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaFea1, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaGob1, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaSimple1, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Libro de  <br />Comunicación</td>
+                                                    <td></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Lectura2, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Escritura2, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaFea2, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaGob2, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaSimple2, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Libros de <br />Comunicaciones</td>
+                                                    <td></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Lectura3, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Escritura3, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaFea3, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaGob3, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaSimple3, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Libros  <br />Complementarios</td>
+                                                    <td></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Lectura4, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.Escritura4, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaFea4, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaGob4, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                    <td><center>@Html.CheckBoxFor(model => model.FirmaSimple4, new { htmlAttributes = new { @class = "form-control" } })</center></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div><h5>Por Empresa</h5></div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        @Html.LabelFor(model => model.EsContratista, "Contratista", htmlAttributes: new { @class = "control-label" })
+                                        @Html.CheckBoxFor(model => model.EsContratista, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.EsGubernamental, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-xs-4">
+                                        @Html.LabelFor(model => model.EsGubernamental, "Gubernamental", htmlAttributes: new { @class = "control-label" })
+                                        @Html.CheckBoxFor(model => model.EsGubernamental, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.EsGubernamental, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-xs-4">
+                                        @Html.LabelFor(model => model.EsFiscalizador, "Fiscalizador", htmlAttributes: new { @class = "control-label" })
+                                        @Html.CheckBoxFor(model => model.EsFiscalizador, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.EsFiscalizador, "", new { @class = "text-danger" })
+                                    </div>
+                                </div><hr />
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div><h5>Por Rol</h5></div>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        @Html.LabelFor(model => model.RolContratista, "Contratista", htmlAttributes: new { @class = "control-label" })
+                                        @Html.CheckBoxFor(model => model.RolContratista, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.RolGubernamental, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-xs-4">
+                                        @Html.LabelFor(model => model.RolGubernamental, "Gubernamental", htmlAttributes: new { @class = "control-label" })
+                                        @Html.CheckBoxFor(model => model.RolGubernamental, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.RolGubernamental, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-xs-4">
+                                        @Html.LabelFor(model => model.RolFiscalizador, "Fiscalizador", htmlAttributes: new { @class = "control-label" })
+                                        @Html.CheckBoxFor(model => model.RolFiscalizador, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.RolFiscalizador, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12">
+                                        <div class="btn-group pull-right">
+                                            <button id="btnSubmit" type="submit" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-save"></i> Guardar</button>
+                                            <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            }
+            </div>
+        </div>
+    </div>
+</div>
+
+

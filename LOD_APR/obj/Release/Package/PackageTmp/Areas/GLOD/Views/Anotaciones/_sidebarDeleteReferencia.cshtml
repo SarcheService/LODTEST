@@ -1,0 +1,16 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_ReferenciasAnot
+@using LOD_APR.Areas.GLOD.Models;
+
+<div class="form-horizontal">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.IdAnotacion)
+    @Html.HiddenFor(model => model.IdAnontacionRef)
+    @Html.HiddenFor(model => model.IdRefAnot)
+    <div class="row">
+        <div class="col-md-12">
+            <h4>¿Realmente desea eliminar esta Referencia?</h4>
+        </div>
+    </div>
+</div>
+

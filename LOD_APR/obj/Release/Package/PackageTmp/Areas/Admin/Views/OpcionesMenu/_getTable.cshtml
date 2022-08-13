@@ -1,0 +1,74 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_opcionesMenu>
+
+<table id="tablaDatos" class="table table-condensed table-hover dataTable no-footer">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdOpcion)
+            </th>
+           
+            <th>
+                @Html.DisplayNameFor(model => model.Opcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Indice)
+            </th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IdOpcion)
+                </td>
+               
+                <td>
+                    @Html.DisplayFor(modelItem => item.Opcion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Indice)
+                </td>
+             
+                <td>
+
+
+
+                    <div class="btn-group" role="group">
+
+
+                @Ajax.RawActionLink(string.Format(" <i class=\"fa fa-pencil-square-o\"></i> "), "Edit", "opcionesMenu", new { Id = item.IdOpcion },
+                new AjaxOptions
+                {
+                   HttpMethod = "GET",
+                   InsertionMode = InsertionMode.Replace,
+                   UpdateTargetId = "modalCanvas",
+                   OnSuccess = "mae_opcionesMenu.initModal(data,status,xhr);"
+                }
+                , new { @class = "btn btn-warning btn-xs" })
+
+
+                      
+                  @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", "opcionesMenu", new { Id = item.IdOpcion },
+                  new AjaxOptions
+                  {
+                      HttpMethod = "GET",
+                      InsertionMode = InsertionMode.Replace,
+                      UpdateTargetId = "modalCanvas",
+                      OnSuccess = "mae_opcionesMenu.initModal(data,status,xhr);"
+                  }
+                  , new { @class = "btn btn-danger btn-xs" })
+
+                    </div>
+                </td>
+            </tr>
+
+
+            
+            
+        }
+    </tbody>
+</table>

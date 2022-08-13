@@ -1,0 +1,294 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.ModelsViews.RepositorioView>
+
+
+<div class="col-md-12">
+    <div class="hpanel hblue">
+        <div class="panel-heading hbuilt">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="btn-group pull-right">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <span> @ViewBag.NombreCarpeta</span>
+                </div>
+
+            </div>
+        </div>
+        <div class="panel-body" style="border-radius:2px;overflow:auto">
+            <input type="hidden" id="NumRegistro" value="@ViewBag.NumRegistro" />
+            <input type="hidden" id="PadreId" value="@ViewBag.Padre" />
+            <div class="row">
+                <div class="col-sm-1 text-center">
+                    <h4 class="text-center text-@ViewBag.Color" style="margin-bottom:0"><i class="fa fa-folder-open-o  fa-2x" style="margin-bottom:0" aria-hidden="true"></i></h4>
+                    <span class="label label-@ViewBag.Color">@ViewBag.NumRegistro</span>
+                </div>
+                <div class="col-sm-8">
+                    @*Vista escritorio*@
+                    <h3 class="text-navy-blue hidden-xs"><b>@ViewBag.FolderName</b></h3>
+
+                    @*Vista celular*@
+                    <center class="visible-xs"> <h4 class="text-navy-blue"><b>@ViewBag.FolderName</b></h4> </center>
+                </div>
+                <div class="col-sm-3 m-t-xs">
+                   
+                </div>
+            </div>
+
+            <hr />
+            <table id="tablaDocs_Repositorio" class="table table-hover table-condensed">
+                <thead>
+                    @if (ViewBag.Tipo == 1 || ViewBag.Tipo == 0)
+                    {
+                        <tr>
+                            <th></th>
+                            <th>Nombre Carpeta</th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Total Documentos</th>
+                        </tr>
+                    }
+                    else if (ViewBag.Tipo == 2)
+                    {
+                        <tr>
+                            <th></th>
+                            <th>Nombre</th>
+                            <th>Obligatorio</th>
+                            <th>Estado</th>
+                            <th>Total documentos</th>
+                            <th>Detalles</th>
+                        </tr>
+                    }
+                </thead>
+                <tbody>
+                    @if (ViewBag.Tipo == 0)
+                    {
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.IdElemento)</td>
+                                <td>
+                                    @{
+                                        string clase = "text-" + ViewBag.Color;
+                                    }
+
+
+                                    @Ajax.RawActionLink(string.Format($"<i class='fa fa-folder {clase}'></i> {item.NombreElemento}"), "GetDocumentos", "RepContrato", new { Padre = item.IdElemento, Tipo = 1, IdContrato = ViewBag.IdContrato },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "lstDocs_Repositorio",
+                                        OnSuccess = $"repcontrato.PartialViewGet({item.IdElemento});"
+                                    }, new { })
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>@Html.DisplayFor(modelItem => item.totalArchivos)</td>
+                            </tr>
+                        }
+
+                    }
+                    else if (ViewBag.Tipo == 1)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>
+                                @Ajax.RawActionLink(string.Format("<i class='fa fa-mail-reply'></i> ..."), "GetDocumentos", "RepContrato", new { Padre = 0, Tipo = 0, IdContrato = ViewBag.IdContrato },
+                              new AjaxOptions
+                              {
+                                  HttpMethod = "GET",
+                                  InsertionMode = InsertionMode.Replace,
+                                  UpdateTargetId = "lstDocs_Repositorio",
+                                  OnSuccess = $"repcontrato.PartialViewGet({ViewBag.Root});"
+                              },
+                              new
+                                   {
+                                  @class = "",
+                                  @data_toggle = "tooltip",
+                                  @data_placement = "top",
+                                  @data_container = "body",
+                                  @title = "Volver"
+                              })
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.IdElemento)</td>
+                                <td>
+                                    @{
+                                        string clase = "text-" + ViewBag.Color;
+                                    }
+
+
+                                    @Ajax.RawActionLink(string.Format($"<i class='fa fa-folder {clase}'></i> {item.NombreElemento}"), "GetDocumentos", "RepContrato", new { Padre = item.IdElemento, Tipo = 2, IdContrato = ViewBag.IdContrato },
+                                     new AjaxOptions
+                                     {
+                                         HttpMethod = "GET",
+                                         InsertionMode = InsertionMode.Replace,
+                                         UpdateTargetId = "lstDocs_Repositorio",
+                                         OnSuccess = $"repcontrato.PartialViewGet({item.IdElemento});"
+                                     }, new { })
+                                </td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>@Html.DisplayFor(modelItem => item.totalArchivos)</td>
+                            </tr>
+                        }
+
+                    }
+                    else if (ViewBag.Tipo == 2)
+                    {
+                        <tr>
+                            <td></td>
+                            <td>
+                                @Ajax.RawActionLink(string.Format("<i class='fa fa-mail-reply'></i> ..."), "GetDocumentos", "RepContrato", new { Padre = ViewBag.Padre, Tipo = 1, IdContrato = ViewBag.IdContrato },
+                               new AjaxOptions
+                               {
+                                   HttpMethod = "GET",
+                                   InsertionMode = InsertionMode.Replace,
+                                   UpdateTargetId = "lstDocs_Repositorio",
+                                   OnSuccess = $"repcontrato.PartialViewGet({ViewBag.Root});"
+                               },
+                               new
+                                    {
+                                   @class = "",
+                                   @data_toggle = "tooltip",
+                                   @data_placement = "top",
+                                   @data_container = "body",
+                                   @title = "Volver"
+                               })
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>@Html.DisplayFor(modelItem => item.IdElemento) </td>
+                                <td>@Html.DisplayFor(modelItem => item.NombreElemento)</td>
+                                <td>@Html.DisplayFor(modelItem => item.Obligatorio)</td>
+                                @if (item.EstadoElemento == 1)
+                                {
+
+                                    <td><label class="label label-success">Cargado</label></td>
+                                }
+                                else
+                                {
+                                    <td><label class="label label-danger">No Cargado</label></td>
+                                }
+                                <td>@Html.DisplayFor(modelItem => item.totalArchivos)</td>
+                                @if (item.IdAnotacion != null && item.IdAnotacion != 0)
+                                {
+                                    <td>
+                                        <center>
+                                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-search\"></i> Detalle"), "detalleAnotacion", null, new { IdTipoDoc = item.IdTipoDocumento, IdLibro = item.IdLibro, IdContrato = ViewBag.IdContrato, IdClassTwo = ViewBag.IdClassTwo },
+                                                              new AjaxOptions
+                                                              {
+                                                                  HttpMethod = "GET",
+                                                                  InsertionMode = InsertionMode.Replace,
+                                                                  UpdateTargetId = "modalCanvas",
+                                                                  OnSuccess = "repcontrato.initModal(data,status,xhr);"
+                                                              }
+                                                              , new { @class = "btn btn-info btn-xs" })
+                                                                            </center>
+                                        
+                                    </td>
+                                }
+                                else if (item.Obligatorio && item.IdAnotacion == null && item.IdLibro != null)
+                                {
+
+                                    <td>
+                                        <center>
+                                            <a class="btn btn-info btn-xs" target="_blank" href="@Url.Action("Index", "Anotaciones", new { id = item.IdLibro })"><i class="fa fa-arrow-up"></i> Ir a Libro</a>
+                                        </center>
+                                    </td>
+                                }
+                                else if (item.Obligatorio && item.IdAnotacion == null && item.IdLibro == null)
+                                {
+
+                                    <td>
+                                        <center>
+                                            <a class="btn btn-info btn-xs" target="_blank" href="@Url.Action("Admin", "Home", new { })"><i class="fa fa-arrow-up"></i> Ir a G. Contrato</a>
+                                        </center>
+                                    </td>
+                                }
+                                else if (!item.Obligatorio && (item.IdAnotacion == 0 || item.IdAnotacion == null) && item.EstadoElemento == 0)
+                                {
+
+                                    <td>
+                                        
+                                    </td>
+                                    @*<td>
+                                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-upload\"></i> Cargar Documento"), "AddDocumento", null, new { IdTipoDoc = item.IdTipoDocumento, IdContrato = ViewBag.IdContrato, IdClassTwo = ViewBag.IdClassTwo },
+                                                              new AjaxOptions
+                                                              {
+                                                                  HttpMethod = "GET",
+                                                                  InsertionMode = InsertionMode.Replace,
+                                                                  UpdateTargetId = "modalCanvas",
+                                                                  OnSuccess = "repcontrato.initModal(data,status,xhr);"
+                                                              }
+                                                              , new { @class = "btn btn-success btn-xs" })
+                                    </td>*@
+
+                                }
+                                else if (item.EstadoElemento == 1)
+                                {
+                                    <td>
+
+                                        <div class="btn-group">
+                                            @*@Ajax.RawActionLink(string.Format("<i class=\"fa fa-upload\"></i> Cargar Otro Doc."), "AddDocumento", null, new { IdTipoDoc = item.IdTipoDocumento, IdContrato = ViewBag.IdContrato, IdClassTwo = ViewBag.IdClassTwo },
+                                                              new AjaxOptions
+                                                              {
+                                                                  HttpMethod = "GET",
+                                                                  InsertionMode = InsertionMode.Replace,
+                                                                  UpdateTargetId = "modalCanvas",
+                                                                  OnSuccess = "repcontrato.initModal(data,status,xhr);"
+                                                              }
+                                                              , new { @class = "btn btn-success btn-xs" })*@
+
+                                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-search\"></i> Detalle"), "detalleDocumento", null, new { IdTipoDoc = item.IdTipoDocumento, IdContrato = ViewBag.IdContrato, IdClassTwo = ViewBag.IdClassTwo },
+                                                             new AjaxOptions
+                                                             {
+                                                                 HttpMethod = "GET",
+                                                                 InsertionMode = InsertionMode.Replace,
+                                                                 UpdateTargetId = "modalCanvas",
+                                                                 OnSuccess = "repcontrato.initModal(data,status,xhr);"
+                                                             }
+                                                             , new { @class = "btn btn-info btn-xs" })
+
+
+                                        </div>
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+
+
+<style>
+    .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+        border-top: 0 !important;
+    }
+</style>

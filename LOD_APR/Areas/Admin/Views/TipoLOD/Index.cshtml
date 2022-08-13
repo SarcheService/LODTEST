@@ -1,0 +1,143 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_TipoLOD>
+
+@{
+    ViewData["CustomArea"] = ViewBag.NombreArea;
+    ViewBag.Title = "Tipos de Libros de Obra";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Libros de Obra</a></li>
+                    <li class="active">
+                        <span>Tipos</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Tipos de Libros de Obra Digital
+            </h2>
+            <small>Listado de tipos de LOD para ser utilizados en las distintas Obras.</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-3 col-md-3">
+            <div class="hpanel hblue">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span> Filtro y búsqueda</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body text-center">
+                    <div class="input-group">
+                        <input class="form-control" type="text" id="searchInput" placeholder="Buscar en tabla"> <span class="input-group-btn">
+                            <button id="btnTableSearch" type="button" class="btn btn-warning" onclick="$('#searchInput').val('');">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Listado de Registros</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                            @if (Html.ValidaPermisos("0010050001"))
+                            {
+                                @Ajax.RawActionLink(string.Format("<i class='fa fa-plus'></i> Nuevo Tipo"), "Create", null, null,
+                                     new AjaxOptions
+                                     {
+                                         HttpMethod = "GET",
+                                         InsertionMode = InsertionMode.Replace,
+                                         UpdateTargetId = "modalCanvas",
+                                         OnSuccess = "mae_tipolod.InitModalTipo(data,status,xhr);"
+                                     }
+                                     , new { @class = "btn btn-success btn-sm pull-right" })}
+
+                            </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="row" style="overflow:auto">
+                        <div class="col-md-12">
+                            <div id="divTableDatos">
+                                @Html.Partial("_getTable", Model)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/select2/css")
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <style>
+
+        ul.ui-autocomplete {
+            z-index: 1100;
+        }
+
+        .ui-front {
+            z-index: 1500 !important;
+        }
+    </style>
+}
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="~/Scripts/app/MAE_TipoLOD.js"></script>
+
+    <script type="text/javascript">
+        $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+        var mae_tipolod;
+        $(document).ready(function () {
+            mae_tipolod = new MAE_TipoLOD();
+        });
+
+    </script>
+
+
+
+}
+
+
+
+

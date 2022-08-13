@@ -1,0 +1,87 @@
+﻿@model IEnumerable<Microsoft.AspNet.Identity.EntityFramework.IdentityRole>
+@{
+    ViewBag.Title = "Index";
+}
+
+
+@*@Html.Partial("~/Views/Shared/_IndexTopBar.cshtml", HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString())*@
+
+<div class="content animate-panel">
+    <div class="row">
+
+        <div class="col-lg-12">
+            <div class="hpanel hblue">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Perfiles en Sistema</span>
+                        </div>
+                        <div class="col-xs-4">
+                            @if (Html.ValidaPermisos("0010020001"))
+                            {
+                                <a href="@Url.Action("Create", "Perfil", new { area = "Admin" }, null)" role="button" class="btn btn-sm btn-success pull-right"><i class="fa fa-plus"></i> Nuevo Perfil</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive" id="divTableDatos">
+                        @Html.Partial("_getTable", Model)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+
+@*<div class="ibox">
+        <div class="ibox-title">
+            <div class="row">
+                <div class="col-xs-8">
+                    <span>Listado de Registros</span>
+                </div>
+                <div class="col-xs-4">
+                    @if (Html.ValidaPermisos(81))
+                    {
+                        <a href="@Url.Action("Create", "Perfil")" class="btn btn-success pull-right"><i class="fa fa-plus"></i> Nuevo Perfil</a>
+                        }
+                </div>
+            </div>
+        </div>
+        <div class="ibox-content">
+            <div class="table-responsive animated fadeInDown" id="divTablaDatos">
+                @Html.Partial("_Perfiles", Model)
+            </div>
+        </div>
+    </div>*@
+
+
+
+
+
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+
+}
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/SEG_Perfiles")
+
+    <script type="text/javascript">
+        var seg_perfiles;
+
+        $(document).ready(function () {
+            seg_perfiles = new SEG_Perfiles("Admin","Perfil");
+
+        });
+    </script>
+}
+

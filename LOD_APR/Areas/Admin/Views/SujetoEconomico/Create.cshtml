@@ -1,0 +1,237 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_sujetoEconomico
+
+@{
+    ViewBag.Title = "Nuevo Sujeto Económico";
+}
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <div id="hbreadcrumb" class="pull-right">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Administración</a></li>
+                    <li class="active">
+                        <span>Sujetos Económicos</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Nuevo Sujeto Económico
+            </h2>
+            @*<small>Show user data in clear profile design</small>*@
+        </div>
+    </div>
+</div>
+<form id="formSujeto" name="formSujeto" enctype="multipart/form-data" action="/Admin/SujetoEconomico/Create" method="post">
+    @Html.AntiForgeryToken()
+    <input class="input-validation-error" id="FechaCreacion" name="FechaCreacion" value="@DateTime.Now" type="hidden">
+    <input class="input-validation-error" id="Activo" name="Activo" value="True" type="hidden">
+    @Html.HiddenFor(model => model.RutaImagen)
+    @Html.HiddenFor(model => model.EsContratista)
+    @Html.HiddenFor(model => model.EsGubernamental)
+    @Html.HiddenFor(model => model.EsMandante)
+
+    <div class="content animate-panel">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hpanel hblue">
+                    <div class="panel-heading hbuilt">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <span>Ficha Sujeto Económico</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div id="divImagenSujeto">
+                            <div class="panel-body panel-load">
+                                <div class="sk-spinner sk-spinner-wandering-cubes">
+                                    <div class="sk-cube1"></div>
+                                    <div class="sk-cube2"></div>
+                                </div>
+                                <div>
+
+                                    <h2 href="#" data-letters="Foto" class="data-letters-galena" style="vertical-align: middle;"></h2>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-t-none">
+                            <div class="fileUpload btn btn-default btn-sm">
+                                <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                <input id="fileImage" name="fileImage" type="file" class="upload" />
+                            </div>
+                            <h3 class="m-b-xs" id="lblRazon">Razón Social</h3>
+                            <h3 class="m-t-xs" id="lblRut">RUT</h3>
+                        </div>
+                        <div class="text-center">
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-globe btn btn-default btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.web, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Sitio Web" } })
+                                @Html.ValidationMessageFor(model => model.web, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-facebook btn btn-info btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.UrlFacebook, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Perfil de Facebook" } })
+                                @Html.ValidationMessageFor(model => model.UrlFacebook, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-twitter btn btn-default btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.UrlTwitter, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Cuenta de Twitter" } })
+                                @Html.ValidationMessageFor(model => model.UrlTwitter, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-linkedin btn btn-primary btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.UrlLinkedin, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Perfil de Linkedin" } })
+                                @Html.ValidationMessageFor(model => model.UrlLinkedin, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hpanel hblue">
+                    <div class="hpanel">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1">Datos Generales</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane active">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>
+                                                Información General
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    @Html.LabelFor(model => model.Rut, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Rut, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.Rut, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-6">
+                                                    @Html.LabelFor(model => model.RazonSocial, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.RazonSocial, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.RazonSocial, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-4">
+                                                    @Html.LabelFor(model => model.NomFantasia, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.NomFantasia, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.NomFantasia, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    @Html.LabelFor(model => model.Giro, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Giro, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.Giro, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-6">
+                                                    @Html.LabelFor(model => model.Direccion, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <label class="control-label" for="IdCiudad">Ciudad</label>
+                                                    @Html.DropDownList("IdCiudad", null, htmlAttributes: new { @class = "form-control  input-sm" })
+                                                    @Html.ValidationMessageFor(model => model.IdCiudad, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-3">
+                                                    @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-4">
+                                                    @Html.LabelFor(model => model.email, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="hr-line-dashed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <label class="col-sm-2 control-label">
+                                            Tipo de Sujeto Económico <br>
+                                        </label>
+                                        <div class="col-sm-10">
+                                            <div class="form-check" hidden>
+                                                <input hidden class="form-check-input" type="radio" name="flexRadioDefault" id="EsGubernamental2" value="2">
+                                                <label hidden class="form-check-label" for="flexRadioDefault2">Es Organismo de Gobierno</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsMandante1" value="1">
+                                                <label class="form-check-label" for="flexRadioDefault2">Es Empresa Fiscalizadora</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsContratista3" checked value="3">
+                                                <label class="form-check-label" for="flexRadioDefault2">Es Contratista</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="hr-line-dashed"></div>
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="btn-group pull-right">
+                                                 @if (Html.ValidaPermisos("0010000001"))
+                                                 {
+                                                    <button type="submit" class="btn btn-success"><i class="fa fa-upload"></i> Guardar</button>
+                                                 }
+                                                 <a href="@Url.Action("Index","SujetoEconomico",new { area="Admin"},null)" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@section Styles {
+    @Styles.Render("~/bundles/select2/css")
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/rut")
+    @Scripts.Render("~/bundles/CommonHelpers")
+
+    <script src="~/Scripts/app/MAE_CreateSujetos.js"></script>
+    <script src="~/Vendor/jQuery-Mask-Plugin/jquery.mask.min.js"></script>
+
+    <script type="text/javascript">
+
+        var mAE_CreateSujetos;
+        $('#Telefono').mask('+56 000000000', { placeholder: "+56 _________" });
+        $(document).ready(function () {
+            mAE_CreateSujetos = new MAE_CreateSujetos();
+        });
+
+
+
+
+    </script>
+}

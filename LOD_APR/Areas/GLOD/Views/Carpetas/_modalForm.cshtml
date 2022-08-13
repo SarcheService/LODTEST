@@ -1,0 +1,70 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_Carpetas
+
+@using System.Configuration
+@{ ViewBag.webKey = Convert.ToString(ConfigurationManager.AppSettings.Get("InternalCaptchaSiteKey")); }
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('@ViewBag.webKey', { action: '' }).then(function (token) {
+            document.getElementById("foo").value = token;
+        });
+    });
+</script>
+<div class="modal inmodal fade hmodal-@ViewBag.ClsModal" id="modalCarpetas" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+            </div>
+            <div class="modal-body">
+                @{string action = ViewBag.Action;}
+
+                @using (Ajax.BeginForm(action, "Carpetas", new { area = "GLOD" }, new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "glod_carpetas.saveResult(data,status,xhr);"
+                }, new { name = "formCarpetas", id = "formCarpetas" }))
+                {
+    @Html.AntiForgeryToken()
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.IdCarpPadre)
+                        @Html.HiddenFor(model => model.IdCarpeta)
+                        @Html.HiddenFor(model => model.UserId)
+                        @Html.HiddenFor(model => model.FechaCreacion)
+
+                        @*@if (ViewBag.Tipo == "t_")
+                            {*@
+                        @if (true/*Html.ValidaPermisos("00601501")*/)
+                        {
+        <div class="form-group">
+            <div class="col-xs-12">
+                @Html.EditorFor(model => model.EsPortafolio, new { htmlAttributes = new { @class = "checkbox   col-xs-1" } })
+                @Html.LabelFor(model => model.EsPortafolio, "Es Portafolio", htmlAttributes: new { @class = "control-label col-xs-6", @style = "margin-left:-20px" })
+            </div>
+        </div> } @*}*@
+
+
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                @Html.LabelFor(model => model.NombreCarpeta, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.NombreCarpeta, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.NombreCarpeta, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                  <input type="hidden" name="foo" id="foo">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="btn-group pull-right">
+                                    <button type="submit" class="btn btn-@ViewBag.ClsModal"><i class="fa fa-upload"></i> Guardar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>}
+            </div>
+        </div>
+    </div>
+</div>
+

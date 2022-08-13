@@ -1,0 +1,181 @@
+﻿@using LOD_APR.Areas.Admin.Models
+@{ ViewBag.Title = "Index";
+    Layout = "~/Areas/GLOD/Views/Shared/_Layout.cshtml"; }
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Gestión LDO</a></li>
+                    <li class="active">
+                        <span>Administración de Contratos</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <b>Administración de Contratos</b>
+            </h2>
+            <small>Aquí se gestionan los contratos y sus carpetas</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <input class="hide" type="number" id="IdEmpresa" name="IdEmpresa" value="1" />
+    <div class="row">
+        <div class="col-lg-4 col-xs-12 m-b-md">
+            <div class="hpanel hnavyblue ">
+                <div class="panel-heading hbuilt">
+                    <div class="panel-tools">
+                        <a class="fullscreen"><i class="fa fa-expand"></i></a>
+                    </div>
+                    Navegación y búsqueda
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-12 col-md-12">
+                            <div class="input-group"> <input placeholder="Buscar item" class="form-control" type="text" id="treesearch"><span class="input-group-addon"><i class="fa fa-search" aria-hidden="true"></i></span></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="btn-group m-t-sm" role="group" aria-label="...">
+                                <button id="btnExpand" type="button" class="btn btn-default btn-sm"><i class="fa fa-plus-square-o" aria-hidden="true"></i> Expandir</button>
+                                <button id="btnCollapse" type="button" class="btn btn-default btn-sm"><i class="fa fa-minus-square-o" aria-hidden="true"></i> Contraer</button>
+                                <input class="hide" type="number" id="IdEmpresa" name="IdEmpresa" value="@ViewBag.IdEmpresa" />
+                                @*<button id="btnFiltro" type="button" class="btn btn-sm btn-success ladda-button" onclick="asp_filtro.GetModal();"><i class="fa fa-filter" aria-hidden="true"></i> Filtro</button>
+                                    <a class="btn btn-sm btn-warning ladda-button pull-right" data-style="zoom-in" id="btnRemoveFiltro" onclick="asp_filtro.CleanFiltro();"><i class="fa fa-refresh"></i> </a>*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-lg-12" style="overflow:auto;padding-bottom:5px;">
+                            <hr />
+                            <div id="treeView"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8 col-xs-12  m-b-md">
+            <div class="hpanel hnavyblue">
+                <div class="panel-heading hbuilt">
+                    <div class="panel-tools">
+                        <a class="fullscreen"><i class="fa fa-expand"></i></a>
+                    </div>
+                    Elemento Seleccionado
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+
+                    <div id="DivDetails">
+                        <div class="row">
+                            <div class="col-xs-12">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=""><div id="modalCanvas"></div></div>
+                <div class=""><div id="modalCanvas2"></div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Styles {
+    @Styles.Render("~/Vendor/jsTree/css")
+    @Styles.Render("~/bundles/datepicker/css")
+    @Styles.Render("~/bundles/select2/css")
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/bundles/DualListBox/css")
+    @Styles.Render("~/bundles/Jasny/css")
+}
+
+@section Scripts {
+
+
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/DualListBox/js")
+    @Scripts.Render("~/bundles/jsTree/js")
+    @Scripts.Render("~/bundles/datepicker/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/Jasny/js")
+    @Scripts.Render("~/bundles/FileHelper")
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDSnNSX4MnGN430WeTBU8zXyeSUynWNycI"></script>
+
+    <script src="~/Scripts/app/GLOD_administracion.js"></script>
+    <script src="~/Scripts/app/GLOD_carpetas.js"></script>
+    <script src="~/Scripts/app/GLOD_contratos.js"></script>
+    <script src="~/Scripts/app/LOD_CierreLibro.js"></script>
+    <script src="~/Scripts/app/LOD_LiquidacionContrato.js"></script>
+
+
+    @Scripts.Render("~/bundles/numeral")
+    <script src="~/Vendor/jQuery-Mask-Plugin/dist/jquery.mask.min.js"></script>
+    <script src="~/Scripts/app/GLOD_LibroObras.js"></script>
+
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>*@
+    @*<script src="~/Scripts/app/ASP_estados.js"></script>*@
+    @*<script src="~/Scripts/app/ASP_FiltroTree.js"></script>*@
+
+    <script type="text/javascript">
+
+        //var asp_estados;
+        //var asp_lobras;
+        var glod_administracion;
+        var glod_carpetas;
+        var glod_contratos;
+        var lod_cierrelibros;
+        var lod_liquidacioncontrato;
+        var glod_libroobras;
+        //var asp_bitacoras;
+        //var asp_filtro;
+
+            $(document).ready(function () {
+                $.validator.methods["date"] = function (value, element) { return true; }
+
+                $.validator.methods.number = function (value, element) {
+                    return this.optional(element) || /-?(?:\d+|\d{1,3}(?:[\s\.,]\d{3})+)(?:[\.,]\d+)?$/.test(value);
+                }
+
+                //asp_estados = new ASP_estados();
+                //asp_lobras = new ASP_lobras();
+                 glod_administracion = new GLOD_Administracion();
+                 glod_administracion.initTreeAdministracion("#treeView", '@ViewBag.Id', '@ViewBag.Tipo');
+
+                glod_contratos = new GLOD_contratos();
+
+                lod_cierrelibros = new LOD_CierreLibro();
+
+                glod_carpetas = new GLOD_carpetas();
+
+                glod_libroobras = new GLOD_LibroObras();
+
+                lod_liquidacioncontrato = new LOD_LiquidacionContrato();
+
+                //asp_bitacoras = new ASP_bitacoras();
+                //asp_filtro = new ASP_FiltroTree();
+
+            });
+    </script>
+
+}

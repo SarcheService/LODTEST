@@ -1,0 +1,250 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_RolesContrato>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th></th>
+            <th>
+                Nombre Rol
+            </th>
+            @*<th>
+                Libro Específico
+            </th>
+            <th>
+                Lectura Libro Específico
+            </th>
+            <th>
+                Escritura Libro Específico
+            </th>
+            <th>
+                Firma E. Avanzada Libro Específico
+            </th>
+            <th>
+                Firma Gob. Libro Específico
+            </th>
+            <th>
+                Firma E. Simple Libro Específico
+            </th>
+            <th>
+                Lectura Libro Obra
+            </th>
+            <th>
+                Escritura Libro Obra
+            </th>
+            <th>
+                Firma E. Avanzada Libro Obra
+            </th>
+            <th>
+                Firma Gob. Libro Obra
+            </th>
+            <th>
+                Firma E. Simple Libro Obra
+            </th>
+            <th>
+                Lectura Libro de Comunicación
+            </th>
+            <th>
+                Escritura Libro de Comunicación
+            </th>
+            <th>
+                Firma E. Avanzada Libro de Comunicación
+            </th>
+            <th>
+                Firma Gob. Libro de Comunicación
+            </th>
+            <th>
+                Firma E. Simple Libro de Comunicación
+            </th>
+            <th>
+                Lectura Libros de Comunicaciones
+            </th>
+            <th>
+                Escritura Libros de Comunicaciones
+            </th>
+            <th>
+                Firma E. Avanzada Libros de Comunicaciones
+            </th>
+            <th>
+                Firma Gob. Libros de Comunicaciones
+            </th>
+            <th>
+                Firma E. Simple Libros de Comunicaciones
+            </th>
+            <th>
+                Lectura Libros Complementarios
+            </th>
+            <th>
+                Escritura Libros Complementarios
+            </th>
+            <th>
+                Firma E. Avanzada Libros Complementarios
+            </th>
+            <th>
+                Firma Gob. Libro Libros Complementarios
+            </th>
+            <th>
+                Firma E. Simple Libro Libros Complementarios
+            </th>*@
+            <th>
+                Empresa Contratista
+            </th>
+            <th>
+                Empresa Gubernamental
+            </th>
+            <th>
+                Empresa Fiscalizadora
+            </th>
+            <th>
+                Rol Contratista
+            </th>
+            <th>
+                Rol Gubernamental
+            </th>
+            <th>
+                Rol Fiscalizadora
+            </th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.IdRolCtto)</td>
+                <td>
+                     @Html.DisplayFor(modelItem => item.NombreRol)
+                </td>
+                @*
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lectura)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Escritura)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaFea)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaGob)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaSimple)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lectura1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Escritura1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaFea1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaGob1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaSimple1)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lectura2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Escritura2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaFea2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaGob2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaSimple2)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lectura3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Escritura3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaFea3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaGob3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaSimple3)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Lectura4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Escritura4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaFea4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaGob4)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirmaSimple4)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.EsContratista)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EsGubernamental)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EsFiscalizador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RolContratista)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RolFiscalizador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RolGubernamental)
+                </td>
+                    @if (item.IdRolCtto != 2)
+                    {
+                        <td>
+                            <div class="btn-group btn-group-nobreak">
+                                @if (Html.ValidaPermisos("0010190002"))
+                                {
+                                    @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Editar"), "Edit", null, new { id = item.IdRolCtto },
+                                          new AjaxOptions
+                                          {
+                                              HttpMethod = "GET",
+                                              InsertionMode = InsertionMode.Replace,
+                                              UpdateTargetId = "modalCanvas",
+                                              OnSuccess = "mae_rolescontrato.InitModalEdit(data,status,xhr);"
+                                          }
+                                          , new { @class = "btn btn-warning btn-xs" })
+                                }
+
+                                @if (Html.ValidaPermisos("0010190003"))
+                                {
+                                    @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdRolCtto },
+                                          new AjaxOptions
+                                          {
+                                              HttpMethod = "GET",
+                                              InsertionMode = InsertionMode.Replace,
+                                              UpdateTargetId = "modalCanvas",
+                                              OnSuccess = "mae_rolescontrato.initModal(data,status,xhr);"
+                                          }
+                                          , new { @class = "btn btn-danger btn-xs" })}
+                                </div>
+
+                        </td>
+                }
+                else { 
+                    <td>-</td>
+                    }
+
+            </tr>}
+    </tbody>
+</table>

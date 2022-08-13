@@ -1,0 +1,63 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_LibroObras
+
+
+<div class="modal inmodal fade hmodal-success" id="modalContratos" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>Activar Libro</b></h4></center>
+            </div>
+            @using (Ajax.BeginForm("ActivarLibro", "LibroObras", new AjaxOptions()
+            {
+                HttpMethod = "POST",
+                OnSuccess = "glod_contratos.saveResultActivacion(data,status,xhr);"
+            }, new { name = "formAnticipo", id = "formAnticipo" }))
+            {
+                <div class="modal-body">
+                    <div class="form-horizontal">
+                        @Html.AntiForgeryToken()
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        @Html.HiddenFor(model => model.IdLod)
+
+                        @if (ViewBag.PermiteActivar)
+                        {
+                            <h4>¿Realmente desea Activar el Libro: @Model.NombreLibroObra?</h4><hr />
+                            <div class="form-group">
+                                <div class="col-sm-3"></div>
+                                <div class="col-sm-6">
+                                    <label class="control-label">Código Doble Verificación OTP</label>
+                                    <input type="text" name="otp" class="form-control" />
+                                </div>
+                                <div class="col-sm-3"></div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="btn-group pull-right">
+                                        <button id="btnSubmit" type="button" onclick="glod_contratos.LoadLadda();" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-check"></i> Si, Activar</button>
+                                        <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        else
+                        {
+                            <h4>Existen roles pendientes de asignación para el Libro: @Model.NombreLibroObra?</h4><hr /><div class="form-group">
+                                <div class="col-md-12">
+                                    <div class="btn-group pull-right">
+
+                                        <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+

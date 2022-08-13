@@ -1,0 +1,104 @@
+﻿@model IEnumerable<Galena.Areas.ASP.Models.ASP_aprobacionesEP>
+
+<div class="modal fade hmodal-info" id="modalEstado" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Registro Eventos EP</h4>
+                <small class="font-bold"></small>
+            </div>
+            <div class="modal-body">
+                <div class="form-horizontal">
+                    <div class="v-timeline vertical-container animate-panel" data-child="vertical-timeline-block" data-delay="1">
+                        @foreach (var item in Model.OrderByDescending(o=>o.FechaAprobacion))
+                        {
+                            <div class="vertical-timeline-block" style="">
+                                <div class="vertical-timeline-icon navy-bg">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                </div>
+                                <div class="vertical-timeline-content">
+                                    <div class="p-sm">
+                                        <span class="vertical-date pull-right">@item.FechaAprobacion.ToShortDateString()  <br> <small>@item.FechaAprobacion.ToShortTimeString()</small> </span>
+
+                                        @if (item.EstadoEP == 1)
+                                        {
+                                            <h2 class="text-big text-muted">Creación EP</h2>
+                                        }
+                                        else if (item.EstadoEP == 2)
+                                        {
+                                            <h2 class="text-big text-warning">Aceptado sólo EP</h2>
+                                        }
+                                        else if (item.EstadoEP == 3)
+                                        {
+                                            <h2 class="text-big text-warning">Documentos EP Aceptados</h2>
+                                        }
+                                        else if (item.EstadoEP == 4)
+                                        {
+                                            <h2 class="text-big text-success">EP Aceptado por ITO</h2>
+                                        }
+                                        else if (item.EstadoEP == 5)
+                                        {
+                                            <h2 class="text-big text-danger">EP Rechazado por ITO</h2>
+                                        }
+                                        else if (item.EstadoEP == 6)
+                                        {
+                                            <h2 class="text-big text-success">EP Aceptado por Jefe Depto</h2>
+                                        }
+                                        else if (item.EstadoEP == 7)
+                                        {
+                                            <h2 class="text-big text-danger">EP Rechazado por Jefe Depto</h2>
+                                        }
+                                        else if (item.EstadoEP == 8)
+                                        {
+                                            <h2 class="text-big text-success">EP Aceptado por Gerente Área</h2>
+                                        }
+                                        else if (item.EstadoEP == 9)
+                                        {
+                                            <h2 class="text-big text-danger">EP Rechazado por Gerente Área</h2>
+                                        }
+                                        else if (item.EstadoEP == 10)
+                                        {
+                                            <h2 class="text-big text-info">Ingreso N° HES</h2>
+                                        }
+                                        else if (item.EstadoEP == 90)
+                                        {
+                                            <h2 class="text-big text-info">Evaluación Generada</h2>
+                                        }
+                                        else if (item.EstadoEP == 91)
+                                        {
+                                            <h2 class="text-big text-success">Evaluación Realizada</h2>
+                                        }
+                                        else if (item.EstadoEP == 92)
+                                        {
+                                            <h2 class="text-big text-info">Ingreso Obs. Prev. Riesgos</h2>
+                                        }
+                                        else if (item.EstadoEP == 93)
+                                        {
+                                            <h2 class="text-big text-info">Ingreso Obs. Medio Ambiente</h2>
+                                        }
+                                        <p>
+                                            El usuario <strong>@item.NombreAprobador</strong> realizó esta acción en la fecha indicada.
+                                            @if (item.Mensaje != null)
+                                            {
+                                                <span>Adicionalmente dejó la siguiente observación:</span><br />
+                                                <span><strong><i>"@item.Mensaje"</i></strong></span>
+                                            }
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="btn-group pull-right">
+                                <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cerrar Ventana </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

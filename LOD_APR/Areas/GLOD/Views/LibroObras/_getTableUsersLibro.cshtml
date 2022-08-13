@@ -1,0 +1,30 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_UsuariosLod>
+
+
+<table class="table table-condensed table-hover" id="tablaUsers" name="tablaUsers">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Rol</th>
+            <th>Estado</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Distinct())
+        {
+
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.ApplicationUser.NombreCompleto)</td>
+                <td>@Html.DisplayFor(modelItem => item.LOD_RolesCttosContrato.MAE_RolesContrato.NombreRol)</td>
+                @if (item.Activo)
+                {
+                    
+                <td><center><i class="fa fa-circle text-success" data-toggle="tooltip" data-placement="bottom" title="Activo"></i></center></td>
+                }
+                else {
+                    <td><center><i class="fa fa-circle text-danger" data-toggle="tooltip" data-placement="bottom" title="Inactivo"></i></center></td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

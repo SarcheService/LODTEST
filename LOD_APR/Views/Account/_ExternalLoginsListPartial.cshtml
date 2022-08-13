@@ -1,0 +1,33 @@
+﻿@model  LOD_APR.Models.ExternalLoginListViewModel
+@using Microsoft.Owin.Security
+
+@{
+    var loginProviders = Context.GetOwinContext().Authentication.GetExternalAuthenticationTypes();
+    if (loginProviders.Count() == 0) {
+        
+    }
+    else {
+        using (Html.BeginForm("ExternalLogin", "Account", new { ReturnUrl = Model.ReturnUrl })) {
+            @Html.AntiForgeryToken();
+            <div id="socialLoginList">
+                <p>
+                    @foreach (AuthenticationDescription p in loginProviders)
+                    {
+
+                        if (@p.AuthenticationType.Equals("Federation"))
+                        {
+                    <div class="form-group">
+                        @*@Html.LabelFor(m => m.RutUsuario, new { @class = "control-label" })
+                        @Html.TextBoxFor(m => m.RutUsuario, new { @class = "form-control", @placeholder = "Ejemplo: 11222333-4" })
+                        @Html.ValidationMessageFor(m => m.RutUsuario, "", new { @class = "text-danger" })*@
+                    </div>
+                            <button type="submit" class="btn btn-success btn-block" id="@p.AuthenticationType" 
+                                    name="provider" value="@p.AuthenticationType" title="Inicie sesión con su cuenta @p.Caption">Usuario Aguas</button>
+
+                        }
+                    }
+                </p>
+            </div>
+        }
+    }
+}

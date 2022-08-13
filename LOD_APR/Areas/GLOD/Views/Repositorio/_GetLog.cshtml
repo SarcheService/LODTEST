@@ -1,0 +1,105 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.ModelsViews.ItemSeguimiento>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+                Tipo de Comunicación
+            </th>
+            <th>
+                Subtipo de Comunicación
+            </th>
+            <th>
+                Clasificación documento
+            </th>
+            <th>
+                Subclasificación documento
+            </th>
+
+            <th>
+                Tipo Documento
+            </th>
+            <th>
+                Nombre documento
+            </th>
+            <th>
+                Fecha Creación
+            </th>
+
+            @*<th>Acciones</th>*@
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                    <td rowspan="@Model.Where(x => x.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom == item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom).Count()">
+                        @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)
+                    </td>
+               
+
+
+
+                    <td rowspan="@Model.Where(x => x.mAE_CodSubCom.IdTipoSub == item.mAE_CodSubCom.IdTipoSub).Count()">
+                        @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.Nombre)
+                    </td>
+              
+
+
+                @if (item.mAE_ClassDoc != null)
+                {
+                    <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.MAE_ClassOne.Nombre)</td>
+                        <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.Nombre)</td>
+
+                }
+                else
+                {
+                    <td>-</td>
+                    <td>-</td>
+                }
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_TipoDocumento.Tipo)
+                </td>
+
+                @if (item.lOD_DocAnotacion != null)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.lOD_DocAnotacion.MAE_documentos.NombreDoc)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.lOD_DocAnotacion.MAE_documentos.FechaCreacion)
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        -
+                    </td>
+                }
+
+                <td>
+                    <div class="btn-group-nobreak">
+                        @{ string ruta = "";
+                            if (item.lOD_DocAnotacion != null)
+                            {
+                                ruta = "/../../Files/Personal/" + item.lOD_DocAnotacion.MAE_documentos.fileName;
+                            }
+                        }
+                        @*<center>
+                                <a href='@ruta' class="btn btn-default btn-sm"><i class="fa fa-cloud-download"></i> Descargar</a>
+                            </center>*@
+
+                    </div>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

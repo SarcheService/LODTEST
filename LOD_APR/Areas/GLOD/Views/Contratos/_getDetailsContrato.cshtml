@@ -1,0 +1,237 @@
+﻿@model LOD_APR.Areas.GLOD.Models.CON_Contratos
+
+    <div class="row">
+        <div class="col-lg-12 col-xs-12" style="text-align:center;">
+          
+
+                <div class="btn-group pull-right">
+
+                    @if (ViewBag.EsInspectorFiscal && Model.EstadoContrato != 3)
+                    {
+                        @Ajax.RawActionLink(string.Format("<i class='fa fa-lock' aria-hidden='true'></i> Líquidar Contrato"), "LiquidacionContrato", "Contratos",
+                        new { IdContrato = Model.IdContrato },
+                        new AjaxOptions
+                        {
+                            HttpMethod = "GET",
+                            InsertionMode = InsertionMode.Replace,
+                            UpdateTargetId = "modalCanvas",
+                            OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);"
+                        }
+                        , new { @class = "btn btn-sm btn-info btn-outline", @id = "BtnLiquidarContrato" })
+                    }
+
+                    @if ((ViewBag.EsInspectorFiscal || Model.UserId == ViewBag.UsuarioActual) && Html.ValidaPermisos("0020000002") && Model.EstadoContrato != 3)
+                    {
+                        @Ajax.RawActionLink(string.Format("Editar"), "Edit", "Contratos", new { id = Model.IdContrato },
+                          new AjaxOptions
+                          {
+                              HttpMethod = "GET",
+                              InsertionMode = InsertionMode.Replace,
+                              UpdateTargetId = "modalCanvas",
+                              OnSuccess = "glod_contratos.initModal(data,status,xhr);"
+                          }
+                          , new { @class = "btn btn-sm btn-warning2 btn-outline", @id = "BtnEditarContrato" })
+                    }
+
+                    @if ((ViewBag.EsInspectorFiscal || Model.UserId == ViewBag.UsuarioActual) && Html.ValidaPermisos("0020000003") && Model.EstadoContrato != 3)
+                    {
+                        @Ajax.RawActionLink(string.Format("Eliminar"), "Delete", "Contratos", new { id = Model.IdContrato },
+                         new AjaxOptions
+                         {
+                             HttpMethod = "GET",
+                             InsertionMode = InsertionMode.Replace,
+                             UpdateTargetId = "modalCanvas",
+                             OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);"
+                         }
+                      , new { @class = "btn btn-sm btn-danger2 btn-outline", @id = "BtnEliminarContrato" })
+                    }
+                </div>
+           
+        </div>
+        <div class="col-lg-1 col-xs-3">
+            <h4 class="text-center text-primary"><i class="fa fa-file-text-o fa-2x" style="margin-left:12px" aria-hidden="true"></i></h4>
+        </div>
+        @*Arreglo Jt 25/01/2018 Ajuste en el tamaño de las columnas para que los botones esten alineados*@
+        <div class="col-lg-11 col-xs-9">
+            <h3 class="text-primary" style="margin-top:16px">&nbsp;&nbsp;<b>@Model.CodigoContrato - @Model.NombreContrato</b></h3>
+        </div>
+     
+
+        </div>
+
+        <div class="row">
+            <div class="panel">
+                <div class="tabs-container">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#tab-1"> <h6>Datos Generales</h6> </a></li>
+                        <li><a data-toggle="tab" href="#tab-2"> <h6>Roles</h6></a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane active">
+                            <div class="col-xs-12">
+                                <div class="col-lg-3 col-xs-12">
+                                    <div>
+                                        @if (Model.RutaImagenContrato != null)
+                                        {<br />
+                                                 <center>
+                                                      <img alt="foto proyecto" class="img-thumbnail" src="@Url.Content(Model.RutaImagenContrato)?@DateTime.Now.Ticks.ToString()" />
+                                                 </center>
+                                         }
+                                          else
+                                          { <br />
+                                            <center>
+                                                <h2 class="text-center text-primary"><i class="fa fa-file-text-o  fa-3x" aria-hidden="true"></i></h2>
+                                            </center>
+                                          }
+                                    </div>
+                                </div>
+                                <div class="col-lg-9 col-xs-12 border-left no-padding">
+                                    <table class="table table-condensed table-striped">
+                                        <tr>
+                                            <th style="border-top:none">Estado</th>
+                                            <td style="border-top:none">
+                                                @switch (Model.EstadoContrato)
+                                                {
+                                                    case 1:
+                                                        <label class="label label-success">Activo</label> break;
+                                                    case 2:
+                                                        <label class="label label-warning">Cierre Anticipado</label>break;
+                                                    case 3:
+                                                        <label class="label label-info">Liquidado</label>break;
+                                                }
+                                            </td>
+                                            <th>Monto Inicial</th>
+                                            <td>
+                                                @if (Model.MontoInicialContrato != null)
+                                                {
+                                                    <span>@Model.MontoInicialContrato.Value.ToString("C0")</span>}
+                                                else
+                                                {
+                                                    <span>-</span>}
+                                            </td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <th>Código</th>
+                                            <td>@Html.DisplayFor(model => model.CodigoContrato, new { htmlAttributes = new { @class = "form-label" } })</td>
+                                            <th>Nombre</th>
+                                            <td>@Html.DisplayFor(model => model.NombreContrato, new { htmlAttributes = new { @class = "form-label" } })</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Creado por</th>
+                                            <td>@Model.Creador</td>
+                                            <th>Creado el</th>
+                                            <td>@Model.FechaCreacionContrato.Value.ToShortDateString()</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Inicia el</th>
+                                            <td>
+                                                @if (Model.FechaInicioContrato != null)
+                                                {
+                                                    <span>@Convert.ToDateTime(Model.FechaInicioContrato).ToShortDateString()</span> }
+                                                else
+                                                {
+                                                    <span>-</span>}
+                                            </td>
+                                            <th style="border-top:none">Plazo (días)</th>
+                                            <td style="border-top:none">
+                                                @if (Model.PlazoInicialContrato != null)
+                                                {
+                                                    <span>@Model.PlazoInicialContrato</span>}
+                                                else
+                                                {
+                                                    <span>-</span>}
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <th>Descripción</th>
+                                            <td colspan="3"><span>@Model.DescripcionContrato</span></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Dirección MOP</th>
+                                            @if (Model.IdDireccionContrato != null)
+                                            {
+                                                <td colspan="3"><span>@Model.MAE_Sucursal.Sucursal</span></td>
+                                            }
+                                            else { 
+                                                <td colspan="3"><span> - </span></td>
+                                            }
+                                        </tr>
+                                        <tr>
+                                            <th>Contratista</th>
+                                            @if (Model.IdEmpresaContratista != null && Model.IdEmpresaContratista != 0)
+                                            {
+                                                <td colspan="3"><span>@Model.Empresa_Contratista.RazonSocial</span></td>
+                                            }
+                                            else { 
+                                                <td colspan="3"><span> - </span></td>
+                                            }
+                                        </tr>
+                                        <tr>
+                                            <th>Empresa Fiscalizadora</th>
+                                            @if (Model.IdEmpresaFiscalizadora != null && Model.IdEmpresaFiscalizadora != 0)
+                                            {
+                                                <td colspan="3"><span>@Model.Empresa_Fiscalizadora.RazonSocial</span></td>
+                                            }
+                                            else
+                                            {
+                                                <td colspan="3"><span> - </span></td>
+                                            }
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xs-12" style="text-align:center;">
+                                <hr />
+                                
+                                    @if (Html.ValidaPermisos("0020080000"))
+                                    {
+                                        <a href="@Url.Action("IndexEjecutivo", "FormInformes", new { area = "GLOD", id = @Model.IdContrato })" role="button" class="btn btn-default btn-outline"><i class="text-info fa fa-file-text-o fa-3x "></i><br /> Informes Ejecutivos</a>}
+
+                                    @if (Html.ValidaPermisos("0020080000"))
+                                    {
+                                        <a href="@Url.Action("IndexIncidentes", "FormInformes", new { area = "GLOD", id = @Model.IdContrato })" class="btn btn-default btn-outline"><i class="text-danger fa fa-medkit fa-3x"></i><br /> Informes Incidente</a>}
+                                    @if (Html.ValidaPermisos("0020050000"))
+                                    {
+                                        <a href="@Url.Action("SeguimientoContrato", "RepContrato", new { area = "GLOD", id = @Model.IdContrato })" class="btn btn-default btn-outline"><i class="text-yellow fa fa-archive fa-3x"></i><br /> Seguimiento Documentos</a>}
+                                    @if (Html.ValidaPermisos("0020070000"))
+                                    {
+                                        <a href="@Url.Action("Index", "Log", new { area = "GLOD", Id = @Model.IdContrato })" class="btn btn-default btn-outline"><i class="text-success2 fa fa-table fa-3x"></i><br /> Log Contrato</a>}
+
+                            </div>
+                        </div>                                   
+                                 
+                        <div id="tab-2" class="tab-pane">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="hpanel panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                        <div class="panel-body" style="overflow:auto">
+                                            <h4 class="m-t-none m-b-none">
+                                                Profesionales asociados a Roles del contrato
+                                               @if(Html.ValidaPermisos("0020000002") && Model.EstadoContrato != 3) {
+                                                    @Ajax.RawActionLink(string.Format("<i class='fa fa-user' aria-hidden='true'></i> Crear Nuevo Rol"), "CreateNuevoRol", "Contratos",
+                                                           new { id = Model.IdContrato },
+                                                           new AjaxOptions
+                                                           {
+                                                               HttpMethod = "GET",
+                                                               InsertionMode = InsertionMode.Replace,
+                                                               UpdateTargetId = "modalCanvas",
+                                                               OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);"
+                                                           }
+                                                           , new { @class = "btn btn-xs btn-success pull-right", @id = "BtnEditarContrato" })
+                                                }
+                                            </h4>
+                                            <br />
+                                            <div class="" id="divTableRoles">
+                                                @Html.Partial("_getTableRolesContrato", Model.Roles)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

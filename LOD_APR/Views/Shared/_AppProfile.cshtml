@@ -1,0 +1,27 @@
+﻿<div class="profile-picture border-bottom">
+    <a @*href="@Url.Action("Index", "Dashboard")"*@>
+        @{ string RutaImg = Convert.ToString(@Session["RutaImgUser"]);}
+
+        @if (!String.IsNullOrEmpty(RutaImg))
+        {
+            <img src="@Session["RutaImgUser"]" class="img-circle m-b img-profile-blue" alt="logo">
+        }
+        else
+        {
+            <h2  data-letters="@Html.ImageLetter(Convert.ToString(Session["NombreUser"]),Convert.ToString(Session["ApellidosUser"]))" data-toggle="tooltip" class="m-b-sm data-letters-orange" style=""></h2>
+        }
+
+    </a>
+    <div class="stats-label text-color">
+        <span class="font-extra-bold font-uppercase">@Session["NombreUser"]</span>
+
+        <div class="dropdown" id="divPerfil">
+       
+            <small class="text-muted">@Session["CargoUser"] </small>
+            <br />
+            <small class="text-muted">@Session["EmpresaUser"] </small>
+            <session-timer></session-timer>
+        </div>
+       
+    </div>
+</div>

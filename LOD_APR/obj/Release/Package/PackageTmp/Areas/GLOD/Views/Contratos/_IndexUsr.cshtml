@@ -1,0 +1,258 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_LibroObras
+    <div class="tab-content">
+      
+        @{var itemCount = 0; }
+
+        <div id="tab-1" class="tab-pane active">
+            <div class="content">
+                @if (Model.Libros.Count() != 0)
+                {
+                    foreach (var item in Model.Libros)
+                    {
+
+                        itemCount++;
+                        if (itemCount % 4 == 1)
+                        {
+                            @Html.Raw("<div class='row'>")
+                        }
+                        <a href="@Url.Action("Index","LibroObras",new {id= item.IdLibroObra})">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="panel hpanel" style="border-top:2px solid #f8ac59;
+                                                                                         color: #f8ac59;">
+                                    <div class="panel-body" style="background: #fff;
+                                                                                           border: 1px solid #e4e5e7;
+                                                                                           border-radius: 2px;
+                                                                                           padding: 20px;
+                                                                                           color:#f8ac59;
+                                                                                           position: relative;">
+
+
+                                        @if (item.RutaImagenLObras != null)
+                                        {
+
+                                            <center><img style="border:#f8ac59 2px solid;width:242.55px;height:159.48px;" alt="logo" class="img-thumbnail" src="@Url.Content(item.RutaImagenLObras)"></center>
+                                        }
+                                        else
+                                        {
+
+                                            <div style="border:2px solid;">
+                                                <Center style="margin-top:20%;margin-bottom:20%"><span class="fa fa-book fa-3x" style="display:table-cell;"></span></Center>
+                                            </div>
+                                        }
+                                        @if (@item.NomLibroObra.Length > 12)
+                                        {
+                                            <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                <h6 class="m-b-xs h3-equal-height">@item.NomLibroObra</h6>
+                                                <div class="text-muted font-bold m-b-xs"></div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                <h3 class="m-b-xs h3-equal-height">@item.NomLibroObra</h3>
+                                                <div class="text-muted font-bold m-b-xs"></div>
+                                            </div>
+                                        }
+
+
+                                        <div class="text-left m-t-md">
+                                            <table class="table small m-b-xs">
+
+                                                <tbody>
+                                                    <tr>
+
+                                                        @if (@item.CodigoLObras != null)
+                                                        {
+                                                            <td>
+                                                                <strong>Código LOD</strong>
+                                                            </td>
+
+                                                            <td style="padding:0;
+                                                                                                        word-break: break-all;
+                                                                                                        padding-top:8px;">
+                                                                @item.CodigoLObras
+                                                            </td>
+                                                        }
+
+
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Contrato</strong>
+                                                        </td>
+
+                                                        <td style="padding:0;
+                                                                                                                                word-break: break-all;
+                                                                                                                                padding-top:8px;">
+
+                                                            @item.ASP_contratos.CodigoContrato
+                                                        </td>
+
+                                                    </tr>
+
+                                                    <tr>
+
+                                                        @if (@item.ASP_contratos.ASP_obras != null)
+                                                        {
+                                                            <td>
+                                                                <strong>Obra</strong>
+                                                            </td>
+
+                                                            <td style="padding:0;
+                                                                                                        word-break: break-all;
+                                                                                                        padding-top:8px;">
+                                                                @item.ASP_contratos.ASP_obras.NombreObra
+                                                            </td>
+                                                        }
+
+
+                                                    </tr>
+
+                                                </tbody>
+
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </a>
+
+                        if (itemCount % 4 == 0 || itemCount == Model.Libros.Count())
+                        {
+                            @Html.Raw("</div>")
+                        }
+
+                    }
+                }
+                else
+                {
+                    <br />
+                    <div class="text-center m-b-md">
+                        <i class="fa fa-book m-b-md" style="font-size: 128px;"></i>
+                        <h3>No tiene acceso a ningun Libro de Obras.</h3>
+                    </div>
+                }
+
+            </div>
+        </div>
+
+        <div id="tab-2" class="tab-pane">
+            <div class="content">
+
+                @{itemCount = 0; }
+
+                @if (Model.Bitacoras.Count() != 0)
+                {
+                    foreach (var item in Model.Bitacoras)
+                    {
+                        itemCount++;
+                        if (itemCount % 4 == 1)
+                        {
+                            @Html.Raw("<div class='row'>")
+                        }
+
+                        <a href="@Url.Action("Index","Bitacoras",new{id = item.IdBitacora})">
+                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                <div class="panel hpanel" style="border-top: 2px solid #23c6c8;
+                                                                                         color: #23c6c8;">
+                                    <div class="panel-body" style="background: #fff;
+                                                                                            border: 1px solid #e4e5e7;
+                                                                                            border-radius: 2px;
+                                                                                            padding: 20px;
+                                                                                            color:#23c6c8;
+                                                                                            position: relative;">
+                                        @if (item.RutaImagenBitacora != null)
+                                        {
+                                            <center><img alt="logo" style="border:#23c6c8 2px solid;width:242.55px;height:159.48px;" class="img-thumbnail" src="@Url.Content(item.RutaImagenBitacora)"></center>
+                                        }
+                                        else
+                                        {
+                                            <Center>
+                                                <div style="border:#23c6c8 2px solid;">
+                                                    <Center style="margin-top:20%;margin-bottom:20%"><span class="fa fa-briefcase fa-3x" style="display:table-cell;"></span></Center>
+                                                </div>
+                                            </Center>
+                                        }
+
+                                        @if (item.NombreBitacora.Length > 12)
+                                        {
+                                            <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                <h6 class="m-b-xs h3-equal-height">@item.NombreBitacora</h6>
+                                                <div class="text-muted font-bold m-b-xs"></div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                <h3 class="m-b-xs h3-equal-height">@item.NombreBitacora</h3>
+                                                <div class="text-muted font-bold m-b-xs"></div>
+                                            </div>
+                                        }
+                                        <div class="text-left m-t-md ">
+                                            <table class="table small m-b-xs">
+                                                <tbody>
+                                                    <tr>
+                                                        @if (@item.CodigoBitacora != null)
+                                                        {
+                                                            <td>
+                                                                <strong>Código BOD</strong>
+                                                            </td>
+
+                                                            <td style="padding:0;
+                                                                                                        word-break: break-all;
+                                                                                                        padding-top:8px;">
+                                                                @item.CodigoBitacora
+                                                            </td>
+                                                        }
+                                                    </tr>
+                                                    <tr>
+                                                        @if (item.ASP_proyectos != null)
+                                                        {
+                                                            <td>
+                                                                <strong>Proyecto</strong>
+                                                            </td>
+                                                            <td style="padding:0;
+                                                                                                word-break: break-all;
+                                                                                                padding-top:8px;">
+                                                                @item.ASP_proyectos.NombreProyecto
+                                                            </td>
+                                                        }
+                                                    </tr>
+                                                    <tr>
+                                                        @if (item.ASP_Obras != null)
+                                                        {
+                                                            <td>
+                                                                <strong>Obra</strong>
+                                                            </td>
+                                                            <td style="padding:0;
+                                                                                            word-break: break-all;
+                                                                                                padding-top:8px;">
+                                                                @item.ASP_Obras.NombreObra
+                                                            </td>
+                                                        }
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        if (itemCount % 4 == 0 || itemCount == Model.Bitacoras.Count())
+                        {
+                            @Html.Raw("</div>")
+                        }
+                    }
+                }
+                else
+                {
+                    <br />
+                    <div class="text-center m-b-md">
+                        <i class="fa fa-book m-b-md" style="font-size: 128px;"></i>
+                        <h3>No tiene acceso a ninguna Bitácora.</h3>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,144 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_ConfigEmail
+@{
+    ViewBag.Title = "Edit2";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="index.html">Administración</a></li>
+                    <li>
+                        <span>Configuracion</span>
+                    </li>
+                    <li class="active">
+                        <span>Configuracion Emails</span>
+                    </li>
+                </ol>
+            </div>
+            
+            <small>Configure los datos del email.</small>
+        
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+
+    <div class="hpanel">
+
+        <div class="panel-body">
+            @using (Html.BeginForm("EditCorreo", "Empresas", FormMethod.Post, new { }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                @Html.HiddenFor(model => model.IdConfig)
+                <div class="row">
+                    <div class="col-md-10">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <label class="font-normal">Servidor</label>
+                                    @Html.EditorFor(model => model.UriServer, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.UriServer, "", new { @class = "text-danger" })
+                                </div>
+
+                                <div class="col-md-5">
+                                    <label class="font-normal">Protocolo Servidor</label>
+                                    @Html.DropDownList("IdTCMail", null, htmlAttributes: new { @class = "form-control" })
+                                    @Html.ValidationMessageFor(model => model.IdTCMail, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <label class="font-normal">E-mail</label>
+                                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="col-md-5">
+                                    <label class="font-normal">E-mail Password</label>
+                                    <div class="input-group">
+                                        @Html.EditorFor(model => model.PassEmail, new { htmlAttributes = new { @class = "form-control" } })
+                                        <span class="input-group-addon viewPass"><i class="fa fa-eye"></i></span>
+                                    </div>
+                                    @Html.ValidationMessageFor(model => model.PassEmail, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label class="font-normal">P. Salida</label>
+                                    @Html.EditorFor(model => model.PuertoSalida, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.PuertoSalida, "", new { @class = "text-danger" })
+                                </div>
+                                <div class="col-md-3">
+                                    <br>
+                                    <div class="checkbox i-checks">
+                                        <label>
+                                            @Html.EditorFor(model => model.IsSSL, new { @class = "i-checks" })
+                                            @Html.ValidationMessageFor(model => model.IsSSL, "", new { @class = "text-danger" }) Activar SSL
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        @Html.Hidden("tab", "2")
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                @if (Html.ValidaPermisos("00101212"))
+                                {
+                                    <input type="submit" value="Guardar" class="btn btn-primary pull-right" />
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            }
+        </div>
+
+    </div>
+</div>
+
+
+
+@section Styles {
+    @Styles.Render("~/bundles/datepicker/css")
+    @Styles.Render("~/bundles/ladda/css")
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/datepicker/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/MAE_Empresas")
+
+    <script type="text/javascript">
+
+        var mae_empresas;
+
+        $(document).ready(function () {
+
+            mae_empresas = new MAE_Empresas();
+
+
+        });
+
+
+    </script>
+
+}

@@ -1,0 +1,36 @@
+﻿@model LOD_APR.Areas.Admin.Models.FORM_Formularios
+
+<div class="modal fade hmodal-danger" id="modalFormEval" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Desactivar Formulario</h4>
+            </div>
+            <div class="modal-body">
+                @using (Ajax.BeginForm("Desactivar", "Formularios", new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "form_formulario.SaveResultActivate(data,status,xhr);",
+                    OnBegin = "form_formulario.OnBeginActivate();"
+                }, new { name = "formActivateFormEval", id = "formActivateFormEval" }))
+                {
+                    <div class="form-horizontal">
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.IdForm)
+                        <h4>¿Realmente desea desactivar este Formulario?</h4>
+                        <h5>Recuerde que no se podrán utilizar mientras esté desactivada.</h5>
+                        <div class="form-group m-t-xl">
+                            <div class="col-xs-12">
+                                <div class="btn-group pull-right">
+                                    <button id="BtnSubmitActivate" type="submit" class="btn btn-danger"><i class="fa fa-check"></i> Sí, desactivar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

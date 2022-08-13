@@ -1,0 +1,1247 @@
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x64\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x86\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\LOD_APR.dll.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csi.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csi.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csi.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.Managed.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.AppContext.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Collections.Immutable.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Console.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.Compression.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.FileSystem.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.Pipes.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Reflection.Metadata.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Claims.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Principal.Windows.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.ValueTuple.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.XmlDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.XPath.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\vbc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\vbc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\vbc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\VBCSCompiler.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\VBCSCompiler.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Antlr3.Runtime.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\BouncyCastle.Crypto.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ClosedXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\DocumentFormat.OpenXml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.SqlServer.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ExcelNumberFormat.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\itextsharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\LinqKit.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\MessagingToolkit.QRCode.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Core.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Logging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Xml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Cookies.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Facebook.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Google.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.OAuth.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Twitter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.Common.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.Design.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.WebForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.SqlServer.Types.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Web.Infrastructure.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Newtonsoft.Json.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Diagnostics.DiagnosticSource.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.IO.Packaging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Net.Http.Formatting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Helpers.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Mvc.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Optimization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Deployment.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\WebGrease.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\EnvDTE.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.WinForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\stdole.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.MSXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ClosedXML.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ClosedXML.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\DocumentFormat.OpenXml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.SqlServer.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ExcelNumberFormat.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\itextsharp.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\LinqKit.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Logging.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Xml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Xml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Net.Http.Formatting.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Helpers.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Mvc.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Optimization.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Deployment.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Newtonsoft.Json.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Antlr3.Runtime.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Core.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Facebook.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Cookies.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Google.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Twitter.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.OAuth.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\System.Diagnostics.DiagnosticSource.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\EntityFramework.SqlServer.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.Owin.Security.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Helpers.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Mvc.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Optimization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.WebPages.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.csprojAssemblyReference.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.Properties.Resources.resources
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.csproj.GenerateResource.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\RdlCompile.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\RdlCompile.compiled
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.csproj.CoreCompileInputs.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.csproj.CopyComplete
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 18-11-2021\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x64\msvcr120.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x86\msvcr120.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\LOD_APR.dll.config
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\LOD_APR.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\LOD_APR.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csc.exe
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csc.exe.config
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csc.rsp
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csi.exe
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csi.exe.config
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\csi.rsp
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.AppContext.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Collections.Immutable.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Console.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.Compression.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.FileSystem.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.IO.Pipes.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Reflection.Metadata.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.AccessControl.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Claims.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.ValueTuple.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.XPath.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\vbc.exe
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\vbc.exe.config
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\vbc.rsp
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\VBCSCompiler.exe
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\roslyn\VBCSCompiler.exe.config
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Antlr3.Runtime.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\BouncyCastle.Crypto.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ClosedXML.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\DocumentFormat.OpenXml.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.SqlServer.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ExcelNumberFormat.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\itextsharp.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\LinqKit.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\MessagingToolkit.QRCode.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Logging.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Xml.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Google.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.Common.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.Design.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.SqlServer.Types.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Web.Infrastructure.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Newtonsoft.Json.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Owin.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.IO.FileSystem.Primitives.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.IO.Packaging.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Net.Http.Formatting.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.Algorithms.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.Encoding.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.Primitives.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Security.Cryptography.X509Certificates.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Helpers.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Mvc.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Optimization.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Razor.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Deployment.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Razor.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\WebGrease.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\EnvDTE.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\stdole.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.MSXML.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ClosedXML.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ClosedXML.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\DocumentFormat.OpenXml.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\EntityFramework.SqlServer.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ExcelNumberFormat.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\itextsharp.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\LinqKit.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Logging.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Xml.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.IdentityModel.Xml.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Net.Http.Formatting.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Helpers.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Mvc.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Optimization.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.Razor.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Deployment.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Web.WebPages.Razor.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Newtonsoft.Json.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Antlr3.Runtime.pdb
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Google.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\EntityFramework.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\EntityFramework.SqlServer.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.Owin.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.Owin.Security.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Helpers.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Mvc.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Optimization.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.Razor.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.WebPages.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.csproj.AssemblyReference.cache
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.Properties.Resources.resources
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.csproj.GenerateResource.cache
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.csproj.CoreCompileInputs.cache
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.dll
+D:\Sistemas\Aguas Nuevas\LOD_APR 2021-11-06\LOD_APR\obj\Release\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\SqlServerTypes\x64\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\SqlServerTypes\x86\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\LOD_APR.dll.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\csc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\csc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\csc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\csi.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\csi.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\csi.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.Managed.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.AppContext.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Collections.Immutable.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Console.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.IO.Compression.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.IO.FileSystem.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.IO.Pipes.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Reflection.Metadata.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Security.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Security.Claims.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Security.Principal.Windows.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.ValueTuple.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XmlDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XPath.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\vbc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\vbc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\vbc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\VBCSCompiler.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\roslyn\VBCSCompiler.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Antlr3.Runtime.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\BouncyCastle.Crypto.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ClosedXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\DocumentFormat.OpenXml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\EntityFramework.SqlServer.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ExcelNumberFormat.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\itextsharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\LinqKit.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\MessagingToolkit.QRCode.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Core.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Logging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Cookies.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Facebook.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Google.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.OAuth.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Twitter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.Common.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.Design.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WebForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.SqlServer.Types.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Web.Infrastructure.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Newtonsoft.Json.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Diagnostics.DiagnosticSource.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.IO.Packaging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Net.Http.Formatting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Helpers.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Mvc.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Optimization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.WebPages.Deployment.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.WebPages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.WebPages.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\WebGrease.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\EnvDTE.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WinForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\stdole.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.MSXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ClosedXML.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ClosedXML.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\DocumentFormat.OpenXml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\EntityFramework.SqlServer.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ExcelNumberFormat.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\itextsharp.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\LinqKit.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Logging.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Net.Http.Formatting.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Helpers.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Mvc.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Optimization.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.WebPages.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.WebPages.Deployment.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Web.WebPages.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Newtonsoft.Json.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Antlr3.Runtime.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Core.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Facebook.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Cookies.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Google.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Twitter.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.OAuth.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\System.Diagnostics.DiagnosticSource.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\EntityFramework.SqlServer.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.Owin.Security.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\System.Web.Helpers.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\System.Web.Mvc.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\System.Web.Optimization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\System.Web.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\LOD_APR.csprojAssemblyReference.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\LOD_APR.Properties.Resources.resources
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.GenerateResource.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\RdlCompile.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\RdlCompile.compiled
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.CoreCompileInputs.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.CopyComplete
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 24-11-2021\23-11-2021 - CL\LOD_APR\obj\Release\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x64\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x86\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\LOD_APR.dll.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\csc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\csc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\csc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\csi.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\csi.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\csi.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.Managed.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.AppContext.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Collections.Immutable.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Console.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.Compression.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.FileSystem.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.Pipes.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Reflection.Metadata.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Claims.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Principal.Windows.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.ValueTuple.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XmlDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XPath.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\vbc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\vbc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\vbc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\VBCSCompiler.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\roslyn\VBCSCompiler.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Antlr3.Runtime.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\BouncyCastle.Crypto.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ClosedXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\DocumentFormat.OpenXml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\EntityFramework.SqlServer.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ExcelNumberFormat.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\itextsharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\LinqKit.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\MessagingToolkit.QRCode.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Core.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Logging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Cookies.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Facebook.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Google.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.OAuth.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Twitter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.Common.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.Design.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WebForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.SqlServer.Types.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Web.Infrastructure.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Newtonsoft.Json.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Diagnostics.DiagnosticSource.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.IO.Packaging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Net.Http.Formatting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Helpers.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Mvc.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Optimization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Deployment.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\WebGrease.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\EnvDTE.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WinForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\stdole.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.MSXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ClosedXML.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ClosedXML.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\DocumentFormat.OpenXml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\EntityFramework.SqlServer.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ExcelNumberFormat.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\itextsharp.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\LinqKit.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Logging.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Net.Http.Formatting.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Helpers.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Mvc.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Optimization.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Deployment.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Newtonsoft.Json.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Antlr3.Runtime.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Core.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Facebook.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Cookies.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Google.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Twitter.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.OAuth.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\System.Diagnostics.DiagnosticSource.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\EntityFramework.SqlServer.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.Owin.Security.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\System.Web.Helpers.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\System.Web.Mvc.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\System.Web.Optimization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\System.Web.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csprojAssemblyReference.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.Properties.Resources.resources
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.GenerateResource.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\RdlCompile.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\RdlCompile.compiled
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.CoreCompileInputs.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.CopyComplete
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-16\16-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x64\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x86\msvcr120.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\LOD_APR.dll.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\csc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\csc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\csc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\csi.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\csi.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\csi.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.Managed.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.AppContext.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Collections.Immutable.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Console.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.Compression.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.FileSystem.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.IO.Pipes.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Reflection.Metadata.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.AccessControl.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Claims.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Security.Principal.Windows.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.ValueTuple.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XmlDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XPath.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\vbc.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\vbc.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\vbc.rsp
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\VBCSCompiler.exe
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\roslyn\VBCSCompiler.exe.config
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Antlr3.Runtime.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\BouncyCastle.Crypto.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ClosedXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\DocumentFormat.OpenXml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\EntityFramework.SqlServer.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ExcelNumberFormat.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\itextsharp.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\LinqKit.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\MessagingToolkit.QRCode.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Core.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Logging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Cookies.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Facebook.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Google.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.OAuth.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Twitter.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.Common.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.Design.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WebForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.SqlServer.Types.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Web.Infrastructure.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Newtonsoft.Json.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Owin.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Diagnostics.DiagnosticSource.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.IO.FileSystem.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.IO.Packaging.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Net.Http.Formatting.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Algorithms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Encoding.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.Primitives.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Security.Cryptography.X509Certificates.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Helpers.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Mvc.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Optimization.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Deployment.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Razor.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\WebGrease.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\EnvDTE.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.ReportViewer.WinForms.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\stdole.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.MSXML.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ClosedXML.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ClosedXML.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\DocumentFormat.OpenXml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\EntityFramework.SqlServer.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ExcelNumberFormat.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\itextsharp.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\LinqKit.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Logging.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.IdentityModel.Xml.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Net.Http.Formatting.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Helpers.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Mvc.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Optimization.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Deployment.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Web.WebPages.Razor.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Newtonsoft.Json.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Antlr3.Runtime.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Core.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Facebook.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Cookies.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Google.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.Twitter.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.Owin.Security.OAuth.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\System.Diagnostics.DiagnosticSource.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\EntityFramework.SqlServer.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.Owin.Security.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\System.Web.Helpers.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\System.Web.Mvc.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\System.Web.Optimization.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\System.Web.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.Properties.Resources.resources
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.GenerateResource.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\RdlCompile.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\RdlCompile.compiled
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.CoreCompileInputs.cache
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.CopyComplete
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.dll
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.pdb
+D:\carle\Documents\KETITO\PROY\LOD_APR\LOD_APR FINAL\CODIGO 2021-12-28 v2\28-12-2021 - CL\LOD_APR\obj\Release\LOD_APR.csproj.AssemblyReference.cache

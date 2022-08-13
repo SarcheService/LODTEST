@@ -1,0 +1,120 @@
+﻿@model LOD_APR.Areas.Admin.Models.FORM_Formularios
+
+@{
+    ViewBag.Title = "Editar Formulario";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Formularios</a></li>
+                    <li class="active">
+                        <span>Editar Formulario</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <a class="btn btn-warning" href="/Admin/Formularios/Index"> <i class="fa fa-reply"></i></a>
+                <b>Editar Formulario</b>
+            </h2>
+            <small>Interfaz para la edición de un Formulario Existente</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-5 col-md-5 ">
+            <div id="DivFormEvaluacion">
+                @Html.Partial("_FormEvaluacion", Model)
+            </div>
+        </div>
+        <div class="col-lg-7 col-md-7">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Configuración del Formulario</span>
+                        </div>
+                        <div class="col-xs-4">
+                            @if (Html.ValidaPermisos("0010120000"))
+                            {
+                                @if (!Model.Activa)
+                                {
+
+                                    @Ajax.RawActionLink("<i class='fa fa-plus'></i><b> Nuevo Item</b>", "Create", "FormItems", new { id = Model.IdForm },
+                                             new AjaxOptions
+                                             {
+                                                 HttpMethod = "GET",
+                                                 InsertionMode = InsertionMode.Replace,
+                                                 UpdateTargetId = "modalCanvas",
+                                                 OnSuccess = "form_itemsFormulario.initModal(data,status,xhr);"
+                                             }
+                                             , new { @class = "btn btn-xs pull-right m-r-sm btn-success " })
+                                    }
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivDetails">
+                        @if (Html.ValidaPermisos("0010120000"))
+                        {
+                            @Html.Action("Details", "Formularios", new { area = "Admin", id = Model.IdForm })
+                        }
+                                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+
+@section Styles {
+    @Styles.Render("~/bundles/select2/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/Vendor/jsTree/css")
+}
+
+@section Scripts {
+    <script src="~/Vendor/jquery-ui/jquery-ui.min.js"></script>
+    <script src="~/Vendor/jQuery-Mask-Plugin/jquery.mask.min.js"></script>
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/jsTree/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/ladda/js")
+    <script src="~/Scripts/app/FORM_Formulario.js"></script>
+    <script src="~/Scripts/app/FORM_ItemsFormulario.js"></script>
+    <script src="~/Scripts/app/FORM_ParametrosFormulario.js"></script>
+    <script src="~/Scripts/app/FORM_AlternativasSM.js"></script>
+
+
+    <script type="text/javascript">
+        var form_itemsFormulario;
+        var form_alternativasSM;
+        var form_parametrosFormulario;
+        var form_formulario;
+        $(document).ready(function () {
+            form_formulario = new FORM_Formulario();
+            form_alternativasSM = new FORM_AlternativasSM();
+            form_itemsFormulario = new FORM_ItemsFormulario();
+            form_parametrosFormulario = new FORM_ParametrosFormulario();
+        });
+    </script>
+
+}

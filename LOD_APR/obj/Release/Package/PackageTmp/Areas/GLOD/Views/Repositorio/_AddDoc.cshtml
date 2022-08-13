@@ -1,0 +1,82 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_documentos
+@using LOD_APR.Helpers;
+
+<div class="modal inmodal fade hmodal-success" id="modalFormDocs" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Nuevo Documento</h4>
+            </div>
+            <div class="modal-body">
+                @using (Html.BeginForm("AddFileV2", "SeguimientoPersonal", new { area = "GLOD" }, FormMethod.Post, new { name = "formDocs", id = "formDocs", enctype = "multipart/form-data" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        @Html.HiddenFor(model => model.PrimaryKey)
+                        @Html.HiddenFor(model => model.Origen)
+                        @Html.HiddenFor(model => model.RandomID)
+                        @Html.HiddenFor(model => model.Vista)
+                        @Html.HiddenFor(model => model.IdPath)
+                        @Html.HiddenFor(model => model.IdTipo)
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                @Html.LabelFor(model => model.Nombre, "Título", htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                @Html.LabelFor(model => model.MAE_TipoDocumento.Tipo, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.MAE_TipoDocumento.Tipo, new { htmlAttributes = new { @class = "form-control input-sm", @readonly = "readonly" } })
+                                @Html.ValidationMessageFor(model => model.MAE_TipoDocumento.Tipo, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                @Html.LabelFor(model => model.Descripcion, "Descripción", htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        @if (ViewBag.Vencimiento)
+                        {
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.FH_Vencimiento, "Fecha de vencimiento", htmlAttributes: new { @class = "control-label" })
+                                    @Html.EditorFor(model => model.FH_Vencimiento, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                    @Html.ValidationMessageFor(model => model.FH_Vencimiento, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        }
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                @Html.LabelFor(model => model.fileName, "Archivo Fuente", htmlAttributes: new { @class = "control-label" })
+                                <input id="fileName" name="fileName" type="file" class="upload" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <div class="progress m-t-md full progress-striped active">
+                                    <div id="pbDocumentHelperV2" style="width:0%" role="progressbar" class="progress-bar progress-bar-success">0%</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="btn-group pull-right" role="group" aria-label="..." style="margin-top:15px">
+                                    <button id="btnSubmitDocHelperV2" type="submit" class="btn btn-success btn-sm ladda-button" data-style="expand-right"><i class="fa fa-upload"></i> Subir Archivo</button>
+                                    <button type="button" class="btn btn-default btn-sm btn-tool" data-dismiss="modal">Cancelar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_TipoDocumento>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                Activo
+            </th>
+           
+                <th>Acciones</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>
+               <td>
+                   @Html.DisplayFor(modelItem => item.Activo)
+               </td>
+               <td>
+                   <div class="btn-group btn-group-nobreak">
+                       @if (Html.ValidaPermisos("0010110002"))
+                       {
+                           @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Editar"), "Edit", null, new { id = item.IdTipo },
+                                new AjaxOptions
+                                {
+                                    HttpMethod = "GET",
+                                    InsertionMode = InsertionMode.Replace,
+                                    UpdateTargetId = "modalCanvas",
+                                    OnSuccess = "mae_tipodoc.InitModalEdit(data,status,xhr);"
+                                }
+                                , new { @class = "btn btn-warning btn-xs" })
+                       }
+                       @if (Html.ValidaPermisos("0010110003"))
+                       {
+
+                           @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdTipo },
+                                new AjaxOptions
+                                {
+                                    HttpMethod = "GET",
+                                    InsertionMode = InsertionMode.Replace,
+                                    UpdateTargetId = "modalCanvas",
+                                    OnSuccess = "mae_tipodoc.initModal(data,status,xhr);"
+                                }
+                                , new { @class = "btn btn-danger btn-xs" })}
+                       </div>
+
+               </td>
+                
+            </tr>}
+    </tbody>
+</table>

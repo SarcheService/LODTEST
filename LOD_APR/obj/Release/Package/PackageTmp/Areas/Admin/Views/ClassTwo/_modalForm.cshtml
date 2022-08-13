@@ -1,0 +1,102 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_ClassTwo
+
+@using System.Configuration
+@{ ViewBag.webKey = Convert.ToString(ConfigurationManager.AppSettings.Get("InternalCaptchaSiteKey")); }
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('@ViewBag.webKey', { action: '' }).then(function (token) {
+            document.getElementById("foo").value = token;
+        });
+    });
+</script>
+
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalTipo" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title">@ViewBag.Titulo</h4></center>
+            </div>
+            <div class="modal-body">
+                @{string action = ViewBag.Action;}
+                @using (Ajax.BeginForm(action, null, new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "mae_classtwo.saveResult(data,status,xhr);"
+                }, new { name = "formTipo", id = "formTipo" }))
+                {
+    @Html.AntiForgeryToken()
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        @Html.HiddenFor(model => model.IdClassTwo)
+
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control", Type = "text" } })
+                                @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control input-sm", @rows = 5 } })
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                @Html.LabelFor(model => model.IdClassOne, htmlAttributes: new { @class = "control-label" })
+                                @Html.DropDownList("IdClassOne", null, htmlAttributes: new { @class = "form-control m-t-xs" })
+                                @Html.ValidationMessageFor(model => model.IdClassTwo, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="form-group m-t-sm">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-3">
+                                @Html.LabelFor(m => m.Activo, htmlAttributes: new { @class = "control-label" })
+                                @Html.CheckBoxFor(m => m.Activo, new { @class = "i-checks" })
+                            </div>
+                            <div class="col-md-8"></div>
+                        </div><hr />
+                <input type="hidden" name="foo" id="foo">
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right">
+                                    <button type="submit" class="btn btn-primary"><i class="fa fa-upload"></i> Guardar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    $('#Tipo').change(function () {
+        var texto = $('#Tipo :selected').val();
+        if (isNaN(texto)) {
+            texto = 0;
+        }
+        $('#IdTipo').val(texto);
+    });
+
+    //$("#first").select2('val');
+
+        @*$('#Tipo').autocomplete({
+            source: '@Url.Action("getJsonTipos", "TipoDoc")',
+            minLength: 2
+        });*@
+
+</script>

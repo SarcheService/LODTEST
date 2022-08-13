@@ -1,0 +1,75 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_ConfigSecurityEmail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/ASP/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>MAE_ConfigSecurityEmail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.RequiredLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequiredLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequireNonLetterOrDigit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequireNonLetterOrDigit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequireDigit)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequireDigit)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequireLowercase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequireLowercase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RequireUppercase)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RequireUppercase)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MaxFailedAccessAttemptsBeforeLockout)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaxFailedAccessAttemptsBeforeLockout)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DefaultAccountLockoutTimeSpan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DefaultAccountLockoutTimeSpan)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdConfig }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

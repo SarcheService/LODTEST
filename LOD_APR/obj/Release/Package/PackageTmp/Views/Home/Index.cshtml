@@ -1,0 +1,138 @@
+﻿@using Microsoft.AspNet.Identity
+@{
+    ViewBag.Title = "Dashboard Personal";
+    Layout = "~/Views/Shared/_Layout_Blank.cshtml";
+}
+
+<div class="content animate-panel">
+    <!--
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            @if (Request.IsAuthenticated)
+            {
+                <h2>
+                    Bienvenido @User.Identity.GetUserName()
+                </h2>
+            }
+            else
+            {
+                <h2>
+                    Bienvenido a tu Panel de Control
+                </h2>
+            }
+
+            <p>
+                Special <strong>Admin Theme</strong> for small, medium and large webapp with very clean and aesthetic style and feel.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel">
+                <div class="panel-heading">
+                    <div class="panel-tools">
+                        <a class="showhide"><i class="fa fa-chevron-up"></i></a>
+                        <a class="closebox"><i class="fa fa-times"></i></a>
+                    </div>
+                    This is a standard panel (header, content, footer)
+                </div>
+                <div class="panel-body">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the <strong>printing and typesetting</strong> industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        <abbr title="" data-original-title="Sample abbreviation">scrambled it to make</abbr> a type specimen book. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        scrambled it to make a type specimen book.
+                    </p>
+                    <a role="button" class="btn btn-success m-b-lg run-tour" href="/Account/Login">INICIAR SESIÓN</a>
+
+                    <a href="javascript:document.getElementById('logoutForm').submit()">
+                        <i class="pe-7s-upload pe-rotate-90"></i> CERRAR SESIÓN
+                    </a>
+                    @using (Html.BeginForm("LogOff", "Account", new { area = "" }, FormMethod.Post, new { id = "logoutForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    -->
+
+</div>
+
+@section Styles {
+    @Styles.Render("~/bundles/bootstrapTour/css")
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/bootstrapTour/js")
+
+    <script type="text/javascript">
+        var tour;
+        $(function () {
+
+            tour = new Tour({
+                backdrop: true,
+                onShown: function (tour) {
+
+                    // ISSUE    - https://github.com/sorich87/bootstrap-tour/issues/189
+                    // FIX      - https://github.com/sorich87/bootstrap-tour/issues/189#issuecomment-49007822
+
+                    // You have to write your used animated effect class
+                    // Standard animated class
+                    $('.animated').removeClass('fadeIn');
+                    // Animate class from animate-panel plugin
+                    $('.animated-panel').removeClass('zoomIn');
+
+                },
+                steps: [
+                    {
+                        element: ".tour-2",
+                        title: "Barra de Accesos Rápidos",
+                        content: "Esta sección contiene botones de acceso rápido a las distintas aplicaciones de la suite experta. Tambien se mostrarán alertas en todo momento!",
+                        placement: "bottom"
+                    },
+                    {
+                        element: ".tour-3",
+                        title: "App Actual",
+                        content: "Aqui se indicará en que aplicación de la suite experta se encuentra trabajando.",
+                        placement: "bottom"
+
+                    },
+                    {
+                        element: "#navigation",
+                        title: "Menú principal",
+                        content: "Este menú dinámico cambiará dependiendo de la aplicación en la cual se encuentre trabajando.",
+                        placement: "right"
+
+                    },
+                    {
+                        element: ".tour-1",
+                        title: "Cuerpo o página de trabajo",
+                        content: "Esta sección corresponde al área de trabajo donde se mostrarán las distintas páginas ingresadas atraves del menú principal.",
+                        placement: "top"
+
+                    }
+                ],
+                container: "body",
+            });
+
+            // Initialize the tour
+            tour.init();
+
+            // Restart the tour
+            $('.run-tour').click(function () {
+                console.debug("Iniciando el tour");
+                tour.restart();
+            });
+
+
+
+        });
+        $(document).ready(function () {
+
+        });
+
+    </script>
+}

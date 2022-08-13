@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Galena.Areas.ASP.Models.ASP_itemizadoContrato>
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalContratos" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+                <center><h4 class="modal-title">@ViewBag.ObjetoEvaluable.CodigoContrato
+                    -&nbsp;@ViewBag.ObjetoEvaluable.NombreContrato</h4></center>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="divTableItemizado" class="table-responsive">
+                            @Html.Partial("~/Areas/ASP/Views/itemizadoContrato/_getTableItemizado.cshtml",Model)
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <div class="col-xs-12">
+                        <div class="btn-group pull-right">
+                            @*<button id="btnEvaluar"  class="btn btn-@ViewBag.Color ladda-button" data-style="expand-left" onclick="asp_contratos.SetEvaluacion(@ViewBag.idContrato);" type="button"><i class="fa fa-upload"></i> Guardar</button>*@
+                            <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,36 @@
+﻿
+<div class="modal fade hmodal-info" id="modalJerarquia" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Mover Nodo</h4>
+                <small class="font-bold"></small>
+            </div>
+            <div class="modal-body">
+              @using (Ajax.BeginForm("MoveNode", null, new AjaxOptions()
+              {
+                  HttpMethod = "POST",
+                  OnSuccess = "asp_administracion.saveResult(data,status,xhr);"
+              }, new { name = "formJerarquia", id = "formJerarquia" }))
+              {
+                <div class="form-horizontal">
+                    <h4>¿Realmente desea Mover @ViewBag.Origin.icon "@ViewBag.Origin.text" en @ViewBag.Destin.icon "@ViewBag.Destin.text"?</h4>
+                    <hr />
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" name="origin" value="@ViewBag.Origin.id" />
+                    <input type="hidden" name="destination" value="@ViewBag.Destin.id" />
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="btn-group pull-right">
+                                <button type="submit" class="btn btn-info"><i class="fa fa-paste"></i> Si, Mover</button>
+                                <button type="button" onclick="asp_filtro.CleanFiltro()" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,191 @@
+﻿@model Galena.Areas.ASP.Models.ASP_contratos
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/ASP/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ASP_contratos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ASP_estados.NombreEstado)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ASP_estados.NombreEstado)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ASP_obras.NombreObra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ASP_obras.NombreObra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ASP_proyectos.NombreProyecto)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ASP_proyectos.NombreProyecto)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ASP_tipoContrato.NombreTipoContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ASP_tipoContrato.NombreTipoContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MAE_sujetoEconomico.Rut)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MAE_sujetoEconomico.Rut)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DescripContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DescripContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RutaImagenContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RutaImagenContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodigoContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodigoContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaCreacionContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaCreacionContrato)
+        </dd>
+
+ 
+       
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicioProgContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicioProgContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicioContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicioContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaTerminoProgContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaTerminoProgContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaTerminoContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaTerminoContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MontoPresupContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MontoPresupContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MontoContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MontoContrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdRespMandante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdRespMandante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAdminContrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAdminContrato)
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContratoInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContratoInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdContratoInicial)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdContratoInicial)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ContratoEnCurso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ContratoEnCurso)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdContrato }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

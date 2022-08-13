@@ -1,0 +1,164 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_LibroObras
+
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalLibros" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+            </div>
+            @{string action = ViewBag.Action;}
+            @*@using (Ajax.BeginForm("Create", "LibroObras", new AjaxOptions()
+        {
+            HttpMethod = "POST",
+            OnSuccess = "glod_libroobras.saveResult(data,status,xhr);"
+        }, new { name = "formLibros", id = "formLibros" }))
+        {*@
+            @if (ViewBag.PermiteCrear)
+            {
+                <form id="formLibros" name="formLibros" enctype="multipart/form-data" action="/GLOD/LibroObras/@action" method="post">
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.UserId)
+                    @Html.HiddenFor(model => Model.IdLod)
+                    @Html.HiddenFor(model => Model.IdContrato)
+                    @Html.HiddenFor(model => model.IdCarpeta)
+                    @Html.HiddenFor(model => model.tipo)
+
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="col-xs-3">
+                                    <div id="divImagenContrato">
+                                        <div class="panel-body text-center panel-load">
+                                            <div class="sk-spinner sk-spinner-wandering-cubes">
+                                                <div class="sk-cube1"></div>
+                                                <div class="sk-cube2"></div>
+                                            </div>
+                                            <div>
+                                                @if (Model.RutaImagenLObras != null)
+                                                {
+                                                    <img alt="foto proyecto" class="img-thumbnail" src="@Url.Content(Model.RutaImagenLObras)?@DateTime.Now.Ticks.ToString()" />
+
+                                                }
+                                                else
+                                                {
+                                                    <h2 class="text-center text-@ViewBag.Color"><i class="fa fa-book  fa-4x" aria-hidden="true"></i></h2>
+
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <div class="fileUpload btn btn-primary btn-outline btn-xs">
+                                            <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                            <input id="fileImage" name="fileImage" type="file" class="upload" accept="image/*" />
+                                        </div>
+                                        <div class="">
+                                            @Html.CheckBoxFor(model => model.HerImgPadre, new { htmlAttributes = new { @class = "form-control"} })
+                                            <small>Heredar foto de Contrato</small>
+                                        </div>
+                                    </center>
+                                </div>
+
+                                <div class="col-xs-9">
+                                    @if (ViewBag.Action == "Edit")
+                                    {
+                                        <div class="form-group">
+                                            <div class="col-xs-3">
+                                                @Html.LabelFor(model => model.NombreLibroObra, htmlAttributes: new { @class = "control-label" })
+                                            </div>
+                                            <div class="col-xs-9">
+                                                @Html.EditorFor(model => model.NombreLibroObra, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                @Html.ValidationMessageFor(model => model.NombreLibroObra, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12"><br /></div>
+                                    }
+                                    @if (Model.tipo == 3)
+                                    {
+                                        <div class="form-group">
+                                            <div class="col-xs-3">
+                                                @Html.LabelFor(model => model.NombreLibroObra, htmlAttributes: new { @class = "control-label" })
+                                            </div>
+                                            <div class="col-xs-9">
+                                                @Html.EditorFor(model => model.NombreLibroObra, new { htmlAttributes = new { @class = "form-control" } })
+                                                @Html.ValidationMessageFor(model => model.NombreLibroObra, "", new { @class = "text-danger" })
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12"><br /></div>
+                                    }
+                                    else if (Model.tipo == 2)
+                                    {
+                                        <div class="form-group">
+                                            <div class="col-xs-3">
+                                                @Html.LabelFor(model => model.IdTipoLod, "Tipo de Libro", htmlAttributes: new { @class = "control-label" })
+                                            </div>
+                                            <div class="col-xs-9">
+                                                @Html.DropDownList("IdTipoLod", null, new { htmlAttributes = new { @class = "form-control select2" } })
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12"><br /></div>
+                                    }
+                                    <div class="form-group">
+                                        <div class="col-xs-3">
+                                            @Html.LabelFor(model => model.DescripcionLObra, htmlAttributes: new { @class = "control-label" })
+                                        </div>
+                                        <div class="col-xs-9">
+                                            @Html.EditorFor(model => model.DescripcionLObra, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.DescripcionLObra, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12"><br /></div>
+                                    <div class="form-group">
+                                        <div class="col-xs-3">
+                                            @Html.LabelFor(model => model.CodigoLObras, htmlAttributes: new { @class = "control-label" })
+                                        </div>
+                                        <div class="col-xs-4">
+                                            @Html.EditorFor(model => model.CodigoLObras, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.CodigoLObras, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <div class="btn-group pull-right">
+                                    <button type="submit" class="btn btn-@ViewBag.Color"><i class="fa fa-upload"></i> Guardar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            }
+            else
+            {
+                <div class="modal-body">
+                    <div class="form-group">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-10">
+                        <h4 class="">No se puede Crear Libros hasta activar el Libro de Obra y Libro de Comunicación</h4></div>
+                    <div class="col-lg-1"></div>
+                    
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <div class="btn-group pull-right">
+                                <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,94 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_ClassTwo>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+                Clasificación 1
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            @*<th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>*@
+            <th>
+                Activo
+            </th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{ var lod = 0;}
+        @foreach (var item in Model)
+        {
+            <tr>
+                @if (Model.First() == item)
+                {
+                <td rowspan="@Model.Where(x => x.IdClassOne == item.IdClassOne).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_ClassOne.Nombre)
+                </td>}
+                else if(item.IdClassOne != Model.First().IdClassOne && lod == 0) 
+                {
+                    lod = item.IdClassOne;
+                    if(item.IdClassOne == lod)
+                    {
+                        <td rowspan="@Model.Where(x => x.IdClassOne == item.IdClassOne).Count()">
+                            @Html.DisplayFor(modelItem => item.MAE_ClassOne.Nombre)
+                        </td>
+                    }
+                }else if(lod != 0 && lod != item.IdClassOne)
+                {
+                    lod = item.IdClassOne;
+                    if(item.IdClassOne == lod)
+                    {
+                        <td rowspan="@Model.Where(x => x.IdClassOne == item.IdClassOne).Count()">
+                            @Html.DisplayFor(modelItem => item.MAE_ClassOne.Nombre)
+                        </td>
+                    }
+                }
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                @*<td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>*@
+                <td>
+                    @Html.DisplayFor(modelItem => item.Activo)
+                </td>
+              
+                <td>
+                    <div class="btn-group btn-group-nobreak">
+                        @if (Html.ValidaPermisos("0010070002"))
+                        {
+                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Editar"), "Edit", null, new { id = item.IdClassTwo },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "mae_classtwo.InitModalEdit(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-warning btn-xs" })}
+
+                        @if (Html.ValidaPermisos("0010070003"))
+                        {
+
+                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdClassTwo },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "mae_classtwo.initModal(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-danger btn-xs" })}
+                        </div>
+
+                </td>
+                
+            </tr>}
+    </tbody>
+</table>

@@ -1,0 +1,39 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_SubtipoComunicacion
+
+<div class="modal fade hmodal-danger" id="modalTipo" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Eliminación de registro</h4>
+                <small class="font-bold">Los registros asociados a otros módulos no se pueden eliminar</small>
+            </div>
+            <div class="modal-body">
+              @using (Ajax.BeginForm("Delete", null, new AjaxOptions()
+              {
+                  HttpMethod = "POST",
+                  OnSuccess = "mae_subtipocom.saveResult(data,status,xhr);"
+              }, new { name = "formTipo", id = "formTipo" }))
+              {
+                    <div class="form-horizontal">
+                        <h4>Realmente desea eliminar este Subtipo de Comunicación: @Model.Nombre ?</h4>
+                        <hr />
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.IdTipoSub)
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right">
+                                    @if (Html.ValidaPermisos("0010040003"))
+                                    {
+                                    <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Si, eliminar</button>
+                                    }
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+}
+            </div>
+        </div>
+    </div>
+</div>

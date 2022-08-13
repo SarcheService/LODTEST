@@ -1,0 +1,39 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_Sucursal
+
+<div class="modal fade hmodal-danger" id="modalSucursal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Eliminación de registro</h4>
+                <h5>Los contactos asociados se eliminarán</h5>
+                <h5>Los registros asociados a otros módulos no se pueden eliminar</h5>
+            </div>
+            <div class="modal-body">
+              @using (Ajax.BeginForm("Delete", "Sucursal", new AjaxOptions()
+              {
+                  HttpMethod = "POST",
+                  OnSuccess = "new MAE_sucursal().saveResult(data,status,xhr);"
+              }, new { name = "formSucursal", id = "formSucursal" }))
+              {
+                    <div class="form-horizontal">
+                        <h4>¿Realmente desea eliminar esta Sucursal: @Model.Sucursal ?</h4>
+                        <hr />
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.IdSucursal)
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right">
+                                    @if (Html.ValidaPermisos("0010170003"))
+                                    {
+                                        <button type="submit" class="btn btn-danger"><i class="fa fa-trash"></i> Si, eliminar</button>
+                                    }<a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+}
+            </div>
+        </div>
+    </div>
+</div>

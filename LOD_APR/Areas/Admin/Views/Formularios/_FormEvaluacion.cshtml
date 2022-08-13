@@ -1,0 +1,124 @@
+﻿@model LOD_APR.Areas.Admin.Models.FORM_Formularios
+
+@using (Ajax.BeginForm("Edit", "Formularios", new AjaxOptions()
+{
+    HttpMethod = "POST",
+    OnSuccess = "form_formulario.saveResult(data,status,xhr);"
+}, new { name = "formFormEval", id = "formFormEval" }))
+{
+
+    <div class="hpanel">
+        <div class="panel-heading hbuilt">
+            <div class="row">
+                <div class="col-xs-8">
+                    Datos del Formulario
+                </div>
+                <div class="col-xs-4">
+                    <div class="pull-right">
+                        @if (Model.Activa)
+                        {
+                            <span class="label label-success">Activado</span>
+                        }
+                        else
+                        {
+                            <span class="label label-warning">Desactivado</span>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel-body panel-load">
+            <div class="sk-spinner sk-spinner-wave">
+                <div class="sk-rect1"></div>
+                <div class="sk-rect2"></div>
+                <div class="sk-rect3"></div>
+                <div class="sk-rect4"></div>
+                <div class="sk-rect5"></div>
+            </div>
+            <div id="DivFormulario">
+
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.IdForm)
+                    <div class="form-group m-b-none">
+                        <div class="col-md-12">
+                            @Html.LabelFor(model => model.Titulo, htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Titulo, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Titulo, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group m-b-none">
+                        <div class="col-md-12">
+                            @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group m-b-none">
+                        <div class="col-md-6">
+                            <label class="control-label">Creado Por</label>
+                            <input class="form-control text-box single-line" value="@Model.UserId" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="control-label">Creado el</label>
+                            <input class="form-control text-box single-line" value="@Model.FechaCreacion.ToLongDateString() a las @Model.FechaCreacion.ToShortTimeString()" readonly>
+                        </div>
+                    </div>
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    <div class="hpanel">
+        <div class="panel-body panel-load">
+            <div class="sk-spinner sk-spinner-wave">
+                <div class="sk-rect1"></div>
+                <div class="sk-rect2"></div>
+                <div class="sk-rect3"></div>
+                <div class="sk-rect4"></div>
+                <div class="sk-rect5"></div>
+            </div>
+            <div id="DivFormulario">
+                <div class="row">
+                    <div class="col-xs-4">
+                        @if (Model.Activa)
+                        {
+                            @Ajax.RawActionLink("<i class='fa fa-ban'></i><b> Desactivar</b>", "Desactivar", "Formularios", new { id = Model.IdForm },
+                            new AjaxOptions
+                            {
+                                HttpMethod = "GET",
+                                InsertionMode = InsertionMode.Replace,
+                                UpdateTargetId = "modalCanvas",
+                                OnSuccess = "form_formulario.initModal(data,status,xhr);"
+                            }
+                            , new { @class = "btn btn-info" })
+                        }
+                        else
+                        {
+                            @Ajax.RawActionLink("<i class='fa fa-check'></i><b> Validar y Activar</b>", "ValidarFormulario", "Formularios", new { id = Model.IdForm },
+                            new AjaxOptions
+                            {
+                                HttpMethod = "GET",
+                                InsertionMode = InsertionMode.Replace,
+                                UpdateTargetId = "modalCanvas",
+                                OnSuccess = "form_formulario.initModal(data,status,xhr);"
+                            }
+                            , new { @class = "btn btn-info" })
+                        }
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="btn-group pull-right">
+                            <button type="submit" class="btn btn-success"><i class="fa fa-upload"></i> Guardar</button>
+                            <a href="/Admin/Formularios/Index" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+

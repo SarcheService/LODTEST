@@ -1,0 +1,152 @@
+﻿@model IEnumerable<LOD_APR.Models.ApplicationUser>
+
+
+@{
+    ViewBag.Title = "Grupos de Destinatarios";
+}
+
+<div class="content">
+    <div>
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="hpanel hblue">
+                    <div class="panel-heading hbuilt">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <span> Filtro y búsqueda</span>
+                            </div>
+                            <div class="col-xs-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body ">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput" placeholder="Buscar en tabla"> <span class="input-group-btn">
+                                <button id="btnTableSearch" type="button" class="btn btn-warning" onclick="$('#searchInput').val('');">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div>
+                        <div class="form-group m-t-sm">
+                            <label class="control-label">Sujetos Economicos:</label>
+                            <div class="input-group">
+                                @Html.DropDownList("IdSujEcon", null, htmlAttributes: new { })
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">Estado:</label>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
+                                    <div class="input-group">
+                                        <div class="col-lg-12 col-xs-6">
+                                            <div class="checkbox checkbox-success">
+                                                <input id="chkActivo" type="checkbox" checked>
+                                                <label for="chkActivo">
+                                                    <span class="label label-success pull-right">Activos</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xs-6">
+                                            <div class="checkbox checkbox-danger">
+                                                <input id="chkInactivo" type="checkbox" checked>
+                                                <label for="chkInactivo">
+                                                    <span class="label label-danger pull-right">Inactivos</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="control-label">Tipo Empresa:</label>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
+                                    <div class="input-group">
+                                        <div class="col-lg-12 col-xs-5">
+                                            <div class="checkbox checkbox-info">
+                                                <input id="chkGob" type="checkbox" checked>
+                                                <label for="chkGob">
+                                                    <span class="label label-info pull-right">Organismo de Gobierno</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xs-6">
+                                            <div class="checkbox checkbox-info">
+                                                <input id="chkMandante" type="checkbox" checked>
+                                                <label for="chkMandante">
+                                                    <span class="label label-info pull-right">Empresa Fiscalizadora</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xs-6">
+                                            <div class="checkbox checkbox-info">
+                                                <input id="chkContra" type="checkbox" checked>
+                                                <label for="chkContra">
+                                                    <span class="label label-info pull-right">Contratista</span>
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <button class="btn btn-sm btn-info btn-block" onclick="sms_users.Filtro();"><i class="fa fa-filter"></i> Filtrar</button>
+                    </div>
+                    <div class="panel-footer">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-9 col-lg-9">
+                <div class="hpanel">
+                    <div class="panel-heading hbuilt">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <span>Listado de Grupos</span>
+                            </div>
+                            <div class="col-xs-4">
+                                @*<a href="@Url.Action("Register","Usuarios")" role="button" class="btn btn-sm btn-success pull-right"><i class="fa fa-plus"></i> Nuevo Usuario</a>*@
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <div id="divTableDatos" style="overflow:auto">
+                            @Html.Partial("_getTableUsers", Model)
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div id="modalCanvas"></div>
+
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/bundles/select2/css")
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/MAE_Usuarios")
+    <script type="text/javascript">
+
+        var sms_users;
+        $(document).ready(function () {
+            sms_users = new MAE_Usuarios();
+        });
+
+
+    </script>
+}

@@ -1,0 +1,480 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_LibroObras>
+
+          <div id="getLibros">
+              <div class="row">
+                  <div class="col-md-12">
+                      <h4>Acceso a Libros del Contrato</h4>
+                      <hr />
+                  </div>
+              </div>
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        @foreach (var item in Model)
+                        {
+
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                            <a href="@Url.Action("Index","Anotaciones",new {id= item.IdLod, tipo = 1})">
+                                <div class="panel hpanel" style="border-top: 2px solid @item.MAE_TipoLOD.Color;color: rgb(106, 108, 111)">
+                                    <div class="panel-body h-300" style="background: #fff;border: 1px solid #e4e5e7;
+                                                                                            border-radius: 2px;
+                                                                                            padding: 15px;
+                                                                                            padding-top:10px;
+                                                                                            position: relative;">
+                                        <div class="row m-b-xs">
+                                            <div class="col-xs-12">
+                                                <div class="dropdown pull-right">
+                                                    @if (item.MisVBPendientes > 0 || item.MisRespuestasPendientes > 0)
+                                                    {
+                                                        <label class="label label-warning"><i class="fa fa-exclamation-triangle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></i><span> @(item.MisRespuestasPendientes + item.MisVBPendientes)</span></label>
+                                                            }
+                                                            else
+                                                            {
+                                                            <label class="label label-success"><i class="fa fa-check" aria-expanded="true"></i><span></span></label>
+                                                            }
+
+                                                            <div class="dropdown-content" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-item">
+                                                                    <div class="list">
+                                                                        <div class="list-item-container">
+                                                                            <div class="list-item text-navy-blue">
+                                                                                <h4 class="no-margins font-extra-bold text-navy-blue">Mis Pendientes</h4>
+                                                                                <small>@item.NombreLibroObra</small>
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins text-muted">Total Folios:</h5></div>
+                                                                                <div class="col-md-4"><h5 class="no-margins text-muted">@item.AnotFirmadasCount</h5></div>
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"> <h5 class="no-margins text-muted">Dar respuesta:</h5></div>
+                                                                                <div class="col-md-4"><h5 class="no-margins text-muted">@item.MisRespuestasPendientes</h5></div>
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins font-extra-bold text-muted">Toma de Conocimiento:</h5></div>
+                                                                                <div class="col-md-4"><h5 class="no-margins text-muted">@item.MisVBPendientes</h5></div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+
+                                        @if (item.RutaImagenLObras != null)
+                                        {
+
+                                            <center><img style="border:@item.MAE_TipoLOD.Color 2px solid;width:242.55px;height:159.48px;" alt="logo" class="img-thumbnail" src="@Url.Content(item.RutaImagenLObras)"></center> }
+                                        else
+                                        {
+
+                                    <div style="border:2px solid @item.MAE_TipoLOD.Color;color:@item.MAE_TipoLOD.Color">
+                                        <Center style="margin-top:20%;margin-bottom:20%"><span class="fa fa-book fa-3x" style="display:table-cell;"></span></Center>
+                                    </div>
+                                        }
+                                        @if (@item.NombreLibroObra.Length > 12)
+                                        {
+                                            <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                <h5 class="m-b-xs h3-equal-height">@item.NombreLibroObra</h5>
+                                                <div class="text-muted font-bold m-b-xs"></div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                <h3 class="m-b-xs h3-equal-height">@item.NombreLibroObra</h3>
+                                                <div class="text-muted font-bold m-b-xs"></div>
+                                            </div>
+                                        }
+                                        <div class="text-left m-t-md">
+                                            <table class="table small m-b-xs">
+                                                <tbody>
+                                                    <tr>
+                                                        @if (@item.CodigoLObras != null)
+                                                        {
+                                                            <td>
+                                                                <strong>Código LOD</strong>
+                                                            </td>
+
+                                                            <td style="padding:0;
+                                                                                   word-break: break-all;
+                                                                                   padding-top:8px;">
+                                                                @item.CodigoLObras
+                                                            </td>
+                                                        }
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Contrato</strong>
+                                                        </td>
+                                                        <td style="padding:0;
+                                                                               word-break: break-all;
+                                                                               padding-top:8px;">
+                                                            @item.CON_Contratos.CodigoContrato
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <strong>Fecha Apertura</strong>
+                                                        </td>
+                                                        <td style="padding:0;
+                                                                               word-break: break-all;
+                                                                               padding-top:8px;">
+                                                            @item.FechaApertura
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </a>
+                        </div>
+                        }
+                    </div>
+                </div>
+                @*<div class="row">
+                    @if (Model.Where(x => x.MAE_TipoLOD.TipoLodJer == 2 || x.MAE_TipoLOD.TipoLodJer == 3).Count() > 0)
+                    {
+                        <div class="col-lg-12 ">
+                            <h4>Comunicaciones</h4>
+                            <hr />
+                            @{var itemCount = 0; }
+
+                            @foreach (var item in Model.Where(x => x.MAE_TipoLOD.TipoLodJer == 2 || x.MAE_TipoLOD.TipoLodJer == 3))
+                            {
+
+                                itemCount++;
+                                if (itemCount % 6 == 1)
+                                {
+                                    @Html.Raw("<div class='row'>")
+                                }
+                                <a href="@Url.Action("Index","Anotaciones",new {id= item.IdLod})">
+                                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="panel hpanel" style="border-top:2px solid @item.MAE_TipoLOD.Color;
+                                                                                         color: @item.MAE_TipoLOD.Color;">
+                                            <div class="panel-body" style="background: #fff;
+                                                                                           border: 1px solid #e4e5e7;
+                                                                                           border-radius: 2px;
+                                                                                           padding:15px;
+                                                                                            padding-top:10px;
+                                                                                           color:@item.MAE_TipoLOD.Color;
+                                                                                           position: relative;">
+
+                                                <div class="row m-b-xs">
+                                                    <div class="col-lg-9"></div>
+                                                        <div class="col-lg-3" style="padding-right:0px;">
+                                                        <div class="dropdown">
+                                                            <i class="fa fa-info-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                @if (@item.LstAnotaciones.Where(x => x.Estado != 2).Count() > 0)
+                                                                {
+                                                            @item.LstAnotaciones.Where(x => x.Estado != 2).Count()}
+                                                            </i>
+                                                            <div class="dropdown-content" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-item">
+                                                                    <div class="list">
+                                                                        <div class="list-item-container">
+                                                                            <div class="list-item text-navy-blue">
+                                                                                <h4 class="no-margins font-extra-bold text-navy-blue">@item.NombreLibroObra</h4>
+                                                                                <small>@item.FechaCreacion.ToLongDateString()</small>
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"> <h5 class="no-margins font-extra-bold text-muted">Anotaciones Creadas:</h5></div>
+                                                                                <div class="col-md-4"><h5>@item.LstAnotaciones.Count()</h5></div>
+
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"> <h5 class="no-margins font-extra-bold text-muted">Anotaciones Firmadas:</h5></div>
+                                                                                <div class="col-md-4"><h5>@item.LstAnotaciones.Where(x => x.Estado == 2).Count()</h5></div>
+
+
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins font-extra-bold text-muted">Anotaciones Pendientes de Firma</h5></div>
+                                                                                <div class="col-md-4"><h5>@item.LstAnotaciones.Where(x => x.Estado != 2).Count()</h5></div>
+
+                                                                            </div>
+                                                                            @{ int docCargados = 0;
+                                                                                int docPendientes = 0;
+                                                                                foreach (var anot in item.LstAnotaciones)
+                                                                                {
+                                                                                    docCargados = docCargados + anot.DocCargados;
+                                                                                }
+
+                                                                                foreach (var anot in item.LstAnotaciones)
+                                                                                {
+                                                                                    docPendientes = docPendientes + anot.DocPendientes;
+                                                                                } }
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins font-extra-bold text-muted">Documentos Cargados</h5></div>
+                                                                                <div class="col-md-4"><h5>@docCargados</h5></div>
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins font-extra-bold text-muted">Documentos Pendientes</h5></div>
+                                                                                <div class="col-md-4"><h5>@docPendientes</h5></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                @if (item.RutaImagenLObras != null)
+                                                {
+                                            <center><img style="border:@item.MAE_TipoLOD.Color 2px solid;width:242.55px;height:159.48px;" alt="logo" class="img-thumbnail" src="@Url.Content(item.RutaImagenLObras)"></center> }
+                                            else
+                                            {
+
+                                                <div style="border:2px solid;">
+                                                    <Center style="margin-top:20%;margin-bottom:20%"><span class="fa fa-book fa-3x" style="display:table-cell;"></span></Center>
+                                                </div>}
+                                                    @if (@item.NombreLibroObra.Length > 12)
+                                                    {
+                                                <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                    <h6 class="m-b-xs h3-equal-height">@item.NombreLibroObra</h6>
+                                                    <div class="text-muted font-bold m-b-xs"></div>
+                                                </div> }
+                                            else
+                                            {
+                                                <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                    <h3 class="m-b-xs h3-equal-height">@item.NombreLibroObra</h3>
+                                                    <div class="text-muted font-bold m-b-xs"></div>
+                                                </div>
+                                                }
+
+
+                                                <div class="text-left m-t-md">
+                                                    <table class="table small m-b-xs">
+
+                                                        <tbody>
+                                                            <tr>
+
+                                                                @if (@item.CodigoLObras != null)
+                                                                {
+                                                                    <td>
+                                                                        <strong>Código LOD</strong>
+                                                                    </td>
+
+                                                                    <td style="padding:0;
+                                                                                     word-break: break-all;
+                                                                                     padding-top:8px;">
+                                                                        @item.CodigoLObras
+                                                                    </td>
+                                                                 }
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <strong>Contrato</strong>
+                                                                </td>
+
+                                                                <td style="padding:0;
+                                                                           word-break: break-all;
+                                                                           padding-top:8px;">
+
+                                                                    @item.CON_Contratos.CodigoContrato
+                                                                </td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <strong>Fecha Apertura</strong>
+                                                                </td>
+                                                                <td style="padding:0;
+                                                                       word-break: break-all;
+                                                                       padding-top:8px;">
+                                                                    @item.FechaCreacion
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </a>
+
+                                if (itemCount % 6 == 0 || itemCount == Model.Where(x => x.MAE_TipoLOD.TipoLodJer == 2 || x.MAE_TipoLOD.TipoLodJer == 3).Count())
+                                {
+                                    @Html.Raw("</div>")
+                                }
+
+                            }
+
+                        </div>
+                    }
+
+                </div>
+                <div class="row">
+                    @if (Model.Where(x => x.MAE_TipoLOD.TipoLodJer == 4).Count() > 0)
+                    {
+                        <div class="col-lg-12 ">
+                            <h4>Complementario</h4>
+                            <hr />
+                            @{var itemCount = 0; }
+
+                            @foreach (var item in Model.Where(x => x.MAE_TipoLOD.TipoLodJer == 4))
+                            {
+
+                                itemCount++;
+                                if (itemCount % 6 == 1)
+                                {
+                                    @Html.Raw("<div class='row'>")
+                                }
+                                <a href="@Url.Action("Index","Anotaciones",new {id= item.IdLod})">
+                                    <div class="col-lg-2 col-md-6 col-sm-6 col-xs-12">
+                                        <div class="panel hpanel" style="border-top:2px solid @item.MAE_TipoLOD.Color;
+                                                                                         color: @item.MAE_TipoLOD.Color;">
+                                            <div class="panel-body" style="background: #fff;
+                                                                                           border: 1px solid #e4e5e7;
+                                                                                           border-radius: 2px;
+                                                                                           padding: 15px;
+                                                                                           padding-top: 10px;
+                                                                                           color:@item.MAE_TipoLOD.Color;
+                                                                                           position: relative;">
+
+                                                <div class="row m-b-xs">
+                                                    <div class="col-lg-9"></div>
+                                                        <div class="col-lg-3" style="padding-right:0px;">
+                                                        <div class="dropdown">
+                                                            <i class="fa fa-info-circle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                @if (@item.LstAnotaciones.Where(x => x.Estado != 2).Count() > 0)
+                                                                {
+                                                            @item.LstAnotaciones.Where(x => x.Estado != 2).Count()}
+                                                            </i>
+                                                            <div class="dropdown-content" aria-labelledby="dropdownMenuButton">
+                                                                <div class="dropdown-item">
+                                                                    <div class="list">
+                                                                        <div class="list-item-container">
+                                                                            <div class="list-item text-navy-blue">
+                                                                                <h4 class="no-margins font-extra-bold text-navy-blue">@item.NombreLibroObra</h4>
+                                                                                <small>@item.FechaCreacion.ToLongDateString()</small>
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"> <h5 class="no-margins font-extra-bold text-muted">Anotaciones Creadas:</h5></div>
+                                                                                <div class="col-md-4"><h5>@item.LstAnotaciones.Count()</h5></div>
+
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"> <h5 class="no-margins font-extra-bold text-muted">Anotaciones Firmadas:</h5></div>
+                                                                                <div class="col-md-4"><h5>@item.LstAnotaciones.Where(x => x.Estado == 2).Count()</h5></div>
+
+
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins font-extra-bold text-muted">Anotaciones Pendientes de Firma</h5></div>
+                                                                                <div class="col-md-4"><h5>@item.LstAnotaciones.Where(x => x.Estado != 2).Count()</h5></div>
+
+                                                                            </div>
+                                                                            @{ int docCargados = 0;
+                                                                                int docPendientes = 0;
+                                                                                foreach (var anot in item.LstAnotaciones)
+                                                                                {
+                                                                                    docCargados = docCargados + anot.DocCargados;
+                                                                                }
+
+                                                                                foreach (var anot in item.LstAnotaciones)
+                                                                                {
+                                                                                    docPendientes = docPendientes + anot.DocPendientes;
+                                                                                } }
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins font-extra-bold text-muted">Documentos Cargados</h5></div>
+                                                                                <div class="col-md-4"><h5>@docCargados</h5></div>
+                                                                            </div>
+                                                                            <div class="list-item">
+                                                                                <div class="col-md-8"><h5 class="no-margins font-extra-bold text-muted">Documentos Pendientes</h5></div>
+                                                                                <div class="col-md-4"><h5>@docPendientes</h5></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                @if (item.RutaImagenLObras != null)
+                                                {
+                                                    <center><img style="border:@item.MAE_TipoLOD.Color 2px solid;width:242.55px;height:159.48px;" alt="logo" class="img-thumbnail" src="@Url.Content(item.RutaImagenLObras)"></center> }
+                                                else
+                                                {
+                                                    <div style="border:2px solid;">
+                                                        <Center style="margin-top:20%;margin-bottom:20%"><span class="fa fa-book fa-3x" style="display:table-cell;"></span></Center>
+                                                    </div>}
+                                                        @if (@item.NombreLibroObra.Length > 12)
+                                                        {
+                                                    <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                        <h6 class="m-b-xs h3-equal-height">@item.NombreLibroObra</h6>
+                                                        <div class="text-muted font-bold m-b-xs"></div>
+                                                    </div> }
+                                                else
+                                                {
+                                                    <div class="m-t-sm text-center" style="word-wrap: break-word;">
+                                                        <h3 class="m-b-xs h3-equal-height">@item.NombreLibroObra</h3>
+                                                        <div class="text-muted font-bold m-b-xs"></div>
+                                                    </div>
+                                                }
+                                                        <div class="text-left m-t-md">
+                                                            <table class="table small m-b-xs">
+                                                                <tbody>
+                                                                    <tr>
+                                                                       @if (@item.CodigoLObras != null)
+                                                                         {
+                                                                            <td>
+                                                                                <strong>Código LOD</strong>
+                                                                            </td>
+                                                                            <td style="padding:0;
+                                                                                       word-break: break-all;
+                                                                                       padding-top:8px;">
+                                                                                @item.CodigoLObras
+                                                                            </td>
+                                                                        }
+                                                                    </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <strong>Contrato</strong>
+                                                                    </td>
+
+                                                                    <td style="padding:0;
+                                                                         word-break: break-all;
+                                                                         padding-top:8px;">
+                                                                        @item.CON_Contratos.CodigoContrato
+                                                                    </td>
+
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>
+                                                                        <strong>Fecha Apertura</strong>
+                                                                    </td>
+                                                                    <td style="padding:0;
+                                                                               word-break: break-all;
+                                                                               padding-top:8px;">
+                                                                        @item.FechaCreacion
+                                                                    </td>
+                                                                </tr>
+
+                                                            </tbody>
+                                                        </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </a>
+                                if (itemCount % 6 == 0 || itemCount == Model.Where(x => x.MAE_TipoLOD.TipoLodJer == 4).Count())
+                                {
+                                    @Html.Raw("</div>")
+                                }
+                            }
+                        </div>
+                    }
+                </div>*@
+            </div>
+        

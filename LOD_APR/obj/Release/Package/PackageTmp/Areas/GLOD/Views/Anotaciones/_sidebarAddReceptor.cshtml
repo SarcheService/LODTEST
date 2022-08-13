@@ -1,0 +1,35 @@
+﻿
+<div class="form-horizontal">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="IdAnotacion" value="@ViewBag.IdAnotacion" />
+    <div class="row">
+        <div class="col-md-12">
+            <label class="control-label">Receptor</label>
+            @Html.DropDownList("IdReceptor", null, htmlAttributes: new { @class = "form-control", @data_live_search = "true" })
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-11">
+            @if (ViewBag.PermiteReceptor)
+            {
+                <div class="checkbox checkbox-info">
+                    <input name="EsPrincipal" id="EsPrincipal" type="checkbox" value="true">
+                    <label for="EsPrincipal">
+                        <span class="label label-info pull-right">Es el Receptor Principal</span>
+                    </label>
+                </div>
+            }
+            @if (ViewBag.PermiteResponsable)
+            {
+                <div class="checkbox checkbox-warning">
+                    <input name="RespRespuesta" id="RespRespuesta" type="checkbox" value="true">
+                    <label for="RespRespuesta">
+                        <span class="label label-warning pull-right">Responsable de Responder</span>
+                    </label>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+

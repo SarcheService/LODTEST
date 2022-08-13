@@ -1,0 +1,127 @@
+﻿@model LOD_APR.Areas.GLOD.Models.FORM_InformesItems
+@using LOD_APR.Areas.Admin.Helpers;
+
+<div class="modal fade hmodal-success" id="modalFormReporte" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">@ViewBag.Titulo</h4>
+                <small class="font-bold">Los registros asociados a otros módulos no se pueden eliminar</small>
+            </div>
+            <div class="modal-body">
+                <form action="/GLOD/FormInformes/PostFormEditEjecutivo" id="formEncuesta" method="post" name="formEncuesta" novalidate="novalidate">
+                    <div class="form-horizontal">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" id="IdItemInforme" name="IdItemInforme" value="@ViewBag.IdItemInforme" />
+                        <input type="hidden" id="IdContrato" name="IdContrato" value="@ViewBag.IdContrato" />
+                            @foreach (var item in Model.FORM_InformesItemsData.OrderBy(o => o.FORM_FormPreguntas.Indice))
+                            {
+                                <div class="form-group">
+                                    <label class="control-label col-lg-4 col-md-4">@item.FORM_FormPreguntas.Titulo</label>
+                                    <div class="col-lg-@item.FORM_FormPreguntas.Largo col-md-@item.FORM_FormPreguntas.Largo">
+                                        @if (item.FORM_FormPreguntas.TipoParam == 914) //ALTERNATIVAS
+                                        {
+                                            foreach (var a in item.FORM_FormPreguntas.FORM_FormAlternativa.OrderBy(o => o.Indice)) //SELECCION MULTIPLE
+                                            {
+                                                <div class="form-group m-b-xs">
+                                                    <div class="col-lg-12">
+                                                        <div class="checkbox">
+                                                            <label for="check_@a.IdAlternativa" class="m-l-n-md">
+                                                                @if (item.Respuesta.Equals(a.Titulo))
+                                                                {
+                                                                    <input type="checkbox" checked class="i-checks respuesta @item.FORM_FormPreguntas.ConfigPregunta.Clase" style="opacity: 0;" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-alterna="@a.IdAlternativa" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" name="check_@item.FORM_FormPreguntas.IdPregunta" id="check_@a.IdAlternativa">
+                                                                }
+                                                                else
+                                                                {
+                                                                    <input type="checkbox" class="i-checks respuesta @item.FORM_FormPreguntas.ConfigPregunta.Clase" style="opacity: 0;" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-alterna="@a.IdAlternativa" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" name="check_@item.FORM_FormPreguntas.IdPregunta" id="check_@a.IdAlternativa">
+                                                                }
+
+                                                                @a.Titulo
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div id="error_check_@item.FORM_FormPreguntas.IdPregunta"></div>
+                                        }
+                                        else if (item.FORM_FormPreguntas.TipoParam == 915)
+                                        {
+                                            foreach (var a in item.FORM_FormPreguntas.FORM_FormAlternativa.OrderBy(o => o.Indice)) //SELECCION UNICA
+                                            {
+                                                <div class="form-group m-b-xs">
+                                                    <div class="col-lg-12">
+                                                        <div class="checkbox">
+                                                            <label for="radio_@a.IdAlternativa" style="padding-left:0px;">
+                                                                @if (item.Respuesta.Equals(a.Titulo))
+                                                                {
+                                                                    <input type="radio" checked class="iradio_square-green i-checks @item.FORM_FormPreguntas.ConfigPregunta.Clase respuesta" style="opacity: 0;" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-alterna="@a.IdAlternativa" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" name="radio_@item.FORM_FormPreguntas.IdPregunta" id="radio_@a.IdAlternativa"> 
+                                                                }
+                                                                else { 
+                                                                    <input type="radio" class="iradio_square-green i-checks @item.FORM_FormPreguntas.ConfigPregunta.Clase respuesta" style="opacity: 0;" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-alterna="@a.IdAlternativa" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" name="radio_@item.FORM_FormPreguntas.IdPregunta" id="radio_@a.IdAlternativa"> 
+                                                                }
+
+                                                                @a.Titulo
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            }
+                                            <div id="error_radio_@item.FORM_FormPreguntas.IdPregunta"></div>
+                                        }
+                                        else if (item.FORM_FormPreguntas.TipoParam == 913)
+                                        {
+                                            <select class="form-control @item.FORM_FormPreguntas.ConfigPregunta.Clase respuesta" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" id="Select_@item.FORM_FormPreguntas.IdPregunta" name="Select_@item.FORM_FormPreguntas.IdPregunta" title="Seleccione una opción">
+                                                <option value="">Seleccione una opción</option>
+                                                @foreach (var a in item.FORM_FormPreguntas.FORM_FormAlternativa.OrderBy(o => o.Indice)) //SELECCION COMBO
+                                                {
+                                                    if (item.Respuesta.Equals(a.Titulo))
+                                                    {
+                                                        <option selected value="@a.IdAlternativa" data-IdAlterna="@a.IdAlternativa">@a.Titulo</option>
+                                                    }
+                                                    else {
+                                                        <option value="@a.IdAlternativa" data-IdAlterna="@a.IdAlternativa">@a.Titulo</option>
+                                                    }
+                                                 }
+                                            </select>
+                                            <div id="error_Select_@item.FORM_FormPreguntas.IdPregunta"></div>
+                                        }
+                                        else if (item.FORM_FormPreguntas.TipoParam == 2) //TEXTO MULTILÍNEA
+                                        {
+                                            <textarea class="form-control input-sm @item.FORM_FormPreguntas.ConfigPregunta.Clase respuesta" rows="5" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" id="Mensaje_@item.FORM_FormPreguntas.IdPregunta" name="Mensaje_@item.FORM_FormPreguntas.IdPregunta">@item.Respuesta</textarea>
+                                            <div id="error_Mensaje_@item.FORM_FormPreguntas.IdPregunta"></div>
+                                        }
+                                        else if (item.FORM_FormPreguntas.TipoParam == 1) //TEXTO SIMPLE
+                                        {
+                                            <input type="text" class="form-control input-sm @item.FORM_FormPreguntas.ConfigPregunta.Clase respuesta" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" id="Mensaje_@item.FORM_FormPreguntas.IdPregunta" name="Mensaje_@item.FORM_FormPreguntas.IdPregunta" value="@item.Respuesta"/>
+                                            <div id="error_Mensaje_@item.FORM_FormPreguntas.IdPregunta"></div>
+                                        }
+                                        else
+                                        {
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <span>@Html.Raw(item.FORM_FormPreguntas.ConfigPregunta.Icono)</span>
+                                                </span>
+                                                <input type="text" class="form-control input-sm respuesta @item.FORM_FormPreguntas.ConfigPregunta.Clase" data-obligatoria="@item.FORM_FormPreguntas.Obligatoria" data-id-preg="@item.FORM_FormPreguntas.IdPregunta" data-IdTipo="@item.FORM_FormPreguntas.TipoParam" data-id-item="@item.FORM_FormPreguntas.FORM_FormItems.IdItem" id="Mensaje_@item.FORM_FormPreguntas.IdPregunta" name="Mensaje_@item.FORM_FormPreguntas.IdPregunta" value="@item.Respuesta" />
+                                            </div>
+                                            <div id="error_Mensaje_@item.FORM_FormPreguntas.IdPregunta"></div>
+                                        }
+
+                                    </div>
+                                </div>
+                            }
+                        
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right" role="group" aria-label="..." style="margin-top:15px">
+                                    <button id="btnSubmitForm" type="submit" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-upload"></i> Guardar Datos</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

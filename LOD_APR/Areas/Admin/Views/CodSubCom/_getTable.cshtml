@@ -1,0 +1,216 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_CodSubCom>
+
+<table class="table table-condensed table-hover header_fijo" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>Tipo de Libro de Obra</th>
+            <th>Tipo de Comunicación</th>
+            <th>
+                Subtipo de Comunicación
+            </th>
+            <th>Clasificación Rep.</th>
+            <th>Subclasificación Rep.</th>
+            <th>
+                Tipo de Documento
+            </th>
+            <th>
+                Activo
+            </th>
+            <th>
+                Obligatorio
+            </th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{ 
+            var lod = 0;
+            var com = 0;
+            var sub = 0;
+            var classone = 0;
+            var classtwo = 0;
+            }
+        @foreach (var item in Model)
+        {
+        <tr>
+            @if (Model.First() == item)
+            {
+                <td rowspan="@Model.Where(x => x.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod == item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.MAE_TipoLOD.Nombre)
+                </td>
+            }
+            else if (item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod != Model.First().MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod && lod == 0)
+            {
+                lod = item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod;
+                if (item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod == lod)
+                {
+                    <td rowspan="@Model.Where(x => x.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod == item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.MAE_TipoLOD.Nombre)
+                    </td>
+                }
+            }
+            else if (lod != 0 && lod != item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod)
+            {
+                lod = item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod;
+                if (item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod == lod)
+                {
+                    <td rowspan="@Model.Where(x => x.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod == item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.IdTipoLod).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.MAE_TipoLOD.Nombre)
+                    </td>
+                }
+            }
+
+
+            @if (Model.First() == item)
+            {
+                <td rowspan="@Model.Where(x => x.MAE_SubtipoComunicacion.IdTipoCom == item.MAE_SubtipoComunicacion.IdTipoCom).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)
+                </td>
+            }
+            else if (item.MAE_SubtipoComunicacion.IdTipoCom != Model.First().MAE_SubtipoComunicacion.IdTipoCom && com == 0)
+            {
+                com = item.MAE_SubtipoComunicacion.IdTipoCom;
+                if (item.MAE_SubtipoComunicacion.IdTipoCom == com)
+                {
+                    <td rowspan="@Model.Where(x => x.MAE_SubtipoComunicacion.IdTipoCom == item.MAE_SubtipoComunicacion.IdTipoCom).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)
+                    </td>
+                }
+            }
+            else if (com != 0 && com != item.MAE_SubtipoComunicacion.IdTipoCom)
+            {
+                com = item.MAE_SubtipoComunicacion.IdTipoCom;
+                if (item.MAE_SubtipoComunicacion.IdTipoCom == com)
+                {
+                    <td rowspan="@Model.Where(x => x.MAE_SubtipoComunicacion.IdTipoCom == item.MAE_SubtipoComunicacion.IdTipoCom).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)
+                    </td>
+                }
+            }
+
+
+
+            @if (Model.First() == item)
+            {
+                <td rowspan="@Model.Where(x => x.IdTipoSub == item.IdTipoSub).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.Nombre)
+                </td>
+            }
+            else if (item.IdTipoSub != Model.First().IdTipoSub && sub == 0)
+            {
+                sub = item.IdTipoSub;
+                if (item.IdTipoSub == sub)
+                {
+                    <td rowspan="@Model.Where(x => x.IdTipoSub == item.IdTipoSub).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.Nombre)
+                    </td>
+                }
+            }
+            else if (sub != 0 && sub != item.IdTipoSub)
+            {
+                sub = item.IdTipoSub;
+                if (item.IdTipoSub == sub)
+                {
+                    <td rowspan="@Model.Where(x => x.IdTipoSub == item.IdTipoSub).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_SubtipoComunicacion.Nombre)
+                    </td>
+                }
+            }
+
+
+            @if (item.MAE_ClassDoc != null)
+            {
+                @*<td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.MAE_ClassOne.Nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.Nombre)</td>*@
+
+
+                if (classone == 0)
+                {
+                    <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.MAE_ClassOne.Nombre)</td>
+                    classone = item.MAE_ClassDoc.MAE_ClassTwo.IdClassOne;
+                }
+                else if (classone == item.MAE_ClassDoc.MAE_ClassTwo.IdClassOne)
+                {
+                    <td style="border-color:transparent;"></td>
+                }
+                else
+                {
+                    <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.MAE_ClassOne.Nombre)</td>
+                    classone = item.MAE_ClassDoc.MAE_ClassTwo.IdClassOne;
+                }
+
+                if (classtwo == 0)
+                {
+                    <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.Nombre)</td>
+                    classtwo = item.MAE_ClassDoc.MAE_ClassTwo.IdClassTwo;
+                }
+                else if (classtwo == item.MAE_ClassDoc.MAE_ClassTwo.IdClassTwo)
+                {
+                    <td style="border-color:transparent;"></td>
+                }
+                else
+                {
+                    <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.Nombre)</td>
+                    classtwo = item.MAE_ClassDoc.MAE_ClassTwo.IdClassTwo;
+                }
+
+
+            }
+            else
+            {
+                <td>-</td>
+                <td>-</td>
+            }
+
+            <td>
+                @Html.DisplayFor(modelItem => item.MAE_TipoDocumento.Tipo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Activo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Obligatorio)
+            </td>
+
+            <td>
+                <div class="btn-group btn-group-nobreak">
+                    @if (Html.ValidaPermisos("0010080002"))
+                    {
+                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Editar"), "Edit", null, new { id = item.IdControl },
+                             new AjaxOptions
+                             {
+                                 HttpMethod = "GET",
+                                 InsertionMode = InsertionMode.Replace,
+                                 UpdateTargetId = "modalCanvas",
+                                 OnSuccess = "mae_codsubcom.InitModalEdit(data,status,xhr);"
+                             }
+                             , new { @class = "btn btn-warning btn-xs" })
+                    }
+
+                    @if (Html.ValidaPermisos("0010080003"))
+                    {
+
+                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdControl },
+                                  new AjaxOptions
+                                  {
+                                      HttpMethod = "GET",
+                                      InsertionMode = InsertionMode.Replace,
+                                      UpdateTargetId = "modalCanvas",
+                                      OnSuccess = "mae_codsubcom.initModal(data,status,xhr);"
+                                  }
+                                  , new { @class = "btn btn-danger btn-xs" })
+                    }
+                    </div>
+
+            </td>
+
+        </tr>}
+    </tbody>
+</table>
+
+
+<style>
+ 
+
+    
+</style>

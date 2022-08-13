@@ -1,0 +1,129 @@
+﻿@model IEnumerable<LOD_APR.Models.ApplicationUser>
+
+<table id="tableUsers" class="table">
+    <thead>
+        <tr>
+            <th>
+
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Run
+            </th>
+            <th>
+                Usuario
+            </th>
+            <th>
+                <center>
+                    Empresa
+                </center>
+            </th>
+            <th>
+                <center>
+                    Cargo
+                </center>
+            </th>
+            <th>
+                <center>
+                    Activo
+                </center>
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+
+                <tr>
+                    <td>
+                        @if (String.IsNullOrEmpty(item.RutaImagen))
+                        {
+
+                            <h6 href="#" data-letters="@Html.ImageLetter(item.Nombres, item.Apellidos)" class="@item.DataLetters m-b-none m-t-none" style="vertical-align: middle; margin-bottom:0; margin-top:0;"></h6>
+
+
+
+                        }
+                        else
+                        {
+
+                            string ruta = "/Images/Contactos/" + item.RutaImagen;
+                            <img alt="" class="img-circle m-b-none" style="margin-bottom:0; width:28px; height:28px;" src="@ruta" />
+
+                        }
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombres) @Html.DisplayFor(modelItem => item.Apellidos)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Run)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UserName)
+                    </td>
+                    <td>
+                        <center>
+                            <label class="label label-info">@Html.DisplayFor(modelItem => item.MAE_Sucursal.MAE_sujetoEconomico.NomFantasia)</label> </center>
+                    </td>
+                    <td><center>
+                        @Html.DisplayFor(modelItem => item.CargoContacto)
+                    </center>
+                    </td>
+                    <td><center>
+                        @Html.DisplayFor(modelItem => item.Activo)
+                    </center>
+                    </td>
+                    <td>
+                        @if (item.Id == "6daefa2c-f5ad-4a56-9ce6-4ce687c05b71")
+                        {
+                            <div class="btn-group" role="group"></div>
+                        }
+                                else {
+                                <div class="btn-group" role="group">
+                                    @if (Html.ValidaPermisos("0010010002"))
+                                    {
+                                        <a href="@Url.Action("Edit", "Usuarios", new { Id = item.Id, back = "1" })" role="button" class="btn btn-xs btn-outline btn-warning"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+                                    
+
+
+                                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-unlock\"></i>"), "SetPassword", "Usuarios", new { userId = item.Id },
+                                        new AjaxOptions
+                                        {
+                                            HttpMethod = "GET",
+                                            InsertionMode = InsertionMode.Replace,
+                                            UpdateTargetId = "modalCanvas",
+                                            OnSuccess = "sms_users.initModal(data,status,xhr);"
+                                        }
+                                        , new { @class = "btn btn-outline btn-info btn-xs" })
+                                    }
+
+                                    @if (Html.ValidaPermisos("0010010003"))
+                                    {
+
+                                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", "Usuarios", new { id = item.Id },
+                                        new AjaxOptions
+                                        {
+                                            HttpMethod = "GET",
+                                            InsertionMode = InsertionMode.Replace,
+                                            UpdateTargetId = "modalCanvas",
+                                            OnSuccess = "sms_users.initModal(data,status,xhr);"
+                                        }
+                                        , new { @class = "btn btn-outline btn-danger btn-xs" })
+                                    }
+
+                                </div>
+                              }
+                        </td>
+                </tr>
+            
+
+        }
+
+    </tbody>
+
+</table>

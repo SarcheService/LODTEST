@@ -1,0 +1,193 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_LibroObras
+@using LOD_APR.Areas.Admin.Models;
+@{ int IdLod = ViewBag.IdLod;
+    string UserId = ViewBag.IdUserActual; }
+
+
+   <div class="row">
+                                <div class="col-md-7 col-sm-12">
+                                    <h3 class="text-navy-blue m-t-none"><strong>@Model.NombreLibroObra</strong></h3>
+                                    <h4 class="m-b-none m-t-xs">Contrato: @Model.CON_Contratos.CodigoContrato - @Model.CON_Contratos.NombreContrato</h4>
+                                </div>
+                                <div class="col-md-5 col-sm-12">
+                                    <div class="btn-group pull-right">
+
+                                        @if (Html.ValidaRoles(IdLod, 2, UserId) && ViewBag.EsInspectorFiscal && Model.Estado == 1)
+                                        {
+
+                                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-lock\"></i> Cerrar Libro"), "CierreLibro", "LibroObras", new { IdLod = Model.IdLod },
+                                            new AjaxOptions
+                                            {
+                                                HttpMethod = "GET",
+                                                InsertionMode = InsertionMode.Replace,
+                                                UpdateTargetId = "modalCanvas",
+                                                OnSuccess = "lod_cierrelibros.initModal(data,status,xhr);"
+                                            }
+                                            , new { @class = "btn btn-sm btn-warning2 btn-outline", @id = "BtnCierreLibro" })
+
+
+                                        }
+                                        else if (Html.ValidaRoles(IdLod, 2, UserId) && Model.Estado == 0)
+                                        {
+                                            <div class="dropdown">
+                                                <button class="btn btn-success btn-sm dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                    Activar Libro
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu pull-left" aria-labelledby="dropdownMenu1" style="position:unset">
+                                                    <li>
+                                                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-check\"></i> Activar con Firma MOP"), "ActivarLibroMOP", "LibroObras", new { IdLod = Model.IdLod },
+                                                        new AjaxOptions
+                                                        {
+                                                            HttpMethod = "GET",
+                                                            InsertionMode = InsertionMode.Replace,
+                                                            UpdateTargetId = "modalCanvas",
+                                                            OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);"
+                                                        }
+                                                        , new { @class = "", @id = "BtnActivarLibro" })
+                                                    </li>
+                                                    <li>
+
+                                                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-check\"></i> Activar con FEA"), "ActivarLibroFEA", "LibroObras", new { IdLod = Model.IdLod },
+                                                        new AjaxOptions
+                                                        {
+                                                            HttpMethod = "GET",
+                                                            InsertionMode = InsertionMode.Replace,
+                                                            UpdateTargetId = "modalCanvas",
+                                                            OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);glod_contratos.initActivacionFEA(" + @Model.IdLod + ");"
+                                                        }
+                                                        , new { @class = "", @id = "BtnActivarLibro" })
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+
+                                        }
+
+                                        @if (Html.ValidaRoles(IdLod, 2, UserId) && ViewBag.EsInspectorFiscal && Model.Estado != 2 && !Model.MAE_TipoLOD.EsObligatorio)
+                                        {
+                                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-edit\"></i> Editar"), "Edit", "LibroObras", new { id = Model.IdLod },
+                                            new AjaxOptions
+                                            {
+                                                HttpMethod = "GET",
+                                                InsertionMode = InsertionMode.Replace,
+                                                UpdateTargetId = "modalCanvas",
+                                                OnSuccess = "glod_libroobras.initModal(data,status,xhr);"
+                                            }
+                                            , new { @class = "btn btn-sm btn-warning2 btn-outline", @id = "BtnEditarBitacora" })
+                                        }
+
+                                        @if (Html.ValidaRoles(IdLod, 2, UserId) && ViewBag.EsInspectorFiscal && !Model.MAE_TipoLOD.EsObligatorio && Model.Estado == 0)
+                                        {
+                                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i> Eliminar"), "Delete", "LibroObras", new { id = Model.IdLod },
+                                            new AjaxOptions
+                                            {
+                                                HttpMethod = "GET",
+                                                InsertionMode = InsertionMode.Replace,
+                                                UpdateTargetId = "modalCanvas",
+                                                OnSuccess = "glod_libroobras.initModalDelete(data,status,xhr);"
+                                            }
+                                            , new { @class = "btn btn-sm btn-danger2 btn-outline", @id = "BtnEliminarBitacoras" })
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="row">
+                                <div class="col-md-3" style="padding-right:0">
+                                    <div class="panel-body" style="background: #fff;border: 1px solid #e4e5e7;border-radius: 2px;padding: 15px;padding-top:10px;position: relative;">
+
+                                        @if (Model.RutaImagenLObras != null)
+                                        {
+                                            <center>
+                                                <img alt="foto proyecto" class="img-thumbnail" src="@Url.Content(Model.RutaImagenLObras)?@DateTime.Now.Ticks.ToString()" />
+                                            </center>
+                                        }
+                                        else
+                                        {
+                                            <center>
+                                                <h2 class="text-center text-primary"><i class="fa fa-book  fa-3x" aria-hidden="true"></i></h2>
+                                            </center>
+                                        }
+
+                                        @if (Html.ValidaRoles(IdLod, 1, UserId) && Model.Estado > 0@*&& Html.ValidaPermisos("0020100000")*@)
+                                          {
+                                             <a role="button" href="@Url.Action("Index", "Anotaciones", new { Id = Model.IdLod,  tipo = 0 })" class="btn btn-sm btn-info btn-group-justified"><i class="fa fa-mail-forward"></i> Entrar al LOD</a>
+                                          }
+                                    </div>
+                                </div>
+                                <div class="col-md-9" style="padding-left:0;">
+                                    <table class="table table-condensed table-striped">
+                                        <tr>
+                                            <th>Estado</th>
+                                            <td>
+                                                @switch (Model.Estado)
+                                                {
+                                                    case 0:
+                                                        <label class="label label-warning">Creado</label> break;
+                                                    case 1:
+                                                        <label class="label label-success">Aperturado</label>break;
+                                                    case 2:
+                                                        <label class="label label-info">Cerrado</label>break;
+                                                }
+                                            </td>
+                                            <th></th>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <th>Creado por</th>
+                                            <td>@Model.Usuario_Creacion.NombreCompleto</td>
+                                            <th>Creado el</th>
+                                            <td>@Model.FechaCreacion.ToShortDateString()</td>
+                                        </tr>
+
+                                        @if (Model.Estado > 0)
+                                        {
+                                            <tr>
+                                                <th>Aperturado por</th>
+                                                @if (!String.IsNullOrEmpty(Model.UsuarioApertura))
+                                                {
+                                                    <td>@Model.Usuario_Apertura.NombreCompleto</td>
+                                                }else{
+                                                    <td>-</td>
+                                                }
+                                                <th>Aperturado el</th>
+                                                @if (Model.FechaApertura != null)
+                                                {
+                                                <td>@Model.FechaApertura.Value.ToShortDateString()</td>
+                                                }
+                                                else { 
+                                                <td>-</td>
+                                                }
+                                            </tr>
+                                            <tr>
+                                                <th>Aperturado con</th>
+                                                <td>@Model.TipoFirmaApertura</td>
+                                                <th></th>
+                                                <td></td>
+                                            </tr>
+                                        }
+                                        @if (Model.Estado > 1)
+                                        {
+                                            <tr>
+                                                <th>Cerrado por</th>
+                                                @if (!String.IsNullOrEmpty(Model.UsuarioCierre))
+                                                {
+                                                    <td>@Model.Usuario_Cierre.NombreCompleto</td>
+                                                }
+                                                else { 
+                                                    <td>-</td>
+                                                }
+                                                <th>Cerrado el</th>
+                                                @if (Model.FechaCierre != null)
+                                                {
+                                                <td>@Model.FechaCierre.Value.ToShortDateString()</td>
+                                                }
+                                                else { 
+                                                <td>-</td>
+                                                }
+                                            </tr>
+                                        }
+                                    </table>
+                                </div>
+                            </div>

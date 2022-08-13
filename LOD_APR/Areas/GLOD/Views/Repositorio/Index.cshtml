@@ -1,0 +1,129 @@
+﻿@model LOD_APR.Areas.GLOD.ModelsViews.IndexCodView
+
+@{
+    ViewData["CustomArea"] = ViewBag.NombreArea;
+    ViewBag.Title = "Repositorio de Documentos";
+    Layout = "~/Areas/GLOD/Views/Shared/_Layout.cshtml";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Libros de Obra</a></li>
+                    <li class="active">
+                        <span>Repositorio de Documentos</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Repositorio de Documentos
+            </h2>
+            <small>Listado de los documentos asociados a los distintos contratos.</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-3 col-md-3">
+            <div class="hpanel hblue">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span> Filtro y búsqueda</span>
+                        </div>
+                        <div class="col-xs-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body ">
+                    <div class="input-group">
+                        <input class="form-control" type="text" id="searchInput" placeholder="Buscar en tabla"> <span class="input-group-btn">
+                            <button id="btnTableSearch" type="button" class="btn btn-warning" onclick="$('#searchInput').val('');">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="panel-body">
+                        <div class="row" style="overflow:auto">
+                            <div class="col-md-12">
+                                <div id="divTableDatos">
+                                    @Html.Partial("_getTable", Model)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="modalCanvas"></div>
+
+
+
+
+
+
+
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/select2/css")
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <style>
+
+        ul.ui-autocomplete {
+            z-index: 1100;
+        }
+
+        .ui-front {
+            z-index: 1500 !important;
+        }
+    </style>
+}
+
+@section Scripts {
+
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="~/Scripts/app/LOD_Repositorio.js"></script>
+
+    <script type="text/javascript">
+        $.fn.modal.Constructor.prototype.enforceFocus = function () { };
+        var lod_repositorio;
+        $(document).ready(function () {
+            lod_repositorio = new LOD_Repositorio();
+        });
+
+    </script>
+
+
+
+}
+
+
+
+

@@ -1,0 +1,86 @@
+﻿
+<div class="row">
+    <div class="col-lg-12 hidden-xs">
+        <h3 class="text-navy-blue"><b>ARCHIVO</b></h3>
+        @*Html.ValidaPermisos("00601801") || Html.ValidaPermisos("00601301")|| Html.ValidaPermisos("00601401")|| Html.ValidaPermisos("00601601")|| Html.ValidaPermisos("00601701")*@
+        @if (true)
+        {
+            <span>Seleccione elemento a crear </span>
+        }
+    </div>
+    <div class="col-lg-12 visible-xs">
+        <center><h4 class="text-navy-blue"><b>ARCHIVO</b></h4></center>
+        <center><span>Seleccione elemento a crear </span></center>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12 hidden-xs"><hr /></div>
+</div>
+<div>
+    <div class="col-lg-1 "></div>
+    
+    <div class="col-xs-6 col-lg-5">
+        <h2 class="text-center text-primary "><i class="fa fa-folder-o fa-2x hidden-xs" aria-hidden="true"></i></h2>
+       <h2 class="text-center text-primary "><i class="fa fa-folder-o visible-xs" aria-hidden="true"></i></h2>
+       <center>
+           @*Html.ValidaPermisos("00601301")*@
+           @if(Html.ValidaPermisos("0020000101"))
+           {
+
+               @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> Carpeta"), "Create", "Carpetas", 
+                    new { area = "GLOD", Padre = 1, Tipo = "0" },
+                    new AjaxOptions
+                    {
+                        HttpMethod = "GET",
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "modalCanvas",
+                        OnSuccess = "glod_carpetas.initModal(data,status,xhr);"
+                    }
+                    , new { @class = "btn btn-primary btn-xs btn-outline" })
+           }
+       </center>
+    </div>
+    
+ 
+    <div class="col-xs-6 col-lg-5">
+        <h2 class="text-center text-primary"><i class="fa fa-file-text-o  fa-2x hidden-xs" aria-hidden="true"></i></h2>
+        <h2 class="text-center text-primary"><i class="fa fa-file-text-o visible-xs" aria-hidden="true"></i></h2>
+        <center>
+            @*Html.ValidaPermisos("00601701")*@
+            @if (Html.ValidaPermisos("0020000001"))
+            {
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> Contrato"), "Create", "Contratos", null,
+                                             new AjaxOptions
+                                             {
+                                                 HttpMethod = "GET",
+                                                 InsertionMode = InsertionMode.Replace,
+                                                 UpdateTargetId = "modalCanvas",
+                                                 OnSuccess = "glod_contratos.initModal(data,status,xhr);"
+                                             }
+                                             , new { @class = "btn btn-primary btn-xs btn-outline" })
+            }
+        </center>
+
+    </div>
+    @*<div class="col-xs-12 col-lg-2">
+
+        <h2 class="text-center text-primary"><i class="fa fa-book  fa-2x hidden-xs" aria-hidden="true"></i></h2>
+        <h2 class="text-center text-primary"><i class="fa fa-book visible-xs" aria-hidden="true"></i></h2>
+        <center>
+            @if (Html.ValidaPermisos("00601801"))
+            {
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-plus ' aria-hidden='true'></i> Bitácora"), "Create", "Bitacoras", null,
+                                             new AjaxOptions
+                                             {
+                                                 HttpMethod = "GET",
+                                                 InsertionMode = InsertionMode.Replace,
+                                                 UpdateTargetId = "modalCanvas",
+                                                 OnSuccess = "asp_bitacoras.initModal(data,status,xhr);"
+                                             }
+                                             , new { @class = "btn btn-primary btn-xs btn-outline", @id="CreateBitacoras" })
+            }
+            </center>
+
+    </div>*@
+    <div class="col-lg-1"></div>
+</div>

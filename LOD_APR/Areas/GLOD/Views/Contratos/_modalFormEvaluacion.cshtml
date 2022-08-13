@@ -1,0 +1,207 @@
+﻿
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalContratos" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+                <center><h4 class="modal-title">@ViewBag.ObjetoEvaluable.CodigoContrato
+                    -&nbsp;@ViewBag.ObjetoEvaluable.NombreContrato</h4></center>
+            </div>
+            @{string action = ViewBag.Action;}
+            <form id="formEvalContratos" name="formEvalContratos" @*enctype="multipart/form-data"*@ @*action="/ASP/Contratos/@action" method="post"*@>
+                @Html.AntiForgeryToken()
+                @*<input id="ContratoId" name="ContratoId" value=@ViewBag.ObjetoEvaluable.IdContrato type="hidden">*@
+                <input id="EvaluacionId" name="EvaluacionId" value=@ViewBag.EvaluacioId type="hidden">
+                <input id="FormularioId" name="FormularioId" value=@ViewBag.Formulario.IdFormEval type="hidden">
+                <div class="modal-body">
+                    <div class="row">
+                        @*CABECERA EVALUACION*@
+                        <div class="col-lg-12">
+                            <div class="col-lg-1">
+                                <center class="text-center text-primary"><i class="pe pe-7s-note2  fa-4x" aria-hidden="true"></i></center>
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>F E:<b> @ViewBag.Formulario.NomFormEval</b></h3>
+                                <span><b>Creado por :&nbsp;</b>bsp; &nbsp;<b>Fecha Creación:&nbsp;</b>@ViewBag.Formulario.FechaCreacion</span>
+                                <br /><span><b>Descripción:&nbsp;</b>@ViewBag.Formulario.DescripFormEval</span>
+                                @if (@ViewBag.Formulario.IdEscala != null)
+                                {
+                                    <span><b>Escala:&nbsp;</b> @ViewBag.Formulario.EVA_escalasEvaluacion.NombreEscala</span>
+                                }
+                                else
+                                {
+                                    <span><b>Escala:&nbsp;</b> Encuesta</span>
+                                }
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="form-group">
+                                    <br />
+                                    <div class="col-md-12">
+                                        <label class="h6"><b>Referencia Evaluación</b></label>
+                                        <textarea class="form-control text-box multi-line" data-min=@ViewBag.RangosMin data-max=@ViewBag.RangosMax  id="RefEval" name="RefEval"></textarea>
+                                        <label class="h6"><b>Programada:</b>&nbsp;<span class="label label-info label-sm">@ViewBag.FechaProgramada.ToShortDateString()</span> 
+                                                          <b>Estado:</b>&nbsp;
+                                            @if (ViewBag.FechaProgramada.Date>=DateTime.Today.Date)
+                                            {
+                                                <span class="label label-success label-sm">Programada</span>
+                                            }
+                                            else
+                                            {
+                                                <span class="label label-danger label-sm">Vencida</span>
+                                            }
+                                            </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <br />
+                            </div>
+                        </div>
+                        @*ITEMS*@
+                        <div class="col-lg-12">
+                            @{int i = 1;}
+                            @foreach (var item in @ViewBag.Formulario.EVA_itemsFormularioEvaluacion)
+                            {
+                                <div class="hpanel">
+                                    <div class="panel-heading hbuilt">
+                                        <h5>
+                                            <b>@Html.EnumeracionRomanos(i).-&nbsp;@item.NombreItemForm.ToString()</b>
+                                            @*<span class="label label-info small" style="color:white">@item.NombreTipoParametro</span>*@
+                                            @*@if (!item.Activo)
+                                            {<span class="label label-danger small" style="color:white">Desactivado</span>}*@
+                                        </h5>
+                                        <p>
+                                            <b>Instrucciones:&nbsp;</b>
+                                            @if (item.InstrucItemForm != null)
+                                            {
+                                                @item.InstrucItemForm.ToString()
+                                            }
+                                            else
+                                            {
+                                                <span>-</span>
+                                            }
+                                            &nbsp; &nbsp;
+                                            @if (item.Puntaje != null)
+                                            {
+                                                <b>Puntaje:&nbsp;</b>@item.Puntaje
+                                            }
+                                            else
+                                            {
+                                                <b>Puntaje:&nbsp;-</b>
+                                            }
+                                            @if (item.Ponderacion != null)
+                                            {
+                                                <b>Ponderación:&nbsp;</b>@item.Ponderacion
+                                            }
+                                            else
+                                            {
+                                                <b>Ponderación:&nbsp;-</b>
+                                            }
+                                        </p>
+                                    </div>
+
+                                    @*PARAMETROS*@
+                                    @{int j = 1;}
+                                    <div class="panel-body" style="overflow:auto">
+                                        <ul class="list-group">
+                                            @foreach (var obj in item.EVA_parametrosEvaluacion)
+                                            {
+                                                //if (obj.activo)
+                                                //{
+                                                    <li class="list-group-item">
+                                                        @*ED Evaluación Directa*@
+                                                        @if (obj.TipoParam == 1)
+                                                        {
+                                                            string idname = "ED_" + item.IdItemFormEval.ToString() + "_" + obj.idParamEval.ToString();
+                                                            <input class="form-control text-box pull-right ED" style="width:45px" id=@idname name=@idname  data-mask="9.9" >
+                                                                <h5> @j)&nbsp; @obj.nomParamEval </h5>
+                                                                <h6>
+                                                                    @obj.descripParam&nbsp;&nbsp;  (puntaje:&nbsp;<b>@obj.puntaje</b> &nbsp; punto(s))
+                                                                    &nbsp; &nbsp;(ponderación:&nbsp;:<b>@obj.ponderacion</b>&nbsp;%)
+                                                                </h6>
+                                                        }
+                                                        @*PA Pregunta Abierta*@
+                                                        else if (obj.TipoParam == 2)
+                                                        {
+                                                            <h5> @j)&nbsp; @obj.nomParamEval </h5>
+                                                            <h6>
+                                                                @obj.descripParam&nbsp;&nbsp;  (puntaje:&nbsp;<b>@obj.puntaje</b> &nbsp; punto(s))
+                                                                &nbsp; &nbsp;(ponderación:&nbsp;:<b>@obj.ponderacion</b>&nbsp;%)
+                                                            </h6>
+                                                            string idname = "PA_" + item.IdItemFormEval.ToString() + "_" + obj.idParamEval.ToString();
+                                                            <textarea class="form-control text-box multi-line" data-val="true" data-val-required="Dato obligatorio" id=@idname name=@idname></textarea>
+                                                        }
+                                                        @*SM PSeleccionMultiple*@
+                                                        else if (obj.TipoParam == 3)
+                                                        {
+                                                            <h5> @j) @obj.nomParamEval </h5>
+                                                            <h6>
+                                                                @obj.descripParam&nbsp;&nbsp;  (puntaje:&nbsp;<b>@obj.puntaje</b> &nbsp; punto(s))
+                                                                &nbsp; &nbsp;(ponderación:&nbsp;:<b>@obj.ponderacion</b>&nbsp;%)
+                                                            </h6>
+                                                            <br />
+                                                            int k = 1;
+                                                            <ul>
+                                                                @{string idname3 = "SM_" + item.IdItemFormEval.ToString() + "_" + obj.idParamEval.ToString();}
+                                                                <li style="display:block">
+                                                                    <div class="radio" >
+                                                                    @foreach (var alternativa in obj.EVA_alternativasSeleccionMultiple)
+                                                                    {
+                                                                        if (alternativa.Activa)
+                                                                        {
+                                                                            <label>
+                                                                                <input type="radio" value=@alternativa.IdAlternativaSM id=@idname3 name=@idname3> @Html.EnumeracionLetras(k))&nbsp;@alternativa.NombreAlternativa
+                                                                            </label>
+                                                                            <br />
+                                                                            k++;
+                                                                        }
+                                                                    }
+                                                                    </div>                                                             
+                                                                </li>
+                                                            </ul>
+                                                        }
+                                                        @*CL CheckList*@
+                                                        else if (obj.TipoParam == 4)
+                                                        {
+                                                            string idname4 = "CL_" + item.IdItemFormEval.ToString() + "_" + obj.idParamEval.ToString();
+                                                            <h5 style="display:inline">
+                                                                <input class="check-box center" id=@idname4 name=@idname4 type="checkbox" value="true">
+                                                                &nbsp;&nbsp;@j<span>.-</span> @obj.nomParamEval
+                                                                @*@if (!obj.activo)
+                                                                {<span class="label label-danger small" style="color:white">Desactivado</span>}*@
+                                                            </h5>
+                                                            <h6 style="display:inline">
+                                                                @obj.descripParam&nbsp;&nbsp;
+                                                                (puntaje:&nbsp;<b>@obj.puntaje</b> &nbsp; punto(s)
+                                                                &nbsp; &nbsp;ponderación:&nbsp;:<b>@obj.ponderacion</b>&nbsp;%)
+                                                            </h6>
+                                                        }
+                                                    </li> 
+                                                                        j++;
+                                                                        //}
+
+                                                                    }
+                                        </ul>
+                                    </div>
+                                </div>
+                                i++;
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <div class="btn-group pull-right">
+                                <button id="btnEvaluar"  class="btn btn-@ViewBag.Color ladda-button" data-style="expand-left" onclick="asp_contratos.SetEvaluacion(@ViewBag.idContrato);" type="button"><i class="fa fa-upload"></i> Guardar</button>
+                                <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

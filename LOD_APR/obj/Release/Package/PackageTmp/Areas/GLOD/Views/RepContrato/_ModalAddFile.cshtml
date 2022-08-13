@@ -1,0 +1,62 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_docAnotacion
+
+<div class="modal inmodal fade hmodal-success " id="modalFormDocs" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" >
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Agregar Documento</h4>
+                <h3></h3>
+            </div>
+            <div class="modal-body">
+                    <form id="formDocs" name="formDocs" enctype="multipart/form-data" action="/GLOD/RepContrato/AddDocumento" method="post">
+
+                        <div class="form-horizontal">
+                            @Html.HiddenFor(model => model.IdDocAnotacion)
+                            @Html.HiddenFor(model => model.IdTipoDoc)
+                            @Html.HiddenFor(model => model.IdContrato)
+                            @Html.HiddenFor(model => model.IdClassDoc)
+                            @Html.HiddenFor(model => model.IdClassTwo)
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.MAE_documentos.NombreDoc, "Título", htmlAttributes: new { @class = "control-label" })
+                                    @Html.EditorFor(model => model.MAE_documentos.NombreDoc, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                    @Html.ValidationMessageFor(model => model.MAE_documentos.NombreDoc, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @Html.LabelFor(model => model.MAE_documentos.Descripcion, "Descripción", htmlAttributes: new { @class = "control-label" })
+                                    @Html.EditorFor(model => model.MAE_documentos.Descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.MAE_documentos.Descripcion, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12" id="col-file">
+                                    @Html.LabelFor(model => model.PerFileName, "Seleccione el Archivo", htmlAttributes: new { @class = "control-label" })
+                                    @Html.TextBoxFor(model => model.PerFileName, new { type = "file" })
+                                    @Html.ValidationMessageFor(model => model.PerFileName, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                @*<div class="col-md-6">
+                                    <div class="progress m-t-md full progress-striped active">
+                                        <div id="progressBar" style="width:0%" role="progressbar" class="progress-bar progress-bar-success">0%</div>
+                                    </div>
+                                </div>*@
+                                <div class="col-md-12">
+                                    <div class="btn-group pull-right" role="group" aria-label="..." style="margin-top:15px">
+                                        <button id="btnSubmit" type="submit" class="btn btn-success btn-sm ladda-button" data-style="expand-right"><i class="fa fa-upload"></i> Subir Archivo</button>
+                                        <button type="button" class="btn btn-default btn-sm btn-tool" data-dismiss="modal">Cancelar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                
+                </div>
+        </div>
+    </div>
+</div>

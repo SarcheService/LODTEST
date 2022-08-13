@@ -1,0 +1,79 @@
+﻿@model LOD_APR.Areas.GLOD.ModelsViews.IndexCodView
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+                Codigo
+            </th>
+            <th>
+                Nombre Contrato
+            </th>
+            <th>
+                Estado
+            </th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var lod = 0;
+        }
+        @if (Model.list_Item != null)
+        {
+            foreach (var item in Model.list_Item)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CON_Contratos.CodigoContrato)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CON_Contratos.NombreContrato)
+                    </td>
+                    @if (item.Estado == 2)
+                    {
+
+                        <td><label class="label label-danger">Documentos Faltantes</label></td>
+                    }
+                    else if (item.Estado == 1)
+                    {
+                        <td><label class="label label-success">Documentos cargados</label></td>
+                    }
+                    else if(item.Estado == 3)
+                    {
+                        <td><label class="label label-warning">Sin Datos</label></td>
+                    }
+
+                    @if(item.Estado != 3) { 
+                        <td>
+                           <a class="btn btn-info btn-xs" target="_blank" href="@Url.Action("SeguimientoLibros", null, new { id = item.CON_Contratos.IdContrato })"><i class="fa fa-search"></i>Detalles</a>
+                        </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    
+                                   
+                                </td>
+                            }
+                
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td>
+                    
+                </td>
+                <td>
+                    
+                </td>
+                <td>
+                   
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

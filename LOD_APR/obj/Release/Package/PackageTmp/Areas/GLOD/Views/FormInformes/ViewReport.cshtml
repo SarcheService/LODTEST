@@ -1,0 +1,301 @@
+﻿@model LOD_APR.Areas.GLOD.Models.FORM_Informes
+
+@{
+    ViewBag.Title = "Reporte Ejecutivo";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Reportes</a></li>
+                    <li class="active">
+                        <span>Gestión de Reportes</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <a class="btn btn-warning" href="/GLOD/FormInformes/IndexEjecutivo/@Model.IdContrato"> <i class="fa fa-reply"></i></a>
+                <b>Reporte Ejecutivo Mensual</b>
+            </h2>
+            <small>Listado de Reportes Ejecutivo Mensual existentes</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Datos Reporte</span>
+                        </div>
+                        <div class="col-xs-4"></div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover small m-b-xs">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>Folio Interno</strong>
+                                </td>
+                                <td>
+                                    @Model.IdEnvio.ToString().PadLeft(6,'0')
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Cód. Contrato</strong>
+                                </td>
+                                <td>
+                                    @Model.CON_Contratos.CodigoContrato
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Mes Informado</strong>
+                                </td>
+                                <td>
+                                    @Model.MesInformado
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Periodo</strong>
+                                </td>
+                                <td>
+                                    @Model.Mes.PadLeft(2, '0')-@Model.Anio
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Creado el</strong>
+                                </td>
+                                <td>
+                                    @Model.FechaCreacion.ToString()
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Creado por</strong>
+                                </td>
+                                <td>
+                                    @Model.Usuario
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Estado</strong>
+                                </td>
+                                <td>
+                                    @Html.Raw(Model.EstadoDescript)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>F.Envío Reporte</strong>
+                                </td>
+                                <td>
+                                    @Model.FechaDespachoDescript
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-9 col-xs-12 ">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Estado del Contrato</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos_2">
+                        @Html.Partial("_GetTableReportItem", Model.FORM_InformesItems.Where(f => f.FORM_Formularios.Tipo == 2).OrderBy(o => o.FORM_Formularios.Titulo))
+                    </div>
+                </div>
+            </div>
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Prevención de Riesgos</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos_3">
+                        @Html.Partial("_GetTableReportItem", Model.FORM_InformesItems.Where(f => f.FORM_Formularios.Tipo == 3).OrderBy(o => o.FORM_Formularios.Titulo))
+                    </div>
+                </div>
+            </div>
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Comité Paritario</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos_4">
+                        @Html.Partial("_GetTableReportItem", Model.FORM_InformesItems.Where(f => f.FORM_Formularios.Tipo == 4).OrderBy(o => o.FORM_Formularios.Titulo))
+                    </div>
+                </div>
+            </div>
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Gestión de Calidad</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos_6">
+                        @Html.Partial("_GetTableReportItem", Model.FORM_InformesItems.Where(f => f.FORM_Formularios.Tipo == 6).OrderBy(o => o.FORM_Formularios.Titulo))
+                    </div>
+                </div>
+            </div>
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Medio Ambiente</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos_8">
+                        @Html.Partial("_GetTableReportItem", Model.FORM_InformesItems.Where(f => f.FORM_Formularios.Tipo == 8).OrderBy(o => o.FORM_Formularios.Titulo))
+                    </div>
+                </div>
+            </div>
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Participación Ciudadana</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos_9">
+                        @Html.Partial("_GetTableReportItem", Model.FORM_InformesItems.Where(f => f.FORM_Formularios.Tipo == 9).OrderBy(o => o.FORM_Formularios.Titulo))
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+
+@section Styles {
+    @Styles.Render("~/bundles/datatables-Layout/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/bundles/datepicker/css")
+    @Styles.Render("~/bundles/clockpicker/css")
+    <link href="~/Content/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+}
+}
+
+@section Scripts {
+    <script src="~/Scripts/jquery.form.js"></script>
+    @Scripts.Render("~/bundles/validation/js")
+    @Scripts.Render("~/bundles/datatables-Layout/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap-Layout/js")
+    @Scripts.Render("~/bundles/moment/js")
+    <script src="~/Scripts/moment-with-locales.min.js"></script>
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/datepicker/js")
+    @Scripts.Render("~/bundles/clockpicker/js")
+    <script src="~/Vendor/jQuery-Mask-Plugin/jquery.mask.min.js"></script>
+    @Scripts.Render("~/bundles/rut")
+    <script src="~/Scripts/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/Scripts/app/FORM_InformesEjecutivo.js"></script>
+
+    <script type="text/javascript">
+        var form_formulario;
+       // var eva_Respuestas;
+        $(document).ready(function () {
+            form_formulario = new FORM_InformesEjecutivo();
+              // eva_Respuestas = new FORM_Respuestas(@Model.IdEnvio);
+        });
+
+    </script>
+}

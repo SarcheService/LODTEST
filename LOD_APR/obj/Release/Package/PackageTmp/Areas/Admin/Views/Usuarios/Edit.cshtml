@@ -1,0 +1,271 @@
+﻿@model LOD_APR.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Editar usuario";
+}
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <div id="hbreadcrumb" class="pull-right">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="@Url.Action("Index", "Home")">Inicio</a></li>
+                    <li>
+                        <span>Usuarios</span>
+                    </li>
+                    <li><a href="@Url.Action("Index", "Usuarios")">Usuarios</a></li>
+                    <li class="active">
+                        <span>Editar Usuario</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                @{ 
+                    string back = ViewBag.back;
+                }
+                @if(!back.Equals("2"))
+                {
+                    <a href="@Url.Action("Index", "Usuarios", null)" class="btn btn-warning"><i class="fa fa-reply"></i></a><span> Editar Usuario</span>
+                }
+                else
+                {
+                        <a href="@Url.Action("Edit", "SujetoEconomico",new{ area = "Admin",id=ViewBag.IdRegreso})" class="btn btn-warning"><i class="fa fa-reply"></i></a><span> Editar Usuario</span> 
+                }
+
+            </h2>
+            <small>Formulario para la edición de un usuario existente.</small>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+
+    <div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="hpanel">
+                    <div class="panel-heading hbuilt">
+                        Datos del Usuario
+                    </div>
+                    <div class="panel-body">
+
+                        @using (Html.BeginForm("Edit", "Usuarios", FormMethod.Post, new { @class = "form-horizontal", @role = "form", @enctype = "multipart/form-data" }))
+                        {
+                            @Html.AntiForgeryToken()
+                            @*@Html.HiddenFor(model => model.Password)
+                            @Html.HiddenFor(model => model.ConfirmPassword)*@
+                            @Html.HiddenFor(model => model.back)
+                            @Html.HiddenFor(model => model.Activo)
+                            @Html.HiddenFor(model => model.Id)
+
+                            @*@Html.ValidationSummary("", new { @class = "text-danger" })*@
+                            <div class="row">
+                                <div class="col-md-3  text-center">
+                                    <div id="divImagenPersonal">
+                                        <div class="panel-body panel-load">
+                                            <div class="sk-spinner sk-spinner-wandering-cubes">
+                                                <div class="sk-cube1"></div>
+                                                <div class="sk-cube2"></div>
+                                            </div>
+                                            <div>
+                                                @if (Model.RutaImagen != null)
+                                                {
+                                                    <img id="contact_image" alt="logo" class="img-circle img-profile-galena" src="~/Images/Contactos/@Model.RutaImagen">}
+                                                else
+                                                {
+                                                    if (Model.Nombres == null)
+                                                    {
+                                                        <h2 href="#" data-letters="Foto" class="data-letters-galena" style="vertical-align: middle;"></h2>
+                                                    }
+                                                    else
+                                                    {
+                                                        <h2 href="#" data-letters="@Html.ImageLetter(Model.Nombres, Model.Apellidos)" class="@Model.DataLetters" style="vertical-align: middle;"></h2>
+                                                    }
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-t-none text-center">
+                                        <div class="btn-group">
+                                            <div class="fileUpload btn btn-default btn-sm">
+                                                <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                                <input id="fileImage" name="fileImage" type="file" class="upload" />
+                                            </div>
+                                            @if (Model.RutaImagen != null)
+                                            {
+                                                <button type="button" class="btn btn-danger btn-sm btn-outline" onclick="mae_user.clearImage('contact_image');"><i class="fa fa-trash"></i></button>}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-9">
+
+                                    <div class="form-group">
+                                        <div class="col-md-5">
+                                            @Html.LabelFor(model => model.Nombres, "Empresa", htmlAttributes: new { @class = "control-label" })
+                                            <input class="form-control text-box single-line" id="Empresa" name="Empresa" readonly="readonly" type="text" value="@ViewBag.Sujeto.NomFantasia">
+                                           
+                                        </div>
+                                        <div class="col-md-3">
+                                            <center> @Html.LabelFor(model => model.Nombres, "Tipo Empresa", htmlAttributes: new { @class = "control-label" })</center>
+                                            @{ string tipo = "Contratista";
+                                                if (@ViewBag.Sujeto.EsGubernamental)
+                                                {
+                                                    tipo = "Gubernamental";
+                                                }
+                                                else if (@ViewBag.Sujeto.EsMandante)
+                                                {
+                                                    tipo = "Fiscalizadora";
+                                                }
+                                            }
+                                            <center><label class="label label-info lavel-sm">@tipo</label></center>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label class="control-label" for="IdSucursal">Sucursal</label>
+                                            @Html.DropDownList("IdSucursal", null, htmlAttributes: new { @class = "form-control" })
+                                            @Html.ValidationMessageFor(model => model.IdSucursal, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group">
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Run, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.Run, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                            @Html.ValidationMessageFor(model => model.Run, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-5">
+                                            @Html.LabelFor(model => model.Nombres, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.Nombres, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Nombres, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-5">
+                                            @Html.LabelFor(model => model.Apellidos, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.Apellidos, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Apellidos, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-3">
+                                            @Html.LabelFor(model => model.CargoContacto, "Cargo Contacto",htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.CargoContacto, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.CargoContacto, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-3">
+                                            @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                            @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.AnexoEmpresa, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.AnexoEmpresa, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.AnexoEmpresa, "", new { @class = "text-danger" })
+                                        </div>
+
+                                        <div class="col-md-2">
+                                            @Html.LabelFor(model => model.Movil, htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.Movil, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Movil, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-6">
+                                            @Html.LabelFor(model => model.IdRoles, "Roles", htmlAttributes: new { @class = "control-label" })
+                                            @Html.DropDownList("IdRoles", null, htmlAttributes: new { @class = "form-control", @multiple = "multiple" })
+                                            @Html.ValidationMessageFor(model => model.IdRoles, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-4">
+                                            @Html.LabelFor(model => model.IdCertificado, "Id Firma Elec. Avanzada",htmlAttributes: new { @class = "control-label" })
+                                            @Html.EditorFor(model => model.IdCertificado, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.IdCertificado, "", new { @class = "text-danger" })
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label class="control-label" for="Activo">Activo</label>
+                                            @*@Html.CheckBox("Activo", Model.Activo);*@
+                                            <div class="switch">
+                                                <div class="onoffswitch">
+                                                    @*@Html.CheckBox("Activo", Model.Activo, new { @class = "onoffswitch-checkbox" });*@
+                                                    @if (Model.Activo)
+                                                    {
+                                                        <input checked="checked" class="onoffswitch-checkbox" id="Activo_" name="Activo_" type="checkbox">}
+                                                    else
+                                                    {
+                                                        <input class="onoffswitch-checkbox" id="Activo_" name="Activo_" type="checkbox">}
+                                                    <label class="onoffswitch-label" for="Activo_">
+                                                        <span class="onoffswitch-inner"></span>
+                                                        <span class="onoffswitch-switch"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group  pull-right">
+                                <div class="col-md-12 ">
+                                    <div class="btn-group pull-right">
+                                        @if (Html.ValidaPermisos("0010010002"))
+                                        {
+                                        <button id="btnSubmit" type="submit" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-upload" aria-hidden="true"></i> Guardar</button>
+                                        }
+                                        <a href="@Url.Action("Edit", "SujetoEconomico",new{ area = "Admin",id=@ViewBag.Sujeto.IdSujEcon })" role="button" class="btn btn-default"><i class="fa fa-ban" aria-hidden="true"></i> Cancelar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div id="modalCanvas"></div>
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/bundles/select2/css")
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/rut")
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+
+    <script src="~/Vendor/jQuery-Mask-Plugin/jquery.mask.min.js"></script>
+
+    <script src="~/Scripts/app/MAE_Usuarios.js"></script>
+    <script type="text/javascript">
+        
+
+        $(document).on("click", "[type='checkbox']", function (e) {
+            if (this.id == "Activo_" && this.checked) {
+                $("#Activo").attr("value", "True");
+            } else if (this.id == "Activo_" && !this.checked) {
+                $("#Activo").attr("value", "False");
+            }
+        });
+
+        $('#Telefono').mask('+56 000000000', { placeholder: "+56 _________" });
+        $('#Movil').mask('+569 00000000', { placeholder: "+56 9________" });
+
+        $("#IdRoles").select2({
+            placeholder: 'Seleccione el o los roles que desempeñará',
+            allowClear: true,
+            theme: "bootstrap"
+        });
+        var mae_user;
+        $(document).ready(function () {
+            mae_user = new MAE_Usuarios();
+        });
+
+    </script>
+}

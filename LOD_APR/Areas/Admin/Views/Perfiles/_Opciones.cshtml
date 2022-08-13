@@ -1,0 +1,94 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_opcionesMenu>
+
+
+
+
+<input type="hidden" id="IdPerfil" value="@ViewBag.IdPerfil">
+
+<div class="tabs-container">
+    <div class="tabs-left">
+        <ul class="nav nav-tabs">
+            @{bool activo = false;
+                string activar = "active";
+            }
+            @foreach (var item in ViewBag.Modulos)
+            {
+                if (!activo)
+                {
+                    <li class="active"><a aria-expanded="false" data-toggle="tab" href="#tab-@item.IdModulo">@item.Modulo</a></li>
+                    activo = true;
+                }
+                else
+                {
+                    <li><a aria-expanded="false" data-toggle="tab" href="#tab-@item.IdModulo">@item.Modulo</a></li>}
+            }
+        </ul>
+        <div class="tab-content">
+            @foreach (var item in ViewBag.Modulos)
+            {
+                <div id="tab-@item.IdModulo" class="tab-pane @activar">
+                    <div class="panel-body">
+                        <div class="table-responsive" @*animated fadeInDown*@>
+                            <table class="table table-striped table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Acción</th>
+                                        <th>Permiso</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{int i = 1;}
+                                    @foreach (var opcion in Model)
+                                    {
+                                        if (opcion.IdModulo == item.IdModulo)
+                                        {
+                                            <tr>
+                                                @*<td>@i</td>*@
+                                                <td>@opcion.IdOpcion</td>
+                                                <td>@opcion.Opcion</td>
+                                                <td>
+                                                    <div class="switch">
+                                                        <div class="onoffswitch">
+                                                            @{bool isPermiso = false;}
+                                                            @foreach (var permiso in ViewBag.Permisos)
+                                                            {
+                                                                if (permiso.IdOpcion == opcion.IdOpcion && permiso.IdRol == ViewBag.IdPerfil)
+                                                                {
+                                                                    isPermiso = true;
+                                                                }
+                                                            }
+                                                            @if (isPermiso)
+                                                            {
+                                                                <input class="onoffswitch-checkbox perm-check" id="chkPerm_@opcion.IdOpcion" data-opcion="@opcion.IdOpcion" data-perfil="@ViewBag.IdPerfil" type="checkbox" checked>
+                                                                <label class="onoffswitch-label" for="chkPerm_@opcion.IdOpcion">
+                                                                    <span class="onoffswitch-inner"></span>
+                                                                    <span class="onoffswitch-switch"></span>
+                                                                </label>
+                                                            }
+                                                            else
+                                                            {
+                                                                <input class="onoffswitch-checkbox perm-check" id="chkPerm_@opcion.IdOpcion" data-opcion="@opcion.IdOpcion" data-perfil="@ViewBag.IdPerfil" type="checkbox">
+                                                                <label class="onoffswitch-label" for="chkPerm_@opcion.IdOpcion">
+                                                                    <span class="onoffswitch-inner"></span>
+                                                                    <span class="onoffswitch-switch"></span>
+                                                                </label>
+                                                            }
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            i++;
+                                        }
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                activar = string.Empty;
+            }
+        </div>
+    </div>
+</div>
+

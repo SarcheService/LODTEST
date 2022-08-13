@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Galena.Models.ApplicationUser>
+
+<table id="tableUsers" class="table">
+    <thead>
+        <tr>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Usuario
+            </th>
+            <th>
+                Perfil
+            </th>
+            <th>
+                <center>
+                    Tipo Usuario
+                </center>
+            </th>
+            <th>
+                <center>
+                    Email confirmado
+                </center>
+            </th>
+            <th>
+                <center>
+                    Activo
+                </center>
+            </th>
+            @{
+                string PemisoEdita = ViewBag.PermisoEditar;
+                string PemisoElimina = ViewBag.PermisoEliminar;
+                if (Html.ValidaPermisos(PemisoEdita) || Html.ValidaPermisos(PemisoElimina))
+                {
+                    <th>Acciones </th>
+                }
+            }
+
+        </tr>
+    </thead>
+    
+    <tbody>
+
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Role)
+                </td>
+                <td><center>
+                    @if (item.EsPersonal)
+                    {
+                        <label class="label label-success">Personal</label>
+                    }
+                    else
+                    {
+                        <label class="label label-info">Contacto</label>
+                    }
+                </center>
+
+                </td>
+                <td><center>
+                    @Html.DisplayFor(modelItem => item.EmailConfirmed)
+                </center>
+                </td>
+                <td><center>
+                    @Html.DisplayFor(modelItem => item.Activo)
+                </center>
+                </td>
+                @if (Html.ValidaPermisos(PemisoEdita) || Html.ValidaPermisos(PemisoElimina))
+                {
+                    <td>                    
+                        <div class="btn-group" role="group">                            
+                            @if (Html.ValidaPermisos(PemisoEdita))
+                            {
+                                @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i>"), "EditUsuario", "UsuariosApp", new { IdUser = item.Id, AppId = ViewBag.AppId },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "modalCanvas",
+                                        OnBegin = "userApp.submit();",
+                                        OnSuccess = "userApp.initModal(data,status,xhr);"
+                                    }
+                                    , new { @class = "btn btn-outline btn-warning btn-xs" })
+                            }
+
+                            @if (Html.ValidaPermisos(PemisoElimina))
+                            {
+                                @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", "UsuariosApp", new { IdUser = item.Id, IdRole = item.IdRole, AppId = ViewBag.AppId },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "modalCanvas",
+                                        OnSuccess = "userApp.initModal(data,status,xhr);"
+                                    }
+                                    , new { @class = "btn btn-outline btn-danger btn-xs" })
+                            }
+                        </div>
+                    
+                    </td>
+                }
+            </tr>            
+        }
+
+    </tbody>
+</table>

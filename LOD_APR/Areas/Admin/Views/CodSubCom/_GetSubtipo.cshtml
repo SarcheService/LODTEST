@@ -1,0 +1,7 @@
+﻿
+@model LOD_APR.Areas.Admin.Models.MAE_CodSubCom
+
+
+@Html.LabelFor(model => model.IdTipoSub, htmlAttributes: new { @class = "control-label" })
+@Html.DropDownList("IdTipoSub", null, htmlAttributes: new { @class = "form-control m-t-xs" })
+@Html.ValidationMessageFor(model => model.IdTipoSub, "", new { @class = "text-danger" })

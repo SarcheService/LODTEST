@@ -1,0 +1,224 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_docAnotacion>
+
+@{
+    ViewData["CustomArea"] = ViewBag.NombreArea;
+    ViewBag.Title = "Biblioteca de Documentos";
+    Layout = "~/Areas/GLOD/Views/Shared/_Layout.cshtml";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Biblioteca de Documentos</a></li>
+                    <li class="active">
+                        <span>Biblioteca de Documentos</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                Biblioteca de Documentos
+            </h2>
+            <small>Listado de los documentos registrados en el sistema</small>
+        </div>
+    </div>
+</div>
+
+<div class="content" >
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="hpanel hgreen">
+                    <div class="panel-heading hbuilt">
+                        <div class="row">
+                            <div class="col-xs-8">
+                                <span> Filtro y búsqueda</span>
+                            </div>
+                            <div class="col-xs-4">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body panel-load">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
+                                    <div class="form-group m-t-sm" id="DivDireccion">
+                                        <label class="control-label">Dirección MOP:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdDireccion", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-sm" id="DivFiscalizador">
+                                        <label class="control-label">Fiscalizador:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdFiscalizador", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-sm" id="DivSujetos">
+                                        <label class="control-label">Contratista:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdSujEcon", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="form-group m-t-sm" id="DivContrato">
+                                        <label class="control-label">Contrato:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdContrato", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    @*<div class="form-group m-t-sm" id="DivLibros">
+            <label class="control-label">Libros de Obra:</label>
+            <div class="input-group">
+                @Html.DropDownList("IdLibroObra", null, htmlAttributes: new { @class = "form-control " })
+            </div>
+        </div>*@
+                                    <div class="form-group m-t-sm" id="DivTipoLod">
+                                        <label class="control-label">Tipo de Libros de Obra:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdTipoLibro", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-sm" id="DivTipoCom">
+                                        <label class="control-label">Tipos de Comunicación:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdTipoComunicacion", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-sm" id="DivSubtipo">
+                                        <label class="control-label">Subtipo de Comunicación:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdSubtipoComunicacion", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-sm" id="DivTipoDoc">
+                                        <label class="control-label">Tipos de Documentos:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdTipoDoc", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="mainApp">
+                                        <label class="control-label">Fecha Creación</label>
+                                        <date-picker v-model="rango" format="DD-MM-YYYY" :placeholder="'Seleccione un Rango'" range :input-attr="{id:'FechaCreacion', name:'FechaCreacion'}"></date-picker>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
+                                    <div class="input-group">
+                                        <div class="col-lg-12 col-xs-5">
+                                            <div class="checkbox checkbox-success2">
+                                                <input id="chkFormulario" type="checkbox" checked>
+                                                <label for="chkFormulario">
+                                                    <span class="label label-success2 pull-right">Formulario</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xs-6">
+                                            <div class="checkbox checkbox-success2">
+                                                <input id="chkDocTecnico" type="checkbox" checked>
+                                                <label for="chkDocTecnico">
+                                                    <span class="label label-success2 pull-right">Doc. Técnicos</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xs-6">
+                                            <div class="checkbox checkbox-success2">
+                                                <input id="chkDocAdmin" type="checkbox" checked>
+                                                <label for="chkDocAdmin">
+                                                    <span class="label label-success2 pull-right">Doc. Administrativos</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 col-xs-6">
+                                            <div class="checkbox checkbox-success2">
+                                                <input id="chkDocOtros" type="checkbox" checked>
+                                                <label for="chkDocOtros">
+                                                    <span class="label label-success2 pull-right">Otros</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-sm btn-success btn-block" onclick="bib_home.Filtro();"><i class="fa fa-filter"></i> Filtrar</button>
+                    </div>
+                    <div class="panel-footer">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="hpanel hgreen" >
+                    <div class="panel-body" style="padding:0;margin:0">
+                        <div class="panel-heading hbuilt">
+                            <div class="mail-box-header">
+                                <div class="row">
+                                    <div class="col-md-12 ">
+                                        <center><h3 class="text-success2" style="margin-top:8px"><b>Listado de Documentos</b></h3></center>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 ">
+                                    <br />
+                                </div>
+                            </div>
+                            <div class="panel-body" style="overflow:auto">
+                                <div class="row">
+                                    <div class="col-md-12" id="divTableDatos">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    
+                                                    @Html.Partial("_GetTable", Model)
+                                                    
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sk-spinner sk-spinner-wandering-cubes">
+                            <div class="sk-cube1"></div>
+                            <div class="sk-cube2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div id="modalCanvas"></div>
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/bundles/select2/css")
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    <script src="~/Scripts/app/BIB_Home.js"></script>
+    @*<script src="~/Scripts/app/BIB_Home.vue.js"></script>*@
+
+    <script type="text/javascript">
+
+        var bib_home;
+        $(document).ready(function () {
+            bib_home = new BIB_Home();
+
+            new Vue({
+                el: "#mainApp",
+                data: { rango:null }
+            });
+        });
+
+
+    </script>
+}

@@ -1,0 +1,71 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_modulos>
+<table id="tablaDatos" class="table table-condensed table-hover dataTable no-footer">
+    <thead>
+        <tr>
+            <th>
+                Id Modulo
+            </th>
+            <th>
+                Modulo
+            </th>
+        
+            <th>
+                Acciones
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.IdModulo)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(model => item.Modulo)
+                </td>
+              
+                <td>
+                    <div class="btn-group" role="group">
+
+
+                        @Ajax.RawActionLink(string.Format(" <i class=\"fa fa-pencil-square-o\"></i> "), "Edit", "Modulos", new { Id = item.IdModulo },
+                        new AjaxOptions
+                         {
+                             HttpMethod = "GET",
+                             InsertionMode = InsertionMode.Replace,
+                             UpdateTargetId = "modalCanvas",
+                             OnSuccess = "mae_modulos.initModal(data,status,xhr);"
+                         }
+                         , new { @class = "btn btn-warning btn-xs" })
+
+
+                        @if (item.MAE_opcionesMenu.Count == 0)
+                        {
+                                @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", "Modulos", new { Id = item.IdModulo },
+                         new AjaxOptions
+                         {
+                             HttpMethod = "GET",
+                             InsertionMode = InsertionMode.Replace,
+                             UpdateTargetId = "modalCanvas",
+                             OnSuccess = "mae_modulos.initModal(data,status,xhr);"
+                         }
+                         , new { @class = "btn btn-danger btn-xs" })
+
+
+}
+
+                        <a href="@Url.Action("Index", "OpcionesMenu", new {Id = item.IdModulo  }, null)" role="button" class="btn btn-info btn-xs"><i class="pe-7s-look"></i> </a>
+
+                    </div>
+                </td>
+
+
+            </tr>
+        }
+    </tbody>
+</table>

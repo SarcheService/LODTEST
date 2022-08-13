@@ -1,0 +1,225 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_RolesCttosContrato>
+@using LOD_APR.Areas.GLOD.Models
+@using LOD_APR.Areas.Admin.Models
+
+<table class="table">
+    <tr>
+        @*<th colspan="2" width="350px">Rol de Proyecto</th>*@
+        @*<th>
+            @Html.DisplayNameFor(model => model.MAE_personal.Run)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAE_personal.NombreCompleto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ASP_RolesProyecto.Rol)
+        </th>
+        <th></th>*@
+    </tr>
+    @{ 
+        if(Model.Select(x => x.IdRolCtto).Contains(null))
+        {
+
+            foreach (var item in Model)
+            {
+                MAE_RolesContrato newRol = new MAE_RolesContrato()
+                {
+                    IdRolCtto = 0,
+                    Jerarquia = 6,
+                    NombreRol = "Complementario"
+                };
+
+                if(item.IdRolCtto == null)
+                {
+                    item.IdRolCtto = 0;
+                    item.MAE_RolesContrato = newRol;
+                }
+            }
+        }
+    }
+
+
+@foreach (var item in Model.OrderBy(x => x.MAE_RolesContrato.Jerarquia)) {
+<tr>
+    <td width="200px">
+        <br />
+        <b>
+            @Html.DisplayFor(modelItem => item.NombreRol)
+        </b>
+        <br />
+        <div class="btn-group">
+            @if(item.IdRolCtto == 21 && !ViewBag.ContratoLiquidado && Html.ValidaPermisos("0020000002"))
+            {
+                if (ViewBag.EsAdministradorPlataforma) { 
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-plus' aria-hidden='true'></i> Asignar"), "AsignarARol", "Contratos",
+                                                                    new { id = item.IdRCContrato },
+                                                                    new AjaxOptions
+                                                                    {
+                                                                        HttpMethod = "GET",
+                                                                        InsertionMode = InsertionMode.Replace,
+                                                                        UpdateTargetId = "modalCanvas",
+                                                                        OnSuccess = "glod_contratos.initModalPermisos(data,status,xhr);"
+                                                                    }
+                                                                    , new { @class = "btn btn-xs btn-success " })
+                }
+                
+            }
+            else if (!ViewBag.ContratoLiquidado && Html.ValidaPermisos("0020000002") && item.IdRolCtto == 19 )
+            {
+                if (ViewBag.EsAdministradorMOP) { 
+                     @Ajax.RawActionLink(string.Format("<i class='fa fa-plus' aria-hidden='true'></i> Asignar"), "AsignarARol", "Contratos",
+                                                                    new { id = item.IdRCContrato },
+                                                                    new AjaxOptions
+                                                                    {
+                                                                        HttpMethod = "GET",
+                                                                        InsertionMode = InsertionMode.Replace,
+                                                                        UpdateTargetId = "modalCanvas",
+                                                                        OnSuccess = "glod_contratos.initModalPermisos(data,status,xhr);"
+                                                                    }
+                                                                    , new { @class = "btn btn-xs btn-success " })
+                
+                }
+                    
+            }else if(!ViewBag.ContratoLiquidado && Html.ValidaPermisos("0020000002") && item.IdRolCtto == 2 )
+            {
+                if(ViewBag.EsControlContratos) { 
+                    @Ajax.RawActionLink(string.Format("<i class='fa fa-plus' aria-hidden='true'></i> Asignar"), "AsignarARol", "Contratos",
+                                                                    new { id = item.IdRCContrato },
+                                                                    new AjaxOptions
+                                                                    {
+                                                                        HttpMethod = "GET",
+                                                                        InsertionMode = InsertionMode.Replace,
+                                                                        UpdateTargetId = "modalCanvas",
+                                                                        OnSuccess = "glod_contratos.initModalPermisos(data,status,xhr);"
+                                                                    }
+                                                                    , new { @class = "btn btn-xs btn-success " })
+                    }
+            }
+            else if(!ViewBag.ContratoLiquidado && Html.ValidaPermisos("0020000002") && (ViewBag.EsInspectorFiscal || ViewBag.EsAdministradorPlataforma))
+            {
+                    @Ajax.RawActionLink(string.Format("<i class='fa fa-plus' aria-hidden='true'></i> Asignar"), "AsignarARol", "Contratos",
+                                                                    new { id = item.IdRCContrato },
+                                                                    new AjaxOptions
+                                                                    {
+                                                                        HttpMethod = "GET",
+                                                                        InsertionMode = InsertionMode.Replace,
+                                                                        UpdateTargetId = "modalCanvas",
+                                                                        OnSuccess = "glod_contratos.initModalPermisos(data,status,xhr);"
+                                                                    }
+                                                                    , new { @class = "btn btn-xs btn-success " })
+            }
+
+            @Ajax.RawActionLink(string.Format("<i class='fa fa-table' aria-hidden='true'></i> Pemisos"), "PermisosRol", "Contratos",
+                                                               new { id = item.IdRCContrato },
+                                                               new AjaxOptions
+                                                               {
+                                                                   HttpMethod = "GET",
+                                                                   InsertionMode = InsertionMode.Replace,
+                                                                   UpdateTargetId = "modalCanvas",
+                                                                   OnSuccess = "glod_contratos.initModalPermisos(data,status,xhr);"
+                                                               }
+                                                               , new { @class = "btn btn-xs btn-info " })
+            @*@if (item.IdRolCtto == null)
+            {
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-ban' aria-hidden='true'></i> Desactivar"), "DesactivarRolCto", "Contratos",
+                                                           new { id = item.IdRCContrato },
+                                                           new AjaxOptions
+                                                           {
+                                                               HttpMethod = "GET",
+                                                               InsertionMode = InsertionMode.Replace,
+                                                               UpdateTargetId = "modalCanvas",
+                                                               OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);"
+                                                           }
+                                                           , new { @class = "btn btn-xs btn-danger" })
+            }*@
+        </div>
+    </td>
+        <td>
+
+            <table class="table table-bordered">
+                <tr>
+                    <th width="100px">
+                        Run
+                    </th>
+                    <th width="250px">
+                        Nombre Completo
+                    </th>
+
+                    <th>Empresa</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+                @if (item.Usuarios.Count > 0)
+                {
+
+                    foreach (var ru in item.Usuarios)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => ru.ApplicationUser.Run)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => ru.ApplicationUser.NombreCompleto)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => ru.ApplicationUser.MAE_Sucursal.MAE_sujetoEconomico.RazonSocial)
+                            </td>
+                            <td>
+                                <center>
+                                    @if (ru.Activo)
+                                    {
+                                        <i class="fa fa-circle text-success" data-toggle="tooltip" data-placement="bottom" title="Activo"></i>
+                                    }
+                                    else {
+                                        <i class="fa fa-circle text-danger" data-toggle="tooltip" data-placement="bottom" title="Inactivo"></i>
+                                    }
+                                </center>
+                            </td>
+                            <td>
+                                @if (!ViewBag.ContratoLiquidado && Html.ValidaPermisos("0020000002"))
+                                {
+                                    if (ru.Activo)
+                                    {
+                                            @Ajax.RawActionLink(string.Format("<i class='fa fa-ban' aria-hidden='true'></i> Desactivar"), "DesactivarRol", "Contratos",
+                                                                          new { idUser = ru.IdUsLod, IdRol = ru.IdRCContrato },
+                                                                          new AjaxOptions
+                                                                          {
+                                                                              HttpMethod = "GET",
+                                                                              InsertionMode = InsertionMode.Replace,
+                                                                              UpdateTargetId = "modalCanvas",
+                                                                              OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);"
+                                                                          }
+                                                                          , new { @class = "btn btn-xs btn-danger pull-right", @id = "BtnEditarContrato" }) 
+                                    }
+                                     else
+                                     {
+                                            @Ajax.RawActionLink(string.Format("<i class='fa fa-check' aria-hidden='true'></i> Activar Rol"), "ActivarRol", "Contratos",
+                                                                          new { idUser = ru.UserId, IdRol = ru.IdRCContrato, IdContrato = item.IdContrato },
+                                                                          new AjaxOptions
+                                                                          {
+                                                                              HttpMethod = "GET",
+                                                                              InsertionMode = InsertionMode.Replace,
+                                                                              UpdateTargetId = "modalCanvas",
+                                                                              OnSuccess = "glod_contratos.initModalActivacion(data,status,xhr);"
+                                                                          }
+                                                                          , new { @class = "btn btn-xs btn-success pull-right", @id = "BtnEditarContrato" })
+                                     }
+                                 }
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="3">
+                         <center><span class="label label-warning"> No se ha asignado profesional al Rol</span></center> 
+                        </td>
+                    </tr>
+                    }
+                </table>
+        </td>
+</tr>
+}
+
+</table>

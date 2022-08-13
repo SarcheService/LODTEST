@@ -1,0 +1,121 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.FORM_Formularios>
+
+@{
+    ViewBag.Title = "Formularios";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Formularios</a></li>
+                    <li class="active">
+                        <span>Gestión de Formularios</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <b>Gestión de Formularios</b>
+            </h2>
+            <small>Listado de Formularios existentes</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span> Filtro y búsqueda</span>
+                        </div>
+                        <div class="col-xs-4">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" type="text" id="searchInput" placeholder="Buscar en tabla"> <span class="input-group-btn">
+                                <button id="btnTableSearch" type="button" class="btn btn-warning" onclick="$('#searchInput').val('');">
+                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-sm btn-info btn-block" onclick="form_formulario.Filtro();"><i class="fa fa-filter"></i> Filtrar</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-9 col-xs-12 ">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Listado de registros</span>
+                        </div>
+                        <div class="col-xs-4">
+                            @if (Html.ValidaPermisos("0010120001"))
+                            {
+                                <a id="CreatePersonal" href="@Url.Action("Create", "Formularios", new { area = "Admin" }, null)" role="button" class="btn btn-xs btn-success pull-right"><i class="fa fa-plus"></i> Nuevo Formulario</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos">
+                        @if (Html.ValidaPermisos("0010120000")) {
+                            @Html.Partial("_GetTabla", Model)
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+
+@section Styles {
+    @Styles.Render("~/bundles/select2/css")
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/ladda/js")
+    <script src="~/Scripts/app/FORM_Formulario.js"></script>
+
+
+
+    <script type="text/javascript">
+        var form_formulario;
+        $(document).ready(function () {
+            form_formulario = new FORM_Formulario();
+        });
+
+    </script>
+}

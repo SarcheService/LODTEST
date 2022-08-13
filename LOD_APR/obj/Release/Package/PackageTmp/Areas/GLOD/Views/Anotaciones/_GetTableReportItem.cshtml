@@ -1,0 +1,25 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.FORM_InformesItems>
+
+@if (Model.Where(e => e.Estado > 0).Count() > 0)
+{
+    <table class="table table-condensed table-hover">
+        <tbody>
+            @foreach (var item in Model.Where(e => e.Estado > 0))
+            {
+                <tr>
+                    <td>@item.Titulo</td>
+                    <td>@Html.Raw(item.EstadoDescript)</td>
+                    <td>
+                        <div class="btn-group text-right">
+                            <agregar-informe-anotacion :id-item="@item.IdItem" :id-anotacion="@ViewBag.IdAnotacion"></agregar-informe-anotacion>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p><span class="label label-default">No existen Informes de esta Categoría</span></p>
+}

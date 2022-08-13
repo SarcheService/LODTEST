@@ -1,0 +1,68 @@
+﻿
+<div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="col-md-6" style="padding-right:0px; margin-right:0px;"><label>Nombre Contrato:</label></div>
+            <div class="col-md-6" style="padding-left:0px; margin-left:0px;">
+                <p>@ViewBag.NombreContrato</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-6" style="padding-right:0px; margin-right:0px;"><label>Estado:</label></div>
+            <div class="col-md-6" style="padding-left:0px; margin-left:0px;">
+                @if (ViewBag.EstadoContrato != 3)
+                {
+                    <label class="label label-warning2">Activo</label>
+                }
+                else
+                { <label class="label label-success">Liquidación Completa</label>}
+            </div>
+        </div>
+
+        @if (ViewBag.EstadoContrato != 3 && ViewBag.EsInspectorFiscal)
+        {
+            <div class="col-md-4">
+                <div class="col-md-6" style="padding-right:0px; margin-right:0px;"></div>
+                <div class="-col-md-6" style="padding-left:0px; margin-left:0px;">
+                @Ajax.RawActionLink(string.Format("<i class='fa fa-lock' aria-hidden='true'></i> Líquidar Contrato"), "LiquidarContrato", "LiquidacionContrato",
+                new { IdContrato = ViewBag.IdContrato },
+                new AjaxOptions
+                {
+                    HttpMethod = "GET",
+                    InsertionMode = InsertionMode.Replace,
+                    UpdateTargetId = "modalCanvas",
+                    OnSuccess = "glod_liquidacion.initModal(data,status,xhr);"
+                }
+                , new { @class = "btn btn-sm btn-info btn-outline", @id = "BtnLiquidarContrato" })</div>
+                 
+            </div>
+           
+        }
+        else
+        { <div class="col-md-4">
+
+            </div>
+        }
+
+    </div><br />
+    <div class="row">
+        <div class="col-md-4">
+            <div class="col-md-6" style="padding-right:0px; margin-right:0px;"><label>Total Libros:</label></div>
+            <div class="col-md-6" style="padding-left:0px; margin-left:0px;"><p>@ViewBag.TotalLibros</p></div>
+            
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-6" style="padding-right:0px; margin-right:0px;"><label>Libros por cerrar:</label></div>
+            <div class="col-md-6" style="padding-left:0px; margin-left:0px;"><p>@ViewBag.LibrosPorCerrar</p></div>
+            
+           
+        </div>
+        <div class="col-md-4">
+            <div class="col-md-6" style="padding-right:0px; margin-right:0px;"><label>Total Documentos Aprobados:</label></div>
+            <div class="col-md-6" style="padding-left:0px; margin-left:0px;"><p>@ViewBag.TotalDocumentosAprobados</p></div>
+            
+        </div>
+
+    </div>
+
+</div><hr />

@@ -1,0 +1,135 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_docAnotacion>
+
+<div class="table-responsive">
+    <table class="table table-sm table-condensed table-hover" id="tablaOtros">
+        <thead>
+            <tr>
+                <th>Tipo Anotación</th>
+                <th>Clasificación repositorio</th>
+                <th>
+                    Documento
+                </th>
+                <th>
+                    Tipo
+                </th>
+                <th>
+                    Estado
+                </th>
+                <th>
+                    Observaciones
+                </th>
+                <th>
+                    <center>Acciones</center>
+                </th>
+                <th>
+
+                </th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LOD_Anotaciones.MAE_SubtipoComunicacion.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ClassDoc.MAE_ClassTwo.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MAE_TipoDocumento.Tipo)
+                    </td>
+                    <td>
+                        @switch (item.MAE_TipoDocumento.TipoClasi)
+                        {
+                            case 1:
+                                <p>Formulario </p>
+                                break;
+                            case 2:
+                                <p>Doc. Técnico </p>
+                                break;
+                            case 3:
+                                <p>Doc. Administrativo  </p>
+                                break;
+                            case 4:
+                                <p>Otros  </p>
+
+                                break;
+                        }
+                    </td>
+                    @if (item.IdTipoDoc == 19 && item.EstadoDoc != 0)
+                    {
+                        <td>
+                            <center>
+                                <label class="label label-success" style="font-size:12px" data-toggle="tooltip" data-placement="bottom" title="Estado">Cargado</label>
+                            </center>
+                        </td>
+                    }
+                    else if (item.EstadoDoc == 0)
+                    {
+                        <td>
+                            <center>
+                                <label class="label label-warning" style="font-size:12px" data-toggle="tooltip" data-placement="bottom" title="Estado">Pendiente</label>
+                            </center>
+                        </td>
+                    }
+                    else if (item.EstadoDoc == 1)
+                    {
+                        <td>
+                            <center>
+                                <label class="label label-warning" style="font-size:12px" data-toggle="tooltip" data-placement="bottom" title="Estado">Cargado</label>
+                            </center>
+                            <center>
+                                <label class="label label-warning" style="font-size:12px" data-toggle="tooltip" data-placement="bottom" title="Estado">Sin Aprobar</label>
+                            </center>
+                        </td>
+                    }
+                    else if (item.EstadoDoc == 2)
+                    {
+                        <td>
+                            <center>
+                                <label class="label label-success" style="font-size:12px" data-toggle="tooltip" data-placement="bottom" title="Estado">Aprobado</label>
+                            </center>
+                        </td>
+                    }
+                    else if (item.EstadoDoc == 3)
+                    {
+                        <td>
+                            <center>
+                                <label class="label label-danger" style="font-size:12px" data-toggle="tooltip" data-placement="bottom" title="Estado">Rechazado</label>
+                            </center>
+                        </td>
+                    }
+
+                    @if (!String.IsNullOrEmpty(item.Observaciones))
+                    {
+                        <td>
+                            @item.Observaciones
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            -
+                        </td>
+                    }
+                    <td>
+                        <center>
+                            <div class="btn-group" role="group" aria-label="...">
+                                @{var ruta = "/../../" + item.MAE_documentos.Ruta;
+                                }
+                                <a role="button" class="btn btn-default btn-xs" href="@ruta" target="_blank"><i class="fa fa-download"></i></a>
+                            </div>
+                        </center>
+                    </td>
+                    <td>
+                         <center>
+                              <a class="btn btn-info btn-xs" target="_blank" href="@Url.Action("Edit", "Anotaciones", new { id = item.IdAnotacion })"><i class="fa fa-search"></i> Ir a Anotación</a>
+                         </center>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

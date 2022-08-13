@@ -1,0 +1,61 @@
+﻿@model IEnumerable<LOD_APR.Models.ApplicationRole>
+
+<table id="tablaDatos" class="table table-condensed table-hover dataTable no-footer">
+    <thead>
+        <tr>
+            <th>Perfil</th>
+            <th>Numeros Usuario</th>
+            <th>Gubernamental</th>
+            <th>Fiscalizador</th>
+            <th>Contratista</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Users.Count)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsGubernamental)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsFiscalizador)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IsContratista)
+                </td>
+                <td>
+                    @if (Html.ValidaPermisos("0010020002"))
+                    {
+                        <a class="btn btn-warning btn-xs" href="@Url.Action("Edit", "Perfil", new { id = item.Id })"><i class="fa fa-pencil"></i></a>
+                    }
+
+                    @if (Html.ValidaPermisos("0010020003"))
+                    {
+                        if (item.Users.Count == 0)
+                        {
+                            @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.Id },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "seg_perfiles.initModal(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-danger btn-xs" })
+                        }
+
+                    }
+
+                    </td>
+            
+            </tr>
+        }
+    </tbody>
+</table>

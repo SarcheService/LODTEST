@@ -1,0 +1,1523 @@
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Galena.dll.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Galena.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Galena.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\csc.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\csc.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\csc.rsp
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\csi.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\csi.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\csi.rsp
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.AppContext.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Console.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.IO.Compression.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Security.Claims.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.ValueTuple.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\vbc.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\vbc.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\vbc.rsp
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\VBCSCompiler.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\AcaMicroframework.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Antlr3.Runtime.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\EntityFramework.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\EntityFramework.SqlServer.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Xml.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.WsFederation.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Newtonsoft.Json.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Owin.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Helpers.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Mvc.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Optimization.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Razor.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.WebPages.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.WebPages.Razor.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\WebGrease.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ClosedXML.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\MySql.Data.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\UTM_ACA.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Exchange.WebServices.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\EnvDTE.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\DocumentFormat.OpenXml.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\stdole.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.MSXML.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\AcaMicroframework.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\AcaMicroframework.dll.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Xml.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.IdentityModel.Xml.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.WsFederation.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Helpers.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Mvc.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Optimization.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.Razor.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.WebPages.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Web.WebPages.Razor.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Newtonsoft.Json.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Antlr3.Runtime.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\EntityFramework.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\EntityFramework.SqlServer.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ClosedXML.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\System.Web.Razor.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\EntityFramework.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\Galena.csprojAssemblyReference.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\Galena.Properties.Resources.resources
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\Galena.csproj.GenerateResource.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\RdlCompile.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\RdlCompile.compiled
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\Galena.csproj.CoreCompileInputs.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\Galena.csproj.CopyComplete
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\Galena.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ANU - ADFS\Galena\obj\Release\Galena.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Galena.dll.config
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Galena.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Galena.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\csc.exe
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\csc.exe.config
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\csc.rsp
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\csi.exe
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\csi.exe.config
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\csi.rsp
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.AppContext.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Console.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.IO.Compression.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Security.Claims.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.ValueTuple.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\vbc.exe
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\vbc.exe.config
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\vbc.rsp
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\VBCSCompiler.exe
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\AcaMicroframework.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Antlr3.Runtime.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\EntityFramework.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\EntityFramework.SqlServer.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Xml.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.WsFederation.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Newtonsoft.Json.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Owin.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Helpers.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Mvc.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Optimization.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Razor.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.WebPages.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.WebPages.Razor.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\WebGrease.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ClosedXML.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\MySql.Data.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\UTM_ACA.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Exchange.WebServices.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\EnvDTE.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\DocumentFormat.OpenXml.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\stdole.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.MSXML.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\AcaMicroframework.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\AcaMicroframework.dll.config
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Xml.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.IdentityModel.Xml.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.WsFederation.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Helpers.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Mvc.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Optimization.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.Razor.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.WebPages.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Web.WebPages.Razor.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Newtonsoft.Json.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Antlr3.Runtime.pdb
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\EntityFramework.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\EntityFramework.SqlServer.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ClosedXML.xml
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\System.Web.Razor.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\EntityFramework.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\Galena.csprojAssemblyReference.cache
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\Galena.Properties.Resources.resources
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\Galena.csproj.GenerateResource.cache
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\RdlCompile.cache
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\RdlCompile.compiled
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\Galena.csproj.CoreCompileInputs.cache
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\Galena.csproj.CopyComplete
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\Galena.dll
+C:\Users\Jorge\Desktop\Galena multiempresa\Galena\obj\Release\Galena.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\SqlServerTypes\x64\msvcr120.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\SqlServerTypes\x86\msvcr120.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Galena.dll.config
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Galena.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Galena.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\csc.exe
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\csc.exe.config
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\csc.rsp
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\csi.exe
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\csi.exe.config
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\csi.rsp
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.AppContext.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Collections.Immutable.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Console.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.IO.Compression.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.IO.FileSystem.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.IO.Pipes.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Reflection.Metadata.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Security.AccessControl.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Security.Claims.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.ValueTuple.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Xml.XPath.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\vbc.exe
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\vbc.exe.config
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\vbc.rsp
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\VBCSCompiler.exe
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\roslyn\VBCSCompiler.exe.config
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\AcaMicroframework.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Antlr3.Runtime.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\EntityFramework.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\EntityFramework.SqlServer.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Logging.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Protocols.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Xml.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Google.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.ReportViewer.Common.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.ReportViewer.Design.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.SqlServer.Types.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Web.Infrastructure.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Newtonsoft.Json.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Owin.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Helpers.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Mvc.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Optimization.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Razor.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.WebPages.Deployment.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.WebPages.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.WebPages.Razor.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\WebGrease.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ClosedXML.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\MySql.Data.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\UTM_ACA.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Exchange.WebServices.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\EnvDTE.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\DocumentFormat.OpenXml.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\stdole.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.MSXML.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\AcaMicroframework.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\AcaMicroframework.dll.config
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Logging.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Logging.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Protocols.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Xml.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.IdentityModel.Xml.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Helpers.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Mvc.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Optimization.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.Razor.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.WebPages.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.WebPages.Deployment.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Web.WebPages.Razor.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Newtonsoft.Json.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Antlr3.Runtime.pdb
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\EntityFramework.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\EntityFramework.SqlServer.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Google.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ClosedXML.xml
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.Owin.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.Owin.Security.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\System.Web.Helpers.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\System.Web.Mvc.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\System.Web.Optimization.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\System.Web.Razor.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\System.Web.WebPages.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\EntityFramework.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\EntityFramework.SqlServer.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\Galena.csprojAssemblyReference.cache
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\Galena.Properties.Resources.resources
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\Galena.csproj.GenerateResource.cache
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\RdlCompile.cache
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\RdlCompile.compiled
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\Galena.csproj.CopyComplete
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\Galena.dll
+D:\Galena ADFS multiempresa V2.2.4 02-09-2020\Galena\obj\Release\Galena.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\SqlServerTypes\x64\msvcr120.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\SqlServerTypes\x86\msvcr120.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Galena.dll.config
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Galena.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Galena.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\csc.exe
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\csc.exe.config
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\csc.rsp
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\csi.exe
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\csi.exe.config
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\csi.rsp
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.AppContext.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Collections.Immutable.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Console.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.IO.Compression.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.IO.FileSystem.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.IO.Pipes.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Reflection.Metadata.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Security.AccessControl.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Security.Claims.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.ValueTuple.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Xml.XPath.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\vbc.exe
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\vbc.exe.config
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\vbc.rsp
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\VBCSCompiler.exe
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\roslyn\VBCSCompiler.exe.config
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Antlr3.Runtime.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ClosedXML.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\DocumentFormat.OpenXml.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\EntityFramework.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\EntityFramework.SqlServer.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ExcelNumberFormat.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\LinqKit.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Logging.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Protocols.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Tokens.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Xml.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Cookies.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Facebook.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Google.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.OAuth.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Twitter.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.ReportViewer.Common.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.ReportViewer.Design.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.ReportViewer.WebForms.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.SqlServer.Types.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Web.Infrastructure.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Newtonsoft.Json.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Owin.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Diagnostics.DiagnosticSource.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.IO.FileSystem.Primitives.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.IO.Packaging.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Helpers.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Mvc.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Optimization.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Razor.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.WebPages.Deployment.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.WebPages.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.WebPages.Razor.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\WebGrease.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\EnvDTE.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.ReportViewer.WinForms.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\stdole.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.MSXML.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ClosedXML.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ClosedXML.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\DocumentFormat.OpenXml.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ExcelNumberFormat.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\LinqKit.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Logging.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Logging.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Protocols.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Tokens.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Xml.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.IdentityModel.Xml.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Helpers.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Mvc.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Optimization.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.Razor.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.WebPages.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.WebPages.Deployment.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Web.WebPages.Razor.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Newtonsoft.Json.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Antlr3.Runtime.pdb
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\EntityFramework.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\EntityFramework.SqlServer.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Facebook.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Cookies.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Google.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.Twitter.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.Owin.Security.OAuth.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\System.Diagnostics.DiagnosticSource.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.Owin.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.Owin.Security.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\System.Web.Helpers.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\System.Web.Mvc.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\System.Web.Optimization.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\System.Web.Razor.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\System.Web.WebPages.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\EntityFramework.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\EntityFramework.SqlServer.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\Galena.csprojAssemblyReference.cache
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\Galena.Properties.Resources.resources
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\Galena.csproj.GenerateResource.cache
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\RdlCompile.cache
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\RdlCompile.compiled
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\Galena.csproj.CopyComplete
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\Galena.dll
+D:\Galena ADFS multiempresa 22-03-2021\Galena\obj\Release\Galena.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Galena.dll.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Galena.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Galena.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\csc.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\csc.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\csc.rsp
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\csi.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\csi.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\csi.rsp
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.AppContext.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Console.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.IO.Compression.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Security.Claims.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.ValueTuple.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\vbc.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\vbc.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\vbc.rsp
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\VBCSCompiler.exe
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Antlr3.Runtime.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ClosedXML.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\DocumentFormat.OpenXml.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\EntityFramework.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\EntityFramework.SqlServer.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ExcelNumberFormat.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\LinqKit.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Logging.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Xml.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.Client.Education.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.Client.Policy.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.Client.TranslationServices.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.DocumentManagement.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.Policy.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.Server.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.Server.Search.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.Server.UserProfiles.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Office.SharePoint.Tools.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.WsFederation.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.ReportViewer.Design.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.ReportViewer.WebDesign.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.ApplicationPages.Administration.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.ApplicationPages.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.Publishing.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.Runtime.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.Search.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.ServerRuntime.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.DesignTime.Activities.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Portal.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Publishing.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Security.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Taxonomy.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Sharepoint.WorkflowActions.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SqlServer.Types.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Newtonsoft.Json.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Owin.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.IO.FileSystem.Primitives.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.IO.Packaging.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Helpers.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Mvc.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Optimization.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Razor.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.WebPages.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.WebPages.Razor.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\WebGrease.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.mshtml.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\EnvDTE.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.VisualStudio.Shell.Interop.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Web.Administration.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Extensions.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Activities.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\stdole.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.VisualStudio.OLE.Interop.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.MSXML.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ClosedXML.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ClosedXML.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\DocumentFormat.OpenXml.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ExcelNumberFormat.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\LinqKit.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Logging.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Logging.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Protocols.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Protocols.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Tokens.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Tokens.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Xml.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.IdentityModel.Xml.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.WsFederation.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.SharePoint.Client.Runtime.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Helpers.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Mvc.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Optimization.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.Razor.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.WebPages.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Web.WebPages.Razor.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Newtonsoft.Json.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Antlr3.Runtime.pdb
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\EntityFramework.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\EntityFramework.SqlServer.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\System.Diagnostics.DiagnosticSource.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\Microsoft.Activities.xml
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.Owin.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.Owin.Security.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\de\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\it\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\de\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\it\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\System.Web.Optimization.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\System.Web.Razor.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\System.Web.WebPages.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\EntityFramework.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\EntityFramework.SqlServer.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\Galena.csprojAssemblyReference.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\Galena.Properties.Resources.resources
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\Galena.csproj.GenerateResource.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\RdlCompile.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\RdlCompile.compiled
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\Galena.csproj.CoreCompileInputs.cache
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\Galena.csproj.CopyComplete
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\Galena.dll
+C:\Users\Informatica\Sistemas\Aguas Nuevas\Galena ADFS multiempresa 19-04-2021\Galena\obj\Release\Galena.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\SqlServerTypes\x64\msvcr120.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\SqlServerTypes\x86\msvcr120.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Galena.dll.config
+D:\GALENA ADFS 17-05-2021\Galena\bin\Galena.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Galena.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\csc.exe
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\csc.exe.config
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\csc.rsp
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\csi.exe
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\csi.exe.config
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\csi.rsp
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.Managed.Core.targets
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.AppContext.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Collections.Immutable.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Console.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.IO.Compression.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.IO.FileSystem.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.IO.Pipes.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Reflection.Metadata.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Security.AccessControl.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Security.Claims.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Security.Principal.Windows.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.ValueTuple.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Xml.XmlDocument.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Xml.XPath.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\vbc.exe
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\vbc.exe.config
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\vbc.rsp
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\VBCSCompiler.exe
+D:\GALENA ADFS 17-05-2021\Galena\bin\roslyn\VBCSCompiler.exe.config
+D:\GALENA ADFS 17-05-2021\Galena\bin\Antlr3.Runtime.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ClosedXML.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\DocumentFormat.OpenXml.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\EntityFramework.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\EntityFramework.SqlServer.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ExcelNumberFormat.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\LinqKit.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\MessagingToolkit.QRCode.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.Identity.Core.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Logging.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Protocols.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Tokens.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Xml.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.Client.Education.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.Client.Policy.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.Client.TranslationServices.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.DocumentManagement.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.Policy.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.Server.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.Server.Search.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.Server.UserProfiles.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Office.SharePoint.Tools.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Online.SharePoint.Client.Tenant.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Cookies.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Facebook.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Google.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.OAuth.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Twitter.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.WsFederation.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.ReportViewer.Common.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.ReportViewer.DataVisualization.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.ReportViewer.Design.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.ReportViewer.WebDesign.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.ReportViewer.WebForms.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.ApplicationPages.Administration.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.ApplicationPages.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.DocumentManagement.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.Publishing.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.Runtime.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.Search.Applications.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.Search.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.ServerRuntime.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.Taxonomy.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.UserProfiles.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.WorkflowServices.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.DesignTime.Activities.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Portal.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Publishing.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Security.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Taxonomy.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Sharepoint.WorkflowActions.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SqlServer.Types.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Web.Infrastructure.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Newtonsoft.Json.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Owin.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Diagnostics.DiagnosticSource.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.IO.FileSystem.Primitives.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.IO.Packaging.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Helpers.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Mvc.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Optimization.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Razor.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.WebPages.Deployment.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.WebPages.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.WebPages.Razor.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\WebGrease.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.mshtml.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\EnvDTE.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.VisualStudio.Shell.Interop.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.ReportViewer.WinForms.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Web.Administration.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\stdole.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.VisualStudio.OLE.Interop.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.MSXML.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ClosedXML.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\ClosedXML.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\DocumentFormat.OpenXml.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\ExcelNumberFormat.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\LinqKit.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.JsonWebTokens.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Logging.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Logging.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Protocols.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Protocols.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Protocols.WsFederation.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Tokens.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Tokens.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Tokens.Saml.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Xml.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.IdentityModel.Xml.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.WsFederation.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.SharePoint.Client.Runtime.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.IdentityModel.Tokens.Jwt.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Helpers.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Mvc.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Optimization.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.Razor.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.WebPages.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.WebPages.Deployment.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Web.WebPages.Razor.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Newtonsoft.Json.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Antlr3.Runtime.pdb
+D:\GALENA ADFS 17-05-2021\Galena\bin\EntityFramework.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\EntityFramework.SqlServer.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.Identity.Core.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Facebook.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Cookies.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Google.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.Twitter.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.Owin.Security.OAuth.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\System.Diagnostics.DiagnosticSource.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.AspNet.TelemetryCorrelation.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.Owin.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.Owin.Security.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\de\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\it\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\de\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\it\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\de\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\fr\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\it\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ja\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ko\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\pt\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ru\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebDesign.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\de\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\fr\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\it\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ja\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ko\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\pt\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ru\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WebForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\System.Web.Helpers.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\System.Web.Mvc.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\System.Web.Optimization.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\System.Web.Razor.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\System.Web.WebPages.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\System.Web.WebPages.Deployment.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\System.Web.WebPages.Razor.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\EntityFramework.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\EntityFramework.SqlServer.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.AspNet.Identity.Core.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.AspNet.Identity.Owin.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\bin\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\Galena.csprojAssemblyReference.cache
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\Galena.Properties.Resources.resources
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\Galena.csproj.GenerateResource.cache
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\RdlCompile.cache
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\RdlCompile.compiled
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\Galena.csproj.CopyComplete
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\Galena.dll
+D:\GALENA ADFS 17-05-2021\Galena\obj\Release\Galena.pdb

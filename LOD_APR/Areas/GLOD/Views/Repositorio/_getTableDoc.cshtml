@@ -1,0 +1,66 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.ModelsViews.ItemSeguimiento>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+                Documento
+            </th>
+            <th>
+                Obligatorio
+            </th>
+            <th>
+                Estado
+            </th>
+            <th>Total documentos</th>
+            <th>Detalles</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+                     
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_TipoDocumento.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.mAE_CodSubCom.Obligatorio)
+                </td>
+                @if (item.Estado == 1)
+                {
+
+                    <td><label class="label label-success">Cargado</label></td>
+                }
+                else
+                {
+                    <td><label class="label label-danger">No Cargado</label></td>
+                }
+                <td>
+                    @item.totalDoc
+                </td>
+                @if (item.Estado == 1)
+                {
+                    <td>
+                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-search\"></i> detalle"), "detalleAnotacion", null, new { id = item.mAE_CodSubCom.IdTipo, idLibro = item.IdLod },
+                                             new AjaxOptions
+                                             {
+                                                 HttpMethod = "GET",
+                                                 InsertionMode = InsertionMode.Replace,
+                                                 UpdateTargetId = "modalCanvas",
+                                                 OnSuccess = "lod_repositorio.initModal(data,status,xhr);"
+                                             }
+                                             , new { @class = "btn btn-info btn-xs" })
+                    </td>
+                }
+                else
+                {
+                    <td>-</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>

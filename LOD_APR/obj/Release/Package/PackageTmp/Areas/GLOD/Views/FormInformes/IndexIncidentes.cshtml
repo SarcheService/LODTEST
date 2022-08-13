@@ -1,0 +1,110 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.FORM_InformesItems>
+
+@{
+    ViewBag.Title = "Formularios";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Reportes</a></li>
+                    <li class="active">
+                        <span>Gestión de Reportes</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <a role="button" class="btn btn-warning" href="@Url.Action("Admin", "Home", new { Area = "GLOD", id = ViewBag.IdContrato, tipo = "c_"})"><i class="fa fa-reply"></i></a>
+                <b>Reporte Incidentes | Contrato @ViewBag.Contrato</b>
+            </h2>
+            <small>Listado de Reportes de incidentes existentes</small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+
+        <div class="col-lg-12 col-xs-12 ">
+            <div class="hpanel">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Listado de registros</span>
+                        </div>
+                        <div class="col-xs-4">
+                            @if (ViewBag.EstadoContrato != 3)
+                            {
+                                @Ajax.RawActionLink("<i class='fa fa-plus'></i> Ingresar Incidente", "IngresarIncidente", "FormInformes", new { idContrato = ViewBag.IdContrato, formId = "bDivYVz1sS" },
+                                new AjaxOptions
+                                {
+                                    HttpMethod = "GET",
+                                    InsertionMode = InsertionMode.Replace,
+                                    UpdateTargetId = "modalCanvas",
+                                    OnSuccess = "form_formulario.InitFormModal(data,status,xhr);"
+                                }
+                                , new { @class = "btn btn-sm btn-success pull-right", @title = "Ingresar Item" })
+                            }
+                            else
+                            {
+                                <button type="button" class="btn btn-sm btn-success pull-right" title="Contrato debe estar Activo" disabled><i class='fa fa-plus'></i> Ingresar Incidente</button>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body panel-load">
+                    <div class="sk-spinner sk-spinner-wave">
+                        <div class="sk-rect1"></div>
+                        <div class="sk-rect2"></div>
+                        <div class="sk-rect3"></div>
+                        <div class="sk-rect4"></div>
+                        <div class="sk-rect5"></div>
+                    </div>
+                    <div id="DivTablaDatos_Incidentes">
+                        @Html.Partial("_GetTableReportIncidentes", Model)
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+
+@section Styles {
+    @Styles.Render("~/bundles/select2/css")
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+}
+
+@section Scripts {
+    <script src="~/Scripts/jquery.form.js"></script>
+    @Scripts.Render("~/bundles/validation/js")
+    @Scripts.Render("~/bundles/datatables-Layout/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap-Layout/js")
+    @Scripts.Render("~/bundles/moment/js")
+    <script src="~/Scripts/moment-with-locales.min.js"></script>
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/datepicker/js")
+    @Scripts.Render("~/bundles/clockpicker/js")
+    <script src="~/Vendor/jQuery-Mask-Plugin/jquery.mask.min.js"></script>
+    @Scripts.Render("~/bundles/rut")
+    <script src="~/Scripts/bootstrap-datetimepicker.min.js"></script>
+    <script src="~/Scripts/app/FORM_InformesEjecutivo.js"></script>
+
+    <script type="text/javascript">
+        var form_formulario;
+        $(document).ready(function () {
+            form_formulario = new FORM_InformesEjecutivo();
+        });
+
+    </script>
+}

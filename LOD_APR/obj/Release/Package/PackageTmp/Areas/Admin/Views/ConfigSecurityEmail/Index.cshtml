@@ -1,0 +1,70 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_ConfigSecurityEmail>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/ASP/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.RequiredLength)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequireNonLetterOrDigit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequireDigit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequireLowercase)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RequireUppercase)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MaxFailedAccessAttemptsBeforeLockout)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DefaultAccountLockoutTimeSpan)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequiredLength)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequireNonLetterOrDigit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequireDigit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequireLowercase)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RequireUppercase)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MaxFailedAccessAttemptsBeforeLockout)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DefaultAccountLockoutTimeSpan)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdConfig }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdConfig }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdConfig })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,155 @@
+﻿@using LOD_APR.Areas.GLOD.Models
+
+@if (ViewBag.IdContrato != 0)
+{
+    <div class="col-lg-4 text-left">
+        <div class="hpanel stats">
+            <div class="panel-heading">
+                <div class="panel-tools">
+                    
+                </div>
+                Información Documentos:
+            </div>
+            <div class="panel-body list" id="getInfoDoc" style="display: block;">
+                <div class="">
+                    <small>
+                        Información de Documentos dependientes del Usuario.
+                    </small>
+                    <br>
+                </div>
+                <div class="row m-t-md m-b-xs">
+                    <div class="col-lg-12">
+                        <h5>Documentos Pendientes de Aprobación</h5>
+                        <h3 class="no-margins font-extra-bold text-warning">@ViewBag.DocPendientes</h3>
+                        <div class="font-bold"> <i class="fa fa-level-up text-warning"></i></div>
+                        <div class="m-t-xs">
+                            <small>Según total Doc. cargados</small>
+                        </div>
+
+                    </div>
+                    @*<div class="col-lg-6">
+                        <h5>Documentos Rechazados</h5>
+                        <h3 class="no-margins font-extra-bold text-warning">@ViewBag.DocRechazados</h3>
+                        <div class="font-bold">@ViewBag.PorDocRechazados% <i class="fa fa-level-up text-danger"></i></div>
+                        <div class="m-t-xs">
+                            <small>Según total Doc. cargados</small>
+                        </div>
+
+                    </div>*@
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <h5 class="m-b-md">Anotaciones Pendiente de Atención:</h5>
+        <div class="table-responsive project-list" style="height:250px;">
+            <table class="table table-condensed table-hover table-striped" id="tablaDatos">
+                <thead>
+                    <tr>
+                        <th>Libro</th>
+                        <th>
+                            Folio
+                        </th>
+                        <th>Tipo</th>
+                        <th>
+                            Fecha Tope
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (ViewBag.IsEmpty) { 
+                    <tr><td colspan="4">No existen Registros</td></tr>
+                    }
+
+                    @foreach (var item in ViewData["MisRespuestasPendientes"] as IEnumerable<LOD_Anotaciones>)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LOD_LibroObras.NombreLibroObra)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Correlativo) - @Html.DisplayFor(modelItem => item.Titulo)
+                            </td>
+                            <td><span class="label label-info">Respuesta</span></td>
+                            @if (item.FechaTopeRespuesta < DateTime.Now)
+                            {
+                                <td>
+                                    <label class="label label-danger">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                                </td>
+                            }
+                            else if (item.FechaTopeRespuesta < DateTime.Now.AddDays(7))
+                            {
+                                <td>
+                                    <label class="label label-warning">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                                </td>
+                            }
+                            else if (item.FechaTopeRespuesta > DateTime.Now)
+                            {
+                                <td>
+                                    <label class="label label-success">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>
+                                    <label class="label label-default">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                                </td>
+                            }
+                            <td>
+                                <div class="btn-group btn-group-nobreak">
+                                    <a class="btn btn-info btn-xs" target="_blank" href="@Url.Action("Edit", "Anotaciones", new { id = item.IdAnotacion })"><i class="fa fa-search"></i> ver</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                    @foreach (var item in ViewData["MisVBPendientes"] as IEnumerable<LOD_Anotaciones>)
+                    {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.LOD_LibroObras.NombreLibroObra)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Correlativo) - @Html.DisplayFor(modelItem => item.Titulo)
+                    </td>
+                    <td><span class="label label-warning">Toma de Conocimiento</span></td>
+                    @if (item.FechaTopeRespuesta < DateTime.Now)
+                    {
+                        <td>
+                            <label class="label label-danger">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                        </td>
+                    }
+                    else if (item.FechaTopeRespuesta < DateTime.Now.AddDays(7))
+                    {
+                        <td>
+                            <label class="label label-warning">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                        </td>
+                    }
+                    else if (item.FechaTopeRespuesta > DateTime.Now)
+                    {
+                        <td>
+                            <label class="label label-success">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            <label class="label label-default">@Html.DisplayFor(modelItem => item.FechaTopeRespuesta)</label>
+                        </td>
+                    }
+                    <td>
+                        <div class="btn-group btn-group-nobreak">
+                            <a class="btn btn-info btn-xs" target="_blank" href="@Url.Action("Edit", "Anotaciones", new { id = item.IdAnotacion })"><i class="fa fa-search"></i> ver</a>
+                        </div>
+                    </td>
+                </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+
+
+}

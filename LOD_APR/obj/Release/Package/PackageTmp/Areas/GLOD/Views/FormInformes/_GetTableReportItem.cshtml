@@ -1,0 +1,76 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.FORM_InformesItems>
+
+<table class="table table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>Nombre Ítem</th>
+            <th>Estado</th>
+            <th>Usuario Ingreso</th>
+            <th>Fecha Ingreso</th>
+            <th>Ingreso Obligatorío</th>
+            <th>Libro Envío</th>
+            <th>Folio Envío</th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Titulo</td>
+            <td>@Html.Raw(item.EstadoDescript)</td>
+            <td>@item.Usuario</td>
+            <td>@item.FechaDespachoDescript</td>
+            <td>@item.ObligatorioDescript</td>
+            <td>@item.LibroEnvio</td>
+            <td>@item.FolioEnvio</td>
+            <td>
+                <div class="btn-group text-right">
+
+                    @if (item.FechaDespacho == null)
+                    {
+                        if (!item.FORM_Informes.Estado)
+                        {
+                            @Ajax.RawActionLink("<i class='fa fa-upload'></i> Ingresar", "Ingresar", "FormInformes", new { id = item.IdItem },
+                           new AjaxOptions
+                           {
+                               HttpMethod = "GET",
+                               InsertionMode = InsertionMode.Replace,
+                               UpdateTargetId = "modalCanvas",
+                               OnSuccess = "form_formulario.InitFormModal(data,status,xhr);"
+                           }
+                           , new { @class = "btn btn-xs btn-warning", @title = "Ingresar Item" })
+                        }
+                    }else if(item.Estado == 1 || item.Estado == 4)
+                    {
+                        @Ajax.RawActionLink("<i class='fa fa-edit'></i> Editar", "EditIngreso", "FormInformes", new { id = item.IdItem },
+                        new AjaxOptions
+                        {
+                            HttpMethod = "GET",
+                            InsertionMode = InsertionMode.Replace,
+                            UpdateTargetId = "modalCanvas",
+                            OnSuccess = "form_formulario.InitFormModal(data,status,xhr);"
+                        }
+                        , new { @class = "btn btn-xs btn-warning", @title = "Ingresar Item" })
+                        <a href="@Url.Action("ITemToExcel", "FormToExcel", new { area = "GLOD", id= item.IdItem }, null)" role="button" class="btn btn-xs btn-success"><i class="fa fa-file-excel-o"></i></a>
+                    }
+                    else
+                    {
+                        @Ajax.RawActionLink("<i class='fa fa-search'></i> Ver", "VerIngreso", "FormInformes", new { id = item.IdItem },
+                        new AjaxOptions
+                        {
+                            HttpMethod = "GET",
+                            InsertionMode = InsertionMode.Replace,
+                            UpdateTargetId = "modalCanvas",
+                            OnSuccess = "form_formulario.InitFormModal(data,status,xhr);"
+                        }
+                        , new { @class = "btn btn-xs btn-default", @title = "Ingresar Item" })
+                        <a href="@Url.Action("ITemToExcel", "FormToExcel", new { area = "GLOD", id= item.IdItem }, null)" role="button" class="btn btn-xs btn-success"><i class="fa fa-file-excel-o"></i></a>
+
+                    }
+                </div>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

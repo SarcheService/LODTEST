@@ -1,0 +1,141 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_ConfigSecurityEmail
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+    <div class="normalheader transition animated fadeIn">
+        <div class="hpanel">
+            <div class="panel-body">
+                <a class="small-header-action" href="">
+                    <div class="clip-header">
+                        <i class="fa fa-arrow-up"></i>
+                    </div>
+                </a>
+
+                <div id="hbreadcrumb" class="pull-right hidden-xs">
+                    <ol class="hbreadcrumb breadcrumb">
+                        <li><a href="index.html">Administración</a></li>
+                        <li>
+                            <span>Configuracion</span>
+                        </li>
+                        <li class="active">
+                            <span>Seguridad cuenta de usuarios</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <h2 class="font-light m-b-xs">
+                    Seguridad cuenta de usuarios
+                </h2>
+                <small>Configure la seguridad de las cuentas de usuarios</small>
+
+            </div>
+        </div>
+    </div>
+    <div class="content animate-panel">
+        <div class="hpanel">
+            <div class="panel-body">
+                @using (Html.BeginForm("Edit", "ConfigSecurityEmail", FormMethod.Post, new { }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.IdConfig)
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        @Html.LabelFor(m => m.RequiredLength)
+                                    </div>
+                                    <div class="col-md-2">
+                                        @Html.EditorFor(model => model.RequiredLength, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.RequiredLength, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        @Html.LabelFor(m => m.MaxFailedAccessAttemptsBeforeLockout)
+                                    </div>
+                                    <div class="col-md-2">
+                                        @Html.EditorFor(model => model.MaxFailedAccessAttemptsBeforeLockout, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.MaxFailedAccessAttemptsBeforeLockout, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        @Html.LabelFor(m => m.DefaultAccountLockoutTimeSpan)
+                                    </div>
+                                    <div class="col-md-2">
+                                        @Html.EditorFor(model => model.DefaultAccountLockoutTimeSpan, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => model.DefaultAccountLockoutTimeSpan, "", new { @class = "text-danger" })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                @Html.EditorFor(model => model.RequireNonLetterOrDigit, new { @class = "i-checks" })
+                                                @Html.ValidationMessageFor(model => model.RequireNonLetterOrDigit, "", new { @class = "text-danger" })  @Html.LabelFor(m => m.RequireNonLetterOrDigit)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                @Html.EditorFor(model => model.RequireDigit, new { @class = "i-checks" })
+                                                @Html.ValidationMessageFor(model => model.RequireDigit, "", new { @class = "text-danger" })  @Html.LabelFor(m => m.RequireDigit)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                @Html.EditorFor(model => model.RequireLowercase, new { @class = "i-checks" })
+                                                @Html.ValidationMessageFor(model => model.RequireLowercase, "", new { @class = "text-danger" })  @Html.LabelFor(m => m.RequireLowercase)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="checkbox i-checks">
+                                            <label>
+                                                @Html.EditorFor(model => model.RequireUppercase, new { @class = "i-checks" })
+                                                @Html.ValidationMessageFor(model => model.RequireUppercase, "", new { @class = "text-danger" })
+                                                @Html.LabelFor(m => m.RequireUppercase)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    @if (Html.ValidaPermisos("0010180002"))
+                                    {
+                                        <input type="submit" value="Guardar" class="btn btn-primary pull-right" />
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div> 

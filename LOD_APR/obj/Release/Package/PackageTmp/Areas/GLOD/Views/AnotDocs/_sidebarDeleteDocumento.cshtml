@@ -1,0 +1,16 @@
+﻿@model LOD_APR.Areas.GLOD.Models.LOD_docAnotacion
+@using LOD_APR.Areas.GLOD.ModelsViews;
+
+<div class="form-horizontal">
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.IdDocAnotacion)
+    @Html.HiddenFor(model => model.IdAnotacion)
+    @Html.HiddenFor(model => model.IdTipoDoc)
+    @Html.HiddenFor(model => model.IdDoc)
+    <div class="row">
+        <div class="col-md-12">
+            <h4>¿Realmente desea eliminar el Documento: @Model.MAE_TipoDocumento.Tipo?</h4>
+        </div>
+    </div>
+</div>
+

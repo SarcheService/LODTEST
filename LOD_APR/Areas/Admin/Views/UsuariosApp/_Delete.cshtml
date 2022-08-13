@@ -1,0 +1,45 @@
+﻿@model Galena.Models.UserViewModel
+
+@{
+    ViewBag.Title = "Eliminar Usuario";
+}
+
+<div class="modal fade hmodal-danger" id="modalAsignaUsuario" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Quitar de @ViewBag.App al Usuario: @Model.UserName</h4>
+        
+            </div>
+            <div class="modal-body">
+                @using (Ajax.BeginForm("Delete", "Usuarios", new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "userApp.saveResult(data,status,xhr);",
+                    OnBegin = "userApp.submit();"
+                }, new { name = "formDelete", id = "formDelete" }))
+                {
+                    <div class="form-horizontal">
+                        <h4>Realmente desea quitar de la aplicación @ViewBag.App al usuario: @Model.Nombre ?</h4>
+                        <hr />
+                        @Html.AntiForgeryToken()
+                        
+                        <input type="hidden" name="IdRole" value="@ViewBag.IdRole" />
+                        <input type="hidden" name="IdUser" value="@Model.Id" />
+
+                 
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right">
+                                    <button id="btnSubmit" type="submit" class="btn btn-danger ladda-button" data-style="expand-right"><i class="fa fa-trash"></i> Si, eliminar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+}
+            </div>
+        </div>
+    </div>
+</div>

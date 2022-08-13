@@ -1,0 +1,90 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_TipoComunicacion
+
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalTipo" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">@ViewBag.Titulo</h4>
+            </div>
+            <div class="modal-body">
+                @{string action = ViewBag.Action;}
+                @using (Ajax.BeginForm(action, null, new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "mae_tipocom.saveResult(data,status,xhr);"
+                }, new { name = "formTipo", id = "formTipo" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                <div class="form-horizontal">
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    @Html.HiddenFor(model => model.IdTipoCom)
+                    @Html.HiddenFor(model => model.MAE_TipoLOD)
+
+                    <div class="form-group">
+
+                        <div class="col-md-12">
+                            @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Nombre, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            @Html.LabelFor(model => model.Descripcion, htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control input-sm", @rows = 5 } })
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            @Html.LabelFor(model => model.MAE_TipoLOD.Nombre, htmlAttributes: new { @class = "control-label" })
+                            @Html.EditorFor(model => model.MAE_TipoLOD.Nombre, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                            @Html.ValidationMessageFor(model => model.MAE_TipoLOD.Nombre, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                    <div class="form-group m-t-sm">
+                        <div class="col-md-3">
+                            @Html.LabelFor(m => m.Activo, htmlAttributes: new { @class = "control-label" })
+                            @Html.CheckBoxFor(m => m.Activo, new { @class = "i-checks" })
+             
+                        </div>
+
+                        <div class="col-md-9"></div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12">
+                            <div class="btn-group pull-right">
+                                <button type="submit" class="btn btn-primary"><i class="fa fa-upload"></i> Guardar</button>
+                                <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    $('#Tipo').change(function () {
+        var texto = $('#Tipo :selected').val();
+        if (isNaN(texto)) {
+            texto = 0;
+        }
+        $('#IdTipo').val(texto);
+    });
+
+    //$("#first").select2('val');
+
+        @*$('#Tipo').autocomplete({
+            source: '@Url.Action("getJsonTipos", "TipoDoc")',
+            minLength: 2
+        });*@
+
+</script>

@@ -1,0 +1,147 @@
+﻿@model LOD_APR.Models.ApplicationUser
+
+
+<div class="modal inmodal fade hmodal-info" id="modalUsuario" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header" style="padding:8px">
+                     <button type="button" class="close" data-dismiss="modal">×</button>
+
+                @*<center><h4 class="modal-title">Ficha Individual</h4></center>*@
+
+            </div>
+
+            <div class="hpanel hblue">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+                            <span>Ficha Usuario</span>
+                        </div>
+                        <div class="col-xs-4 pull-right">
+                            @if (Model.Activo)
+                            {
+                                <label class="label label-success pull-right">Activo</label>}
+                            else
+                            {
+                                <label class="label label-danger pull-right">Inactivo</label>}
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body text-center panel-load">
+                    <div class="sk-spinner sk-spinner-wandering-cubes">
+                        <div class="sk-cube1"></div>
+                        <div class="sk-cube2"></div>
+                    </div>
+                    @if (Model.RutaImagen != null)
+                    {
+                        <img alt="logo" class="img-thumbnail " style="max-width:200px" src="~/Images/Usuarios/@Model.RutaImagen">}
+                    else
+                    {
+                        <h2 href="#" data-letters="@Html.ImageLetter(Model.Nombres)" class="@Model.DataLetters" style="vertical-align: middle;"></h2>
+                    }
+                    <div class="m-t-sm">
+                        <h3 class="m-b-xs">@Html.DisplayFor(model => model.Nombres) @Html.DisplayFor(model => model.Apellidos)</h3>
+                        <div class="text-muted font-bold m-b-xs">@Html.DisplayFor(model => model.Run)</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="btn-group">
+                            @if (Model.Email != null)
+                            {
+                                <a class="btn btn-default btn-xs" href="mailto:@Model.Email" target="_blank"><i class="fa fa-envelope-o"></i></a>}                           
+                        </div>
+                    </div>
+                    <div class="text-left m-t-md">
+                        <table class="table small m-b-xs">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <strong>Nombre:</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Nombres) @Html.DisplayFor(model => model.Apellidos)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Cargo</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.CargoContacto)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Ciudad</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.MAE_Sucursal.MAE_ciudad.Ciudad)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>E-mail</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Email)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Tel.Contacto</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.Telefono)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Empresa</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.MAE_Sucursal.MAE_sujetoEconomico.NomFantasia)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>Sucursal</strong>
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.MAE_Sucursal.Sucursal)
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td>
+                                        <strong>Tipo de Empresa</strong>
+                                    </td>
+                                    <td>
+                                        @{ string tipo = "Contratista";
+                                            if (Model.MAE_Sucursal.MAE_sujetoEconomico.EsMandante)
+                                            {
+                                                tipo = "Empresa Mandante";
+                                            }
+                                            else if (Model.MAE_Sucursal.MAE_sujetoEconomico.EsGubernamental)
+                                            {
+                                                tipo = "Institución de Gobierno";
+                                            }
+                                        }  @tipo
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                @*<div class="border-right border-left">
+                <section id="map">
+                    <div id="map1" style="height: 200px"></div>
+                </section>
+            </div>*@
+            </div>
+
+
+        </div>
+    </div>
+</div>

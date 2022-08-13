@@ -1,0 +1,581 @@
+﻿<div id="mainApp">
+    <div class="normalheader transition animated fadeIn">
+        <div class="hpanel">
+            <div class="panel-body">
+                <a class="small-header-action" href="">
+                    <div class="clip-header">
+                        <i class="fa fa-arrow-up"></i>
+                    </div>
+                </a>
+                <div id="hbreadcrumb" class="pull-right hidden-xs">
+                    <ol class="hbreadcrumb breadcrumb">
+                        <li><a href="#">Formularios</a></li>
+                        <li class="active">
+                            <span>Editar Formulario</span>
+                        </li>
+                    </ol>
+                </div>
+                <h2 class="font-light m-b-xs">
+                    <a class="btn btn-warning" href="/GLOD/Anotaciones/Index/@ViewBag.IdLod"> <i class="fa fa-reply"></i></a>
+                    <b>Editar Anotación</b>
+                </h2>
+                <small>Interfaz para la edición de un Formulario Existente</small>
+            </div>
+        </div>
+    </div>
+    <glod-detalle-anotacion :id-anotacion="@ViewBag.IdAnotacion" inline-template>
+        <div class="content">
+            <div class="row">
+                <div class="col-lg-3 col-md-3">
+                    <div class="hpanel horange">
+                        <div class="panel-body">
+                            <table class="table table-hover small m-b-xs">
+                                <tbody>
+                                    <tr>
+                                        <td><strong>Rut Empresa</strong></td>
+                                        <td>
+                                            {{anotacion.RutContratista}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>N. Fantasía</strong></td>
+                                        <td>
+                                            {{anotacion.Contratista}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Contrato</strong></td>
+                                        <td>
+                                            {{anotacion.Contrato}}
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Libro de Obras</strong></td>
+                                        <td>
+                                            {{anotacion.LibroDeObras}}
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <div class="hpanel horange">
+                        <div :class="['panel-body panel-load',showSpinner?'sk-loading':'']">
+                            <div class="sk-spinner sk-spinner-wave">
+                                <div class="sk-rect1"></div>
+                                <div class="sk-rect2"></div>
+                                <div class="sk-rect3"></div>
+                                <div class="sk-rect4"></div>
+                                <div class="sk-rect5"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="pull-right">
+                                        @{
+                                            int IdLod = ViewBag.IdLod;
+                                            string IdUserActual = ViewBag.IdUserActual;
+                                        }
+
+                                        @if (Html.ValidaRoles(IdLod, 2, IdUserActual)@*&& Html.ValidaPermisos("0020090000")*@)
+                                        {
+
+                                                <a v-if="!anotacion.EstadoFirma.IsFirmada" :href="'/Report/VistaPreviaAnotacion/' + anotacion.IdAnotacion" target="_blank" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Imprimir en PDF"><i class="fa fa-file-pdf-o"></i> Vista Previa</a>
+                                            if (!ViewBag.ContratoLiquidado)
+                                            {
+                                            <button v-if="!EditMode && !anotacion.EstadoFirma.IsFirmada" @@click="editAnotacion" class="btn btn-warning btn-sm" data-toggle="tooltip" data-placement="top" title="Editar"><i class="fa fa-pencil-square-o"></i>Editar</button>
+                                            }
+                                        }
+                                        @if (Html.ValidaRoles(IdLod, 2, IdUserActual)@*&& Html.ValidaPermisos("0020090003")*@)
+                                        {
+
+                                                <modal-button v-if="!EditMode && !anotacion.EstadoFirma.IsFirmada" id="btnEliminarAnotacion"
+                                                              :get-url="'/GLOD/Anotaciones/DeleteAnotacion/' + IdAnotacion"
+                                                              post-url="/GLOD/Anotaciones/DeleteAnotacion"
+                                                              form-name="Eliminar Anotación" form-class="text-danger"
+                                                              button-name="Eliminar" button-class="btn btn-danger btn-sm" button-icon="fa fa-trash"
+                                                              form-button-name="Sí, Eliminar" form-button-class="btn btn-danger btn-sm" form-button-icon="fa fa-trash">
+                                                </modal-button>
+
+
+                                                <button v-if="EditMode" @@click="saveAnotacion" class="btn btn-success btn-sm" data-toggle="tooltip" data-placement="top" title="Guardar"><i class="fa fa-upload"></i> Guardar</button>
+                                                <button v-if="EditMode" @@click="cancelUpdate" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Cancelar"><i class="fa fa-ban"></i> Cancelar</button>
+
+                                            if (!ViewBag.ContratoLiquidado)
+                                            {
+
+                                                <modal-button-no-form v-if="!EditMode && !anotacion.EstadoFirma.IsFirmada" id="btnFirmar"
+                                                                      :get-url="'/GLOD/Anotaciones/FirmarAnotacion/' + IdAnotacion"
+                                                                      form-name="Firmar Anotación" form-class="text-success"
+                                                                      button-name="Firmar" button-class="btn btn-success btn-sm" button-icon="fa fa-pencil">
+                                                </modal-button-no-form>
+                                                <modal-button v-if="!EditMode && !anotacion.EstadoFirma.IsFirmada" id="btnSolicitarFirma"
+                                                              :get-url="'/GLOD/Anotaciones/SolicitarFirma/' + IdAnotacion"
+                                                              post-url="/GLOD/Anotaciones/SolicitarFirma"
+                                                              after="custom" custom-after="GetAnotacionData"
+                                                              form-name="Solicitar Firma" form-class="text-info"
+                                                              button-name="Solicitar Firma" button-class="btn btn-info btn-sm" button-icon="fa fa-user-plus" button-title="Solicitar Firma"
+                                                              form-button-name="Solicitar Firma" form-button-class="btn btn-info btn-sm" form-button-icon="fa fa-user-plus">
+                                                </modal-button>
+
+                                            }
+                                            <a v-if="anotacion.EstadoFirma.IsFirmada" :href="'/Anotaciones/DescargarAnotacion/' + anotacion.IdAnotacion" target="_blank" class="btn btn-warning2 btn-sm" data-toggle="tooltip" data-placement="top" title="Descargar Folio"><i class="fa fa-file-pdf-o"></i> Descargar Folio</a>
+
+                                        }
+                                        <modal-button v-if="!EditMode && anotacion.EstadoFirma.IsFirmada" id="btnSolicitarFirma"
+                                                      :get-url="'/GLOD/Anotaciones/ReenviarAnotacion/' + IdAnotacion"
+                                                      post-url="/GLOD/Anotaciones/ReenviarAnotacion"
+                                                      after="custom" custom-after="GetAnotacionData"
+                                                      form-name="Reenviar Anotación" form-class="text-info"
+                                                      button-name="Reenviar Anotación" button-class="btn btn-default btn-sm" button-icon="fa fa-share-alt" button-title="Reenviar Anotación"
+                                                      form-button-name="Reenviar Anotación" form-button-class="btn btn-info btn-sm" form-button-icon="fa fa-share-alt">
+                                        </modal-button>
+                                        @*<button v-if="anotacion.EstadoFirma.IsFirmada" class="btn btn-default btn-sm" data-toggle="tooltip" data-placement="top" title="Reenviar"><i class="fa fa-share-alt"></i> Reenviar</button>*@
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h3 v-if="!EditMode">
+                                        <strong>{{anotacion.Titulo}}</strong>
+                                        <span @@click="setDestacar" :class="anotacion.UsuarioActual.EsDestacada?'fa fa-star text-warning':'fa fa-star-o'" data-toggle="tooltip" data-placement="bottom" :title="(anotacion.UsuarioActual.EsDestacada)?'Anotación destacada por usted':'Destacar Anotación'" style="cursor: pointer;"></span>
+                                    </h3>
+                                    <input v-if="EditMode" type="text" class="form-control m-t-md" v-model="anotacion.Titulo" />
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <dl class="dl-horizontal">
+                                        <dt>Estado Firma:</dt>
+                                        <dd>
+                                            <span><i :class="['fa fa-circle', 'text-' + anotacion.EstadoFirma.claseFirma]"></i> {{anotacion.EstadoFirma.TipoFirma}}</span>
+                                        </dd>
+                                        <dt>Correlativo:</dt>
+                                        <dd>
+                                            {{anotacion.Folio}}
+                                        </dd>
+                                        <dt>Tipo:</dt>
+                                        <dd>{{anotacion.Tipo}}</dd>
+                                        <dt>SubTipo:</dt>
+                                        <dd>{{anotacion.Subtipo}}</dd>
+                                        <dt>Creada el:</dt>
+                                        <dd>{{anotacion.FechaCreacion}}</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-md-6">
+                                    <dl class="dl-horizontal">
+                                        <dt>Estado Anotación:</dt>
+                                        <dd>
+                                            <span><i :class="['fa fa-circle', 'text-' + anotacion.EstadoAnotacion.claseEstado]"></i> {{anotacion.EstadoAnotacion.Descripcion}}</span>
+                                        </dd>
+                                        <dt>Firmada el:</dt>
+                                        <dd>{{anotacion.EstadoFirma.FechaFirma}}</dd>
+                                        <dt>Solicita Respuesta:</dt>
+                                        <dd>
+                                            <div class="checkbox checkbox-info m-t-none m-b-none">
+                                                <input type="checkbox" id="solResp" v-model="anotacion.SolicitudRest" :disabled="!EditMode">
+                                                <label for="solResp">
+                                                    <span class="label label-info pull-right"></span>
+                                                </label>
+                                            </div>
+                                        </dd>
+                                        <dt>Plazo de Respuesta:</dt>
+                                        <dd>
+                                            <date-picker :disabled="!EditMode || !anotacion.SolicitudRest" v-model="anotacion.FechaTopeRespuesta" default-value="new Date()" :disabled-date="notBeforeToday" value-type="format" format="DD-MM-YYYY" :placeholder="'Seleccione la F.Respuesta'"></date-picker>
+                                        </dd>
+                                        <dt>Receptores:</dt>
+                                        <dd class="project-people" style="display:-webkit-box;list-style:none">
+                                            <div v-for="r in anotacion.Receptores" style="display:inline">
+                                                <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                                    <img v-if="r.Imagen" alt="logo" class="img-circle" style="width:34px; height:34px;margin-top:4px" :src="r.Imagen" data-toggle="tooltip" data-placement="top" :title="r.Nombre">
+                                                    <h5 v-if="!r.Imagen" :data-letters="r.Iniciales" data-toggle="tooltip" :title="r.Nombre" :data-original-title="r.Nombre" data_placement="top" class="m-b-sm data-letters-orange" style="vertical-align: middle;width: 30px;display: inline-block;height:30px;font-size:12px;margin:5px 4px 0 0;"></h5>
+                                                </a>
+                                                <ul v-on:click.stop class="dropdown-menu animated fadeInTop" style="min-width:190px; max-width:190px;left:inherit;top:inherit">
+                                                    <li><span style="padding:3px 20px;color:#262626"><strong>{{r.Nombre}}</strong></span></li>
+                                                    <li><span style="padding:3px 20px;color:#262626">Receptor Principal: {{(r.EsPrincipal?'Sí':'No')}}</span></li>
+                                                    <li><span style="padding:3px 20px;color:#262626">Debe Responder: {{(r.RespRespuesta?'Sí':'No')}}</span></li>
+                                                    <li>
+                                                        <div style="padding:3px 20px">
+                                                            @if (Html.ValidaRoles(IdLod, 2, IdUserActual) && !ViewBag.ContratoLiquidado @*&& Html.ValidaPermisos("0020090002")*@)
+                                                            {
+                                                                <modal-button v-if="!anotacion.EstadoFirma.IsFirmada" :id="'btnEditarReceptor_' + r.IdReceptor"
+                                                                              :get-url="'/GLOD/Anotaciones/EditReceptor?id=' + r.IdAnotacion+'&idReceptor='+r.IdReceptor"
+                                                                              post-url="/GLOD/Anotaciones/EditReceptor"
+                                                                              after="custom" custom-after="GetReceptores"
+                                                                              form-name="Editar Receptor" form-class="text-info"
+                                                                              button-name="Editar" button-class="btn btn-warning btn-xs" button-icon="fa fa-edit" button-title="Editar Receptor"
+                                                                              form-button-class="btn btn-info btn-sm">
+                                                                </modal-button>
+                                                                <modal-button v-if="!anotacion.EstadoFirma.IsFirmada" :id="'btnEliminarReceptor_' + r.IdReceptor"
+                                                                              :get-url="'/GLOD/Anotaciones/DeleteReceptor?id=' + r.IdAnotacion+'&idReceptor='+r.IdReceptor"
+                                                                              post-url="/GLOD/Anotaciones/DeleteReceptor"
+                                                                              after="custom" custom-after="GetReceptores"
+                                                                              form-name="Quitar Receptor" form-class="text-danger"
+                                                                              button-name="Quitar" button-class="btn btn-danger btn-xs" button-icon="fa fa-edit" button-title="Quitar Receptor"
+                                                                              form-button-class="btn btn-danger btn-sm" form-button-name="Sí, Quitar" form-button-icon="fa fa-trash">
+                                                                </modal-button>
+                                                            }
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            @if(Html.ValidaRoles(IdLod, 2, IdUserActual) && !ViewBag.ContratoLiquidado)
+                                            {
+                                                <modal-button v-if="!anotacion.EstadoFirma.IsFirmada" id="btnAgregarReceptor"
+                                                              :get-url="'/GLOD/Anotaciones/AddReceptor/' + anotacion.IdAnotacion"
+                                                              post-url="/GLOD/Anotaciones/AddReceptor"
+                                                              after="custom" custom-after="GetReceptores"
+                                                              form-name="Agregar Receptor" form-class="text-info"
+                                                              button-name="" button-class="btn btn-info btn-outline btn-sm btn-circle m-t-xs" button-icon="fa fa-user-plus" button-title="Agregar Receptor"
+                                                              form-button-name="Agregar" form-button-class="btn btn-info btn-sm" form-button-icon="fa fa-user-plus">
+                                                </modal-button>
+                                            }
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            <div class="row m-t-sm">
+                                <div class="col-lg-12">
+                                    @{ 
+                                        var tabAnot = "active";
+                                        var tabDoc = "";
+                                        if (ViewBag.TabDoc) {
+                                            tabAnot = "";
+                                            tabDoc = "active";
+                                        }
+                                    }
+                                    <div class="hpanel">
+                                        <ul class="nav nav-tabs">
+                                           
+                                                <li class="@tabAnot"><a href="#tab-1" data-toggle="tab">Anotación</a></li>
+                                                <li class="@tabDoc"><a href="#tab-2" data-toggle="tab">Adjuntos</a></li>
+                                                <li @@click="getLog"><a href="#tab-3" data-toggle="tab">Actividad Reciente</a></li>
+
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div id="tab-1" class="tab-pane @tabAnot">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="mail-body">
+                                                                <div class="text-justify">
+                                                                    <p v-if="!EditMode" v-html="anotacion.Cuerpo"></p>
+                                                                    <textarea id="CuerpoAnotacion" v-if="EditMode" class="form-control summernote" v-model="anotacion.Cuerpo" placeholder="Cuerpo de la Anotación"></textarea>
+                                                                </div>
+                                                                <div class="row" v-if="anotacion.EstadoFirma.IsFirmada">
+                                                                    <div class="col-sm-11" style="padding-right:0px;">
+                                                                        <p class="small text-right">
+                                                                            {{anotacion.Remitente.Nombre}}
+                                                                            <br />
+                                                                            {{anotacion.Remitente.Cargo}}
+                                                                            <br />
+                                                                            {{anotacion.Remitente.Empresa}}
+                                                                        </p>
+                                                                    </div>
+                                                                    <div class="col-sm-1 text-right">
+                                                                        <img v-if="anotacion.Remitente.ImgRemitente" alt="logo" class="img-circle" style="width:48px; height:48px;" :src="anotacion.Remitente.ImgRemitente" data-toggle="tooltip" data-placement="top" :title="anotacion.Remitente.Nombre">
+                                                                        <h5 v-if="!anotacion.Remitente.ImgRemitente" href="#" :data-letters="anotacion.Remitente.InicialesRemitente" data-toggle="tooltip" title="" :data-original-title="anotacion.Remitente.Nombre" data_placement="top" class="m-b-sm data-letters-orange" style="margin-top: -2px;vertical-align: middle;width: 2.5em;display: inline-block;line-height:48px;height:48px;margin-right:5px;font-size:18px"></h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    @*REFERENCIAS A OTRAS ANOTACIONES*@
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <hr style="border-color:orange" />
+                                                            <h5>Referencia a otras Anotaciones:</h5>
+                                                            <div v-if="anotacion.Referencias.length>0" class="project-people" style="padding: 10px 20px;display:-webkit-box;">
+                                                                <table class="table table-hover small m-b-xs">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th>Libro</th>
+                                                                            <th>Folio</th>
+                                                                            <th>Anotación</th>
+                                                                            <th>Archivo</th>
+                                                                            <th>Remitente</th>
+                                                                            <th>Fecha</th>
+                                                                            <th>Observación</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr v-for="r in anotacion.Referencias">
+                                                                            <td>{{r.Libro}}</td>
+                                                                            <td>{{r.Folio}}</td>
+                                                                            <td><a :href="'/GLOD/Anotaciones/Edit/' + r.IdAnotacion" target="_blank">{{r.Anotacion}}</a></td>
+                                                                            <td><a :href="'/Anotaciones/DescargarAnotacion/' + r.IdAnotacion" target="_blank" data-toggle="tooltip" data-placement="top" title="Descargar Folio"><div style="display:inline-block"><i class="fa fa-file-pdf-o"></i><span> Descargar</span></div></a></td>
+                                                                            <td>{{r.Remitente}}</td>
+                                                                            <td>{{r.Fecha}}</td>
+                                                                            <td>{{r.Observacion}}</td>
+                                                                            <td>
+                                                                                @if (Html.ValidaRoles(IdLod, 2, IdUserActual))
+                                                                                {
+
+                                                                                    <modal-button v-if="!EditMode &&!anotacion.EstadoFirma.IsFirmada" id="btnDeleteReferencia"
+                                                                                                  :get-url="'/GLOD/Anotaciones/DeleteReferencia?id=' + r.IdRefAnot"
+                                                                                                  post-url="/GLOD/Anotaciones/DeleteReferencia"
+                                                                                                  after="custom" custom-after="GetAnotacionData"
+                                                                                                  form-name="Eliminar Referencia" form-class="text-danger"
+                                                                                                  button-name="Eliminar Referencia" button-class="btn btn-danger btn-sm compose-mail" button-icon="fa fa-trash" button-title="Eliminar Referencia"
+                                                                                                  form-button-name="Sí, Eliminar" form-button-class="btn btn-danger btn-sm" form-button-icon="fa fa-send">
+                                                                                    </modal-button>
+                                                                                }
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <h5 v-if="anotacion.Referencias.length==0"><span class="label label-default">No existen referencias a otras anotaciones</span></h5>
+                                                            <center>
+                                                                @if (Html.ValidaRoles(IdLod, 2, IdUserActual) && !ViewBag.ContratoLiquidado)
+                                                                {
+                                                                    <modal-button v-if="!anotacion.EstadoFirma.IsFirmada" id="btnAddReferencia"
+                                                                                  :get-url="'/GLOD/Anotaciones/AddReferencia/' + anotacion.IdAnotacion"
+                                                                                  post-url="/GLOD/Anotaciones/AddReferencia"
+                                                                                  after="custom" custom-after="GetAnotacionData"
+                                                                                  form-name="Agregar Referencia" form-class="text-info"
+                                                                                  button-name="Agregar Referencia" button-class="btn btn-info compose-mail" button-icon="fa fa-send" button-title="Agregar Referencia"
+                                                                                  form-button-name="Agregar Referencia" form-button-class="btn btn-info btn-sm" form-button-icon="fa fa-send">
+                                                                    </modal-button>
+                                                                }
+                                                            </center>
+                                                        </div>
+                                                    </div>
+                                                    @*VISTOS BUENOS*@
+                                                    <div class="row">
+                                                        <div class="col-xs-12">
+                                                            <hr style="border-color:orange" />
+                                                            <h5>Toma de Conocimiento:</h5>
+                                                            <div v-if="vistosBuenos.length>0" class="project-people" style="padding: 10px 20px;display:-webkit-box;">
+                                                                <table class="table table-hover small m-b-xs">
+                                                                    <tbody>
+                                                                        <tr v-for="r in vistosBuenos">
+                                                                            <td>
+                                                                                <img v-if="r.Imagen" alt="logo" class="img-circle" style="width:34px; height:34px;margin:0 4px 0 0" :src="r.Imagen" data-toggle="tooltip" data-placement="top" :title="r.Nombre">
+                                                                                <h5 v-if="!r.Imagen" :data-letters="r.Iniciales" data-toggle="tooltip" :title="r.Nombre" :data-original-title="r.Nombre" data_placement="top" class="m-b-sm data-letters-orange" style="vertical-align: middle;width: 30px;display: inline-block;height:30px;font-size:14px;margin:0 4px 0 0;"></h5>
+                                                                            </td>
+                                                                            <td>
+                                                                                {{r.Nombre}}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{r.Cargo}}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{r.FechaVB}}
+                                                                            </td>
+                                                                            <td>
+                                                                                {{r.TipoFirmaDetalle}}
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <h5 v-if="vistosBuenos.length==0"><span class="label label-default">No existen registros por el momento</span></h5>
+                                                            <center>
+                                                                @if (!ViewBag.ContratoLiquidado) {
+                                                                    <modal-button-no-form v-if="anotacion.UsuarioActual.DebeDarVistoBueno" id="bbtnDarVistoBuenotnFirmar"
+                                                                                          :get-url="'/GLOD/Anotaciones/VBAnotacion/' + IdAnotacion"
+                                                                                          form-name="Dar Toma de Conocimiento" form-class="text-info"
+                                                                                          button-name="Tomé Conocimiento" button-class="btn btn-info btn-sm" button-icon="fa fa-check">
+                                                                    </modal-button-no-form>
+                                                                }
+                                                            </center>
+                                                        </div>
+                                                    </div>
+                                                    @*RESPUESTA DE LA ANOTACIÓN*@
+                                                    <div class="row">
+                                                        <div class="col-xs-12" v-if="anotacion.SolicitudRest">
+                                                            <hr style="border-color:orange" />
+                                                            <h5>Respuesta:</h5>
+                                                            <h5 v-if="!anotacion.EstadoRespuesta.Respondida">
+                                                                @if (ViewBag.ContratoLiquidado)
+                                                                {
+                                                                    <span class="label label-default">Contrato Liquidado</span>
+                                                                }
+                                                                <span class="label label-default">{{anotacion.EstadoRespuesta.Descripcion}}</span>
+                                                            </h5>
+                                                            <center>
+                                                                @if (Html.ValidaRoles(IdLod, 1, IdUserActual) && !ViewBag.ContratoLiquidado@*&& Html.ValidaPermisos("0020090002")*@)
+                                                                {
+                                                                    <modal-button v-if="anotacion.UsuarioActual.DebeResponder" id="btnResponder"
+                                                                                  :get-url="'/GLOD/Anotaciones/ResponderAnotacion/' + anotacion.IdAnotacion"
+                                                                                  post-url="/GLOD/Anotaciones/ResponderAnotacion"
+                                                                                  form-name="Responder Anotación" form-class="text-success"
+                                                                                  button-name="Responder Anotación" button-class="btn btn-success compose-mail" button-icon="fa fa-send" button-title="Responder Anotación"
+                                                                                  form-button-name="Responder" form-button-class="btn btn-success btn-sm" form-button-icon="fa fa-send">
+                                                                    </modal-button>
+                                                                }
+                                                                        </center>
+                                                            <dl v-if="anotacion.EstadoRespuesta.Respondida" class="dl-horizontal">
+                                                                <dt>Respondida el:</dt>
+                                                                <dd>
+                                                                    {{anotacion.EstadoRespuesta.FechaRespuesta}}
+                                                                </dd>
+                                                                <dt>Respondida por:</dt>
+                                                                <dd>
+                                                                    {{anotacion.EstadoRespuesta.UsuarioRespuesta}}
+                                                                </dd>
+                                                                <dt>Folio Respuesta:</dt>
+                                                                <dd>
+                                                                    <a :href="'/GLOD/Anotaciones/Edit/' + anotacion.EstadoRespuesta.IdRespuesta"target="_blank"><span class="fa fa-file"></span><span>  {{anotacion.EstadoRespuesta.FolioRespuesta}} -  {{anotacion.EstadoRespuesta.TituloRespuesta}}</span></a>
+                                                                </dd>
+                                                            </dl>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-2" class="tab-pane @tabDoc">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="pull-right m-b-sm">
+                                                                @if (Html.ValidaRoles(IdLod, 2, IdUserActual) && !ViewBag.ContratoLiquidado @*&& Html.ValidaPermisos("0020090002")*@)
+                                                                {
+                                                                    <modal-button v-if="!anotacion.EstadoFirma.IsFirmada" id="btnAddOtrosDocumentos" :show-progress="true"
+                                                                                  :get-url="'/GLOD/AnotDocs/AddOtroDocumento/' + anotacion.IdAnotacion"
+                                                                                  post-url="/GLOD/AnotDocs/AddOtroDocumento"
+                                                                                  after="customroot" custom-after="dtDocsAnotacion_GetData"
+                                                                                  form-name="Añadir Documento" form-class="text-info"
+                                                                                  button-name="Añadir Otros Documentos" button-class="btn btn-info btn-sm" button-icon="fa fa-upload" button-title="Añadir Otros Documentos"
+                                                                                  form-button-name="Añadir Documento" form-button-class="btn btn-info btn-sm" form-button-icon="fa fa-upload">
+                                                                    </modal-button>
+                                                               
+                                                                    <modal-button v-if="!anotacion.EstadoFirma.IsFirmada && anotacion.IdTipoSub==30" id="btnAddInformeMensual"
+                                                                                  :get-url="'/GLOD/AnotDocs/AddInforme/' + anotacion.IdAnotacion"
+                                                                                  post-url="/GLOD/AnotDocs/AddInforme"
+                                                                                  after="customroot" custom-after="dtDocsAnotacion_GetData"
+                                                                                  form-name="Añadir Informe Mensual" form-class="text-info"
+                                                                                  button-name="Añadir Informe Mensual" button-class="btn btn-warning2 btn-sm" button-icon="fa fa-file-excel-o" button-title="Añadir Informe Mensual"
+                                                                                  form-button-name="Añadir Informe Mensual" form-button-class="btn btn-info btn-sm" form-button-icon="fa fa-upload">
+                                                                    </modal-button>
+                                                                }
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-12">
+                                                            <data-table-json id="dtDocsAnotacion" tableid="dtDocsAnotacion" :get-url="'/GLOD/AnotDocs/GetDocumentosData/' + @ViewBag.IdAnotacion" inline-template>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-sm table-condensed table-hover">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Título</th>
+                                                                                <th>Tipo Documento</th>
+                                                                                <th>Estado</th>
+                                                                                <th>Acciones</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr v-for="row in tableRows" :key="row.IdTipo">
+                                                                                <td>{{row.Titulo}}</td>
+                                                                                <td>{{row.TipoDoc}}</td>
+                                                                                <td><label :class="row.EstadoClass" data-toggle="tooltip" data-placement="bottom" title="Estado">{{row.EstadoDescript}}</label></td>
+                                                                                <td>
+                                                                                    @if (Html.ValidaRoles(IdLod, 1, IdUserActual))
+                                                                                    {
+                                                                                           <modal-button v-if="row.IdEstado>0" :id="'btnVerDocumento_'+ row.IdDocanot"
+                                                                                                          :get-url="'/GLOD/AnotDocs/VerDocumento/' + row.IdDocanot"
+                                                                                                          after="custom" :custom-after="tableid + '_GetData'"
+                                                                                                          form-name="Detalle de Documento" form-class="text-info"
+                                                                                                          button-name="Ver" button-class="btn btn-info btn-xs" button-icon="fa fa-search" button-title="Ver Documento"
+                                                                                                          form-button-reset-name="Cerrar" form-button-reset-class="btn btn-default btn-sm" form-button-reset-icon="fa fa-sign-out"
+                                                                                                          :show-submit="false">
+                                                                                            </modal-button>
+                                                                                     }
+                                                                                    @if (Html.ValidaRoles(IdLod, 2, IdUserActual) @*&& Html.ValidaPermisos("0020090002")*@)
+                                                                                    {
+                                                                                        if (!ViewBag.ContratoLiquidado)
+                                                                                        {
+                                                                                            <modal-button v-if="row.IdEstado==1 && row.anotFirmada==false" id="btnDeleteDocumento"
+                                                                                                  :get-url="'/GLOD/AnotDocs/DeleteDocumento?id=' + row.IdDocanot"
+                                                                                                  post-url="/GLOD/AnotDocs/DeleteDocumento"
+                                                                                                  after="custom" :custom-after="tableid + '_GetData'"
+                                                                                                  form-name="Eliminar Documento" form-class="text-danger"
+                                                                                                  button-name="" button-class="btn btn-danger btn-xs compose-mail" button-icon="fa fa-trash" button-title=""
+                                                                                                  form-button-name="Sí, Eliminar" form-button-class="btn btn-danger btn-sm" form-button-icon="fa fa-send">
+                                                                                            </modal-button>
+                                                                                        }
+
+                                                                                        <modal-button v-if="row.IdEstado==0 && row.IsResponsable" :id="'btnAddDocumento_'+ row.IdTipoDoc" :show-progress="true"
+                                                                                                      :get-url="'/GLOD/AnotDocs/AddDocumento?id=' + row.IdAnotacion + '&IdTipoDoc=' + row.IdTipoDoc"
+                                                                                                      post-url="/GLOD/AnotDocs/AddDocumento"
+                                                                                                      after="custom" :custom-after="tableid + '_GetData'"
+                                                                                                      form-name="Añadir Documento" form-class="text-info"
+                                                                                                      button-name="Cargar" button-class="btn btn-default btn-xs" button-icon="fa fa-upload" button-title="Cargar Documento"
+                                                                                                      form-button-name="Añadir Documento" form-button-class="btn btn-info btn-sm" form-button-icon="fa fa-upload">
+                                                                                        </modal-button>
+                                                                                    }
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </data-table-json>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div id="tab-3" class="tab-pane">
+                                                <div class="panel-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12 col-lg-12">
+                                                            <data-table-json id="dtLogAnotacion" tableid="dtLogsAnotacion" :get-url="'/GLOD/Anotaciones/GetLogJson/' + @ViewBag.IdAnotacion" inline-template>
+                                                                <div class="table-responsive">
+                                                                    <table class="table table-sm table-condensed table-hover">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Usuario</th>
+                                                                                <th>Acción</th>
+                                                                                <th>Fecha</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr v-for="row in tableRows" :key="row.IdTipo">
+                                                                                <td>{{row.Usuario}}</td>
+                                                                                <td>{{row.Accion}}</td>
+                                                                                <td>{{row.FechaLog}}</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </data-table-json>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </glod-detalle-anotacion>
+</div>
+
+@section Styles {
+    <link href="~/Vendor/summernote/dist/summernote.css" rel="stylesheet" />
+    <link href="~/Vendor/summernote/dist/summernote-bs3.css" rel="stylesheet" />
+}
+
+@section Scripts {
+    <script src="~/Scripts/components/DataTableJson.vue.js"></script>
+    <script src="~/Scripts/components/FichaSujeto.vue.js"></script>
+    <script src="~/Vendor/summernote/dist/summernote.min.js"></script>
+    <script src="~/Scripts/app/GLOD_Anotacion.vue.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            new Vue({
+                el: "#mainApp"
+            });
+
+        });
+    </script>
+
+}

@@ -1,0 +1,76 @@
+﻿@model LOD_APR.Areas.GLOD.ModelsViews.CreateRolesView
+@using System.Configuration
+@{ ViewBag.webKey = Convert.ToString(ConfigurationManager.AppSettings.Get("InternalCaptchaSiteKey")); }
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('@ViewBag.webKey', { action: '' }).then(function (token) {
+            document.getElementById("foo").value = token;
+        });
+    });
+</script>
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalContratos" role="dialog" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+            </div>
+            @{string action = ViewBag.Action;}
+            @using (Ajax.BeginForm(action, "Contratos", new AjaxOptions()
+            {
+                HttpMethod = "POST",
+                OnSuccess = "glod_contratos.saveResultAsinarARol(data,status,xhr);"
+            }, new { name = "formContratos", id = "formContratos" }))
+            {
+
+<div class="modal-body">
+    <div class="form-horizontal">
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => Model.IdContrato)
+        <div class="form-group">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                @Html.LabelFor(model => model.NombreRol, "Nombre Rol:", htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.NombreRol, new { htmlAttributes = new { @class = "form-control", Type = "text" } })
+                @Html.ValidationMessageFor(model => model.NombreRol, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                @Html.LabelFor(model => model.Descripcion, "Descripción:", htmlAttributes: new { @class = "control-label" })
+                @Html.EditorFor(model => model.Descripcion, new { htmlAttributes = new { @class = "form-control", Type = "text" } })
+                @Html.ValidationMessageFor(model => model.Descripcion, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-md-1"></div>
+        </div>
+        @*<div class="form-group">
+                <div class="col-md-2">Nombre Libro</div>
+                <div class="col-md-2">Lectura</div>
+                <div class="col-md-2">Escrituta</div>
+                <div class="col-md-2">Firma Gob.</div>
+                <div class="col-md-2">Firma E. Avanzada</div>
+                <div class="col-md-2">Firma E. Simple</div>
+            </div>*@  <input type="hidden" name="foo" id="foo">
+        <div class="form-group">
+            <div class="col-xs-12">
+                <div class="btn-group pull-right">
+                    @if (Html.ValidaPermisos("0020000002"))
+                    {
+    <button type="button" id="btnSubmit" onclick="glod_contratos.LoadLadda();" class="btn btn-success ladda-button" data-style="expand-right"><i class="fa fa-plus"></i> Crear</button>}
+                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>            }
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+

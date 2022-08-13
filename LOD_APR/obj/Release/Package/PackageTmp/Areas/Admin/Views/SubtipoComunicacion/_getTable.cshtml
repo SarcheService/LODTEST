@@ -1,0 +1,124 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_SubtipoComunicacion>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>Tipo de Libro</th>
+            <th>
+                Tipo de Comunicación
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            @*<th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>*@
+            <th>
+                Activo
+            </th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{ var com = 0;
+            var lod = 0;}
+        @foreach (var item in Model)
+        {
+        <tr>
+            @if (Model.First() == item)
+            {
+                <td rowspan="@Model.Where(x => x.MAE_TipoComunicacion.IdTipoLod == item.MAE_TipoComunicacion.IdTipoLod).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_TipoComunicacion.MAE_TipoLOD.Nombre)
+                </td>
+}
+            else if (item.MAE_TipoComunicacion.IdTipoLod != Model.First().MAE_TipoComunicacion.IdTipoLod && lod == 0)
+            {
+                lod = item.MAE_TipoComunicacion.IdTipoLod;
+                if (item.MAE_TipoComunicacion.IdTipoLod == lod)
+                {
+                    <td rowspan="@Model.Where(x => x.MAE_TipoComunicacion.IdTipoLod == item.MAE_TipoComunicacion.IdTipoLod).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_TipoComunicacion.MAE_TipoLOD.Nombre)
+                    </td>
+                }
+            }
+            else if (lod != 0 && lod != item.MAE_TipoComunicacion.IdTipoLod)
+            {
+                lod = item.MAE_TipoComunicacion.IdTipoLod;
+                if (item.MAE_TipoComunicacion.IdTipoLod == lod)
+                {
+                    <td rowspan="@Model.Where(x => x.MAE_TipoComunicacion.IdTipoLod == item.MAE_TipoComunicacion.IdTipoLod).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_TipoComunicacion.MAE_TipoLOD.Nombre)
+                    </td>
+                }
+            }
+
+            @if (Model.First() == item)
+            {
+                <td rowspan="@Model.Where(x => x.IdTipoCom == item.IdTipoCom).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_TipoComunicacion.Nombre)
+                </td>
+}
+            else if (item.IdTipoCom != Model.First().IdTipoCom && com == 0)
+            {
+                com = item.IdTipoCom;
+                if (item.IdTipoCom == com)
+                {
+                    <td rowspan="@Model.Where(x => x.IdTipoCom == item.IdTipoCom).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_TipoComunicacion.Nombre)
+                    </td>
+                }
+            }
+            else if (com != 0 && com != item.IdTipoCom)
+            {
+                com = item.IdTipoCom;
+                if (item.IdTipoCom == com)
+                {
+                    <td rowspan="@Model.Where(x => x.IdTipoCom == item.IdTipoCom).Count()">
+                        @Html.DisplayFor(modelItem => item.MAE_TipoComunicacion.Nombre)
+                    </td>
+                }
+            }
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            @*<td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>*@
+            <td>
+                @Html.DisplayFor(modelItem => item.Activo)
+            </td>
+
+            <td>
+                <div class="btn-group btn-group-nobreak">
+                    @if (Html.ValidaPermisos("0010040002")) { 
+                    @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Editar"), "Edit", null, new { id = item.IdTipoSub },
+                     new AjaxOptions
+                     {
+                         HttpMethod = "GET",
+                         InsertionMode = InsertionMode.Replace,
+                         UpdateTargetId = "modalCanvas",
+                         OnSuccess = "mae_subtipocom.InitModalEdit(data,status,xhr);"
+                     }
+                     , new { @class = "btn btn-warning btn-xs" })
+                    }
+
+                     @if (Html.ValidaPermisos("0010040003")) { 
+                    @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdTipoSub },
+                         new AjaxOptions
+                         {
+                             HttpMethod = "GET",
+                             InsertionMode = InsertionMode.Replace,
+                             UpdateTargetId = "modalCanvas",
+                             OnSuccess = "mae_subtipocom.initModal(data,status,xhr);"
+                         }
+                         , new { @class = "btn btn-danger btn-xs" })}
+                </div>
+                
+
+            </td>
+
+        </tr>}
+    </tbody>
+</table>

@@ -1,0 +1,434 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_sujetoEconomico
+@using LOD_APR.Areas.Admin.Models;
+
+@{
+    ViewBag.Title = "Nuevo Sujeto Económico";
+}
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <div id="hbreadcrumb" class="pull-right">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Administración</a></li>
+                    <li class="active">
+                        <span>Sujetos Económicos</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <a href="@Url.Action("Index", "SujetoEconomico", new { area = "Admin" }, null)" class="btn btn-warning"><i class="fa fa-reply"></i></a> Editar Sujeto Económico
+            </h2>
+        </div>
+    </div>
+</div>
+<form id="formSujeto" name="formSujeto" enctype="multipart/form-data" action="/Admin/SujetoEconomico/Edit" method="post">
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.IdSujEcon)
+    @Html.HiddenFor(model => model.FechaCreacion)
+    <input class="input-validation-error" id="Activo" name="Activo" value="True" type="hidden">
+    @Html.HiddenFor(model => model.RutaImagen)
+    @Html.HiddenFor(model => model.DataLetters)
+    @Html.HiddenFor(model => model.EsContratista)
+    @Html.HiddenFor(model => model.EsGubernamental)
+    @Html.HiddenFor(model => model.EsMandante)
+
+    <div class="content animate-panel">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="hpanel hblue">
+                    <div class="panel-heading hbuilt">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <span>Ficha Sujeto Económico</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-body text-center">
+                        <div id="divImagenSujeto">
+                            <div class="panel-body panel-load">
+                                <div class="sk-spinner sk-spinner-wandering-cubes">
+                                    <div class="sk-cube1"></div>
+                                    <div class="sk-cube2"></div>
+                                </div>
+                                <div>
+
+                                    @if (Model.RutaImagen != null)
+                                    {
+                                        <img id="sujeto_image" alt="logo" class="img-thumbnail" src="~/Images/Sujetos/@Model.RutaImagen">}
+                                    else
+                                    {
+                                        <h2 href="#" data-letters="@Html.ImageLetter(Model.RazonSocial)" class="@Model.DataLetters" style="vertical-align: middle;"></h2>}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="m-t-none">
+                            <div class="btn-group">
+                                <div class="fileUpload btn btn-default btn-sm">
+                                    <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                    <input id="fileImage" name="fileImage" type="file" class="upload" />
+                                </div>
+                                @if (Model.RutaImagen != null)
+                                {
+                                    <button type="button" class="btn btn-danger btn-sm btn-outline" onclick="mae_sujetos.clearImage('sujeto_image');"><i class="fa fa-trash"></i></button>}
+                            </div>
+                            <h3 class="m-b-xs" id="lblRazon">Razón Social</h3>
+                            <h3 class="m-t-xs" id="lblRut">RUT</h3>
+                        </div>
+                        <div class="text-center">
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-globe btn btn-default btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.web, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Sitio Web" } })
+                                @Html.ValidationMessageFor(model => model.web, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-facebook btn btn-info btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.UrlFacebook, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Perfil de Facebook" } })
+                                @Html.ValidationMessageFor(model => model.UrlFacebook, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-twitter btn btn-default btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.UrlTwitter, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Cuenta de Twitter" } })
+                                @Html.ValidationMessageFor(model => model.UrlTwitter, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="input-group m-b">
+                                <span class="input-group-btn">
+                                    <i class="fa fa-linkedin btn btn-primary btn-sm"></i>
+                                </span> @Html.EditorFor(model => model.UrlLinkedin, new { htmlAttributes = new { @class = "form-control input-sm", @placeholder = "Perfil de Linkedin" } })
+                                @Html.ValidationMessageFor(model => model.UrlLinkedin, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="hpanel hblue">
+                    <div class="hpanel">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-toggle="tab" href="#tab-1">Datos Generales</a></li>
+                            <li class=""><a data-toggle="tab" href="#tab-2">Sucursales</a></li>
+                            @*<li class=""><a data-toggle="tab" href="#tab-3">Documentos</a></li>*@
+                            <li class=""><a data-toggle="tab" href="#tab-3">Usuarios</a></li>
+                            @*<li class=""><a data-toggle="tab" href="#tab-4">Información Complementaria</a></li>*@
+                        </ul>
+                        <div class="tab-content">
+                            <div id="tab-1" class="tab-pane active">
+                                <div class="panel-body panel-load">
+                                    <div class="sk-spinner sk-spinner-wandering-cubes">
+                                        <div class="sk-cube1"></div>
+                                        <div class="sk-cube2"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h3>
+                                                Información General
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    @Html.LabelFor(model => model.Rut, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Rut, new { htmlAttributes = new { @class = "form-control input-sm", @readonly = "readonly" } })
+                                                    @Html.ValidationMessageFor(model => model.Rut, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-6">
+                                                    @Html.LabelFor(model => model.RazonSocial, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.RazonSocial, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.RazonSocial, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-4">
+                                                    @Html.LabelFor(model => model.NomFantasia, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.NomFantasia, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.NomFantasia, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    @Html.LabelFor(model => model.Giro, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Giro, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.Giro, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-6">
+                                                    @Html.LabelFor(model => model.Direccion, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="row">
+
+                                                <div class="col-md-3">
+                                                    <label class="control-label" for="IdCiudad">Ciudad</label>
+                                                    @Html.DropDownList("IdCiudad", null, htmlAttributes: new { @class = "form-control  input-sm" })
+                                                    @Html.ValidationMessageFor(model => model.IdCiudad, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-3">
+                                                    @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-4">
+                                                    @Html.LabelFor(model => model.email, htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.email, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                                    @Html.ValidationMessageFor(model => model.email, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label class="control-label" for="Activo">Activo</label>
+                                                    @*@Html.CheckBox("Activo", Model.Activo);*@
+                                                    <div class="switch">
+                                                        <div class="onoffswitch">
+                                                            @*@Html.CheckBox("Activo", Model.Activo, new { @class = "onoffswitch-checkbox" });*@
+                                                            @if (Model.Activo)
+                                                            {
+                                                                <input checked="checked" class="onoffswitch-checkbox" id="Activo_" name="Activo_" type="checkbox">}
+                                                            else
+                                                            {
+                                                                <input class="onoffswitch-checkbox" id="Activo_" name="Activo_" type="checkbox">}
+
+                                                            <label class="onoffswitch-label" for="Activo_">
+                                                                <span class="onoffswitch-inner"></span>
+                                                                <span class="onoffswitch-switch"></span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="hr-line-dashed"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 @*border-right*@">
+                                            <label class="col-sm-4 control-label">
+                                                Tipo de Sujeto Económico <br>
+                                            </label>
+                                            <div class="col-sm-8">
+
+                                                @if (Model.EsGubernamental)
+                                                {
+                                                    <div class="form-check">
+                                                        @if (Model.EsGubernamental)
+                                                        {
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsGubernamental2" checked>
+                                                        }
+                                                        else
+                                                        {
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsGubernamental2">
+                                                        }
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            Es Organismo de Gobierno
+                                                        </label>
+                                                    </div>
+                                                }
+                                                else
+                                                {
+
+                                                    <div class="form-check">
+                                                        @if (Model.EsMandante)
+                                                        {
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsMandante1" checked>
+                                                        }
+                                                        else
+                                                        {
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsMandante1">
+                                                        }
+                                                        <label class="form-check-label" for="flexRadioDefault1">
+                                                            Es Empresa Fiscalizadora
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        @if (Model.EsContratista)
+                                                        {
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsContratista3" checked>
+                                                        }
+                                                        else
+                                                        {
+                                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="EsContratista3">
+                                                        }
+                                                        <label class="form-check-label" for="flexRadioDefault2">
+                                                            Es Contratista
+                                                        </label>
+                                                    </div>
+                                                }
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 projects">
+                                            @*<div class="project-info">
+                                                <div class="project-action m-t-none pull-right">
+                                                    <div class="btn-group">
+                                                        @Ajax.RawActionLink("<i class='fa fa-plus'></i> Nuevo Contacto", "Create", "Contactos", new { IdSujeto = Model.IdSujEcon },
+                                                        new AjaxOptions
+                                                        {
+                                                            HttpMethod = "GET",
+                                                            InsertionMode = InsertionMode.Replace,
+                                                            UpdateTargetId = "modalCanvas",
+                                                            OnBegin = "$(\".panel-load\").addClass(\"sk-loading\");",
+                                                            OnSuccess = "new MAE_Contactos().initModal(data,status,xhr);"
+                                                        }, new { @class = "btn btn-xs btn-default", role = "button" })
+                                                    </div>
+                                                </div>
+                                                <div class="project-value pull-left">
+                                                    <label class="m-t-none text-muted">
+                                                        Contactos
+                                                    </label>
+                                                </div>
+                                                <br />
+                                                <div id="divContactos" class="project-people pull-left m-t-sm" style="width:100%;text-align:left">*@
+                                            @*{ List<MAE_Contactos> con = ViewBag.ContactosSujeto;}*@
+                                            @*@Html.Partial("~/Areas/Admin/Views/Contactos/_getContactos.cshtml", con)*@
+                                            @*</div>*@
+                                            @*</div>*@
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="hr-line-dashed"></div>
+                                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <div class="btn-group pull-right">
+                                                @if (Html.ValidaPermisos("0010000002"))
+                                                {
+                                                    <button type="submit" class="btn btn-success"><i class="fa fa-upload"></i> Guardar</button>
+                                                }
+                                                <a href="@Url.Action("Edit","SujetoEconomico",new { area="Admin",id=Model.IdSujEcon},null)" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-2" class="tab-pane">
+                                <div class="panel-body projects  panel-load">
+                                    <div class="sk-spinner sk-spinner-wandering-cubes">
+                                        <div class="sk-cube1"></div>
+                                        <div class="sk-cube2"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            @Ajax.RawActionLink("<i class='fa fa-plus'></i> Nueva Sucursal", "Create", "Sucursal", new { IdSujEcon = Model.IdSujEcon },
+                                            new AjaxOptions
+                                            {
+                                                HttpMethod = "GET",
+                                                InsertionMode = InsertionMode.Replace,
+                                                UpdateTargetId = "modalCanvas",
+                                                OnBegin = "$(\".panel-load\").addClass(\"sk-loading\");",
+                                                OnSuccess = "mae_sucursal.initModal(data,status,xhr);"
+                                            }, new { @class = "btn btn-sm btn-success pull-right m-b-sm" })
+
+                                        </div>
+                                    </div>
+                                    <div id="divTableDatos">
+                                        @Html.Partial("~/Areas/Admin/Views/Sucursal/_getSucursales.cshtml", Model.Sucursales)
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="tab-3" class="tab-pane">
+                                <div class="panel-body panel-load">
+                                    <div class="sk-spinner sk-spinner-wandering-cubes">
+                                        <div class="sk-cube1"></div>
+                                        <div class="sk-cube2"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            @if(Html.ValidaPermisos("0010010001"))
+                                            {
+                                                <a href="@Url.Action("Register", "Usuarios", new { IdSujEcon = Model.IdSujEcon })" class="btn btn-sm btn-success pull-right m-b-sm"><i class="fa fa-plus"></i> Nuevo Usuario</a>
+                                            }
+                                            </div>
+                                    </div>
+                                    <div id="divTableDatosUser">
+                                        @Html.Partial("~/Areas/Admin/Views/SujetoEconomico/_getTableUsuarios.cshtml", Model.Sucursales)
+                                    </div>
+                                </div>
+                            </div>
+
+                            @*<div id="tab-4" class="tab-pane">
+                                    <div class="panel-body panel-load" style="overflow:auto">
+                                        <div class="sk-spinner sk-spinner-wandering-cubes">
+                                            <div class="sk-cube1"></div>
+                                            <div class="sk-cube2"></div>
+                                        </div>
+                                        @Html.Partial("~/Areas/Admin/Views/Tags/sujetos/_TagsControl.cshtml", Model.IdSujEcon)
+                                    </div>
+                                </div>*@
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+<div id="modalCanvas"></div>
+
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/select2/css")
+    @Styles.Render("~/bundles/datepicker/css")
+    @Styles.Render("~/Vendor/jsTree/css")
+    @Styles.Render("~/bundles/ladda/css")
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/rut")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datepicker/js")
+    @Scripts.Render("~/bundles/FileHelper")
+    <script src="~/Scripts/app/MAE_Sucursal.js"></script>
+    <script src="~/Scripts/app/MAE_sujetos.js"></script>
+
+    <script src="~/Vendor/jQuery-Mask-Plugin/jquery.mask.min.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).on("click", "[type='checkbox']", function (e) {
+            if (this.id == "Activo_" && this.checked) {
+                $("#Activo").attr("value", "True");
+            } else if (this.id == "Activo_" && !this.checked) {
+                $("#Activo").attr("value", "False");
+            }
+        });
+        $(function () {
+            $('.project-people').tooltip({
+                selector: "[data-toggle=tooltip]"
+            });
+
+            $("#IdCiudad").select2({
+                theme: "bootstrap"
+            });
+
+            $("#RazonSocial").keyup(function () {
+                var value = $(this).val();
+                $("#lblRazon").text(value);
+            }).keyup();
+
+            $("#Rut").keyup(function () {
+                var value = $(this).val();
+                $("#lblRut").text(value);
+            }).keyup();
+
+        });
+        //var files_sujetos;
+        var mae_sujetos;
+        var mae_sucursal;
+
+        $('#Telefono').mask('+56 000000000', { placeholder: "+56 _________" });
+        $(document).ready(function () {
+            mae_sujetos = new MAE_sujetos();
+            mae_sucursal = new MAE_sucursal();
+        });
+
+    </script>
+}

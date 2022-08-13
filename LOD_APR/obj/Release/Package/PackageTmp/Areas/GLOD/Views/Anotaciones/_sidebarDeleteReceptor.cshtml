@@ -1,0 +1,66 @@
+﻿@model LOD_APR.Areas.GLOD.ModelsViews.Receptor
+@using LOD_APR.Areas.GLOD.ModelsViews;
+
+<div class="form-horizontal">
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.IdReceptor)
+    @Html.HiddenFor(model => model.IdAnotacion)
+    <div class="row">
+        <div class="col-md-12">
+            <h4>¿Realmente desea quitar a este Receptor?</h4>
+        </div>
+    </div>
+    <hr />
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        @if (String.IsNullOrEmpty(Model.Imagen))
+                        {
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#" aria-expanded="false">
+                                <h5 href="#" data-letters="@Model.Iniciales" data-toggle="tooltip" title="" data-original-title="@Model.Nombre" data_placement="top" class="m-b-sm data-letters-orange" style="margin-top: -2px;vertical-align: middle;width: 2.5em;display: inline-block;line-height:48px;height:48px;margin-right:5px;font-size:24px"></h5>
+                            </a>
+                        }
+                        else
+                        {
+                            <img alt="logo" class="img-circle" style="width:86px; height:86px;" src="@Model.Imagen" data-toggle="tooltip" data-placement="top" title="@Model.Nombre">
+                        }
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <center>
+                        <h3>@Model.Nombre</h3>
+                        <h4>@Model.Cargo</h4>
+                    </center>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-11">
+                    <div class="checkbox checkbox-info">
+                        <input name="EsPrincipal" id="EsPrincipal" type="checkbox" value="true" checked="@Model.EsPrincipal" disabled>
+                        <label for="EsPrincipal">
+                            <span class="label label-info pull-right">Es el Receptor Principal</span>
+                        </label>
+                    </div>
+                    <div class="checkbox checkbox-warning">
+                        <input name="RespRespuesta" id="RespRespuesta" type="checkbox" value="true" checked="@Model.RespRespuesta" disabled>
+                        <label for="RespRespuesta">
+                            <span class="label label-warning pull-right">Responsable de Responder</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+
+
+
+</div>
+

@@ -1,0 +1,226 @@
+﻿@model LOD_APR.Areas.GLOD.Models.CON_Contratos
+@using System.Configuration
+@{ ViewBag.webKey = Convert.ToString(ConfigurationManager.AppSettings.Get("InternalCaptchaSiteKey")); }
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('@ViewBag.webKey', { action: '' }).then(function (token) {
+            document.getElementById("foo").value = token;
+        });
+    });
+</script>
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalContratos" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title"><b>@ViewBag.Titulo</b></h4></center>
+            </div>
+            @{string action = ViewBag.Action;}
+            <form id="formContratos" name="formContratos" enctype="multipart/form-data" action="/GLOD/Contratos/@action" method="post">
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(model => Model.UserId)
+                @Html.HiddenFor(model => Model.IdContrato)
+                @Html.HiddenFor(model => Model.RutaImagenContrato)
+                @Html.HiddenFor(model => Model.FechaCreacionContrato)
+                @Html.HiddenFor(model => Model.IdCarpeta)
+
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="tabs-container">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tab-10"> <h6>Datos Generales</h6> </a></li>
+                                @*<li><a data-toggle="tab" href="#tab-30"> <h6>Roles del Contrato</h6> </a></li>*@
+                                @*<li><a data-toggle="tab" href="#tab-20"> <h6>Datos Contractuales</h6> </a></li>*@
+                            </ul>
+                            <div class="tab-content">
+
+                                <div id="tab-10" class="tab-pane active">
+                                    <div class="col-xs-12"><br /></div>
+                                    <div class="col-xs-12">
+                                        <div class="col-lg-3 col-xs-12">
+                                            <div id="divImagenContrato">
+                                                <div class="panel-body text-center panel-load">
+                                                    <div class="sk-spinner sk-spinner-wandering-cubes">
+                                                        <div class="sk-cube1"></div>
+                                                        <div class="sk-cube2"></div>
+                                                    </div>
+                                                    <div>
+                                                        @if (Model.RutaImagenContrato != null)
+                                                        {
+                                            <img alt="foto proyecto" class="img-thumbnail" src="@Url.Content(Model.RutaImagenContrato)?@DateTime.Now.Ticks.ToString()" /> }
+                                                        else
+                                                        {
+                                            <h2 class="text-center text-@ViewBag.Color"><i class="fa fa-file-text-o   fa-3x" aria-hidden="true"></i></h2>}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12"><br /></div>
+                                            <center>
+                                                <div class="fileUpload btn btn-primary btn-outline btn-xs">
+                                                    <span><i class="fa fa-camera" aria-hidden="true"></i></span>
+                                                    <input id="fileImage" name="fileImage" type="file" class="upload" accept="image/*" />
+                                                </div>
+                                            </center>
+                                        </div>
+                                        <div class="col-lg-9 col-xs-12">
+                                            <div class="form-group">
+                                                <div class="col-lg-4 col-xs-12">
+                                                    @Html.LabelFor(model => model.CodigoContrato, "Número Contrato", htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.CodigoContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.CodigoContrato, "", new { @class = "text-danger" })
+                                                </div>
+                                                <div class="col-lg-8 col-xs-12">
+                                                    @Html.LabelFor(model => model.NombreContrato, "Nombre del Contrato", htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.NombreContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.NombreContrato, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12"><br /></div>
+                                            <div class="form-group">
+                                                <div class="col-lg-12 col-xs-12">
+                                                    @Html.LabelFor(model => model.DescripcionContrato, "Descripción", htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.DescripcionContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.DescripcionContrato, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12"><br /></div>
+                                            <div class="form-group">
+                                                <!--<div class="col-lg-4 col-xs-4">-->
+                                                @*@Html.LabelFor(model => model.IdTipoContrato, "Tipo de Contrato", htmlAttributes: new { @class = "control-label" })
+                                                    @Html.EditorFor(model => model.IdTipoContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.IdTipoContrato, "", new { @class = "text-danger" })*@
+                                                <!--</div>-->
+                                                @if (ViewBag.PermiteEditar && ViewBag.PermiteEditarMOP)
+                                                {
+                                    <div class="col-xs-12">
+                                        @Html.LabelFor(model => Model.IdDireccionContrato, "Dirección MOP", htmlAttributes: new { @class = "control-label" })
+                                        @Html.DropDownList("IdDireccionContrato", null, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => Model.IdDireccionContrato, "", new { @class = "text-danger" })
+                                    </div> }
+                                                else
+                                                {
+                                    @Html.HiddenFor(model => model.MOP)
+                                                    @Html.LabelFor(model => Model.IdDireccionContrato, "Dirección MOP", htmlAttributes: new { @class = "control-label" })
+                                                                    @Html.EditorFor(model => Model.MAE_Sucursal.Sucursal, null, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                                                    @Html.ValidationMessageFor(model => Model.IdDireccionContrato, "", new { @class = "text-danger" })}
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-12"><br /></div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                <!--<div class="col-lg-3 col-xs-12">-->
+                                                @*@Html.LabelFor(model => model.IdModalidadContrato, "Modalidad Contratación", htmlAttributes: new { @class = "control-label", @autocomplete = "false" })
+                                                    @Html.EditorFor(model => model.IdModalidadContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.IdModalidadContrato, "", new { @class = "text-danger" })*@
+                                                <!--</div>-->
+
+                                                <div class="col-lg-4 col-xs-12">
+                                                    @Html.LabelFor(model => model.MontoInicialContrato, "Monto Inical Ctto", htmlAttributes: new { @class = "control-label", @autocomplete = "false" })
+                                                    @Html.EditorFor(model => model.MontoInicialstr, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.MontoInicialContrato, "", new { @class = "text-danger" })
+                                                </div>
+
+                                                <div class="col-lg-4 col-xs-12">
+                                                    @Html.LabelFor(model => model.FechaInicioContrato, "Fecha Inicio Ctto", htmlAttributes: new { @class = "control-label", @autocomplete = "false" })
+                                                    @Html.EditorFor(model => model.FechaInicioContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.FechaInicioContrato, "", new { @class = "text-danger" })
+                                                </div>
+
+                                                <div class="col-lg-4 col-xs-12">
+                                                    @Html.LabelFor(model => model.PlazoInicialContrato, "Plazo Inicial Ctto", htmlAttributes: new { @class = "control-label", @autocomplete = "false" })
+                                                    @Html.EditorFor(model => model.PlazoInicialContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                    @Html.ValidationMessageFor(model => model.PlazoInicialContrato, "", new { @class = "text-danger" })
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12">
+                                        <div class="col-xs-12"><br /></div>
+                                        <div class="col-xs-12">
+                                            <div class="form-group">
+                                                @if (ViewBag.PermiteEditar)
+                                                {
+                                                    if (ViewBag.PermiteEditarContratista)
+                                                    {
+                                    <div class="col-xs-6">
+                                        @Html.LabelFor(model => Model.IdEmpresaContratista, "Empresa Contratista", htmlAttributes: new { @class = "control-label" })
+                                        @Html.DropDownList("IdEmpresaContratista", null, new { htmlAttributes = new { @class = "form-control" } })
+                                        @Html.ValidationMessageFor(model => Model.IdEmpresaContratista, "", new { @class = "text-danger" })
+                                    </div> }
+                                                    else
+                                                    {
+                                    @Html.HiddenFor(model => model.Contratista)
+                                                        <div class="col-xs-6">
+                                                            @Html.LabelFor(model => Model.IdEmpresaContratista, "Empresa Contratista", htmlAttributes: new { @class = "control-label" })
+                                                            @Html.EditorFor(model => Model.Empresa_Contratista.NomFantasia, null, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                            @Html.ValidationMessageFor(model => Model.IdEmpresaContratista, "", new { @class = "text-danger" })
+                                                        </div> }
+                                                                        if (ViewBag.PermiteEditarContratista)
+                                                                        {
+                                                        <div class="col-xs-6">
+                                                            @Html.LabelFor(model => Model.IdEmpresaFiscalizadora, "Empresa Fiscalizadora", htmlAttributes: new { @class = "control-label" })
+                                                            @Html.DropDownList("IdEmpresaFiscalizadora", null, new { htmlAttributes = new { @class = "form-control" } })
+                                                            @Html.ValidationMessageFor(model => Model.IdEmpresaFiscalizadora, "", new { @class = "text-danger" })
+                                                        </div> }
+                                                                        else
+                                                                        {
+                                                                            @Html.HiddenFor(model => model.Fiscalizadora)
+                                                                            <div class="col-xs-6">
+                                                                                @Html.LabelFor(model => Model.IdEmpresaFiscalizadora, "Empresa Fiscalizadora", htmlAttributes: new { @class = "control-label" })
+                                                                                @Html.EditorFor(model => Model.Empresa_Contratista.NomFantasia, null, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                                                @Html.ValidationMessageFor(model => Model.IdEmpresaFiscalizadora, "", new { @class = "text-danger" })
+                                                                            </div>
+                                                                        }
+                                                                    }
+                                                                    else
+                                                                    {
+                                                        @Html.HiddenFor(model => model.MOP)
+                                                                        @Html.HiddenFor(model => model.Contratista)
+                                                                                        @Html.HiddenFor(model => model.Fiscalizadora)
+                                                                                                        <div class="col-xs-6">
+                                                                                                            @Html.LabelFor(model => Model.IdEmpresaContratista, "Empresa Contratista", htmlAttributes: new { @class = "control-label" })
+                                                                                                            @Html.EditorFor(model => Model.Empresa_Contratista.NomFantasia, null, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                                                                            @Html.ValidationMessageFor(model => Model.IdEmpresaContratista, "", new { @class = "text-danger" })
+                                                                                                        </div>
+                                                                                                                        <div class="col-xs-6">
+                                                                                                                            @Html.LabelFor(model => Model.IdEmpresaFiscalizadora, "Empresa Fiscalizadora", htmlAttributes: new { @class = "control-label" })
+                                                                                                                            @Html.EditorFor(model => Model.Empresa_Fiscalizadora.NomFantasia, null, new { htmlAttributes = new { @class = "form-control", @readonly = "readonly" } })
+                                                                                                                            @Html.ValidationMessageFor(model => Model.IdEmpresaFiscalizadora, "", new { @class = "text-danger" })
+                                                                                                                        </div>}
+                                                <div class="col-lg-3 col-xs-12">  <input type="hidden" name="foo" id="foo">
+                                                    @*@Html.LabelFor(model => model.MontoPresupContrato, htmlAttributes: new { @class = "control-label" })
+                                                        @Html.EditorFor(model => model.MontoPresupContrato, new { htmlAttributes = new { @class = "form-control" } })
+                                                         @Html.ValidationMessageFor(model => model.MontoPresupContrato, "", new { @class = "text-danger" })*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="form-group">
+                        <div class="col-xs-12">
+                            <div class="btn-group pull-right">
+                                <button type="button" id="guardar" class="btn btn-@ViewBag.Color"><i class="fa fa-upload"></i> Guardar</button>
+                                <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    /*   $('#MontoInicialContrato').mask('$ ###,#', { placeholder: "$ " });*/
+
+</script>

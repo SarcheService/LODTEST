@@ -1,0 +1,99 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_TipoComunicacion>
+
+<table class="table table-condensed table-hover" id="tablaDatos">
+    <thead>
+        <tr>
+            <th>
+                Tipo de Libro de Obra
+            </th>
+            <th>
+                Nombre Tipo Comunicación
+            </th>
+
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                Activo
+            </th>
+            <th>Acciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            var lod = 0;
+         }  
+        @foreach (var item in Model)
+        {
+            <tr>
+            @if (Model.First() == item)
+                {
+                <td rowspan="@Model.Where(x => x.IdTipoLod == item.IdTipoLod).Count()">
+                    @Html.DisplayFor(modelItem => item.MAE_TipoLOD.Nombre)
+                </td>}
+                else if(item.IdTipoLod != Model.First().IdTipoLod && lod == 0) 
+                {
+                    lod = item.IdTipoLod;
+                    if(item.IdTipoLod == lod)
+                    {
+                        <td rowspan="@Model.Where(x => x.IdTipoLod == item.IdTipoLod).Count()">
+                            @Html.DisplayFor(modelItem => item.MAE_TipoLOD.Nombre)
+                        </td>
+                    }
+                }else if(lod != 0 && lod != item.IdTipoLod)
+                {
+                    lod = item.IdTipoLod;
+                    if(item.IdTipoLod == lod)
+                    {
+                        <td rowspan="@Model.Where(x => x.IdTipoLod == item.IdTipoLod).Count()">
+                            @Html.DisplayFor(modelItem => item.MAE_TipoLOD.Nombre)
+                        </td>
+                    }
+                }
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>                
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descripcion)
+                </td>              
+                <td>
+                    @Html.DisplayFor(modelItem => item.Activo)
+                </td>
+              
+                    <td>
+                        <div class="btn-group btn-group-nobreak">
+
+                            @if (Html.ValidaPermisos("0010030002"))
+                            {
+                                        @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Editar"), "Edit", null, new { id = item.IdTipoCom },
+                                          new AjaxOptions
+                                          {
+                                              HttpMethod = "GET",
+                                              InsertionMode = InsertionMode.Replace,
+                                              UpdateTargetId = "modalCanvas",
+                                              OnSuccess = "mae_tipocom.InitModalEdit(data,status,xhr);"
+                                          }
+                                          , new { @class = "btn btn-warning btn-xs" })
+                            }
+
+                            @if (Html.ValidaPermisos("0010030003")) { 
+                                @Ajax.RawActionLink(string.Format("<i class=\"fa fa-trash\"></i>"), "Delete", null, new { id = item.IdTipoCom },
+                                 new AjaxOptions
+                                 {
+                                     HttpMethod = "GET",
+                                     InsertionMode = InsertionMode.Replace,
+                                     UpdateTargetId = "modalCanvas",
+                                     OnSuccess = "mae_tipocom.initModal(data,status,xhr);"
+                                 }
+                                 , new { @class = "btn btn-danger btn-xs" })
+                            }
+                        </div>
+
+                        
+                    </td>
+                
+                
+            </tr>}
+    </tbody>
+</table>

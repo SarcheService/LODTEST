@@ -1,0 +1,102 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_sistema>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <h2 class="font-light m-b-xs">
+                Sistemas
+            </h2>
+            <small> Listado de sistemas </small>
+        </div>
+    </div>
+</div>
+
+<div class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel hblue">
+                <div class="panel-heading hbuilt">
+                    <div class="row">
+                        <div class="col-xs-8">
+
+                        </div>
+                        <div class="col-xs-4">
+                            @Ajax.RawActionLink(string.Format(" <i class=\"fa fa-plus\"></i> Nuevo sistema "), "Create", "Sistemas", new { },
+                             new AjaxOptions
+                             {
+                                 HttpMethod = "GET",
+                                 InsertionMode = InsertionMode.Replace,
+                                 UpdateTargetId = "modalCanvas",
+                                 OnSuccess = "mae_sistemas.initModal(data,status,xhr);"
+                             }
+                             , new { @class = "btn btn-sm btn-success pull-right" })
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <div class="table-responsive" id="divTableDatos">
+                        @Html.Action("getTable", new { Id = ViewBag.Id })
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+
+
+
+
+
+
+
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/select2/css")
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/MAE_sistemas")
+
+    <script type="text/javascript">
+        var mae_sistemas;
+
+        $(document).ready(function () {
+            mae_sistemas = new MAE_sistemas("Admin", "Sistemas");
+
+        });
+    </script>
+    @*<script>
+            var table = $("#tablaDatos").DataTable({ "sDom": 'ltipr', stateSave: true });
+
+            $("#searchInput").keyup(() => {
+                table.search($("#searchInput").val()).draw();
+            });
+
+            $("#btnTableSearch").click(function () {
+                $("#searchInput").keyup();
+            });
+        </script>*@
+}

@@ -1,0 +1,92 @@
+﻿
+@model Microsoft.AspNet.Identity.EntityFramework.IdentityRole
+@{
+    ViewBag.Title = "Editar Perfil";
+}
+
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-down"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a>Administración</a></li>
+                    <li>
+                        <span>Perfiles</span>
+                    </li>
+                    <li class="active">
+                        <span>Editar Perfil</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <a href="@Url.Action("Index", "Perfil", new { area = "Admin" }, null)" class="btn btn-warning"><i class="fa fa-reply"></i></a> Nuevo Perfil
+            </h2>
+            <small>Formulario para la creación de un nuevo Perfil de Usuario.</small>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="content">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="hpanel hblue">
+                <div class="hpanel">
+                    
+
+
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>
+                                    Información Perfil
+                                </h3>
+                            </div>
+                        </div>
+                        <br />
+                        @using (Html.BeginForm())
+                        {
+                            @Html.AntiForgeryToken()
+                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <div class="col-md-6 m-b-md">
+                                            <label class="font-normal">Nombre Perfil</label>
+
+                                            <div class="input-group">
+                                                @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                                                <span class="input-group-btn">
+                                                    <button id="btnSubmit" type="submit" class="btn btn-success ladda-button ladda-button-demo" data-style="zoom-in"><i class="fa fa-save"></i></button>
+
+                                                </span>
+                                            </div>
+                                            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+
+                                        </div>
+                                    </div>                                        
+                                </div>
+                            </div>
+                        }
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

@@ -1,0 +1,5 @@
+﻿@model LOD_APR.Helpers.Filtro_Documentos
+
+@Html.LabelFor(model => model.IdLibroObra, htmlAttributes: new { @class = "control-label" })
+@Html.DropDownList("IdLibroObra", null, htmlAttributes: new { @class = "form-control m-t-xs" })
+@Html.ValidationMessageFor(model => model.IdLibroObra, "", new { @class = "text-danger" })

@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Libros de Obras</a></li>
+                    <li class="active">
+                        <span>Inicio Rápido</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <b>Inicio Rápido</b>
+            </h2>
+            <small>Listado de Libros de Obras autorizadaos para el usuario en sesión</small>
+        </div>
+    </div>
+</div>
+
+<div id="App" class="content animate-panel">
+    <div class="row">
+        <div class="col-lg-3">
+            <select-tree id="IdPath" :tipo="4" tipopath="anot" :idselected="4" selected="Carpeta sel"></select-tree>
+            <select-tree id="IdPath2" :tipo="4" tipopath="anot" :idselected="4" selected="Carpeta sel"></select-tree>
+            <select-tree id="IdPath3" :tipo="4" tipopath="anot" :idselected="4" selected="Carpeta sel"></select-tree>
+        </div>
+        <div class="col-lg-3">
+            <select-dropdown id="IdCiudad" tipo="Ciudad" idselected="782" selected="Ciudad Seleccionada" readonly="true"></select-dropdown>
+        </div>
+        <div class="col-lg-3">
+            <select-dropdown id="IdSujeto" tipo="Sujeto" :em="['get-sujeto-sel']"></select-dropdown>
+        </div>
+        <div class="col-lg-3">
+            <select-dropdown id="IdPersonal" tipo="Personal" :em="['get-personal-sel']"></select-dropdown>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-3">
+            <ficha-personal :id="1"></ficha-personal>
+        </div>
+        <div class="col-lg-3">
+            <ficha-sujeto :id="6"></ficha-sujeto>
+        </div>
+        <div class="col-lg-3">
+            <ficha-sujeto :re="['get-sujeto-sel']"></ficha-sujeto>
+        </div>
+        <div class="col-lg-3">
+            <ficha-Personal :re="['get-personal-sel']"></ficha-Personal>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="~/Scripts/components/SelectTree.vue.js"></script>
+    <script src="~/Scripts/components/SelectDropdown.vue.js"></script>
+    <script src="~/Scripts/components/FichaPersonal.vue.js"></script>
+    <script src="~/Scripts/components/FichaSujeto.vue.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+             new Vue({ el: "#App" });
+        });
+    </script>
+
+}

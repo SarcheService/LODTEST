@@ -1,0 +1,41 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_sistema
+
+@{
+    ViewBag.Title = "Eliminar sistema";
+}
+
+<div class="modal fade hmodal-danger" id="modalSistema" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Eliminación de sistema: @Model.NombreSistema</h4>
+
+            </div>
+            <div class="modal-body">
+                @using (Ajax.BeginForm("Delete", "Sistema", new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "mae_sistemas.saveResult(data,status,xhr);",
+            
+                }, new { name = "formDatos", id = "formDatos" }))
+                {
+                    <div class="form-horizontal">
+                        <h4>Realmente desea eliminar este sistema: @Model.NombreSistema ?</h4>
+                        <hr />
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.IdSistema)
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right">
+                                    <button id="btnSubmit" type="submit" class="btn btn-danger ladda-button" data-style="expand-right"><i class="fa fa-trash"></i> Si, eliminar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+}
+            </div>
+        </div>
+    </div>
+</div>

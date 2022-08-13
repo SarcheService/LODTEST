@@ -1,0 +1,167 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_log>
+
+@{
+    ViewData["CustomArea"] = ViewBag.NombreArea;
+    ViewBag.Title = "Listado de Log";
+    Layout = "~/Areas/GLOD/Views/Shared/_Layout.cshtml"; 
+    }
+
+<div class="normalheader transition animated fadeIn">
+    <div class="hpanel">
+        <div class="panel-body">
+            <a class="small-header-action" href="">
+                <div class="clip-header">
+                    <i class="fa fa-arrow-up"></i>
+                </div>
+            </a>
+
+            <div id="hbreadcrumb" class="pull-right hidden-xs">
+                <ol class="hbreadcrumb breadcrumb">
+                    <li><a href="#">Listado de Logs</a></li>
+                    <li class="active">
+                        <span>Log</span>
+                    </li>
+                </ol>
+            </div>
+            <h2 class="font-light m-b-xs">
+                <a role="button" href="@Url.Action("Admin", "Home", new { Area = "GLOD", id = ViewBag.IdContrato, tipo = "c_"})" class="btn btn-warning"><i class="fa fa-reply"></i></a>
+                Listado de Logs: @ViewBag.NomContrato
+            </h2>
+
+            <small>Listado de Logs registrados en el sistema</small>
+
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="row">
+        <div class="col-lg-3 col-md-3">
+            <div class="hpanel hblue">
+                <form action="/GLOD/Log/Excel_Log" method="get">
+                    <div class="panel-heading hbuilt">
+                            <div class="row">
+                                <div class="col-xs-8">
+                                    <span> Filtro y búsqueda</span>
+                                </div>
+                                <div class="col-xs-4">
+                                    
+                                </div>
+                            </div>
+                    </div>
+                    <div class="panel-body ">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <div class="col-md-11">
+                                    <div class="form-group m-t-sm" id="DivLod">
+                                        <label class="control-label">Libro de Obra:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdLod", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-sm" id="DivAnotacion">
+                                        <label class="control-label">Anotaciones:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("IdAnotacion", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+                                    <div class="form-group m-t-sm" id="DivUsuario">
+                                        <label class="control-label">Usuario:</label>
+                                        <div class="input-group">
+                                            @Html.DropDownList("UserId", null, htmlAttributes: new { @class = "form-control " })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group" id="mainApp">
+                                        <label class="control-label">Fecha Creación</label>
+                                        <date-picker v-model="rango" format="DD-MM-YYYY" :placeholder="'Seleccione un Rango'" range :input-attr="{id:'FechaLog', name:'FechaLog'}"></date-picker>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <center><a class="btn btn-sm btn-info ladda-button" style="width:150px;" data-style="zoom-in" id="btnFilter" onclick="log_home.Filtro();"><i class="fa fa-filter"></i> Filtrar</a></center>
+                        
+                        @*<button class="btn btn-sm btn-info btn-block" onclick=""><i class="fa fa-filter"></i> Filtrar</button>*@
+                    </div>
+                    <div class="panel-footer">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="hpanel hblue">
+                <div class="panel-body panel-load" style="padding:0;margin:0">
+                    <div class="panel-heading hbuilt">
+                        <div class="mail-box-header">
+                            <div class="row">
+                                <div class="col-md-2"></div>
+                                <div class="col-md-8">
+                                    <center><h3 class="text-info" style="margin-top:8px"><b>Listado de Logs</b></h3></center>
+                                </div>
+                                <div class="col-md-2">
+                                    <form action="/GLOD/Log/Excel_Log" method="get">
+                                        <button type="submit" class="btn btn-success btn-xs pull-right"><i class="fa fa-file-excel-o"></i> Exportar a Excel</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-12 ">
+                                <br />
+                            </div>
+                        </div>
+                        <div class="panel-body" style="overflow:auto">
+                            <div class="row">
+                                <div class="col-md-12" id="divTableDatos">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            @if (Html.ValidaPermisos("0020070000"))
+                                            {
+                                                @Html.Partial("_GetTable", Model)
+                                            }
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sk-spinner sk-spinner-wandering-cubes">
+                        <div class="sk-cube1"></div>
+                        <div class="sk-cube2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCanvas"></div>
+@section Styles {
+    @Styles.Render("~/bundles/datatables/css")
+    @Styles.Render("~/bundles/ladda/css")
+    @Styles.Render("~/bundles/select2/css")
+}
+@section Scripts {
+    @Scripts.Render("~/bundles/datatables/js")
+    @Scripts.Render("~/bundles/ladda/js")
+    @Scripts.Render("~/bundles/select2/js")
+    @Scripts.Render("~/bundles/datatablesBootstrap/js")
+    @Scripts.Render("~/bundles/CommonHelpers")
+
+    <script src="~/Scripts/app/Log_Home.js"></script>
+
+    <script type="text/javascript">
+
+        var log_home;
+        $(document).ready(function () {
+            log_home = new Log_Home(@ViewBag.IdContrato);
+
+            new Vue({
+                el: "#mainApp",
+                data: { rango:null }
+            });
+        });
+
+
+    </script>
+}

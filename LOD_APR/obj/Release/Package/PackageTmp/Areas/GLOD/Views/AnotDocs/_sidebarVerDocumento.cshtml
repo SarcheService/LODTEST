@@ -1,0 +1,61 @@
+﻿@model LOD_APR.Areas.GLOD.ModelsViews.DocumentosAnotacionView
+@using LOD_APR.Areas.GLOD.ModelsViews;
+
+<div class="form-horizontal">
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(model => model.IdDocanot)
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <div class="row">
+                <div class="col-md-12">
+          
+                    <h4>@Model.Titulo</h4>
+               
+                    <dl class="dl-horizontal">
+                        <dt>Tipo:</dt>
+                        <dd>@Model.TipoDoc</dd>
+                        <dt>Descripción:</dt>
+                        <dd>@Model.Descripcion</dd>
+                        <dt>Creado por:</dt>
+                        <dd>@Model.CreadoPor</dd>
+                        <dt>Creado el:</dt>
+                        <dd>@Model.CreadoEl</dd>
+                        <dt>Estado:</dt>
+                        <dd><label class="@Model.EstadoClass" data-toggle="tooltip" data-placement="bottom" title="Estado">@Model.EstadoDescript</label></dd>
+                        @if (Model.IdEstado > 1)
+                        {
+                            <dt>Usuario Aprob/Rechazo:</dt>
+                            <dd>@Model.UsuarioEvento</dd>
+                            <dt>Fecha Aprob/Rechazo:</dt>
+                            <dd>@Model.FechaEvento</dd>
+                            <dt>Observaciones:</dt>
+                            <dd>@Model.Observaciones</dd>
+                        }
+                        <dt></dt>
+                        <dd style="padding-top:10px">
+                            <a :href="'/AnotDocs/DescargarDocumento/' + @Model.IdDocanot" target="_blank" class="btn btn-warning2 btn-sm" data-toggle="tooltip" data-placement="top" title="Descargar Documento"><i class="fa fa-download"></i> Descargar Documento</a>
+                            @if (Model.IdEstado < 2 && Model.IsResponsable && !ViewBag.ContratoLiquidado)
+                            {
+                                <modal-button id="btnAprobarDocumento_@Model.IdDocanot"
+                                              get-url="/GLOD/AnotDocs/AprobarDocumento/@Model.IdDocanot"
+                                              post-url="/GLOD/AnotDocs/AprobarDocumento"
+                                              form-name="Aprobar Documento" form-class="text-success"
+                                              button-name="Aprobar" button-class="btn btn-success btn-xs" button-icon="fa fa-check" button-title="Aprobar"
+                                              form-button-class="btn btn-success btn-sm" form-button-name="Sí, Aprobar" form-button-icon="fa fa-check">
+                                </modal-button>
+                                <modal-button id="btnRechazarDocumento_@Model.IdDocanot"
+                                              get-url="/GLOD/AnotDocs/RechazarDocumento/@Model.IdDocanot"
+                                              post-url="/GLOD/AnotDocs/RechazarDocumento"
+                                              form-name="Rechazar Documento" form-class="text-danger"
+                                              button-name="Rechazar" button-class="btn btn-danger btn-xs" button-icon="fa fa-ban" button-title="Rechazar"
+                                              form-button-class="btn btn-danger btn-sm" form-button-name="Sí, Rechazar" form-button-icon="fa fa-trash">
+                                </modal-button>
+                            }
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

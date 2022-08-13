@@ -1,0 +1,82 @@
+﻿<div class="modal fade hmodal-info" id="modalFiltro" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header" style="padding-bottom:8px;padding-top:8px">
+                <h4 class="modal-title">Filtrar Contratos</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label class="control-label" for="IdObra">Obra</label>
+                                @Html.DropDownList("IdObra", null, htmlAttributes: new { @class = "form-control", @multiple = "multiple" })
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label class="control-label" for="IdContrato">Contrato Específico</label>
+                                @Html.DropDownList("IdContrato", null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="control-label" for="IdTipoContrato">Tipo</label>
+                                @Html.DropDownList("IdTipoContrato", null, htmlAttributes: new { @class = "form-control", @multiple = "multiple" })
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" for="IdEstado">Estados</label>
+                                @Html.DropDownList("IdEstado", null, htmlAttributes: new { @class = "form-control", @multiple = "multiple" })
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label class="control-label" for="IdSujEcon">Sujeto Económico</label>
+                                @Html.DropDownList("IdSujEcon", null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="control-label" for="IdRespMandante">ITO</label>
+                                @Html.DropDownList("IdRespMandante", null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" for="IdAdminContrato">Administrador Contratista</label>
+                                @Html.DropDownList("IdAdminContrato", null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label class="control-label" for="datepicker">Fecha Inicio</label>
+                                <div class="input-daterange input-group" id="datepicker">
+                                    <input type="text" class="input-sm form-control FRange" id="FDesdeFilter" placeholder="Desde" autocomplete="off" />
+                                    <span class="input-group-addon" style="background-color:#ddd;">-</span>
+                                    <input type="text" class="input-sm form-control FRange" id="FHastaFilter" placeholder="Hasta" autocomplete="off" />
+                                </div>
+                                <span class="field-validation-valid text-danger" data-valmsg-for="daterange"></span>
+                            </div>
+                            <div class="col-sm-6">
+                                <label class="control-label" for="IdLocalidad">Localidad</label>
+                                @Html.DropDownList("IdLocalidad", null, htmlAttributes: new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <hr class="m-b-sm m-t-sm" />
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="btn-group  btn-group-justified" role="group" aria-label="...">
+                                    <a class="btn btn-sm btn-info ladda-button" data-style="zoom-in" id="btnFilter" onclick="asp_filtro.Filtro(@ViewBag.IdEmpresa);"><i class="fa fa-filter"></i> Filtrar</a>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

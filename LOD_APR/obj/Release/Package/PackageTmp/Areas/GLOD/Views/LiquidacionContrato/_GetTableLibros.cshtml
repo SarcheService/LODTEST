@@ -1,0 +1,88 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_LibroObras>
+
+<div class="row">
+    <div class="col-lg-12 m-l-md m-b-md">
+        <h5>Libros del Contrato</h5><small>Sólo Libros Activos</small>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-condensed table-hover" id="tablaLibros">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.NombreLibroObra)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.DescripcionLObra)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.FechaApertura)
+                    </th>
+                    <th>@Html.DisplayNameFor(model => model.FechaCierre)</th>
+                    <th>
+                        Estado
+                    </th>
+                    <th>Acciones</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NombreLibroObra)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.DescripcionLObra)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.FechaApertura.Value)
+                        </td>
+                        @if (item.FechaCierre != null)
+                        {
+                            <td>@Html.DisplayFor(modelItem => item.FechaCierre.Value)</td>
+                        }
+                        else
+                        {
+                            <td> - </td>
+                        }
+                        @if (item.Estado == 1)
+                        {
+                            <td><label class="label label-warning2">Activo</label></td>
+                        }
+                        else if (item.Estado == 2)
+                        {
+
+                            <td><label class="label label-info">Cerrado</label></td>
+                        }
+
+                        <td>
+
+                            <div class="btn-group btn-group-nobreak">
+                                @if (ViewBag.EsInspectorFiscal && ViewBag.EstadoContrato != 3 && item.Estado == 1)
+                                {
+                                    @Ajax.RawActionLink(string.Format("<i class=\"fa fa-pencil\"></i> Cerrar Libro"), "CierreLibro", null, new { IdLod = item.IdLod },
+                                         new AjaxOptions
+                                         {
+                                             HttpMethod = "GET",
+                                             InsertionMode = InsertionMode.Replace,
+                                             UpdateTargetId = "modalCanvas",
+                                             OnSuccess = "glod_liquidacion.initModal(data,status,xhr);"
+                                         }
+                                         , new { @class = "btn btn-warning btn-xs" })
+                                }
+
+                            </div>
+
+                        </td>
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</div>
+

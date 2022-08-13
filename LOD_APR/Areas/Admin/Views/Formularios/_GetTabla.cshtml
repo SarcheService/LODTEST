@@ -1,0 +1,49 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.FORM_Formularios>
+
+<div class="row">
+    <div class="col-lg-12">
+        <table class="table table-condensed table-hover" id="tablaFormularios" name="tablaFormularios">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Creado por</th>
+                    <th>Creado el</th>
+                    <th>Activo</th>
+                    <th> </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.UserId)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FechaCreacion)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Activa)</td>
+                    <td>
+                        <div class="btn-group text-right">
+                          
+                            <a id="CreatePersonal" href="@Url.Action("Edit", "Formularios", new { area = "Admin", id= item.IdForm }, null)" role="button" class="btn btn-xs btn-warning"><i class="fa fa-pencil"></i> Editar</a>
+                            
+                            @Ajax.RawActionLink("<i class='fa fa-trash'></i>", "Delete", "Formularios", new { id = item.IdForm },
+                            new AjaxOptions
+                            {
+                                HttpMethod = "GET",
+                                InsertionMode = InsertionMode.Replace,
+                                UpdateTargetId = "modalCanvas",
+                                OnSuccess = "form_formulario.initModal(data,status,xhr);"
+                            }
+                            , new { @class = "btn btn-xs btn-danger", @title = "Eliminar Item" })
+
+                            @if (item.Activa)
+                            {
+                                <a href="@Url.Action("Test", "Formularios", new { area = "Admin", id= item.IdForm }, null)" role="button" class="btn btn-xs btn-info" target="_blank"><i class="fa fa-search"></i> Ver</a>
+                            }
+                        </div>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

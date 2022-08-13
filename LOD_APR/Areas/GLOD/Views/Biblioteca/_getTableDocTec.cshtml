@@ -1,0 +1,213 @@
+﻿@model IEnumerable<LOD_APR.Areas.GLOD.Models.LOD_docAnotacion>
+
+<table class="table table-condensed table-hover" id="tablaDatos1">
+    <thead>
+        <tr>
+            <th>Contrato</th>
+            <th>
+                Tipo de Comunicación
+            </th>
+            <th>
+                Subtipo de Comunicación
+            </th>
+            <th>
+                Tipo Documento
+            </th>
+            <th>
+                Nombre documento
+            </th>
+            <th>Descripción</th>
+            <th>
+                Fecha Creación
+            </th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+
+            //var lod = 0;
+            //var com = 0;
+            //var sub = 0;
+            //var classone = 0;
+            //var classtwo = 0;
+
+        }
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.LOD_Anotaciones.LOD_LibroObras.CON_Contratos.CodigoContrato)</td>
+                <td>@Html.DisplayFor(modelItem => item.LOD_Anotaciones.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.LOD_Anotaciones.MAE_SubtipoComunicacion.Nombre)</td>
+                <td>@Html.DisplayFor(modelItem => item.MAE_TipoDocumento.Tipo)</td>
+                <td>@Html.DisplayFor(modelItem => item.MAE_documentos.NombreDoc)</td>
+                <td>@Html.DisplayFor(modelItem => item.MAE_documentos.Descripcion)</td>
+                <td>@Html.DisplayFor(modelItem => item.MAE_documentos.FechaCreacion)</td>
+                <td>
+                    <div class="btn-group-nobreak">
+                        @{ string ruta = "";
+                            if (!string.IsNullOrEmpty(item.MAE_documentos.Ruta))
+                            {
+                                ruta = "/Files/Contratos/" + item.MAE_documentos.Ruta;
+                            }
+                        }
+                        <center>
+                            <a href='@ruta' class="btn btn-default btn-sm"><i class="fa fa-cloud-download"></i> Descargar</a>
+                        </center>
+
+                    </div>
+                </td>
+
+                @*
+                    @if (Model.First() == item)
+                    {
+                        <td rowspan="@Model.Where(x => x.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom == item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom).Count()">
+                            @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)
+                        </td>
+                    }
+                    else if (item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom != Model.First().mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom && com == 0)
+                    {
+                        com = item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom;
+                        if (item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom == com)
+                        {
+                            <td rowspan="@Model.Where(x => x.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom == item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom).Count()">
+                                @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)
+                            </td>
+                        }
+                    }
+                    else if (com != 0 && com != item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom)
+                    {
+                        com = item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom;
+                        if (item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom == com)
+                        {
+                            <td rowspan="@Model.Where(x => x.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom == item.mAE_CodSubCom.MAE_SubtipoComunicacion.IdTipoCom).Count()">
+                                @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.MAE_TipoComunicacion.Nombre)
+                            </td>
+                        }
+                    }
+
+
+
+                    @if (Model.First() == item)
+                    {
+                        <td rowspan="@Model.Where(x => x.mAE_CodSubCom.IdTipoSub == item.mAE_CodSubCom.IdTipoSub).Count()">
+                            @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.Nombre)
+                        </td>
+                    }
+                    else if (item.mAE_CodSubCom.IdTipoSub != Model.First().mAE_CodSubCom.IdTipoSub && sub == 0)
+                    {
+                        sub = item.mAE_CodSubCom.IdTipoSub;
+                        if (item.mAE_CodSubCom.IdTipoSub == sub)
+                        {
+                            <td rowspan="@Model.Where(x => x.mAE_CodSubCom.IdTipoSub == item.mAE_CodSubCom.IdTipoSub).Count()">
+                                @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.Nombre)
+                            </td>
+                        }
+                    }
+                    else if (sub != 0 && sub != item.mAE_CodSubCom.IdTipoSub)
+                    {
+                        sub = item.mAE_CodSubCom.IdTipoSub;
+                        if (item.mAE_CodSubCom.IdTipoSub == sub)
+                        {
+                            <td rowspan="@Model.Where(x => x.mAE_CodSubCom.IdTipoSub == item.mAE_CodSubCom.IdTipoSub).Count()">
+                                @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_SubtipoComunicacion.Nombre)
+                            </td>
+                        }
+                    }
+
+
+                    @if (item.mAE_ClassDoc != null)
+                    {
+                        @*<td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.MAE_ClassOne.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.MAE_ClassDoc.MAE_ClassTwo.Nombre)</td>
+
+
+                        if (classone == 0)
+                        {
+                            <td>@Html.DisplayFor(modelItem => item.mAE_ClassDoc.MAE_ClassTwo.MAE_ClassOne.Nombre)</td>
+                            classone = item.mAE_ClassDoc.MAE_ClassTwo.IdClassOne;
+                        }
+                        else if (classone == item.mAE_ClassDoc.MAE_ClassTwo.IdClassOne)
+                        {
+                            <td style="border-color:transparent;"></td>
+                        }
+                        else
+                        {
+                            <td>@Html.DisplayFor(modelItem => item.mAE_ClassDoc.MAE_ClassTwo.MAE_ClassOne.Nombre)</td>
+                            classone = item.mAE_ClassDoc.MAE_ClassTwo.IdClassOne;
+                        }
+
+                        if (classtwo == 0)
+                        {
+                            <td>@Html.DisplayFor(modelItem => item.mAE_ClassDoc.MAE_ClassTwo.Nombre)</td>
+                            classtwo = item.mAE_ClassDoc.MAE_ClassTwo.IdClassTwo;
+                        }
+                        else if (classtwo == item.mAE_ClassDoc.MAE_ClassTwo.IdClassTwo)
+                        {
+                            <td style="border-color:transparent;"></td>
+                        }
+                        else
+                        {
+                            <td>@Html.DisplayFor(modelItem => item.mAE_ClassDoc.MAE_ClassTwo.Nombre)</td>
+                            classtwo = item.mAE_ClassDoc.MAE_ClassTwo.IdClassTwo;
+                        }
+
+
+                    }
+                    else
+                    {
+                        <td>-</td>
+                        <td>-</td>
+                    }
+
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.mAE_CodSubCom.MAE_TipoDocumento.Tipo)
+                    </td>
+                    @if (item.lOD_DocAnotacion == null)
+                    {
+
+                        <td><label class="label label-danger">No cargado</label></td>
+                    }
+                    else
+                    {
+                        <td><label class="label label-success">Cargado</label></td>
+                    }
+                    @if (item.lOD_DocAnotacion != null)
+                    {
+                        <td>
+                            @Html.DisplayFor(modelItem => item.lOD_DocAnotacion.MAE_documentos.NombreDoc)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.lOD_DocAnotacion.MAE_documentos.FechaCreacion)
+                        </td>
+                    }
+                    else
+                    {
+                        <td>
+                            -
+                        </td>
+                        <td>
+                            -
+                        </td>
+                    }
+
+                    <td>
+                        <div class="btn-group-nobreak">
+                            @{ string ruta = "";
+                                if (item.lOD_DocAnotacion != null)
+                                {
+                                    ruta = "/../../Files/Personal/" + item.lOD_DocAnotacion.MAE_documentos.fileName;
+                                }
+                            }
+                                <center>
+                                    <a href='@ruta' class="btn btn-default btn-sm"><i class="fa fa-cloud-download"></i> Descargar</a>
+                                </center>
+
+                        </div>
+                    </td>
+                *@
+            </tr>
+        }
+    </tbody>
+</table>

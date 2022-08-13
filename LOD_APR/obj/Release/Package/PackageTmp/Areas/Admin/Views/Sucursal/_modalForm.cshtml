@@ -1,0 +1,118 @@
+﻿@model LOD_APR.Areas.Admin.Models.MAE_Sucursal
+
+@using System.Configuration
+@{ ViewBag.webKey = Convert.ToString(ConfigurationManager.AppSettings.Get("InternalCaptchaSiteKey")); }
+<script>
+    grecaptcha.ready(function () {
+        grecaptcha.execute('@ViewBag.webKey', { action: '' }).then(function (token) {
+            document.getElementById("foo").value = token;
+        });
+    });
+</script>
+
+<div class="modal inmodal fade @ViewBag.ClsModal" id="modalSucursal" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <center><h4 class="modal-title">@ViewBag.Titulo</h4></center>
+            </div>
+            <div class="modal-body">
+                @{string action = ViewBag.Action;}
+                @using (Ajax.BeginForm(action, null, new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "mae_sucursal.saveResult(data,status,xhr);"
+                }, new { name = "formSucursal", id = "formSucursal" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.HiddenFor(model => model.IdSucursal)
+                    @Html.HiddenFor(model => model.IdSujeto)
+                    @Html.HiddenFor(model => model.EsCentral)
+
+                    <div class="form-horizontal">
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                @Html.LabelFor(model => model.Sucursal, htmlAttributes: new { @class = "control-label " })
+                                @Html.EditorFor(model => model.Sucursal, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @Html.ValidationMessageFor(model => model.Sucursal, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        @if (Model.MAE_sujetoEconomico != null)
+                        {
+                            if (Model.MAE_sujetoEconomico.EsGubernamental)
+                            {
+                                <div class="form-group">
+                                    <div class="col-md-1"></div>
+                                    <div class="col-md-10">
+                                        <label class="control-label" for="IdCiudad">Dirección MOP</label>
+                                        @Html.DropDownList("IdDireccion", null, htmlAttributes: new { @class = "form-control select_IdCiudad  input-sm", @style = "min-width:280px,width:450px" })
+                                        @Html.ValidationMessageFor(model => model.IdCiudad, "", new { @class = "text-danger" })
+                                    </div>
+                                    <div class="col-md-1"></div>
+                                </div>
+                            }
+                        }
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                @Html.LabelFor(model => model.Direccion, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Direccion, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @Html.ValidationMessageFor(model => model.Direccion, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-5">
+                                @Html.LabelFor(model => model.Encargado, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Encargado, new { htmlAttributes = new { @class = "form-control input-sm" } })
+                                @Html.ValidationMessageFor(model => model.Encargado, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                <label class="control-label" for="IdCiudad">Ciudad</label>
+                                @Html.DropDownList("IdCiudad", null, htmlAttributes: new { @class = "form-control select_IdCiudad  input-sm", @style = "min-width:280px,width:450px" })
+                                @Html.ValidationMessageFor(model => model.IdCiudad, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-5">
+                                @Html.LabelFor(model => model.Telefono, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Telefono, new { htmlAttributes = new { @class = "form-control  input-sm" } })
+                                @Html.ValidationMessageFor(model => model.Telefono, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-5">
+                                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label" })
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control  input-sm" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                        <input type="hidden" name="foo" id="foo">
+                        <br />
+                        <br />
+                        <div class="form-group">
+                            <div class="col-md-1"></div>
+                            <div class="col-md-10">
+                                <div class="btn-group pull-right">
+                                    @if (Html.ValidaPermisos("0010170001"))
+                                    {
+                                        <button type="submit" class="btn btn-primary"><i class="fa fa-upload"></i> Guardar</button>
+                                    }
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                            <div class="col-md-1"></div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

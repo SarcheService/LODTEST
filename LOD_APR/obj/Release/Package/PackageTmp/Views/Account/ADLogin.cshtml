@@ -1,0 +1,117 @@
+﻿@using LOD_APR.Models
+@using Microsoft.AspNet.Identity
+@model ADLoginViewModel
+
+@{
+    ViewBag.Title = "Iniciar sesión";
+    Layout = "~/Views/Shared/_Layout_Blank.cshtml";
+}
+
+    <div class="login-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="hpanel">
+                    <div class="panel-body">
+                        <div class="text-center col-lg-12">
+                            <div class="col-lg-12">
+                                <div class="m">
+                                    @*<img src="~/Content/img/GALENA-LOGO.png" class="img-responsive m-t-md" style="margin: 0px auto;" />*@
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12 m-t-sm">
+
+                                @if (Request.IsAuthenticated)
+                                {
+                                    using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <h5 class="m-b-xs">Usuario Activo: @User.Identity.GetUserName()</h5>
+                                        <a href="/ASP/LibroObras/LibroIndex" role="button" class="btn btn-sm btn-info m-b-sm">Ingresar al sistema</a><br />
+                                        <a href="javascript:document.getElementById('logoutForm').submit()" class="btn btn-sm btn-warning">Cerrar sesión</a>
+                                    }
+                                }
+                                else
+                                {
+                                    <p class="m-b-xs text-left">Inicie sesión mediante su cuenta organizativa</p>
+                                    <div id="ExternalLogin" class="m-t-sm text-left">
+                                        <img src="~/Content/img/Auten-Unificada.png" style="height:40px;" />
+                                        @using (Html.BeginForm("ADLogin", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                                            <div class="form-group">
+                                                @Html.LabelFor(m => m.Email, new { @class = "control-label text-left" })
+                                                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @placeholder = "nombre.apellido@aguasnuevas.cl" })
+                                                @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+
+                                            </div>
+                                            <div class="form-group">
+
+                                                @Html.LabelFor(m => m.Password, new { @class = "control-label text-left" })
+                                                @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "******" })
+                                                @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
+                                            </div>
+
+                                            <button type="submit" role="button" class="btn btn-success"><i class='fa fa-unlock-alt' aria-hidden='true'></i> Iniciar Sesión</button>
+                                        }
+                                    </div>
+                                }
+                                <div class="row">
+                                    <div class="col-md-12 text-center m-t-sm">
+                                        <small>Powered by MDTech Ltda.</small>
+                                        <p class="m-t-xs"><strong>Versión @ViewBag.version</strong></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <input type="hidden" id="MaxHeight" value="0" />
+    @section Scripts {
+
+        <script type="text/javascript">
+            function fnfederation() {
+
+
+            }
+            function updateLogo() {
+                var img = $("#LogosEmpresas").val();
+                document.getElementById('LogoImg').src = img;
+            }
+
+            $(window).resize(function () {
+                resizeImg();
+            });
+            
+            $(document).ready(function () {
+                setTimeout(function () {
+                    resizeImg();
+                }, 100);
+            });
+
+            function resizeImg() {
+                var MaxHeight = 0;
+                var MaxHeihtIni = parseInt($("#MaxHeight").val());
+
+                $('.img-empresa').each(function () {
+                    if (MaxHeight < $(this).height()) {
+                        MaxHeight = $(this).height();
+                    }
+                });
+
+                if (MaxHeight !== MaxHeihtIni) {
+                    $("#MaxHeight").val(MaxHeight);
+                    $(".div-img-empresa").css({ "height": (MaxHeight + 2) + "px", "line-height": (MaxHeight + 2) + "px" })
+                }
+            }
+        </script>
+
+    }

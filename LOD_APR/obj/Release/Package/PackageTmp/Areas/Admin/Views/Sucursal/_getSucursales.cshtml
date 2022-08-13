@@ -1,0 +1,167 @@
+﻿@model IEnumerable<LOD_APR.Areas.Admin.Models.MAE_Sucursal>
+@using LOD_APR.Helpers
+
+<table class="table table-hover table-condensed" id="tablaSucursal">
+    <thead>
+        <tr>
+            <th>
+                
+            </th>
+            <th>
+                
+            </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var sucursal in Model)
+        {
+            <tr>
+                <td style="width:65%;margin-top:10px; margin-bottom:5px;">
+                    <div class="col-sm-12 border-right m-t-xs">
+                        <div class="project-action m-t-none pull-right">
+                            <div class="btn-group">
+                                @if (Html.ValidaPermisos("0010170002"))
+                                {
+                                    @Ajax.RawActionLink("<i class='fa fa-edit'></i> Editar", "Edit", "Sucursal", new { id = sucursal.IdSucursal },
+                                             new AjaxOptions
+                                             {
+                                                 HttpMethod = "GET",
+                                                 InsertionMode = InsertionMode.Replace,
+                                                 UpdateTargetId = "modalCanvas",
+                                                 OnBegin = "$(\".panel-load\").addClass(\"sk-loading\");",
+                                                 OnSuccess = "mae_sucursal.initModal(data,status,xhr);"
+                                             }, new { @class = "btn btn-xs btn-outline btn-warning" })
+                                }
+                                @if (!sucursal.EsCentral)
+                                {
+                                    if (Html.ValidaPermisos("0010170003"))
+                                    {
+                                        @Ajax.RawActionLink("<i class='fa fa-trash'></i>", "Delete", "Sucursal", new { id = sucursal.IdSucursal },
+                                            new AjaxOptions
+                                            {
+                                                HttpMethod = "GET",
+                                                InsertionMode = InsertionMode.Replace,
+                                                UpdateTargetId = "modalCanvas",
+                                                OnBegin = "$(\".panel-load\").addClass(\"sk-loading\");",
+                                                OnSuccess = "mae_sucursal.initModal(data,status,xhr);"
+                                            }, new { @class = "btn btn-xs btn-outline btn-danger2", @title = "Eliminar Sucursal" })
+                                        }
+                                    }
+
+                                </div>
+                        </div>
+                        <h4 class="m-t-none"><a href=""> @sucursal.Sucursal</a></h4>
+                        <p>@sucursal.Direccion, @sucursal.MAE_ciudad.Ciudad, @sucursal.MAE_ciudad.MAE_region.Region</p>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="project-label">Teléfono</div>
+                                @if (sucursal.Telefono != null)
+                                {
+                                    <small>@sucursal.Telefono</small>
+                                }
+                                else
+                                {
+                                    <small>-</small>
+                                }
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="project-label">E-Mail</div>
+                                @if (sucursal.Email != null)
+                                {
+                                    <small>@sucursal.Email</small>
+                                }
+                                else
+                                {
+                                    <small>-</small>
+                                }
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="project-label">Encargado/a</div>
+                                <small>@sucursal.Encargado</small>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+
+                <td style="width:35%;  margin-top:10px; margin-bottom:5px;">
+
+                    <div class="col-sm-12 project-info m-t-xs">
+                        @*<div class="project-action m-t-none pull-right">
+                <div class="btn-group">
+                    @Ajax.RawActionLink("<i class='fa fa-plus'></i> Nuevo Contacto", "Create", "Contactos", new { IdSujeto = con.IdSujEcon },
+                    new AjaxOptions
+                    {
+                        HttpMethod = "GET",
+                        InsertionMode = InsertionMode.Replace,
+                        UpdateTargetId = "modalCanvas",
+                        OnBegin = "$(\".panel-load\").addClass(\"sk-loading\");",
+                        OnSuccess = "new MAE_Contactos().initModal(data,status,xhr);"
+                    }, new { @class = "btn btn-xs btn-default", role = "button" })
+
+                </div>
+            </div>*@
+                        <div class="project-value pull-left">
+                            <h4 class="m-t-none text-muted">
+                                Contactos
+                            </h4>
+                        </div>
+                        <br />
+                        <div class="project-people pull-left" style="width:100%;text-align:left">
+                            @foreach (var con in sucursal.Usuarios)
+                            {
+                                if (con.RutaImagen == null)
+                                {
+                                    @*<small>
+                            <a href="@Url.Action("Edit","Usuarios",new { Id = con.Id, back = "1" })" data-letters="@Html.ImageLetter(con.Nombres, con.Apellidos)" role="button" class="@con.DataLetters"></a>
+                        </small>*@
+
+                                    <small>
+                                        @Ajax.RawActionLink("", "DetailsUser", null, new { id = con.Id },
+                                        new AjaxOptions
+                                        {
+                                            HttpMethod = "GET",
+                                            InsertionMode = InsertionMode.Replace,
+                                            UpdateTargetId = "modalCanvas",
+                                            OnSuccess = "mae_sujetos.initModalUser(data,status,xhr);"
+                                        }, new { data_letters = Html.ImageLetter(con.Nombres, con.Apellidos), data_toggle = "tooltip", data_placement = "bottom", title = "", data_original_title = @con.Nombres, @class = con.DataLetters })
+                                    </small>
+                                }
+                                else
+                                {
+                                    @*string ruta = "/Images/Usuarios/" + con.RutaImagen;
+                        <a href="@Url.Action("Edit","Usuarios",new { Id = con.Id, back = "1" })" role="button" class="img-circle">
+                            <img alt="" class="img-circle m-b-none" style="margin-bottom:0; width:28px; height:28px;" src="@ruta" />
+                        </a>*@
+                                    string button = "<img src='/Images/Contactos/" + con.RutaImagen + "' class=\"img-circle m-b-none\" style=\"margin-bottom:0;\"/>";
+                                    @Ajax.RawActionLink(button, "DetailsUser", null, new { id = con.Id },
+                                    new AjaxOptions
+                                    {
+                                        HttpMethod = "GET",
+                                        InsertionMode = InsertionMode.Replace,
+                                        UpdateTargetId = "modalCanvas",
+                                        OnSuccess = "mae_sujetos.initModalUser(data,status,xhr);"
+                                    }, new { @class = "img-circle", data_toggle = "tooltip", data_placement = "bottom", title = "", data_original_title = @con.Nombres })
+
+                                }
+                            }
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
+
+@*@foreach (var sucursal in Model)
+{
+    <div>
+        <div class="panel-body" style="border-top:1px solid #e4e5e7;margin-top:10px;">
+            <div class="row">
+              
+            </div>
+        </div>
+    </div>}*@

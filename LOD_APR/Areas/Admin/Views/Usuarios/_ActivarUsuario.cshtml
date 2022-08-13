@@ -1,0 +1,41 @@
+﻿@model LOD_APR.Models.ApplicationUser
+
+@{
+    ViewBag.Title = "Desactivar Usuario";
+}
+
+<div class="modal fade hmodal-warning" id="modalPassword" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="color-line"></div>
+            <div class="modal-header">
+                <h4 class="modal-title">Activar Usuario: @Model.Run</h4>
+                <small class="font-bold"></small>
+            </div>
+            <div class="modal-body">
+                @using (Ajax.BeginForm("ActivarUsuario", "Usuarios", new AjaxOptions()
+                {
+                    HttpMethod = "POST",
+                    OnSuccess = "mae_user.saveResult2(data,status,xhr);",
+                }, new { name = "formPassword", id = "formPassword" }))
+                {
+                    <div class="form-horizontal">
+                        <h4>Ya existe un Usuario activo para este Rut ¿Desea Activar esa cuenta de usuario?</h4>
+                        <h5>Las cuentas asociadas al rut serán desactivadas y sólo se mantendrá activa la cuenta actual</h5>
+                        <hr />
+                        @Html.AntiForgeryToken()
+                        @Html.HiddenFor(model => model.Id)
+                        <div class="form-group">
+                            <div class="col-md-12">
+                                <div class="btn-group pull-right">
+                                    <button id="btnSubmit" type="submit" class="btn btn-warning ladda-button" data-style="expand-right"><i class="fa fa-check"></i> Si, Activar</button>
+                                    <a href="#" data-dismiss="modal" class="btn btn-default"><i class="fa fa-ban"></i> Cancelar </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+}
+            </div>
+        </div>
+    </div>
+</div>

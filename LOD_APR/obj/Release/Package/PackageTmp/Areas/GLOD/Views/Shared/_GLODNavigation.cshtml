@@ -1,0 +1,52 @@
+﻿<div id="navigation">
+    @Html.Partial("~/Views/Shared/_AppProfile.cshtml")
+    <ul class="nav metismenu side-menu-alter-blue" id="side-menu">
+
+        <li class="@Html.IsSelected("Contratos", "InicioRapido")">
+            <a href="@Url.Action("InicioRapido", "Contratos", new { area = "GLOD" }, null)">Inicio Rápido</a>
+        </li>
+
+        @if (Html.ValidaPermisos("0020000000"))
+        {
+            <li class="@Html.IsSelected("Home", "Admin")"><a href="@Url.Action("Admin", "Home", new { area = "GLOD" }, null)">Arbol Contratos</a></li>
+        }
+
+        @if (Html.ValidaPermisos("0020020000"))
+        {
+        <li class="@Html.IsSelected("Liquidacion", "Index")">
+            <a href="@Url.Action("Index", "LiquidacionContrato", new { area = "GLOD" }, null)">Liquidación Contratos</a>
+        </li>
+        }
+
+        @if (Html.ValidaPermisos("0070000000"))
+        {
+            <li class="@Html.IsSelected("ConsultaAvanzada", "Index")">
+                <a href="@Url.Action("Index", "Biblioteca", new { area = "GLOD" }, null)">Biblioteca de Documentos</a>
+            </li>
+        }
+
+    @*<li class="@Html.IsSelected(new string[] {"ArbolContratos", "TablaContratos"})">
+            <a href="#"><span class="nav-label">Gestión Contratos</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected("Home", "Admin")"><a href="@Url.Action("Admin", "Home", new { area = "GLOD" }, null)">Arbol Contratos</a></li>
+                @* <li class="@Html.IsSelected("TablaContratos", "Index")"><a href="@Url.Action("", "", new { area = "GLOD" }, null)">Tabla de Contratos</a></li>
+            <!--</ul>
+        </li>-->
+
+        <li class="@Html.IsSelected(new string[] {"FormInformes"})">
+            <a href="#"><span class="nav-label">Reportes</span><span class="fa arrow"></span> </a>
+            <ul class="nav nav-second-level">
+                <li class="@Html.IsSelected("FormInformes", "IndexIncidentes")"><a href="@Url.Action("IndexIncidentes", "FormInformes", new { area = "GLOD", IdContrato = 3 }, null)">Reporte Incidentes</a></li>
+                <li class="@Html.IsSelected("FormInformes", "IndexEjecutivo")"><a href="@Url.Action("IndexEjecutivo", "FormInformes", new { area = "GLOD", id = 3 }, null)">Reporte Ejecutivo Mensual</a></li>
+            </ul>
+        </li>
+
+        
+
+        <li class="@Html.IsSelected("ControlHitos", "Index")">
+            <a href="@Url.Action("Index", "ControlHitos", new { area = "GLOD" }, null)">Control Avanzado de Hitos</a>
+        </li>*@
+
+
+    </ul>
+</div>
